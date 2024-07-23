@@ -40,12 +40,6 @@ These are needed before working to get engine3d building successfully on your pl
     choco install git
     ```
     
-    Install `mingw` (powershell must be admin):
-    
-    ```powershell
-    choco install mingw
-    ```
-    
     Install `python` (powershell must be admin):
     
     ```powershell
@@ -56,12 +50,6 @@ These are needed before working to get engine3d building successfully on your pl
     
     ```powershell
     choco install llvm
-    ```
-
-    Install `directx` (Optional)
-    
-    ```powershell
-    choco install directx
     ```
     
     Install `conan` (powershell must be admin)

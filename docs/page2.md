@@ -9,18 +9,22 @@ These are needed before working to get engine3d building successfully on your pl
 * `llvm`: 17 or above
 * `make`: CMake downloaded using conan to build Engine3D
 * `git`: (only needs to be installed via installer on Windows)
+* `Visual Studio`: (Installing it just for getting C++ Windows SDK to work)
 
 === "Windows"
 
     !!! tip
-    
-        Installing DirectX is optional, since Engine3D does not support it yet.
         
         Adding it as an option for future change to using DirectX when you run on Windows.
 
-    It is recommended to use Choco for an easy install for the Windows platform.
+    !!! info
+        Needs to install Visual Studio installed because it comes with C++ Windows SDK kits
+
+        Until there is an easier way of installing the C++ Windows SDK Kit for the Windows platform.
+
+    It is recommended to use Choco for an easy installatoin process on Windows.
     
-    To install `choco`, open powershell with admin access and run the following command in your terminal:
+    To install `choco`, open powershell with admin access and run the following command in your terminal (powershell must be admin):
     
     ```powershell
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))

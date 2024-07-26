@@ -60,6 +60,22 @@ These are needed before working to get engine3d building successfully on your pl
     ```powershell
     python -m pip install -U "conan>=2.2.2"
     ```
+
+    Install cmake
+    ```powershell
+    choco install cmake
+    ```
+
+    Install mingw
+    ```powershell
+    choco install mingw
+    ```
+
+    Install Vulkan  using the vulkan installer from [here](https://vulkan.lunarg.com/sdk/home#windows)
+
+    During installation select the `SDK 32-bit Core Components` as shown
+
+    ![screencap of component selection on vulkan installer](pics/vulkan_components_win_md.png)
     
 === "Ubuntu"
 
@@ -129,7 +145,7 @@ Cloning the engine3d repository
 git clone https://github.com/engine3d-dev/engine3d
 cd engine3d/
 
-conan create .
+conan create . -b missing
 
 conan build .
 ```

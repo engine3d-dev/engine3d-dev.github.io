@@ -1,4 +1,4 @@
-- [home](home_page.md)
+- [🏡home](home_page.md)
 - [About](about.md)
 - [Getting Started](getting_started.md)
 - [Used Guide](user_guide.md)

@@ -20,5 +20,6 @@ Basics
 Engine3D at it's core is a set of subsystems and wrappers. Typically when developing working on a game engine there are three types of applications. You have the editor, the actual game engine, and the actual game the developer is building. The editor is what uses the runtime API calls to the engine. Providing the tooling, while the editor allows you to do specific tasks during the editor's runtime. Such as running simulations, executing profilers, and manymore. Third application would be the game you are building. The editor is a tool that is used part of your development when building your game. Where building your game uses the API's that are provided to you through Engine3D. Which contains higher abstractions (abstraction that is only needed) you'd call as the developer making the game itself.
 
 🚧 NOTE: Example needs to be inserted here 🚧
+
 Example would be about creating a project with Engine3D.
 

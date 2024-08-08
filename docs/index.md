@@ -1,4 +1,3 @@
-# 🏡 Home
 <div align="center">
 <h1>Welcome to Engine3D</h1>
 </div>

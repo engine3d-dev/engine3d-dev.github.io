@@ -164,7 +164,7 @@ Setting up a conan profile for your specific platforms.
     If you are on Macbook that uses M1 processor.
     
     ```bash
-    conan config install -sf profiles/x86_64/linux/ -tf profiles https://github.com/engine3d-dev/conan-config.git
+    conan config install -sf profiles/armv8/mac/ -tf profiles https://github.com/engine3d-dev/conan-config.git
     ```
 
 ---

@@ -156,9 +156,13 @@ These are needed before working to get engine3d building successfully on your pl
         export VK_LAYER_PATH="$VULKAN_SDK/share/vulkan/explicit_layer.d"
     ```
 
-    After adding these exports, refresh your `.zshrc` by doing `source ~/.zshrc`
+    !!! note
 
-    After installing Vulkan you should be able to type the following command `vkvia`
+        To check if vulkan is installed, you should be able to type the following command `vkvia`
+
+        This runs the vulkan basic cube program validating vulkan's been installed correctly.
+
+    After adding these exports, refresh your `.zshrc` by doing `source ~/.zshrc`
 
 ---
 

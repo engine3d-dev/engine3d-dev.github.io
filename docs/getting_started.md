@@ -143,7 +143,7 @@ These are needed before working to get engine3d building successfully on your pl
 
     Installing Vulkan using the installer from [here](https://vulkan.lunarg.com/sdk/home#mac)
 
-    During the installation select the `System Global Installation` as shown
+    During the installation select the checkbox's shown below.
 
     ![screencap of component selection on vulkan installer](pics/vulkan_components_mac_md.png)
 

@@ -105,38 +105,6 @@ These are needed before working to get engine3d building successfully on your pl
     ``` bash
     python -m pip install -U "conan>=2.2.2"
     ```
-=== "Mac OS"
-
-    Install Homebrew:
-    
-    ```
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
-    
-    Install latest version of Python && llvm:
-    
-    ```
-    brew install python
-    brew install llvm@17
-    ```
-    
-    Install conan:
-    
-    ```
-    python3 -m pip install "conan>=2.2.2"
-    ```
-    
-    Make `clang-tidy` available on the command line:
-    
-    ```
-    sudo ln -s $(brew --prefix llvm)/bin/clang-tidy /usr/local/bin/
-    ```
-    
-    Install Rosetta (only required for M1 macs):
-    
-    ```
-    /usr/sbin/softwareupdate --install-rosetta --agree-to-license
-    ```
 ---
 
 ## Setting up Conan

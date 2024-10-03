@@ -78,6 +78,36 @@ These are needed before working to get engine3d building successfully on your pl
     ![screencap of component selection on vulkan installer](pics/vulkan_components_win_md.png)
 
     ```
+    
+=== "Ubuntu"
+
+    Install wget if it isn't already on your system
+
+    `sudo apt-get install wget`
+
+    Install the latest version of `llvm`
+    
+    ``` bash
+    wget https://apt.llvm.org/llvm.sh
+    chmod +x llvm.sh
+    sudo ./llvm.sh
+    ```
+    
+    !!! info
+    
+        If your using 20.04, you have to upgrade Python to 3.10
+    
+    ``` bash
+    sudo apt update
+    sudo apt install software-properties-common -y
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo apt install Python3.10
+    ```
+
+    Installing Conan
+    ``` bash
+    python -m pip install -U "conan>=2.2.2"
+    ```
 
 === "Mac OS"
 
@@ -126,36 +156,10 @@ These are needed before working to get engine3d building successfully on your pl
         export VK_LAYER_PATH="$VULKAN_SDK/share/vulkan/explicit_layer.d"
     ```
 
+    After adding these exports, refresh your `.zshrc` by doing `source ~/.zshrc`
+
     After installing Vulkan you should be able to type the following command `vkvia`
-    
-=== "Ubuntu"
 
-    Install wget if it isn't already on your system
-    `sudo apt-get install wget`
-
-    Install the latest version of `llvm`
-    
-    ``` bash
-    wget https://apt.llvm.org/llvm.sh
-    chmod +x llvm.sh
-    sudo ./llvm.sh
-    ```
-    
-    !!! info
-    
-        If your using 20.04, you have to upgrade Python to 3.10
-    
-    ``` bash
-    sudo apt update
-    sudo apt install software-properties-common -y
-    sudo add-apt-repository ppa:deadsnakes/ppa
-    sudo apt install Python3.10
-    ```
-
-    Installing Conan
-    ``` bash
-    python -m pip install -U "conan>=2.2.2"
-    ```
 ---
 
 ## Setting up Conan
@@ -170,20 +174,20 @@ Setting up a conan profile for your specific platforms.
     conan config install -sf profiles/x86_64/Windows/ -tf profiles https://github.com/engine3d-dev/conan-config.git
     ```
 
-=== "M1 Mac"
-
-    If you are on an M1 Mac OS.
-
-    ```zsh
-    conan config install -sf profiles/armv8/mac/ -tf profiles https://github.com/engine3d-dev/conan-config.git
-    ```
-
 === "X86 Linux"
 
     If you are on a linux platform that uses an x86 architecture.
     
     ```bash
     conan config install -sf profiles/x86_64/linux/ -tf profiles https://github.com/engine3d-dev/conan-config.git
+    ```
+
+=== "M1 Mac"
+
+    If you are on an M1 Mac OS.
+
+    ```zsh
+    conan config install -sf profiles/armv8/mac/ -tf profiles https://github.com/engine3d-dev/conan-config.git
     ```
 
 ---

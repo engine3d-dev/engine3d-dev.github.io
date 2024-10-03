@@ -76,6 +76,57 @@ These are needed before working to get engine3d building successfully on your pl
     During installation select the `SDK 32-bit Core Components` as shown
 
     ![screencap of component selection on vulkan installer](pics/vulkan_components_win_md.png)
+
+    ```
+
+=== "Mac OS"
+
+    Install Homebrew:
+    
+    ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+    Install latest version of Python && llvm:
+    
+    ```
+    brew install python
+    brew install llvm@17
+    ```
+    
+    Install conan:
+    
+    ```
+    python3 -m pip install "conan>=2.2.2"
+    ```
+    
+    Make `clang-tidy` available on the command line:
+    
+    ```
+    sudo ln -s $(brew --prefix llvm)/bin/clang-tidy /usr/local/bin/
+    ```
+    
+    Install Rosetta (only required for M1 macs):
+    
+    ```
+    /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+    ```
+
+    Installing Vulkan using the installer from [here](https://vulkan.lunarg.com/sdk/home#mac)
+
+    During the installation select the `System Global Installation` as shown
+
+    ![screencap of component selection on vulkan installer](pics/vulkan_components_mac_md.png)
+
+    Once vulkan's installed apply the following export commands into your mac's `.zshrc` file
+    
+    ```zsh
+        export VULKAN_SDK="${HOME}/VulkanSDK/1.3.290.0/macOS"
+        export DYLD_LIBRARY_PATH="${VULKAN_SDK}/lib/libvulkan.1.3.290.dylib"
+        export VK_ICD_FILENAMES="$VULKAN_SDK/share/vulkan/icd.d/MoltenVK_icd.json"
+        export VK_LAYER_PATH="$VULKAN_SDK/share/vulkan/explicit_layer.d"
+    ```
+
+    After installing Vulkan you should be able to type the following command `vkvia`
     
 === "Ubuntu"
 
@@ -119,6 +170,14 @@ Setting up a conan profile for your specific platforms.
     conan config install -sf profiles/x86_64/Windows/ -tf profiles https://github.com/engine3d-dev/conan-config.git
     ```
 
+=== "M1 Mac"
+
+    If you are on an M1 Mac OS.
+
+    ```zsh
+    conan config install -sf profiles/armv8/mac/ -tf profiles https://github.com/engine3d-dev/conan-config.git
+    ```
+
 === "X86 Linux"
 
     If you are on a linux platform that uses an x86 architecture.
@@ -129,20 +188,24 @@ Setting up a conan profile for your specific platforms.
 
 ---
 
-## Building Engine3D
+## Contributing to Engine3D
 
-Cloning the engine3d repository
+- Create a fork of the Engine3D repository. Then clone your fork of the Engine3d repo.
+
+- Then use conan to build the project.
 
 !!! tip
-    Add this flag at the end `-b missing` when conan cannot find packages in conan's cache.
-    This means to build our packages and install any missing packages that we might have
-    
-* `conan create` command will install all the dependencies of engine3d and will build the project.
+    `-b missing` means that there are missing binaries in your conan cache.
 
-* `conan build .` will build the entire project
+!!! note
+    You only need to do the `conan create` command once. Then just continue using `conan build` afterwards.
+    
+- `conan create` command will install all the dependencies of engine3d, build, and test the project.
+
+- `conan build .` will build the entire project
 
 ```bash
-git clone https://github.com/engine3d-dev/engine3d
+git clone https://github.com/<username>/engine3d
 cd engine3d/
 
 conan create . -b missing

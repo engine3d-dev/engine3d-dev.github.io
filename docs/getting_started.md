@@ -34,9 +34,6 @@ These are needed before working to get engine3d building successfully on your pl
     
         If `choco` command does not work after running this script try closing and reopening powershell again.
         When `choco` prompts you to run install scripts from the commands below, enter `all` so it can install everything.
-
-        After installing MinGW, add `C:\Users\<username>\ProgramData\chocolatey\bin` to your environment variable path to make it available globally.
-        Creating a copy in the `make.exe` and renaming it to `mingw32-make.exe` to get make working. If you do not do this, you will get the `CMAKE_MAKE_PROGRAM not set` error.
     
     Install `git` (powershell must be admin):
     
@@ -71,7 +68,14 @@ These are needed before working to get engine3d building successfully on your pl
     choco install mingw
     ```
 
-    Install Vulkan  using the vulkan installer from [here](https://vulkan.lunarg.com/sdk/home#windows)
+    [comment]: <> (Install Vulkan  using the vulkan installer from [here](https://vulkan.lunarg.com/sdk/home#windows))
+    
+
+    Installing Vulkan's installer from the terminal. (in Powershell)
+    ```powershell
+    Invoke-WebRequest -Uri https://sdk.lunarg.com/sdk/download/1.3.290.0/windows/VulkanSDK-1.3.290.0-Installer.exe -OutFile $env:USERPROFILE\Downloads\VulkanSDK-1.3.290.0-Installer.exe
+    ```
+
 
     During installation select the `SDK 32-bit Core Components` as shown
 
@@ -109,6 +113,8 @@ These are needed before working to get engine3d building successfully on your pl
     python -m pip install -U "conan>=2.2.2"
     ```
 
+    On Linux vulkan does not need 
+
 === "Mac OS"
 
     Install Homebrew:
@@ -125,6 +131,11 @@ These are needed before working to get engine3d building successfully on your pl
     
     Install conan:
     
+    !!! tip
+        If using the conan command does not work after pip installing.
+
+        Type the `brew install conan` command, instead.
+
     ```
     python3 -m pip install "conan>=2.2.2"
     ```
@@ -141,7 +152,11 @@ These are needed before working to get engine3d building successfully on your pl
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
     ```
 
-    Installing Vulkan using the installer from [here](https://vulkan.lunarg.com/sdk/home#mac)
+    [comment]: <> (Installing Vulkan using the installer from [here](https://vulkan.lunarg.com/sdk/home#mac))
+
+    ```zsh
+    curl -O https://sdk.lunarg.com/sdk/download/1.3.290.0/mac/vulkansdk-macos-1.3.290.0.dmg ${HOME}/Downloads
+    ```
 
     During the installation select the checkbox's shown below.
 

@@ -216,7 +216,7 @@ Setting up a conan profile for your specific platforms.
 Add the engine3d-conan repository to your system. This repository holds all of the engine3d packages.
 
 ```zsh
-conan remote add engine3d-conan https://libhal.jfrog.io/engine3d-conan
+conan remote add engine3d-conan https://libhal.jfrog.io/artifactory/api/conan/engine3d-conan
 ```
 
 ## Contributing to Engine3D

@@ -211,13 +211,13 @@ Setting up a conan profile for your specific platforms.
 
 ---
 
-## "Extracting engine3d conan packages"
+## Extracting engine3d conan packages
 
-    Add the engine3d-conan repository to your system. This repository holds all of the engine3d packages.
+Add the engine3d-conan repository to your system. This repository holds all of the engine3d packages.
 
-    ```zsh
-    conan remote add engine3d-conan https://libhal.jfrog.io/engine3d-conan
-    ```
+```zsh
+conan remote add engine3d-conan https://libhal.jfrog.io/engine3d-conan
+```
 
 ## Contributing to Engine3D
 

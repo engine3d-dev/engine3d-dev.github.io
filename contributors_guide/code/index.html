@@ -703,6 +703,33 @@
 </li>
 </ol>
 <p>Instead there needs to be some sort of relationship between interfaces, then this type of relationship should be managed by concrete classes that can take dependent objects with a relationship and manage that relationship.</p>
+<h1 id="templates-in-utility">Templates in Utility</h1>
+<p>In the case that we need to deal with multiple data types from various frameworks. Refrain from adding them into a single class.</p>
+<p>Consider the following:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Vector3</span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="n">JPH</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">Type</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">SetPosition</span><span class="p">(</span><span class="n">Type</span><span class="w"> </span><span class="n">p_Position</span><span class="p">){</span>
+<span class="w">        </span><span class="n">m_Position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">p_Position</span><span class="p">.</span><span class="n">GetX</span><span class="p">(),</span><span class="w"> </span><span class="n">p_Position</span><span class="p">.</span><span class="n">GetY</span><span class="p">(),</span><span class="w"> </span><span class="n">p_Position</span><span class="p">.</span><span class="n">GetZ</span><span class="p">()};</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="n">T</span><span class="w"> </span><span class="n">GetPosition</span><span class="p">(){</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="k">constexpr</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_same_v</span><span class="o">&lt;</span><span class="n">T</span><span class="p">,</span><span class="w"> </span><span class="n">JPH</span><span class="o">::</span><span class="n">Vector3</span><span class="o">&gt;</span><span class="p">){</span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m_Position</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span><span class="w">    </span>
+<span class="w">    </span><span class="n">glm</span><span class="o">::</span><span class="n">vec3</span><span class="w"> </span><span class="n">m_Position</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<h2 id="why_8">Why?</h2>
+<p>This code may seem like a way to broaden Vec3 to work with different variations of Vector data types. That is the problem.</p>
+<p>By having Vector3 take in templates for SetPosition and GetPosition may complicate things because there are different variations of how other frameworks define their vector data type's.</p>
+<p>If we a single function gets more complicated because there are variations of the same type, then separate those functions. By making a single generic function that handles converting those functions can overcomplicate things.</p>
+<h2 id="consider_5">Consider:</h2>
+<p>Is there a way we can implement around this? Why not just separate the functions to explicitly handle those functions? If we generically have a single function to do this how can we ensure this works across all data types.</p>
 
 
 

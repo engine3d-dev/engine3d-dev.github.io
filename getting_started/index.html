@@ -427,51 +427,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#setting-up-conan" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting up Conan
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#extracting-engine3d-conan-packages" class="md-nav__link">
-    <span class="md-ellipsis">
-      Extracting engine3d conan packages
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributing-to-engine3d" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contributing to Engine3D
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-editor" class="md-nav__link">
-    <span class="md-ellipsis">
-      Running Editor
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#different-build-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      Different Build Types
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -610,21 +565,21 @@
 <h2 id="prerequisites">✅ Prerequisites</h2>
 <p>These are needed before working to get engine3d building successfully on your platform.</p>
 <ul>
-<li><code>python</code>: 3.10 or above</li>
-<li><code>conan</code>: 2.2.0 or above</li>
+<li><code>python</code>: 3.12 or above</li>
+<li><code>conan</code>: 2.10.0 or above</li>
 <li><code>llvm</code>: 17 or above</li>
 <li><code>make</code>: CMake downloaded using conan to build Engine3D</li>
 <li><code>git</code>: (only needs to be installed via installer on Windows)</li>
-<li><code>Visual Studio</code>: (Installing it just for getting C++ Windows SDK to work)</li>
+<li><code>Visual Studio Installer</code>: (Installer is for MSBuild to get C++ working on Windows)</li>
 </ul>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Ubuntu</label><label for="__tabbed_1_3">Mac OS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Needs to install Visual Studio's installer to get C++ on your windows machine.</p>
+<p>Needs to install Visual Studio's installer before using the <code>winget</code> command</p>
 </div>
-<p>Install Visual Studio Installer. Then run this <code>winget</code> command to setup C++ with the installer in powershell (in admin mode)</p>
+<p>Run this <code>winget</code> command to setup C++ with Visual Studio installer in powershell (in admin mode)</p>
 <div class="highlight"><pre><span></span><code><span class="n">winget</span> <span class="n">install</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">VisualStudio</span><span class="p">.</span><span class="n">2022</span><span class="p">.</span><span class="n">BuildTools</span> <span class="p">-</span><span class="n">-override</span> <span class="s2">&quot;--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended -p --installWhileDownloading&quot;</span>
 </code></pre></div>
 <p>It is recommended to use Choco for an easy installation process on Windows.</p>
@@ -636,27 +591,54 @@
 <p>If <code>choco</code> command does not work after running this script try closing and reopening powershell again.
 When <code>choco</code> prompts you to run install scripts from the commands below, enter <code>all</code> so it can install everything.</p>
 </div>
-<p>Install <code>git</code> (powershell must be admin):</p>
+<p>Install <code>git</code> (powershell must be admin):
 <div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">git</span>
-</code></pre></div>
-<p>Install <code>python</code> (powershell must be admin):</p>
+</code></pre></div></p>
+<p>Install <code>python</code> (powershell must be admin):
 <div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">python</span> <span class="p">-</span><span class="n">-version</span><span class="p">=</span><span class="n">3</span><span class="p">.</span><span class="n">12</span><span class="p">.</span><span class="n">0</span>
-</code></pre></div>
+</code></pre></div></p>
 <p>Install <code>llvm</code> (powershell must be admin):</p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>If you get this error make sure that your environment variable is set to LLVM's clang.exe and clang++.exe filepath.</p>
+<p>While also making sure </p>
+<div class="highlight"><pre><span></span><code>CMake Error at CMakeLists.txt:2 (project):
+The CMAKE_CXX_COMPILER:
+
+    C:/Program Files/LLVM/bin/clang++.exe
+
+is not a full path to an existing compiler tool.
+</code></pre></div>
+</div>
 <div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">llvm</span>
 </code></pre></div>
 <p>Install <code>conan</code> (powershell must be admin)
 <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="s2">&quot;conan&gt;=2.10.2&quot;</span>
 </code></pre></div></p>
-<p>Install make
-<div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">make</span>
-</code></pre></div></p>
-<p>Install cmake
-<div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">cmake</span>
-</code></pre></div></p>
+<p>Install cmake and make</p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>you can get this error if you DO NOT have 'make' installed via choco</p>
+<div class="highlight"><pre><span></span><code>CMake Error: CMake was unable to find a build program corresponding to &quot;Unix Makefiles&quot;.  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+</code></pre></div>
+</div>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>you can get this error if you DO NOT have 'mingw' installed via choco</p>
+<p>CMake Error: CMake was unable to find a build program corresponding to "MinGW Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.</p>
+</div>
+<div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">make</span> <span class="n">cmake</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>mingw is installed because we need <code>mingw32-make.exe</code> as dependencies will default to using "MinGW Makefiles" generator specified.
+which means that their CMake will look for <code>mingw32-make.exe</code> specific make executables instead of <code>make.exe</code></p>
+</div>
 <p>Install mingw
 <div class="highlight"><pre><span></span><code><span class="n">choco</span> <span class="n">install</span> <span class="n">mingw</span>
 </code></pre></div></p>
+<p>!! info
+    Using this <code>winget</code> command will install Vulkan's installer, set it up for you, and set the environment path variable.</p>
 <p>Installing Vulkan's installer from the terminal in powershell. (in admin mode)
 <div class="highlight"><pre><span></span><code><span class="n">winget</span> <span class="n">install</span> <span class="p">-</span><span class="n">-id</span><span class="p">=</span><span class="n">KhronosGroup</span><span class="p">.</span><span class="n">VulkanSDK</span> <span class="n">-e</span>
 </code></pre></div></p>
@@ -729,8 +711,9 @@ brew install llvm@17
 </div>
 </div>
 <hr />
-<h2 id="setting-up-conan">Setting up Conan</h2>
-<p>Setting up a conan profile for your specific platforms.</p>
+<h1 id="setting-up-conan">Setting up Conan</h1>
+<p>Now continue and setup conan</p>
+<p>Setting up conan platform-dependent profile.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Windows</label><label for="__tabbed_2_2">X86 Linux</label><label for="__tabbed_2_3">M1 Mac</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -751,42 +734,26 @@ brew install llvm@17
 </div>
 </div>
 <hr />
-<h2 id="extracting-engine3d-conan-packages">Extracting engine3d conan packages</h2>
+<h2 id="getting-engine3d-conan-packages">Getting engine3d conan packages</h2>
 <p>Add the engine3d-conan repository to your system. This repository holds all of the engine3d packages.</p>
 <div class="highlight"><pre><span></span><code>conan<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>engine3d-conan<span class="w"> </span>https://libhal.jfrog.io/artifactory/api/conan/engine3d-conan
 </code></pre></div>
 <h2 id="contributing-to-engine3d">Contributing to Engine3D</h2>
-<ul>
-<li>
-<p>Create a fork of the Engine3D repository. Then clone your fork of the Engine3d repo.</p>
-</li>
-<li>
-<p>Then use conan to build the project.</p>
-</li>
-</ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><code>-b missing</code> means that there are missing binaries in your conan cache.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You only need to do the <code>conan create</code> command once. Then just continue using <code>conan build</code> afterwards.</p>
-</div>
-<ul>
-<li>
-<p><code>conan build .</code> will build the entire project</p>
-</li>
-<li>
-<p><code>-b missing</code> will build and install any missing binaries of your dependencies into conan cache</p>
-</li>
-</ul>
+<p>If you want to contribute to Engine3D, create either a new branch to the engine3d repository.</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/engine3d-dev/engine3d
 <span class="nb">cd</span><span class="w"> </span>engine3d/
 
 conan<span class="w"> </span>build<span class="w"> </span>.<span class="w"> </span>-b<span class="w"> </span>missing
 </code></pre></div>
-<h2 id="running-editor">Running Editor</h2>
-<p>The editor executable will be in <code>build/Release/Editor/Editor.exe</code></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code>-b missing</code> will build and install any missing binaries of your dependencies into conan cache</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p><code>conan build .</code> will build the entire project</p>
+</div>
+<p>The editor executable can be found in the path <code>build/Release/Editor/Editor.exe</code></p>
 <hr />
 <h2 id="different-build-types">Different Build Types</h2>
 <p>There are two different build types that you can build engine3d in, <code>Release</code> and <code>Debug</code>.</p>

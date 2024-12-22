@@ -4,25 +4,25 @@
 
 These are needed before working to get engine3d building successfully on your platform.
 
-* `python`: 3.10 or above
-* `conan`: 2.2.0 or above
+* `python`: 3.12 or above
+* `conan`: 2.10.0 or above
 * `llvm`: 17 or above
 * `make`: CMake downloaded using conan to build Engine3D
 * `git`: (only needs to be installed via installer on Windows)
-* `Visual Studio`: (Installing it just for getting C++ Windows SDK to work)
+* `Visual Studio Installer`: (Installer is for MSBuild to get C++ working on Windows)
 
 === "Windows"
 
-    !!! tip
-        
-        Adding it as an option for future change to using DirectX when you run on Windows.
-
     !!! info
-        Needs to install Visual Studio installed because it comes with C++ Windows SDK kits
+        Needs to install Visual Studio's installer before using the `winget` command
 
-        Until there is an easier way of installing the C++ Windows SDK Kit for the Windows platform.
+    Run this `winget` command to setup C++ with Visual Studio installer in powershell (in admin mode)
 
-    It is recommended to use Choco for an easy installatoin process on Windows.
+    ```powershell
+    winget install Microsoft.VisualStudio.2022.BuildTools --override "--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended -p --installWhileDownloading"
+    ```
+
+    It is recommended to use Choco for an easy installation process on Windows.
     
     To install `choco`, open powershell with admin access and run the following command in your terminal (powershell must be admin):
     
@@ -31,58 +31,87 @@ These are needed before working to get engine3d building successfully on your pl
     ```
     
     !!! tip
-    
         If `choco` command does not work after running this script try closing and reopening powershell again.
         When `choco` prompts you to run install scripts from the commands below, enter `all` so it can install everything.
     
     Install `git` (powershell must be admin):
-    
     ```powershell
     choco install git
     ```
     
     Install `python` (powershell must be admin):
-    
     ```powershell
     choco install python --version=3.12.0
     ```
     
     Install `llvm` (powershell must be admin):
-    
+
+    !!! error
+        If you get this error make sure that your environment variable is set to LLVM's clang.exe and clang++.exe filepath.
+
+        While also making sure 
+        
+        ```
+        CMake Error at CMakeLists.txt:2 (project):
+        The CMAKE_CXX_COMPILER:
+
+            C:/Program Files/LLVM/bin/clang++.exe
+
+        is not a full path to an existing compiler tool.
+        ```
+
     ```powershell
     choco install llvm
     ```
     
     Install `conan` (powershell must be admin)
     ```powershell
-    python -m pip install -U "conan>=2.2.2"
+    pip install "conan>=2.10.2"
     ```
 
-    Install cmake
+    Install cmake and make
+
+    !!! error
+        you can get this error if you DO NOT have 'make' installed via choco
+
+        ```
+        CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+        ```
+    
+    !!! error
+        you can get this error if you DO NOT have 'mingw' installed via choco
+
+        CMake Error: CMake was unable to find a build program corresponding to "MinGW Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+
     ```powershell
-    choco install cmake
+    choco install make cmake
     ```
+
+    !!! info
+
+        mingw is installed because we need `mingw32-make.exe` as dependencies will default to using "MinGW Makefiles" generator specified.
+        which means that their CMake will look for `mingw32-make.exe` specific make executables instead of `make.exe`
 
     Install mingw
     ```powershell
     choco install mingw
     ```
 
-    [comment]: <> (Install Vulkan  using the vulkan installer from [here](https://vulkan.lunarg.com/sdk/home#windows))
-    
+    [comment]: <> (Vulkan Installer can be found here [here](https://vulkan.lunarg.com/sdk/home#windows))
 
-    Installing Vulkan's installer from the terminal. (in Powershell)
+    !!! info
+
+        Using this `winget` command will install Vulkan's installer, set it up for you, and set the environment path variable.
+    
+    Installing Vulkan's installer from the terminal in powershell. (in admin mode)
     ```powershell
-    Invoke-WebRequest -Uri https://sdk.lunarg.com/sdk/download/1.3.290.0/windows/VulkanSDK-1.3.290.0-Installer.exe -OutFile $env:USERPROFILE\Downloads\VulkanSDK-1.3.290.0-Installer.exe
+    winget install --id=KhronosGroup.VulkanSDK -e
     ```
 
+    !!! tip
+        Once you have completely finish installing. DONT FORGET to refresh your powershell before building the engine3d project.
 
-    During installation select the `SDK 32-bit Core Components` as shown
 
-    ![screencap of component selection on vulkan installer](pics/vulkan_components_win_md.png)
-
-    ```
-    
 === "Ubuntu"
 
     Install wget if it isn't already on your system
@@ -114,6 +143,7 @@ These are needed before working to get engine3d building successfully on your pl
     ```
 
     On Linux vulkan does not need 
+
 
 === "Mac OS"
 
@@ -152,8 +182,6 @@ These are needed before working to get engine3d building successfully on your pl
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
     ```
 
-    [comment]: <> (Installing Vulkan using the installer from [here](https://vulkan.lunarg.com/sdk/home#mac))
-
     ```zsh
     curl -O https://sdk.lunarg.com/sdk/download/1.3.290.0/mac/vulkansdk-macos-1.3.290.0.dmg ${HOME}/Downloads
     ```
@@ -181,9 +209,11 @@ These are needed before working to get engine3d building successfully on your pl
 
 ---
 
-## Setting up Conan
+# Setting up Conan
 
-Setting up a conan profile for your specific platforms.
+Now continue and setup conan
+
+Setting up conan platform-dependent profile.
 
 === "Windows"
 
@@ -211,7 +241,7 @@ Setting up a conan profile for your specific platforms.
 
 ---
 
-## Extracting engine3d conan packages
+## Getting engine3d conan packages
 
 Add the engine3d-conan repository to your system. This repository holds all of the engine3d packages.
 
@@ -221,40 +251,27 @@ conan remote add engine3d-conan https://libhal.jfrog.io/artifactory/api/conan/en
 
 ## Contributing to Engine3D
 
-- Create a fork of the Engine3D repository. Then clone your fork of the Engine3d repo.
-
-- Then use conan to build the project.
-
-!!! tip
-    `-b missing` means that there are missing binaries in your conan cache.
-
-!!! note
-    You only need to do the `conan create` command once. Then just continue using `conan build` afterwards.
-    
-- `conan create` command will install all the dependencies of engine3d, build, and test the project.
-
-- `conan build .` will build the entire project
+If you want to contribute to Engine3D, create either a new branch to the engine3d repository.
 
 ```bash
-git clone https://github.com/<username>/engine3d
+git clone https://github.com/engine3d-dev/engine3d
 cd engine3d/
 
-conan create . -b missing
-
-conan build .
+conan build . -b missing
 ```
 
-## Running Editor
+!!! tip
+    `-b missing` will build and install any missing binaries of your dependencies into conan cache
 
-The editor executable will be in `build/clang-17-x86_64-23-release/Editor/Editor.exe`
+!!! info
+    `conan build .` will build the entire project
 
-You can simply run the editor just by doing `.\build/clang-17-x86_64-23-release/Editor/Editor.exe`
-
-Depending on your current platform the editor executable will be in `./build/<arch-Release>/Editor/Editor.exe`
+The editor executable can be found in the path `build/Release/Editor/Editor.exe`
 
 ---
 
 ## Different Build Types
+
 There are two different build types that you can build engine3d in, `Release` and `Debug`.
 
 `Release` will be turning on optimization and making your code size.

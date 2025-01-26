@@ -211,7 +211,7 @@ Setting up a conan profile for your specific platforms.
 
 ---
 
-## Extracting engine3d conan packages
+## Extracting conan packages
 
 Add the engine3d-conan repository to your system. This repository holds all of the engine3d packages.
 

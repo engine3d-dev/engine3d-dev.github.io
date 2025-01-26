@@ -1,0 +1,115 @@
+@media (min-width: 1601px) {
+    [itemprop="articleBody"] {     
+        margin: 0 auto;      
+    }
+}
+
+.simple:not(.field-list) {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(100, 150, 100, 0.05);
+}
+
+.simple:not(.field-list) dt,
+.simple:not(.field-list) dd {
+    display: inline-block;
+    margin: 0;
+}
+
+.simple:not(.field-list) dt {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: right;
+}
+
+.simple:not(.field-list) dd {
+    flex-grow: 1;
+    transform: translate(-10px);
+    font-size: 10px;
+    text-align: left;
+}
+
+.field-odd
+{
+    font-size: 14px !important;
+}
+
+.field-even
+{
+    max-width: 400px;
+    font-size: 14px !important;
+}
+
+.cpp
+{
+    font-size: 32px;
+}
+
+.cpp.pre__inside
+{
+    font-size: 16px;
+}
+
+.breathe-sectiondef-title
+{
+    font-size: 28px;
+}
+
+.reference.internal
+{
+    font-size: 16px;
+}
+
+
+/* Mapping of sidebar */
+.custom-navigation ul {
+    list-style: none; /* Remove bullet points */
+    margin-left: 3px; /* Slightly indent nested levels */
+    padding-left: 10px; /* Optional: Adjust padding for consistent spacing */
+    font-size: 16px;
+}
+
+/* Style for individual list items */
+.custom-navigation li {
+    margin: 4px 0; /* Vertical spacing between items */
+    color: initial; /* Reset color for normal state */
+}
+
+/* Hover effect for the specific item being hovered */
+.custom-navigation li:hover {
+    color: #2f8341; /* Greenish color for the hovered item */
+    font-size: 18px; /* Optional: Increase font size */
+    background-color: rgba(75, 158, 161, 0.055); /* Optional: Subtle background highlight */
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+/* Ensure child elements (like nested ul or a tags) do not inherit the hover color */
+.custom-navigation li a {
+    color: inherit; /* Keep link color consistent with parent li */
+    text-decoration: none; /* Optional: Remove underline for links */
+}
+
+.custom-navigation li a:hover {
+    color: #568608ef; /* Apply hover effect only to the link itself */
+    font-size: 20px !important;
+}
+
+.custom-navigation ul ul {
+    margin-left: 3px; /* Indent sub-levels slightly more */
+    padding-left: 0; /* Prevent excessive indentation */
+}
+
+.highlight-default
+{
+    font-size: .65vw;
+}
+
+@media (max-width: 1200px)
+{
+    .highlight-default
+    {
+        font-size: 7px;
+    }
+}
+

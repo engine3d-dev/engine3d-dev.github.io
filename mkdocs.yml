@@ -44,9 +44,14 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/engine3d-dev/Engine3D
       
-extra_css:
-  - assets/extra.css
+extra_css: 
+  - assets/CSS/extra_style.css
+  - assets/CSS/sphinx_api.css
 
+extra_javascript:
+  - assets/js/dynamic-sidebar.js
+  - assets/JS/sphinx-mkdocs-converter.js
+  - assets/JS/custome-nav.js
 # docs_dir: docs
 
 # plugins:
@@ -75,6 +80,18 @@ markdown_extensions:
   # - pymdownx.emoji:
   #     emoji_index: !!python/name:material.extensions.emoji.twemoji
   #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Getting Started: getting_started.md
+  - Documentation:
+    - Overview: Documentation/docs_home.md
+    - Engine3D API: Documentation/engine3d_api_docs.md
+    - Older Versions:
+      - Older Versions List: Documentation/engine3d_older_doc_list.md
+      - Test: Documentation/API_Release/index.html
 
 copyright: |
   &copy; 2024 <a href="https://github.com/sfsu-dev" target="_blank" rel="noopener">Aaron</a>

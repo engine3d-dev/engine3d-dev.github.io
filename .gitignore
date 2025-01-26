@@ -34,3 +34,13 @@
 venv/
 .DS_Store
 .cache/
+
+#Sphinx Data
+docs/Documentation/API_Release/
+Sphinx/source/engine3d_website_test/
+
+#doxygen
+doxygen_output/
+
+#Website Output
+site/

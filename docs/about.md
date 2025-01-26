@@ -4,7 +4,7 @@ Engine3D is an interactive 3D cross-platform application - otherwise a game engi
 
 Engine3D-Dev is the organization that helps maintain the Engine3D project, working to build engine3d to enable users to make commercialized games, artwork for assets, animations, and other forms of engine capabilities. Aaron created Engine3D for students who are passionate about both making games and interested in being part of a community in developing a game engine. Where you can make commercialized games using our internal toolings that Engine3D would provide.
 
-## Why make a Game Engine? What started this project?
+## Why make a Game Engine?
 
 To describe simply: because of having a passion for engine development and the curiosity to get better at designing APIs architecturally, thinking outside the box.
 

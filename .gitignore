@@ -44,3 +44,5 @@ doxygen_output/
 
 #Website Output
 site/
+html/
+latex/

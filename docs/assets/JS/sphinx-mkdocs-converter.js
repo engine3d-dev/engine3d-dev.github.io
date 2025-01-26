@@ -8,12 +8,10 @@ document.addEventListener('api_loaded', (event) => {
         return;
     }
 
-    // **Batch DOM Operations**: Use querySelectorAll once for all relevant elements
     const paragraphs = articleBody.querySelectorAll('p');
     const cppElements = articleBody.querySelectorAll('.cpp');
     const emElements = articleBody.querySelectorAll('em');
 
-    // **Process Paragraphs**
     paragraphs.forEach((paragraph) => {
         if (!paragraph.textContent.trim()) return; // Skip empty
         if (paragraph.classList.length > 0) return; // Skip with class
@@ -22,7 +20,7 @@ document.addEventListener('api_loaded', (event) => {
         const grandparent = parent?.parentElement;
         if (grandparent?.matches('dl.simple')) return; // Skip grandchild of dl.simple
 
-        // New Condition: Check if parent is <dd> and its first child contains "BUG"
+        // Check if parent is <dd> and its first child contains "BUG"
         if (parent?.matches('dd')) {
             const firstChild = grandparent.firstElementChild;
             const grandchild = firstChild.firstElementChild;
@@ -44,10 +42,11 @@ document.addEventListener('api_loaded', (event) => {
                 newDt.appendChild(paragraph.cloneNode(true));
 
                 parent.replaceWith(newDt); // Replace <dd> with the new <dt>
-                return; // Skip further processing for this paragraph
+                return;
             }
         }
 
+        // This is here as bug works differently in sphinx than everything else
         if (parent?.matches('div'))
         {
             const firstChild = parent.firstElementChild;
@@ -62,7 +61,7 @@ document.addEventListener('api_loaded', (event) => {
             }
         }
 
-        // Default: Turn into a "Note"
+        // Turn into a "Note" when <p> with no class
         const noteDiv = document.createElement('div');
         noteDiv.classList.add('admonition', 'note');
 
@@ -87,13 +86,11 @@ document.addEventListener('api_loaded', (event) => {
         }
     });
 
-    // **Process .cpp Elements**
     cppElements.forEach((cpp, index) => {
-        if (index < 2) return; // Skip first two
+        if (index < 2) return;
         cpp.classList.add('pre__inside');
     });
 
-    // **Process <em> Elements**
     emElements.forEach((em, index) => {
         em.classList.add('highlighted-em');
         em.style.fontSize = '24px';

@@ -14,6 +14,8 @@ Check https://sfsu-dev.github.io/engine3d.github.io to learn mode.
 * Installing the dependencies for this project.
 `pip install -r requirements.txt`
 
+## Doxygen
+* running on linux for github to deploy `sudo apt install doxygen`
 
 # Doxygen-Breath-Sphinx
 * cd into Sphinx/source folder `cd Sphinx\source`

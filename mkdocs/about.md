@@ -1,18 +1,9 @@
-## Engine3D
+# About TheAtlasEngine
 
-Engine3D is an interactive 3D cross-platform application - otherwise a game engine. Engine3D was a project that I had started towards the end of 2023, developed by Aaron (SpinnerX). Deciding on this project to become open-source starting Fall 2024. 
+Still in progress 🚧
 
-Engine3D-Dev is the organization that helps maintain the Engine3D project, working to build engine3d to enable users to make commercialized games, artwork for assets, animations, and other forms of engine capabilities. Aaron created Engine3D for students who are passionate about both making games and interested in being part of a community in developing a game engine. Where you can make commercialized games using our internal toolings that Engine3D would provide.
+Atlas started as a 2D interactive game engine that was built just for fun and to have a fun way of seeing how game engines are made. Using them to build fun games.
 
-## Why make a Game Engine? What started this project?
+Then Aaron (creator) of the project decided to on making this project now focused in 3D. Where it gives students the opportunities to work on a cool project. Then being able to seeing some great results and using them during game jam events.
 
-To describe simply: because of having a passion for engine development and the curiosity to get better at designing APIs architecturally, thinking outside the box.
-
-To explain further, Aaron started this project building a game engine for a few reasons: passion creativity, and curiosity in how various technologies operate in an engine. This is because when looking at a game engine. There is a wide variety of subsystems that are involved to making an engine work. Meaning there is always room to continue learning and growing from both technical and design standpoints.
-
-# Plans for the future
-* Continue developing for Engine3D to build very interesting projects.
-
-* Open-source project for users and developers to have a tool to develop games with familiar API.
-
-* Develop commercialized games that can be used to export in game jams having a sense of satisfaction on a project they know they've worked on.
+One of the most satisfying factors of building this project is being able to use them during game jams and submitting games developed by this engine. That is the feeling he wants to share with other students.

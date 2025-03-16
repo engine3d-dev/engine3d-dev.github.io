@@ -34,3 +34,12 @@
 venv/
 .DS_Store
 .cache/
+
+libraries/
+doxygen_output/
+sphinx/output/
+.vscode/
+
+
+mkdocs/api
+library_merger_devel.sh

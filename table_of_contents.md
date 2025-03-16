@@ -1,7 +1,0 @@
-- [Home](mkdocs/index.md)
-- [Getting Started](mkdocs/getting_started.md)
-- [About](mkdocs/about.md)
-- Contributor Guide
-    - [Design Philosophy](mkdocs/contributors_guide/design.md)
-    - [Style Guide](mkdocs/contributors_guide/style.md)
-    - [Code Design](mkdocs/contributors_guide/code.md)

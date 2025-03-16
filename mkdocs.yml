@@ -1,6 +1,6 @@
-site_name: Engine3D
-repo_url: https://github.com/engine3d-dev/engine3d
-repo_name: engine3d
+site_name: TheAtlasEngine
+repo_url: https://github.com/engine3d-dev/TheAtlasEngine
+repo_name: Github Repo
 
 extra:
   social:
@@ -43,7 +43,7 @@ docs_dir: mkdocs
 plugins:
   - search
   - literate-nav:
-      nav_file: table_of_contents.md
+      nav_file: summary.md
       tab_length: 2
 
 markdown_extensions:
@@ -68,4 +68,4 @@ markdown_extensions:
   #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/sfsu-dev" target="_blank" rel="noopener">Aaron Herr</a>
+  &copy; 2024 <a href="https://github.com/engine3d-dev" target="_blank" rel="noopener">Aaron Herr</a>

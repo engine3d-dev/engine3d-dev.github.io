@@ -9,7 +9,7 @@ These are needed before working to get engine3d building successfully on your pl
 * `llvm`: 17 or above
 * `make`: CMake downloaded using conan to build Engine3D
 * `git`: (only needs to be installed via installer on Windows)
-* `Visual Studio Installer`: (Installer is for MSBuild to get C++ working on Windows)
+* `Visual Studio Installer`: (Installer to get C++ working on Windows)
 
 === "Windows"
 
@@ -112,7 +112,7 @@ These are needed before working to get engine3d building successfully on your pl
         Once you have completely finish installing. DONT FORGET to refresh your powershell before building the engine3d project.
 
 
-=== "Ubuntu"
+=== "Ubuntu 20.0+"
 
     Install wget if it isn't already on your system
 
@@ -125,24 +125,37 @@ These are needed before working to get engine3d building successfully on your pl
     chmod +x llvm.sh
     sudo ./llvm.sh
     ```
+
+    Install LLVM's C+ standard library (this will use the llvm apt repos)
+
+    ```bash
+    sudo apt install libc++-17-dev libc++abi-17-dev
+    ```
     
     !!! info
     
         If your using 20.04, you have to upgrade Python to 3.10
     
-    ``` bash
-    sudo apt update
-    sudo apt install software-properties-common -y
-    sudo add-apt-repository ppa:deadsnakes/ppa
-    sudo apt install Python3.10
+        ```bash
+        sudo apt update
+        sudo apt install software-properties-common -y
+        sudo add-apt-repository ppa:deadsnakes/ppa
+        sudo apt install Python3.10
+        ```
+    
+    Install pipx which is used to install conan
+
+    ```bash
+    sudo apt install pipx
     ```
 
-    Installing Conan
-    ``` bash
-    python -m pip install -U "conan>=2.2.2"
+    Installing conan
+
+    ```bash
+    pipx install "conan>=2.10.1"
     ```
 
-    On Linux vulkan does not need 
+    On Linux vulkan is not needed for installing vulkan
 
 
 === "Mac OS"
@@ -162,6 +175,7 @@ These are needed before working to get engine3d building successfully on your pl
     Install conan:
     
     !!! tip
+
         If using the conan command does not work after pip installing.
 
         Type the `brew install conan` command, instead.
@@ -211,9 +225,7 @@ These are needed before working to get engine3d building successfully on your pl
 
 # Setting up Conan
 
-Now continue and setup conan
-
-Setting up conan platform-dependent profile.
+Install the profile for your specific OS.
 
 === "Windows"
 
@@ -248,36 +260,3 @@ Add the engine3d-conan repository to your system. This repository holds all of t
 ```zsh
 conan remote add engine3d-conan https://libhal.jfrog.io/artifactory/api/conan/engine3d-conan
 ```
-
-## Contributing to Engine3D
-
-If you want to contribute to Engine3D, create either a new branch to the engine3d repository.
-
-```bash
-git clone https://github.com/engine3d-dev/engine3d
-cd engine3d/
-
-conan build . -b missing
-```
-
-!!! tip
-    `-b missing` will build and install any missing binaries of your dependencies into conan cache
-
-!!! info
-    `conan build .` will build the entire project
-
-The editor executable can be found in the path `build/Release/Editor/Editor.exe`
-
----
-
-## Different Build Types
-
-There are two different build types that you can build engine3d in, `Release` and `Debug`.
-
-`Release` will be turning on optimization and making your code size.
-
-`Debug` is much slower than `Release`. Not recommended because used for testing and enabling debugging information.
-
----
-
-

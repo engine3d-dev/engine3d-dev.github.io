@@ -1,0 +1,33 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: git fetch origin gh-pages --depth=1
+        with:
+          python-version: 3.x
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      
+      - run: sudo apt install doxygen
+      - run: pip install -r requirements.txt
+      - run: git config user.name ci-bot
+      - run: git config user.email ci-bot@example.com
+      - run: chmod +x build.sh && ./build.sh
+      - run: mike delete -b gh-pages $CURRENT_VERSION
+        continue-on-error: true
+      - run: mike deploy -b gh-pages $CURRENT_VERSION
+      - run: mike set-default -b gh-pages $CURRENT_VERSION
+      - run: mike deploy -b gh-pages --push --update-aliases $CURRENT_VERSION latest

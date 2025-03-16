@@ -6,6 +6,11 @@ on:
       - main
 permissions:
   contents: write
+
+env:
+  CURRENT_VERSION: "0.1"
+  PRODUCTION: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

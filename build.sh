@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# cd "$(dirname "$0")"
+cd "$(dirname "$0")"
 
-# ./library_merger.sh
+./library_merger.sh
 
 rm -rf doxygen_output
 

@@ -1,4 +1,4 @@
-from cgitb import html
+# from cgitb import html
 from sphinx.application import Sphinx
 import os
 

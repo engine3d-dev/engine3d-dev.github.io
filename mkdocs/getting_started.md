@@ -1,6 +1,6 @@
-# 🛸 Getting Started
+# 📚 Getting Started
 
-## ✅ Prerequisites
+## 💥 Prerequisites
 
 These are needed before working to get engine3d building successfully on your platform.
 
@@ -8,13 +8,15 @@ These are needed before working to get engine3d building successfully on your pl
 * `conan`: 2.10.0 or above
 * `llvm`: 17 or above
 * `make`: CMake downloaded using conan to build Engine3D
-* `git`: (only needs to be installed via installer on Windows)
-* `Visual Studio Installer`: (Installer to get C++ working on Windows)
+* `git`: Version control
 
 === "Windows"
 
     !!! info
+
         Needs to install Visual Studio's installer before using the `winget` command
+
+        Visual studio is required only on Windows for getting C++ to work
 
     Run this `winget` command to setup C++ with Visual Studio installer in powershell (in admin mode)
 
@@ -131,6 +133,15 @@ These are needed before working to get engine3d building successfully on your pl
     ```bash
     sudo apt install libc++-17-dev libc++abi-17-dev
     ```
+
+    Installing Linux Prerequisites
+
+    ```bash
+    sudo apt install -y lsb-release wget software-properties-common gnupg libgtk2.0-dev libgl1-mesa-dev
+    sudo apt-get install -y libx11-dev libx11-xcb-dev libfontenc-dev libice-dev libsm-dev libxau-dev libxaw7-dev libxt-dev libxtst-dev libxrender-dev libxrandr-dev libxi-dev
+    sudo apt install -y software-properties-common
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    ```
     
     !!! info
     
@@ -155,10 +166,12 @@ These are needed before working to get engine3d building successfully on your pl
     pipx install "conan>=2.10.1"
     ```
 
-    On Linux vulkan is not needed for installing vulkan
+    !!! tip
+
+        On linux vulkan is not needed to be installed, conan handles that
 
 
-=== "Mac OS"
+=== "MacOS X"
 
     Install Homebrew:
     
@@ -168,20 +181,13 @@ These are needed before working to get engine3d building successfully on your pl
     Install latest version of Python && llvm:
     
     ```
-    brew install python
-    brew install llvm@17
+    brew install python pipx llvm@17
     ```
     
     Install conan:
     
-    !!! tip
-
-        If using the conan command does not work after pip installing.
-
-        Type the `brew install conan` command, instead.
-
-    ```
-    python3 -m pip install "conan>=2.2.2"
+    ```zsh
+    pipx install "conan>=2.10.2"
     ```
     
     Make `clang-tidy` available on the command line:
@@ -196,36 +202,15 @@ These are needed before working to get engine3d building successfully on your pl
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
     ```
 
-    ```zsh
-    curl -O https://sdk.lunarg.com/sdk/download/1.3.290.0/mac/vulkansdk-macos-1.3.290.0.dmg ${HOME}/Downloads
-    ```
+    !!! info
 
-    During the installation select the checkbox's shown below.
-
-    ![screencap of component selection on vulkan installer](pics/vulkan_components_mac_md.png)
-
-    Once vulkan's installed apply the following export commands into your mac's `.zshrc` file
-    
-    ```zsh
-        export VULKAN_SDK="${HOME}/VulkanSDK/1.3.290.0/macOS"
-        export DYLD_LIBRARY_PATH="${VULKAN_SDK}/lib/libvulkan.1.3.290.dylib"
-        export VK_ICD_FILENAMES="$VULKAN_SDK/share/vulkan/icd.d/MoltenVK_icd.json"
-        export VK_LAYER_PATH="$VULKAN_SDK/share/vulkan/explicit_layer.d"
-    ```
-
-    !!! note
-
-        To check if vulkan is installed, you should be able to type the following command `vkvia`
-
-        This runs the vulkan basic cube program validating vulkan's been installed correctly.
-
-    After adding these exports, refresh your `.zshrc` by doing `source ~/.zshrc`
+        metal-cpp does not need to be installed because conan handles this for you
 
 ---
 
-# Setting up Conan
+# 📦 Setting up Conan
 
-Install the profile for your specific OS.
+Install host profiles for your specific platforms
 
 === "Windows"
 
@@ -253,10 +238,14 @@ Install the profile for your specific OS.
 
 ---
 
-## Getting engine3d conan packages
+## 📥 Getting project repositories from Artifactory
 
 Add the engine3d-conan repository to your system. This repository holds all of the engine3d packages.
 
 ```zsh
 conan remote add engine3d-conan https://libhal.jfrog.io/artifactory/api/conan/engine3d-conan
 ```
+
+## ✅ Development Environment Completed!!
+
+Once the development environment is completed. Then go to the [repos](https://github.com/engine3d-dev) to see the list of repositories that you plan to contribute to.

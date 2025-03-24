@@ -1,9 +1,9 @@
-- [Home](index.md)
-- [Getting Started](getting_started.md)
-- [User Guide](user_guide/setup_vscode.md)
-- Contributor Guides
-  - [Style Guide](contributor_guide/style.md)
-  - [Code Design](contributor_guide/code_design.md)
-- Project Information
+- [🏠 Home](index.md)
+- [📚 Getting Started](getting_started.md)
+- [🕹️ User Guide](user_guide/setup_vscode.md)
+- 🚀 Contributor Guides
+  - [🎨 Style Guide](contributor_guide/style.md)
+  - [📝 Code Design](contributor_guide/code_design.md)
+- 📜 Project Information
   - [About](about.md)
-- [APIs](api/index.html)
+- [📖 APIs](api/index.html)

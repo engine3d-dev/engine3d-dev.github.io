@@ -1,4 +1,4 @@
-# Style Guide
+# 🎨 Style Guide
 
 ## S.0 Code Guidelines
 

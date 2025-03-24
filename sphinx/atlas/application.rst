@@ -10,9 +10,13 @@ Defined in namespace `atlas`
 .. code-block:: cpp
    :linenos:
 
+   /**
+     @brief This is me testing!!!
+   
+   */
    #include <iostream>
 
    class application {
    public:
-        application(const application_settings& p_settings)
+        application(const application_settings& p_settings) {}
    };

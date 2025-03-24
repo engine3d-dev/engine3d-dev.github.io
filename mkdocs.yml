@@ -9,7 +9,7 @@ extra:
 
 theme:
   name: material
-  logo: assets/logos/engine3DHighResLogo.png
+  logo: mkdocs/assets/Preview.jpg
   features:
     - navigation.tabs
     - content.tabs.link

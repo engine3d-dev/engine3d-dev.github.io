@@ -5,7 +5,7 @@ repo_name: Github Repo
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/engine3d-dev/Engine3D
+      link: https://github.com/engine3d-dev/TheAtlasEngine
 
 theme:
   name: material

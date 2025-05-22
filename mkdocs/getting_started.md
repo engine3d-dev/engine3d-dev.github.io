@@ -2,12 +2,12 @@
 
 ## 💥 Prerequisites
 
-These are needed before working to get engine3d building successfully on your platform.
+These are needed before working to get TheAtlasEngine building successfully on your platform.
 
 * `python`: 3.12 or above
 * `conan`: 2.10.0 or above
 * `llvm`: 17 or above
-* `make`: CMake downloaded using conan to build Engine3D
+* `CMake` Build tool for the project
 * `git`: Version control
 
 === "Windows"
@@ -111,7 +111,7 @@ These are needed before working to get engine3d building successfully on your pl
     ```
 
     !!! tip
-        Once you have completely finish installing. DONT FORGET to refresh your powershell before building the engine3d project.
+        Once you have completely finish installing. DONT FORGET to refresh your powershell before building the TheAtlasEngine project.
 
 
 === "Ubuntu 20.0+"
@@ -240,7 +240,7 @@ Install host profiles for your specific platforms
 
 ## 📥 Getting project repositories from Artifactory
 
-Add the engine3d-conan repository to your system. This repository holds all of the engine3d packages.
+Add the engine3d-conan repository to your system. This repository holds all of the TheAtlasEngine packages.
 
 ```zsh
 conan remote add engine3d-conan https://libhal.jfrog.io/artifactory/api/conan/engine3d-conan
@@ -249,3 +249,30 @@ conan remote add engine3d-conan https://libhal.jfrog.io/artifactory/api/conan/en
 ## ✅ Development Environment Completed!!
 
 Once the development environment is completed. Then go to the [repos](https://github.com/engine3d-dev) to see the list of repositories that you plan to contribute to.
+
+
+## **Changing Build Type**
+
+The build type determines level of optimizations for the project you are building for. TheAtlasEngine by default is Release is because performance is one of the most important aspects of the project.
+
+You can change `build_type` to the following types:
+
+* `Debug`: Turns on some optimizations to reduce binary size and improve performance while still maintaining the structure to make debugging easier. Recommended for testing and prototyping.
+
+* `Release`: Turns on optimizations and favors high-performance optimizations over space-saving optimizations.
+
+* `MinSizeRel`: Turns on optimizations and favor higher space saving optimizations over higher-performance.
+
+!!! tip
+    
+    -b missing is only used during your first build.
+
+    ```
+    conan build . -b missing -s build_type=Debug
+    ```
+
+This is how you can specify build types when building with conan:
+
+```
+conan build . -s build_type=Debug
+```

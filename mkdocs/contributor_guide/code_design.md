@@ -31,6 +31,22 @@ These are implementations that will have common API's to do equivalent operation
 
 The fundamental idea is interfaces should be used to allow a generalized API that internal state of the engine could interact without touching or using any api-dependent code within the engine. That should be completely handle and communicated via those abstraction layers around those API's.
 
+
+
+## **Inheritance Not Used for Game Objects**
+
+Why are we not using inheritance to express game object state?
+
+As game objects grow more complex, especially in modern game engines. Inheritance in game engines have been used to determine a variety of states game objects could be in. Including using virtual functions and inheritance to express relationships between the variety of complex states game objects can go into.
+
+What are the issues that comes from this design?
+
+To further learn why I went with a data-oriented design approach in atlas. It is because
+
+
+
+
+
 ## **Interfaces Not Used for Actors/Objects**
 
 Typically it is seen natural to have scene objects inherit from some virtual class to define a `UActor` (like unreal). As other engines will have their own variation of this.
@@ -63,37 +79,26 @@ protected:
 ```
 
 
-## **Different Perspective Creating Actors**
 
-In TheAtlasEngine rather then needing to inherit from some base class to define the actor. That ability should be open to the user in how they define what their actors are implemented.
+## **Different Perspective Creating Game Objects**
 
-What the engine would be looking at when users create their own actors. Are the update logic, what time intervals these logic get updated, and how their scene objects get rendered. Currently these are what we are looking for and still defining other areas within developing atlas.
+As game object state grows more complex. TheAtlasEngine strives to allow game object to contain the data associated with. Rather the game objects themselves contain state. It is because game object state can be widely complex and making an attempt to try expressing these state for the objects in the form of inheritance and virtual functions can lead to caveauts that I want to research into.
 
-As of the current time of writing this new approach. This approach is still early in it's development and there are a few factors that will be needed to consider as the engine goes through its development.
+These caveauts involve code bloat, complex and high increase of vtables, complex contracts users are by default signed into when trying to make their own game objects.
 
-Reasons currently why I made the decision to separate the two sync_* functions is because rather then having a single function to do the checking for us. I would prefer if that decision is given to the users giving them the option of when they would like their logic to be updated during update or physics time intervals.
+Approaching with a data-oriented design in mind. This way it could simplify what users need has to do for setting up a game object. Simplifying means of how these objects get created, lifetime managements of these objects, when these objects get updated. As time update frequency matters and giving users that control when their objects state get update is direct.
 
-The main reason currently (will change indefinitely) is when inheriting a `atlas::scene_scope` this automatically registers to the defualt `atlas::world_scope` that is defined by default.
-
-In the future, I will provide a functionality to enable control over which world to register, as of right now this functionality only assumes their is one world that is created.
-
-
-**Issues that are alleviated**
-
-- Bloat in the amount of bytes each custom actor contain when inheriting from a custom base class. Making binary sizes larger.
-- Vtable Entry Lookups when needing an implementation detail for that actor
-- Binded contract whenever a scene object is needed to be customizably created
-
+**Concerns Removed When Creating Objects**
 ```C++
-
+// Creating custom scene to contain user-defined game objects in this given scene
 class level_scene : public scene_scope{
 public:
     level_scene(const std::string& p_tag) : scene_scope(p_tag) {
-        // Registrying entity "Empty Entity" to this scene its created in
-        m_object = empty_entity("Empty Entity");
+        // Creating entity "Camera Entity" to this scene while setting the lifetime of this object to be managed by scene_scope
+        m_camera = this->create_new_entity("Camera Entity");
 
-        // Registrying entity "Sphere" to this scene its created in
-        m_sphere = sphere_entity("Sphere");
+        // Creating entity "Sphere Entity" to this scene while setting the lifetime of this object to be managed by scene_scope
+        m_sphere = this->create_new_entity("Sphere Entity");
 
 
         // This registers our update callable and associates the address of our current scene
@@ -115,8 +120,8 @@ public:
     }
 
 private:
-    atlas::scene_object m_object;
-    atlas::scene_object m_sphere;
+    atlas::ref<atlas::scene_object> m_camera;
+    atlas::ref<atlas::scene_object> m_sphere;
 };
 
 ```

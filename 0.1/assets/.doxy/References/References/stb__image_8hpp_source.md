@@ -1,0 +1,15 @@
+
+
+# File stb\_image.hpp
+
+[**File List**](files.md) **>** [**atlas**](dir_1e6ffef027cfcf7ded3287660b505c9f.md) **>** [**core**](dir_ab5f97e7ae27ba905c508150b2df25d1.md) **>** [**image**](dir_3050860d9c50f9f4f11f08b3bfb0b023.md) **>** [**stb\_image.hpp**](stb__image_8hpp.md)
+
+[Go to the documentation of this file](stb__image_8hpp.md)
+
+
+```C++
+#pragma once
+#include <stb_image.h>
+```
+
+

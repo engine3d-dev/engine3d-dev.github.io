@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1Pipeline" kind="class" language="C++" prot="public">
+    <compoundname>atlas::Pipeline</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1Pipeline_1a4edbae28a12facb5399006fc11db7571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::Pipeline::Pipeline</definition>
+        <argsstring>()=default</argsstring>
+        <name>Pipeline</name>
+        <qualifiedname>atlas::Pipeline::Pipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/pipeline.hpp" line="6" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/pipeline.hpp" line="4" column="5" bodyfile="TheAtlasEngine/atlas/drivers/pipeline.hpp" bodystart="4" bodyend="7"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1Pipeline_1a4edbae28a12facb5399006fc11db7571" prot="public" virt="non-virtual"><scope>atlas::Pipeline</scope><name>Pipeline</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

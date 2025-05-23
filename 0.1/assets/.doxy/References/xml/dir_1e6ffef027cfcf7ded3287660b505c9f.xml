@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_1e6ffef027cfcf7ded3287660b505c9f" kind="dir">
+    <compoundname>TheAtlasEngine/atlas</compoundname>
+    <innerdir refid="dir_ab5f97e7ae27ba905c508150b2df25d1">TheAtlasEngine/atlas/core</innerdir>
+    <innerdir refid="dir_1605561db8076fbb4262fa758aa3edc0">TheAtlasEngine/atlas/drivers</innerdir>
+    <innerdir refid="dir_40e4880a491f87475db52b6f14fdb765">TheAtlasEngine/atlas/physics</innerdir>
+    <innerdir refid="dir_8ab98dc538dea21b0c00575cec6c8f5c">TheAtlasEngine/atlas/renderer</innerdir>
+    <innerdir refid="dir_2d188042b35c07e13e36a6d5b630b30a">TheAtlasEngine/atlas/thread_utils</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/"/>
+  </compounddef>
+</doxygen>

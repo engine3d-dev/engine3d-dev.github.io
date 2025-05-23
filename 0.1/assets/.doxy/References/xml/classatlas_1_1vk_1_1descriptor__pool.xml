@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1descriptor__pool" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::descriptor_pool</compoundname>
+    <innerclass refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder" prot="public">atlas::vk::descriptor_pool::builder</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1descriptor__pool_1a9165b8971d96806c604212db8a381368" prot="private" static="no" mutable="no">
+        <type>VkDescriptorPool</type>
+        <definition>VkDescriptorPool atlas::vk::descriptor_pool::m_descriptor_pool</definition>
+        <argsstring></argsstring>
+        <name>m_descriptor_pool</name>
+        <qualifiedname>atlas::vk::descriptor_pool::m_descriptor_pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="78" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1aa9edd7e2e2e914edf8e4c319ef295726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::descriptor_pool::descriptor_pool</definition>
+        <argsstring>(uint32_t maxSets, VkDescriptorPoolCreateFlags poolFlags, const std::vector&lt; VkDescriptorPoolSize &gt; &amp;poolSizes)</argsstring>
+        <name>descriptor_pool</name>
+        <qualifiedname>atlas::vk::descriptor_pool::descriptor_pool</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>maxSets</declname>
+        </param>
+        <param>
+          <type>VkDescriptorPoolCreateFlags</type>
+          <declname>poolFlags</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; VkDescriptorPoolSize &gt; &amp;</type>
+          <declname>poolSizes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="62" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1a628a47365432b84b67f938df271e1e2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::descriptor_pool::~descriptor_pool</definition>
+        <argsstring>()</argsstring>
+        <name>~descriptor_pool</name>
+        <qualifiedname>atlas::vk::descriptor_pool::~descriptor_pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="65" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1a94051ede500264d51535cdfffebab0f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::descriptor_pool::descriptor_pool</definition>
+        <argsstring>(const descriptor_pool &amp;)=delete</argsstring>
+        <name>descriptor_pool</name>
+        <qualifiedname>atlas::vk::descriptor_pool::descriptor_pool</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1descriptor__pool" kindref="compound">descriptor_pool</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="66" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1ab529917923d7a3b09a3ada77a69258ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__pool" kindref="compound">descriptor_pool</ref> &amp;</type>
+        <definition>descriptor_pool &amp; atlas::vk::descriptor_pool::operator=</definition>
+        <argsstring>(const descriptor_pool &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>atlas::vk::descriptor_pool::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1descriptor__pool" kindref="compound">descriptor_pool</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="67" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1aae7c3d8a813e9ef3d3217779a24408a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::vk::descriptor_pool::allocateDescriptor</definition>
+        <argsstring>(const VkDescriptorSetLayout descriptor_set_layout, VkDescriptorSet &amp;descriptor) const</argsstring>
+        <name>allocateDescriptor</name>
+        <qualifiedname>atlas::vk::descriptor_pool::allocateDescriptor</qualifiedname>
+        <param>
+          <type>const VkDescriptorSetLayout</type>
+          <declname>descriptor_set_layout</declname>
+        </param>
+        <param>
+          <type>VkDescriptorSet &amp;</type>
+          <declname>descriptor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="69" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1ad39be34d13c1e7d10c0a3ec6671a8bbe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::descriptor_pool::freeDescriptors</definition>
+        <argsstring>(std::vector&lt; VkDescriptorSet &gt; &amp;descriptors) const</argsstring>
+        <name>freeDescriptors</name>
+        <qualifiedname>atlas::vk::descriptor_pool::freeDescriptors</qualifiedname>
+        <param>
+          <type>std::vector&lt; VkDescriptorSet &gt; &amp;</type>
+          <declname>descriptors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="73" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1a0401078a6a5aa3a2a4ed628c721f77fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::descriptor_pool::resetPool</definition>
+        <argsstring>()</argsstring>
+        <name>resetPool</name>
+        <qualifiedname>atlas::vk::descriptor_pool::resetPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="75" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="44" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="44" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1aae7c3d8a813e9ef3d3217779a24408a4" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool</scope><name>allocateDescriptor</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1aa9edd7e2e2e914edf8e4c319ef295726" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool</scope><name>descriptor_pool</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1a94051ede500264d51535cdfffebab0f5" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool</scope><name>descriptor_pool</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1ad39be34d13c1e7d10c0a3ec6671a8bbe" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool</scope><name>freeDescriptors</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1a9165b8971d96806c604212db8a381368" prot="private" virt="non-virtual"><scope>atlas::vk::descriptor_pool</scope><name>m_descriptor_pool</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1ab529917923d7a3b09a3ada77a69258ab" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool</scope><name>operator=</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1a0401078a6a5aa3a2a4ed628c721f77fc" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool</scope><name>resetPool</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1a628a47365432b84b67f938df271e1e2c" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool</scope><name>~descriptor_pool</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

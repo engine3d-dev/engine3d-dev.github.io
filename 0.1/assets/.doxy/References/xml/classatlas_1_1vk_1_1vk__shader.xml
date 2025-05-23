@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__shader" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_shader</compoundname>
+    <basecompoundref refid="classatlas_1_1shader" prot="public" virt="non-virtual">atlas::shader</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__shader_1a2bed05880af4e29d876ae9fb1c6fb326" prot="private" static="no" mutable="no">
+        <type>VkPipeline</type>
+        <definition>VkPipeline atlas::vk::vk_shader::m_graphics_pipeline</definition>
+        <argsstring></argsstring>
+        <name>m_graphics_pipeline</name>
+        <qualifiedname>atlas::vk::vk_shader::m_graphics_pipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="44" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__shader_1aba48572dee62f3c08eeda2f810b8863d" prot="private" static="no" mutable="no">
+        <type>VkShaderModule</type>
+        <definition>VkShaderModule atlas::vk::vk_shader::m_vertex_shader_module</definition>
+        <argsstring></argsstring>
+        <name>m_vertex_shader_module</name>
+        <qualifiedname>atlas::vk::vk_shader::m_vertex_shader_module</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="45" column="24" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__shader_1aa73dd531f60cf110f833ad68565a52cf" prot="private" static="no" mutable="no">
+        <type>VkShaderModule</type>
+        <definition>VkShaderModule atlas::vk::vk_shader::m_fragment_shader_module</definition>
+        <argsstring></argsstring>
+        <name>m_fragment_shader_module</name>
+        <qualifiedname>atlas::vk::vk_shader::m_fragment_shader_module</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="46" column="24" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1afd32e9668d7ad4f537737c51accd89be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_shader::vk_shader</definition>
+        <argsstring>()=default</argsstring>
+        <name>vk_shader</name>
+        <qualifiedname>atlas::vk::vk_shader::vk_shader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="14" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1af051cf66d9e235f817eaca5db70260bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_shader::vk_shader</definition>
+        <argsstring>(const std::string &amp;p_vertex, const std::string &amp;p_fragment, const shader_pipeline_config &amp;p_config={})</argsstring>
+        <name>vk_shader</name>
+        <qualifiedname>atlas::vk::vk_shader::vk_shader</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_vertex</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_fragment</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1vk_1_1shader__pipeline__config" kindref="compound">shader_pipeline_config</ref> &amp;</type>
+          <declname>p_config</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="15" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1a766820c7b83297995fedc95a90b8f974" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual atlas::vk::vk_shader::~vk_shader</definition>
+        <argsstring>()</argsstring>
+        <name>~vk_shader</name>
+        <qualifiedname>atlas::vk::vk_shader::~vk_shader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="18" column="17" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1a8e17d2e78741b4a99b715ea5c7cf2e6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipeline</type>
+        <definition>VkPipeline atlas::vk::vk_shader::get_graphics_pipeline</definition>
+        <argsstring>()</argsstring>
+        <name>get_graphics_pipeline</name>
+        <qualifiedname>atlas::vk::vk_shader::get_graphics_pipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="23" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1ae5ca6db09fa7b058f5f60afca356f382" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structatlas_1_1vk_1_1shader__pipeline__config" kindref="compound">shader_pipeline_config</ref></type>
+        <definition>static shader_pipeline_config atlas::vk::vk_shader::shader_configuration</definition>
+        <argsstring>(uint32_t p_width, uint32_t p_height)</argsstring>
+        <name>shader_configuration</name>
+        <qualifiedname>atlas::vk::vk_shader::shader_configuration</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_width</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="20" column="39"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1ac1b491cd1352220292b56ea50932af24" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>VkPipeline</type>
+        <definition>VkPipeline atlas::vk::vk_shader::graphics_pipeline</definition>
+        <argsstring>() override</argsstring>
+        <name>graphics_pipeline</name>
+        <qualifiedname>atlas::vk::vk_shader::graphics_pipeline</qualifiedname>
+        <reimplements refid="classatlas_1_1shader_1ad4a95ab111f3461bae53d5fb729258f8">graphics_pipeline</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="26" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1a01da38b6aad8641a2926aef9d850ebde" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; VkVertexInputBindingDescription &gt;</type>
+        <definition>std::vector&lt; VkVertexInputBindingDescription &gt; atlas::vk::vk_shader::get_vertex_input_bind_description</definition>
+        <argsstring>()</argsstring>
+        <name>get_vertex_input_bind_description</name>
+        <qualifiedname>atlas::vk::vk_shader::get_vertex_input_bind_description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="30" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1ae7ae36d421322fa2334c091902bed24c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; VkVertexInputAttributeDescription &gt;</type>
+        <definition>std::vector&lt; VkVertexInputAttributeDescription &gt; atlas::vk::vk_shader::get_vertex_attribute_description</definition>
+        <argsstring>()</argsstring>
+        <name>get_vertex_attribute_description</name>
+        <qualifiedname>atlas::vk::vk_shader::get_vertex_attribute_description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="32" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1ad1c814a989951a0231db3fdf91d11160" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; char &gt;</type>
+        <definition>std::vector&lt; char &gt; atlas::vk::vk_shader::read_file</definition>
+        <argsstring>(const std::string &amp;p_filepath)</argsstring>
+        <name>read_file</name>
+        <qualifiedname>atlas::vk::vk_shader::read_file</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_filepath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="34" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1a01698c0a1768935e3b171bb0d9da68a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_shader::initialize_graphics_pipeline</definition>
+        <argsstring>(const std::string &amp;p_vertex, const std::string &amp;p_fragment, const shader_pipeline_config &amp;p_config)</argsstring>
+        <name>initialize_graphics_pipeline</name>
+        <qualifiedname>atlas::vk::vk_shader::initialize_graphics_pipeline</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_vertex</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_fragment</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1vk_1_1shader__pipeline__config" kindref="compound">shader_pipeline_config</ref> &amp;</type>
+          <declname>p_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="36" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__shader_1ac748406715ffcc5d004be6279f67a320" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_shader::initialize_shader_module</definition>
+        <argsstring>(const std::vector&lt; char &gt; &amp;p_binary, VkShaderModule &amp;p_shader_module)</argsstring>
+        <name>initialize_shader_module</name>
+        <qualifiedname>atlas::vk::vk_shader::initialize_shader_module</qualifiedname>
+        <param>
+          <type>const std::vector&lt; char &gt; &amp;</type>
+          <declname>p_binary</declname>
+        </param>
+        <param>
+          <type>VkShaderModule &amp;</type>
+          <declname>p_shader_module</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="40" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>atlas::shader</label>
+        <link refid="classatlas_1_1shader"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_shader</label>
+        <link refid="classatlas_1_1vk_1_1vk__shader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>atlas::shader</label>
+        <link refid="classatlas_1_1shader"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_shader</label>
+        <link refid="classatlas_1_1vk_1_1vk__shader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" line="12" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader.hpp" bodystart="12" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1shader_1a5c9abddd42b4f3876e42771e6cd40f53" prot="public" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>create</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1a8e17d2e78741b4a99b715ea5c7cf2e6a" prot="public" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>get_graphics_pipeline</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1ae7ae36d421322fa2334c091902bed24c" prot="private" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>get_vertex_attribute_description</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1a01da38b6aad8641a2926aef9d850ebde" prot="private" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>get_vertex_input_bind_description</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1ac1b491cd1352220292b56ea50932af24" prot="private" virt="virtual"><scope>atlas::vk::vk_shader</scope><name>graphics_pipeline</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1a01698c0a1768935e3b171bb0d9da68a2" prot="private" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>initialize_graphics_pipeline</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1ac748406715ffcc5d004be6279f67a320" prot="private" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>initialize_shader_module</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1aa73dd531f60cf110f833ad68565a52cf" prot="private" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>m_fragment_shader_module</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1a2bed05880af4e29d876ae9fb1c6fb326" prot="private" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>m_graphics_pipeline</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1aba48572dee62f3c08eeda2f810b8863d" prot="private" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>m_vertex_shader_module</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1ad1c814a989951a0231db3fdf91d11160" prot="private" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>read_file</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1ae5ca6db09fa7b058f5f60afca356f382" prot="public" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>shader_configuration</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1afd32e9668d7ad4f537737c51accd89be" prot="public" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>vk_shader</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1af051cf66d9e235f817eaca5db70260bb" prot="public" virt="non-virtual"><scope>atlas::vk::vk_shader</scope><name>vk_shader</name></member>
+      <member refid="classatlas_1_1shader_1a5a4db3603becf958415d7d41958b1896" prot="public" virt="virtual"><scope>atlas::vk::vk_shader</scope><name>~shader</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__shader_1a766820c7b83297995fedc95a90b8f974" prot="public" virt="virtual"><scope>atlas::vk::vk_shader</scope><name>~vk_shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1descriptor__set__layout" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::descriptor_set_layout</compoundname>
+    <innerclass refid="classatlas_1_1vk_1_1descriptor__set__layout_1_1builder" prot="public">atlas::vk::descriptor_set_layout::builder</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1descriptor__set__layout_1a88d778865809291ba6285581655b4f6f" prot="private" static="no" mutable="no">
+        <type>VkDescriptorSetLayout</type>
+        <definition>VkDescriptorSetLayout atlas::vk::descriptor_set_layout::m_descriptor_set_layout</definition>
+        <argsstring></argsstring>
+        <name>m_descriptor_set_layout</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::m_descriptor_set_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="40" column="31" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1descriptor__set__layout_1a20d2fb87cf0e776fe5fc669616479191" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; uint32_t, VkDescriptorSetLayoutBinding &gt;</type>
+        <definition>std::unordered_map&lt;uint32_t, VkDescriptorSetLayoutBinding&gt; atlas::vk::descriptor_set_layout::bindings</definition>
+        <argsstring></argsstring>
+        <name>bindings</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::bindings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="41" column="28" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__set__layout_1a50328105a8792258050eb51016a4cd81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::descriptor_set_layout::descriptor_set_layout</definition>
+        <argsstring>(std::unordered_map&lt; uint32_t, VkDescriptorSetLayoutBinding &gt; bindings)</argsstring>
+        <name>descriptor_set_layout</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::descriptor_set_layout</qualifiedname>
+        <param>
+          <type>std::unordered_map&lt; uint32_t, VkDescriptorSetLayoutBinding &gt;</type>
+          <declname>bindings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="25" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__set__layout_1a4c12fed80f3fc99fedf2d43603f124a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::descriptor_set_layout::~descriptor_set_layout</definition>
+        <argsstring>()</argsstring>
+        <name>~descriptor_set_layout</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::~descriptor_set_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="27" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__set__layout_1aacebd5c8655185f9639c5917db7f9c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::descriptor_set_layout::descriptor_set_layout</definition>
+        <argsstring>(const descriptor_set_layout &amp;)=delete</argsstring>
+        <name>descriptor_set_layout</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::descriptor_set_layout</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1descriptor__set__layout" kindref="compound">descriptor_set_layout</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="28" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__set__layout_1a79bd3945653be46aa991488759443085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__set__layout" kindref="compound">descriptor_set_layout</ref> &amp;</type>
+        <definition>descriptor_set_layout &amp; atlas::vk::descriptor_set_layout::operator=</definition>
+        <argsstring>(const descriptor_set_layout &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1descriptor__set__layout" kindref="compound">descriptor_set_layout</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="29" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__set__layout_1acb2d299279b52bbdab27e33f91b788e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkDescriptorSetLayout</type>
+        <definition>VkDescriptorSetLayout atlas::vk::descriptor_set_layout::get_descriptor_set_layout</definition>
+        <argsstring>() const</argsstring>
+        <name>get_descriptor_set_layout</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::get_descriptor_set_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="31" column="31" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__set__layout_1a524decad15b47f49feb0799db5642a30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkDescriptorSetLayoutBinding &amp;</type>
+        <definition>VkDescriptorSetLayoutBinding &amp; atlas::vk::descriptor_set_layout::Get</definition>
+        <argsstring>(uint32_t bind)</argsstring>
+        <name>Get</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::Get</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>bind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="35" column="38" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="8" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="8" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1descriptor__set__layout_1a20d2fb87cf0e776fe5fc669616479191" prot="private" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>bindings</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__set__layout_1a50328105a8792258050eb51016a4cd81" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>descriptor_set_layout</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__set__layout_1aacebd5c8655185f9639c5917db7f9c34" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>descriptor_set_layout</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__set__layout_1a524decad15b47f49feb0799db5642a30" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>Get</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__set__layout_1acb2d299279b52bbdab27e33f91b788e9" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>get_descriptor_set_layout</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__set__layout_1a88d778865809291ba6285581655b4f6f" prot="private" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>m_descriptor_set_layout</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__set__layout_1a79bd3945653be46aa991488759443085" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>operator=</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__set__layout_1a4c12fed80f3fc99fedf2d43603f124a7" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>~descriptor_set_layout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

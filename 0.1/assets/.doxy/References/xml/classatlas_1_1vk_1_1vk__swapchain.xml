@@ -1,0 +1,960 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__swapchain" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_swapchain</compoundname>
+    <basecompoundref refid="classatlas_1_1swapchain" prot="public" virt="non-virtual">atlas::swapchain</basecompoundref>
+    <innerclass refid="structatlas_1_1vk_1_1vk__swapchain_1_1swapchain__depth__image" prot="private">atlas::vk::vk_swapchain::swapchain_depth_image</innerclass>
+    <innerclass refid="structatlas_1_1vk_1_1vk__swapchain_1_1swapchain__image" prot="private">atlas::vk::vk_swapchain::swapchain_image</innerclass>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a8360fad2ba87adb0817212b44169bf07" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t atlas::vk::vk_swapchain::max_frames_in_flight</definition>
+        <argsstring></argsstring>
+        <name>max_frames_in_flight</name>
+        <qualifiedname>atlas::vk::vk_swapchain::max_frames_in_flight</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>TODO: Change this into RendererConfig </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="15" column="35" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a2ee90b5dac5424dc793d088d562cf289" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_swapchain::m_width</definition>
+        <argsstring></argsstring>
+        <name>m_width</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_width</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="78" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1ad2f9499bee94c00deddcd282335fd990" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_swapchain::m_height</definition>
+        <argsstring></argsstring>
+        <name>m_height</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_height</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="79" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a06c37d3cd4bb660f0ae1bd868a0356e1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::vk::vk_swapchain::m_is_resized_requested</definition>
+        <argsstring></argsstring>
+        <name>m_is_resized_requested</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_is_resized_requested</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="80" column="14" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a546b9040e726b44c0f09782eb60b8415" prot="private" static="no" mutable="no">
+        <type>VkQueue</type>
+        <definition>VkQueue atlas::vk::vk_swapchain::m_presentation_queue</definition>
+        <argsstring></argsstring>
+        <name>m_presentation_queue</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_presentation_queue</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="81" column="17" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a0c9c13c4af50ccfdc7112448e83892ef" prot="private" static="no" mutable="no">
+        <type>VkSurfaceKHR</type>
+        <definition>VkSurfaceKHR atlas::vk::vk_swapchain::m_current_surface</definition>
+        <argsstring></argsstring>
+        <name>m_current_surface</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_current_surface</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="82" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1ac8a226393736f4fb8bd93abdd8b9fff0" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; swapchain_image &gt;</type>
+        <definition>std::vector&lt;swapchain_image&gt; atlas::vk::vk_swapchain::m_swapchain_images</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain_images</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain_images</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Images that are either in-use for images or depth images. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="96" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a1c76a0733d71ce5fee0a585b2bbe947b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; swapchain_depth_image &gt;</type>
+        <definition>std::vector&lt;swapchain_depth_image&gt; atlas::vk::vk_swapchain::m_swapchain_depth_images</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain_depth_images</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain_depth_images</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="97" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a3894d7b5311c5ecb5ae9134ca0f7e5cc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkFramebuffer &gt;</type>
+        <definition>std::vector&lt;VkFramebuffer&gt; atlas::vk::vk_swapchain::m_swapchain_framebuffers</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain_framebuffers</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain_framebuffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="98" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a08d8c3304313739e39b129729adba34a" prot="private" static="no" mutable="no">
+        <type>VkSwapchainKHR</type>
+        <definition>VkSwapchainKHR atlas::vk::vk_swapchain::m_swapchain</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="100" column="24" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a3dabf1b7bd7ffbee14ee187466c4f73d" prot="private" static="no" mutable="no">
+        <type>VkSurfaceFormatKHR</type>
+        <definition>VkSurfaceFormatKHR atlas::vk::vk_swapchain::m_surface_format</definition>
+        <argsstring></argsstring>
+        <name>m_surface_format</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_surface_format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="101" column="28" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1ae8b5d0c5c13b3a639cc01279b9a4a92b" prot="private" static="no" mutable="no">
+        <type>VkPresentModeKHR</type>
+        <definition>VkPresentModeKHR atlas::vk::vk_swapchain::m_presentation_mode</definition>
+        <argsstring></argsstring>
+        <name>m_presentation_mode</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_presentation_mode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="102" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a4b99d9d037dc44499b3defdd879d6843" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_swapchain::m_presentation_index</definition>
+        <argsstring></argsstring>
+        <name>m_presentation_index</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_presentation_index</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="103" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1ad1ec343fbeb9be7d53dca4714f2e34e3" prot="private" static="no" mutable="no">
+        <type>VkExtent2D</type>
+        <definition>VkExtent2D atlas::vk::vk_swapchain::m_swapchain_extent</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain_extent</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain_extent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="104" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a9ae1a617218c19a0bc59e7097bfbcd44" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkCommandBuffer &gt;</type>
+        <definition>std::vector&lt;VkCommandBuffer&gt; atlas::vk::vk_swapchain::m_swapchain_command_buffers</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain_command_buffers</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain_command_buffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Setting up Command Buffers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="109" column="11" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a6ac1daa70653d3959a9cc059f53e813b" prot="private" static="no" mutable="no">
+        <type>VkCommandPool</type>
+        <definition>VkCommandPool atlas::vk::vk_swapchain::m_swapchain_command_pool</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain_command_pool</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain_command_pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="110" column="23" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1aca20c14af4cac6d18b57639a122b92d4" prot="private" static="no" mutable="no">
+        <type>VkRenderPass</type>
+        <definition>VkRenderPass atlas::vk::vk_swapchain::m_swapchain_renderpass</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain_renderpass</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain_renderpass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="112" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a17ca191369dd5c37d772d65b0e4075e1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkSemaphore &gt;</type>
+        <definition>std::vector&lt;VkSemaphore&gt; atlas::vk::vk_swapchain::m_semaphores_images_available</definition>
+        <argsstring></argsstring>
+        <name>m_semaphores_images_available</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_semaphores_images_available</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Semaphores to signal when frames finished or current frame being rendered has been completed. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="117" column="11" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1acce4e9f89c9f1a25ecbb16c30e5c7ec1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkSemaphore &gt;</type>
+        <definition>std::vector&lt;VkSemaphore&gt; atlas::vk::vk_swapchain::m_semaphores_render_completed</definition>
+        <argsstring></argsstring>
+        <name>m_semaphores_render_completed</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_semaphores_render_completed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="120" column="11" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1ac13f4018b8d4cfa4b1c96ca23a499f0b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkFence &gt;</type>
+        <definition>std::vector&lt;VkFence&gt; atlas::vk::vk_swapchain::m_swapchain_fences</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain_fences</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain_fences</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="124" column="11" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1aa81a9943080c77d3af74acd2861e57bc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkFence &gt;</type>
+        <definition>std::vector&lt;VkFence&gt; atlas::vk::vk_swapchain::m_swapchain_in_flight_fences</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain_in_flight_fences</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_swapchain_in_flight_fences</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="126" column="11" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1acfe036785e0c6b2c882725fff97a285f" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__physical__driver" kindref="compound">vk_physical_driver</ref></type>
+        <definition>vk_physical_driver atlas::vk::vk_swapchain::m_physical</definition>
+        <argsstring></argsstring>
+        <name>m_physical</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_physical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="129" column="28" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1ae9d8e40d39802aa2b28170bf489882e9" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__driver" kindref="compound">vk_driver</ref></type>
+        <definition>vk_driver atlas::vk::vk_swapchain::m_driver</definition>
+        <argsstring></argsstring>
+        <name>m_driver</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_driver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="130" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a1583a1a7c9f39a124cd0e443769cb5ef" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t atlas::vk::vk_swapchain::m_current_frame_index</definition>
+        <argsstring></argsstring>
+        <name>m_current_frame_index</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_current_frame_index</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Current frame that we are at in the application from the start of the app. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="134" column="16" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__swapchain_1a99a2c68cd7b2b6e7bf239e8a8ec9ac06" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_swapchain::m_current_image_index</definition>
+        <argsstring></argsstring>
+        <name>m_current_image_index</name>
+        <qualifiedname>atlas::vk::vk_swapchain::m_current_image_index</qualifiedname>
+        <initializer>=
+          0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Acts as our image index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="137" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="137" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1aaba65e690cc2255af05107ca25af7b5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_swapchain::~vk_swapchain</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~vk_swapchain</name>
+        <qualifiedname>atlas::vk::vk_swapchain::~vk_swapchain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="13" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a68ffa5eb6ee80082f92b762da4af50be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_swapchain::vk_swapchain</definition>
+        <argsstring>()=default</argsstring>
+        <name>vk_swapchain</name>
+        <qualifiedname>atlas::vk::vk_swapchain::vk_swapchain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="17" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a11a3efa0e5fd1d8065d241790e189556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_swapchain::vk_swapchain</definition>
+        <argsstring>(const vk_physical_driver &amp;p_physical, const vk_driver &amp;p_driver, const VkSurfaceKHR &amp;p_surface)</argsstring>
+        <name>vk_swapchain</name>
+        <qualifiedname>atlas::vk::vk_swapchain::vk_swapchain</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__physical__driver" kindref="compound">vk_physical_driver</ref> &amp;</type>
+          <declname>p_physical</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__driver" kindref="compound">vk_driver</ref> &amp;</type>
+          <declname>p_driver</declname>
+        </param>
+        <param>
+          <type>const VkSurfaceKHR &amp;</type>
+          <declname>p_surface</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="18" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1abcfa04d691cb507bd5ecaec8db718731" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void atlas::vk::vk_swapchain::resize_reset</definition>
+        <argsstring>()</argsstring>
+        <name>resize_reset</name>
+        <qualifiedname>atlas::vk::vk_swapchain::resize_reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="22" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a2249cee813be0106eda2bf278565bc93" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool atlas::vk::vk_swapchain::is_resized</definition>
+        <argsstring>()</argsstring>
+        <name>is_resized</name>
+        <qualifiedname>atlas::vk::vk_swapchain::is_resized</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="23" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a81bc6f1600d35cd79341cccb62b0005c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_swapchain::on_create</definition>
+        <argsstring>(uint32_t p_width, const uint32_t p_height)</argsstring>
+        <name>on_create</name>
+        <qualifiedname>atlas::vk::vk_swapchain::on_create</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_width</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>p_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>I made p_height const because of clang-tidy </para>
+</simplesect>
+<simplesect kind="note"><para>vulkan abstractions getting a rewrite anyways, so doing this to silence it for the time being </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="29" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1aa4cb1f65f62ab4159429cc8029b6a30d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_swapchain::resize_status</definition>
+        <argsstring>(bool p_is_resized_signaled) override</argsstring>
+        <name>resize_status</name>
+        <qualifiedname>atlas::vk::vk_swapchain::resize_status</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1a3815cbf30e1c70c67fd9bb8d11c7029b">resize_status</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>p_is_resized_signaled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Graphic swapchain virtual implementation functions </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="33" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1af648a9cae82644bb31e8bc1ea3e275d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool atlas::vk::vk_swapchain::swapchain_resized</definition>
+        <argsstring>() override</argsstring>
+        <name>swapchain_resized</name>
+        <qualifiedname>atlas::vk::vk_swapchain::swapchain_resized</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1ae6e28c2fbab288c44be90a16cab3f5f4">swapchain_resized</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="35" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1ae1a20194bbc4bc17292a92873dc5a073" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_swapchain::recreate_swapchain</definition>
+        <argsstring>(uint32_t p_width, uint32_t p_height) override</argsstring>
+        <name>recreate_swapchain</name>
+        <qualifiedname>atlas::vk::vk_swapchain::recreate_swapchain</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1a3bed6ae813186117963734ffd520b7c8">recreate_swapchain</reimplements>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_width</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="36" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1ab53979aeb12760ac7be66f304c732cf7" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>VkSwapchainKHR</type>
+        <definition>VkSwapchainKHR atlas::vk::vk_swapchain::vk_swapchain_handler</definition>
+        <argsstring>() override</argsstring>
+        <name>vk_swapchain_handler</name>
+        <qualifiedname>atlas::vk::vk_swapchain::vk_swapchain_handler</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1a377de9570079d35c6e6cb86abd3db8dd">vk_swapchain_handler</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="37" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1ad4c2b37be776e9649c96928f7a66f8ef" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>VkRenderPass</type>
+        <definition>VkRenderPass atlas::vk::vk_swapchain::read_swapchain_renderpass</definition>
+        <argsstring>() override</argsstring>
+        <name>read_swapchain_renderpass</name>
+        <qualifiedname>atlas::vk::vk_swapchain::read_swapchain_renderpass</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1aad02a0c575e9a30e6d5bcb22b845f0c1">read_swapchain_renderpass</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="38" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a08a207c9a44d5c9004441de887dc9159" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>VkFormat &amp;</type>
+        <definition>VkFormat &amp; atlas::vk::vk_swapchain::read_swapchain_format</definition>
+        <argsstring>() override</argsstring>
+        <name>read_swapchain_format</name>
+        <qualifiedname>atlas::vk::vk_swapchain::read_swapchain_format</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1a492727787fba125b7da28b86525ee066">read_swapchain_format</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="39" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1af64d4a05ca7dfdd9867eaf5e2c915c5f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_swapchain::images_size</definition>
+        <argsstring>() const override</argsstring>
+        <name>images_size</name>
+        <qualifiedname>atlas::vk::vk_swapchain::images_size</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1a47f18723ad890ad2475e1f0d34ade15a">images_size</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="41" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a29e6e255253f091a9bd86dc669e197f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>VkFramebuffer</type>
+        <definition>VkFramebuffer atlas::vk::vk_swapchain::read_framebuffer</definition>
+        <argsstring>(uint32_t idx) override</argsstring>
+        <name>read_framebuffer</name>
+        <qualifiedname>atlas::vk::vk_swapchain::read_framebuffer</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1acde5bbd6ba5974039f0291762a6c2b87">read_framebuffer</reimplements>
+        <param>
+          <type>uint32_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="42" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1ad32fddbc362307e73e4d1d5411d2de23" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>VkImageView</type>
+        <definition>VkImageView atlas::vk::vk_swapchain::read_image_view</definition>
+        <argsstring>(uint32_t index) override</argsstring>
+        <name>read_image_view</name>
+        <qualifiedname>atlas::vk::vk_swapchain::read_image_view</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1a1248853102f853dc70bc01b66619846b">read_image_view</reimplements>
+        <param>
+          <type>uint32_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="43" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1aa47c92fa0f9306b087f46a3c98d6be2b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>VkExtent2D</type>
+        <definition>VkExtent2D atlas::vk::vk_swapchain::read_swapchain_extent</definition>
+        <argsstring>() override</argsstring>
+        <name>read_swapchain_extent</name>
+        <qualifiedname>atlas::vk::vk_swapchain::read_swapchain_extent</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1a928a71859dcb6e127561b243050e5c3c">read_swapchain_extent</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="44" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a4e89c168c6b78b2f3d9da0b5c154f9c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_swapchain::submit_and_write_command_buffer</definition>
+        <argsstring>(VkCommandBuffer *p_command_buffers) override</argsstring>
+        <name>submit_and_write_command_buffer</name>
+        <qualifiedname>atlas::vk::vk_swapchain::submit_and_write_command_buffer</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1a8310256473e9731cb81f5f6e34af18f1">submit_and_write_command_buffer</reimplements>
+        <param>
+          <type>VkCommandBuffer *</type>
+          <declname>p_command_buffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="45" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a10d1d70cbf166c2b29df63371e200ac9" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_swapchain::read_acquire_next_frame</definition>
+        <argsstring>() override</argsstring>
+        <name>read_acquire_next_frame</name>
+        <qualifiedname>atlas::vk::vk_swapchain::read_acquire_next_frame</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1a1ba622baf48be3720b8d6020e97548ea">read_acquire_next_frame</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="47" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1ae9bd119a76a375dc7c8d3bf63c168d80" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_swapchain::current_frame_per_tick</definition>
+        <argsstring>() override</argsstring>
+        <name>current_frame_per_tick</name>
+        <qualifiedname>atlas::vk::vk_swapchain::current_frame_per_tick</qualifiedname>
+        <reimplements refid="classatlas_1_1swapchain_1ae034ede7e2ce58c090f0b348c1fb6c7a">current_frame_per_tick</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="48" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1abfc928a27b7966457c6a380933d885df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkPresentModeKHR</type>
+        <definition>VkPresentModeKHR atlas::vk::vk_swapchain::select_compatible_present_mode</definition>
+        <argsstring>(const VkPresentModeKHR &amp;p_request_mode, const std::vector&lt; VkPresentModeKHR &gt; &amp;p_modes)</argsstring>
+        <name>select_compatible_present_mode</name>
+        <qualifiedname>atlas::vk::vk_swapchain::select_compatible_present_mode</qualifiedname>
+        <param>
+          <type>const VkPresentModeKHR &amp;</type>
+          <declname>p_request_mode</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; VkPresentModeKHR &gt; &amp;</type>
+          <declname>p_modes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Helper functions or various operations. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="52" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a5a1bd0b8ed7c88526d3d898011f74791" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkExtent2D</type>
+        <definition>VkExtent2D atlas::vk::vk_swapchain::select_valid_extent</definition>
+        <argsstring>(const VkSurfaceCapabilitiesKHR &amp;p_surface_capabilities)</argsstring>
+        <name>select_valid_extent</name>
+        <qualifiedname>atlas::vk::vk_swapchain::select_valid_extent</qualifiedname>
+        <param>
+          <type>const VkSurfaceCapabilitiesKHR &amp;</type>
+          <declname>p_surface_capabilities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="55" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1a595b55e10cbe0403e7f2b73466e16cac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_swapchain::select_memory_type</definition>
+        <argsstring>(VkPhysicalDeviceMemoryProperties p_memory_properties, uint32_t p_type_filter, VkMemoryPropertyFlags p_property_flag)</argsstring>
+        <name>select_memory_type</name>
+        <qualifiedname>atlas::vk::vk_swapchain::select_memory_type</qualifiedname>
+        <param>
+          <type>VkPhysicalDeviceMemoryProperties</type>
+          <declname>p_memory_properties</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_type_filter</declname>
+        </param>
+        <param>
+          <type>VkMemoryPropertyFlags</type>
+          <declname>p_property_flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Search Memory Type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="59" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1aa4a3972813caf2992e8ed4e73a06d436" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkFormat</type>
+        <definition>VkFormat atlas::vk::vk_swapchain::select_depth_format</definition>
+        <argsstring>(const VkPhysicalDevice &amp;p_physical)</argsstring>
+        <name>select_depth_format</name>
+        <qualifiedname>atlas::vk::vk_swapchain::select_depth_format</qualifiedname>
+        <param>
+          <type>const VkPhysicalDevice &amp;</type>
+          <declname>p_physical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Selecting specific type of format. </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>VkPhysicalDevice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is used to extract the depth format and check if it is available on our current GPU. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="69" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__swapchain_1af54732454a60a808e360148a010ec074" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkFormat</type>
+        <definition>VkFormat atlas::vk::vk_swapchain::select_supported_format</definition>
+        <argsstring>(VkPhysicalDevice p_physical, const std::vector&lt; VkFormat &gt; &amp;p_formats, VkImageTiling p_tiling, VkFormatFeatureFlags p_feature_flags)</argsstring>
+        <name>select_supported_format</name>
+        <qualifiedname>atlas::vk::vk_swapchain::select_supported_format</qualifiedname>
+        <param>
+          <type>VkPhysicalDevice</type>
+          <declname>p_physical</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; VkFormat &gt; &amp;</type>
+          <declname>p_formats</declname>
+        </param>
+        <param>
+          <type>VkImageTiling</type>
+          <declname>p_tiling</declname>
+        </param>
+        <param>
+          <type>VkFormatFeatureFlags</type>
+          <declname>p_feature_flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Helper function to get the format types we need. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="72" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>atlas::swapchain</label>
+        <link refid="classatlas_1_1swapchain"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_swapchain</label>
+        <link refid="classatlas_1_1vk_1_1vk__swapchain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>atlas::swapchain</label>
+        <link refid="classatlas_1_1swapchain"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_swapchain</label>
+        <link refid="classatlas_1_1vk_1_1vk__swapchain"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" line="11" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_swapchain.hpp" bodystart="11" bodyend="139"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1swapchain_1af6fb122d2e36925aa1d641f8eff2bb40" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>acquire_next_image</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ae9bd119a76a375dc7c8d3bf63c168d80" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>current_frame_per_tick</name></member>
+      <member refid="classatlas_1_1swapchain_1a688a7a9d93904572da371050aa47822a" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>get_current_per_tick</name></member>
+      <member refid="classatlas_1_1swapchain_1a5c7a8f268b595e0906b32adb6ebfd2c6" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>get_extent</name></member>
+      <member refid="classatlas_1_1swapchain_1a6931070aa5be9795eb98839f6a645f62" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>get_framebuffer</name></member>
+      <member refid="classatlas_1_1swapchain_1ae486760189a6a49cba5ae554f274a276" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>get_image_view</name></member>
+      <member refid="classatlas_1_1swapchain_1a159d05e176b56862c1f3c6be00b9dca8" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>get_images_size</name></member>
+      <member refid="classatlas_1_1swapchain_1a41ee867ab5a2f40e6b922c9a89b2b145" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>get_renderpass</name></member>
+      <member refid="classatlas_1_1swapchain_1a67385c501cc1dca9efb2b87053be39ca" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>get_swapchain_format</name></member>
+      <member refid="classatlas_1_1swapchain_1a483162969375f0908e097b8a31af71fd" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>get_vk_swapchain</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1af64d4a05ca7dfdd9867eaf5e2c915c5f" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>images_size</name></member>
+      <member refid="classatlas_1_1swapchain_1ae0e05ca4fd4b8011e685d6feef951ead" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>initialize</name></member>
+      <member refid="classatlas_1_1swapchain_1a44a3db031c59e22ff8934002f4422d11" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>is_rebuild</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a2249cee813be0106eda2bf278565bc93" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>is_resized</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a1583a1a7c9f39a124cd0e443769cb5ef" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_current_frame_index</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a99a2c68cd7b2b6e7bf239e8a8ec9ac06" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_current_image_index</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a0c9c13c4af50ccfdc7112448e83892ef" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_current_surface</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ae9d8e40d39802aa2b28170bf489882e9" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ad2f9499bee94c00deddcd282335fd990" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_height</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a06c37d3cd4bb660f0ae1bd868a0356e1" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_is_resized_requested</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1acfe036785e0c6b2c882725fff97a285f" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_physical</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a4b99d9d037dc44499b3defdd879d6843" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_presentation_index</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ae8b5d0c5c13b3a639cc01279b9a4a92b" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_presentation_mode</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a546b9040e726b44c0f09782eb60b8415" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_presentation_queue</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a17ca191369dd5c37d772d65b0e4075e1" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_semaphores_images_available</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1acce4e9f89c9f1a25ecbb16c30e5c7ec1" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_semaphores_render_completed</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a3dabf1b7bd7ffbee14ee187466c4f73d" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_surface_format</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a08d8c3304313739e39b129729adba34a" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a9ae1a617218c19a0bc59e7097bfbcd44" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain_command_buffers</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a6ac1daa70653d3959a9cc059f53e813b" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain_command_pool</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a1c76a0733d71ce5fee0a585b2bbe947b" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain_depth_images</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ad1ec343fbeb9be7d53dca4714f2e34e3" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain_extent</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ac13f4018b8d4cfa4b1c96ca23a499f0b" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain_fences</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a3894d7b5311c5ecb5ae9134ca0f7e5cc" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain_framebuffers</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ac8a226393736f4fb8bd93abdd8b9fff0" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain_images</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1aa81a9943080c77d3af74acd2861e57bc" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain_in_flight_fences</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1aca20c14af4cac6d18b57639a122b92d4" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_swapchain_renderpass</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a2ee90b5dac5424dc793d088d562cf289" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>m_width</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a8360fad2ba87adb0817212b44169bf07" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>max_frames_in_flight</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a81bc6f1600d35cd79341cccb62b0005c" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>on_create</name></member>
+      <member refid="classatlas_1_1swapchain_1aecfa5f3878080d4d9342e5aa6f9e06d1" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>on_resize</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a10d1d70cbf166c2b29df63371e200ac9" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>read_acquire_next_frame</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a29e6e255253f091a9bd86dc669e197f0" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>read_framebuffer</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ad32fddbc362307e73e4d1d5411d2de23" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>read_image_view</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1aa47c92fa0f9306b087f46a3c98d6be2b" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>read_swapchain_extent</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a08a207c9a44d5c9004441de887dc9159" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>read_swapchain_format</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ad4c2b37be776e9649c96928f7a66f8ef" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>read_swapchain_renderpass</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ae1a20194bbc4bc17292a92873dc5a073" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>recreate_swapchain</name></member>
+      <member refid="classatlas_1_1swapchain_1a653190e688d0a237054540a77a064166" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>reset_build</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1abcfa04d691cb507bd5ecaec8db718731" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>resize_reset</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1aa4cb1f65f62ab4159429cc8029b6a30d" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>resize_status</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1abfc928a27b7966457c6a380933d885df" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>select_compatible_present_mode</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1aa4a3972813caf2992e8ed4e73a06d436" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>select_depth_format</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a595b55e10cbe0403e7f2b73466e16cac" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>select_memory_type</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1af54732454a60a808e360148a010ec074" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>select_supported_format</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a5a1bd0b8ed7c88526d3d898011f74791" prot="private" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>select_valid_extent</name></member>
+      <member refid="classatlas_1_1swapchain_1a2888529b7af2cdc6cfc83a5436698d0f" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>set_resize_status</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a4e89c168c6b78b2f3d9da0b5c154f9c7" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>submit_and_write_command_buffer</name></member>
+      <member refid="classatlas_1_1swapchain_1abbbd33c748f43dd0ddee32415c2fd2ea" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>submit_command_buffer</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1af648a9cae82644bb31e8bc1ea3e275d2" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>swapchain_resized</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a68ffa5eb6ee80082f92b762da4af50be" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>vk_swapchain</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1a11a3efa0e5fd1d8065d241790e189556" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>vk_swapchain</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1ab53979aeb12760ac7be66f304c732cf7" prot="private" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>vk_swapchain_handler</name></member>
+      <member refid="classatlas_1_1swapchain_1abc03fe4dd64acb46438c02a258f04296" prot="public" virt="virtual"><scope>atlas::vk::vk_swapchain</scope><name>~swapchain</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__swapchain_1aaba65e690cc2255af05107ca25af7b5a" prot="public" virt="non-virtual"><scope>atlas::vk::vk_swapchain</scope><name>~vk_swapchain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

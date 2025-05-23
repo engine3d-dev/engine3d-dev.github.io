@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_50632568389acd88e20d4049896804e3" kind="dir">
+    <compoundname>TheAtlasEngine/atlas/core/scene</compoundname>
+    <innerfile refid="components_8hpp">components.hpp</innerfile>
+    <innerfile refid="entity_8hpp">entity.hpp</innerfile>
+    <innerfile refid="scene_8hpp">scene.hpp</innerfile>
+    <innerfile refid="scene__object_8hpp">scene_object.hpp</innerfile>
+    <innerfile refid="world_8hpp">world.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/scene/"/>
+  </compounddef>
+</doxygen>

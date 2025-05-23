@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceatlas_1_1vk" kind="namespace" language="C++">
+    <compoundname>atlas::vk</compoundname>
+    <innerclass refid="classatlas_1_1vk_1_1BufferTutorial" prot="public">atlas::vk::BufferTutorial</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1descriptor__pool" prot="public">atlas::vk::descriptor_pool</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1descriptor__set__layout" prot="public">atlas::vk::descriptor_set_layout</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1descriptor__writer" prot="public">atlas::vk::descriptor_writer</innerclass>
+    <innerclass refid="structatlas_1_1vk_1_1shader__pipeline__config" prot="public">atlas::vk::shader_pipeline_config</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1vk__context" prot="public">atlas::vk::vk_context</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1vk__driver" prot="public">atlas::vk::vk_driver</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1vk__index__buffer" prot="public">atlas::vk::vk_index_buffer</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1vk__physical__driver" prot="public">atlas::vk::vk_physical_driver</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1vk__renderer" prot="public">atlas::vk::vk_renderer</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1vk__shader" prot="public">atlas::vk::vk_shader</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1vk__swapchain" prot="public">atlas::vk::vk_swapchain</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1vk__vertex__buffer" prot="public">atlas::vk::vk_vertex_buffer</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1vk__window" prot="public">atlas::vk::vk_window</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1VulkanDescriptorSets" prot="public">atlas::vk::VulkanDescriptorSets</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1VulkanPipeline" prot="public">atlas::vk::VulkanPipeline</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1VulkanRenderPass" prot="public">atlas::vk::VulkanRenderPass</innerclass>
+    <innerclass refid="classatlas_1_1vk_1_1VulkanUniformBuffer" prot="public">atlas::vk::VulkanUniformBuffer</innerclass>
+    <sectiondef kind="user-defined">
+      <header>CommandbufferBeginInfo</header>
+      <description><para><simplesect kind="note"><para>Operation to indicate when a command buffer can start to record </para>
+</simplesect>
+<simplesect kind="note"><para>Creates a complelety new command buffer and indicating to start recording to that new command buffer </para>
+</simplesect>
+<simplesect kind="note"><para>Use to creating a command buffer more easier TODO: Depends on how this go, may change this later </para>
+</simplesect>
+</para>
+</description>
+      <memberdef kind="function" id="vulkan__core_8hpp_1a2d1aacd3de034cc6190124d7363e4e91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkCommandBuffer</type>
+        <definition>VkCommandBuffer atlas::vk::create_command_buffer_and_record</definition>
+        <argsstring>(const VkDevice &amp;p_driver, const VkCommandPool &amp;p_command_buffer)</argsstring>
+        <name>create_command_buffer_and_record</name>
+        <qualifiedname>atlas::vk::create_command_buffer_and_record</qualifiedname>
+        <param>
+          <type>const VkDevice &amp;</type>
+          <declname>p_driver</declname>
+        </param>
+        <param>
+          <type>const VkCommandPool &amp;</type>
+          <declname>p_command_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="25" column="21" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="25" declcolumn="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>BeginCommandBuffer</header>
+      <description><para><simplesect kind="note"><para>Enables you to begin recording the command buffer excluding actually specifying the structure VkBeginInfo </para>
+</simplesect>
+<simplesect kind="note"><para>Minimize boilerplate to record command buffers </para>
+</simplesect>
+</para>
+</description>
+      <memberdef kind="function" id="vulkan__core_8hpp_1a379f3330b3dd23116d0c50e1b800bad0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::begin_command_buffer</definition>
+        <argsstring>(const VkCommandBuffer &amp;p_command_buffer)</argsstring>
+        <name>begin_command_buffer</name>
+        <qualifiedname>atlas::vk::begin_command_buffer</qualifiedname>
+        <param>
+          <type>const VkCommandBuffer &amp;</type>
+          <declname>p_command_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="35" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="35" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>End Command Buffer</header>
+      <description><para><simplesect kind="note"><para>Operation to signal command buffer to stop recording commands </para>
+</simplesect>
+</para>
+</description>
+      <memberdef kind="function" id="vulkan__core_8hpp_1aec14112642d944a7b0b67987abed9f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::end_command_buffer</definition>
+        <argsstring>(const VkCommandBuffer &amp;p_command_buffer)</argsstring>
+        <name>end_command_buffer</name>
+        <qualifiedname>atlas::vk::end_command_buffer</qualifiedname>
+        <param>
+          <type>const VkCommandBuffer &amp;</type>
+          <declname>p_command_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="41" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="41" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Submit</header>
+      <description><para><simplesect kind="note"><para>This is the vulkan operation to submit commands directly to the GPU </para>
+</simplesect>
+<simplesect kind="note"><para>This operation is to minimize the specific boilerplate that comes with vulkan </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>VkQueue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the queue the user can specify to submit commands to use </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_Commands</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the span of commands that will be submitted to the gpu </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Typically the swapchain contains the information what queue to submit to </para>
+</simplesect>
+<simplesect kind="note"><para>swapchain also knows </para>
+</simplesect>
+</para>
+</description>
+      <memberdef kind="function" id="vulkan__core_8hpp_1af02a3b2e583ced15d37e95b655c466a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::submit</definition>
+        <argsstring>(VkQueue p_queue_to_use, const std::span&lt; VkCommandBuffer &gt; &amp;p_command_buffers)</argsstring>
+        <name>submit</name>
+        <qualifiedname>atlas::vk::submit</qualifiedname>
+        <param>
+          <type>VkQueue</type>
+          <declname>p_queue_to_use</declname>
+        </param>
+        <param>
+          <type>const std::span&lt; VkCommandBuffer &gt; &amp;</type>
+          <declname>p_command_buffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="56" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="56" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="vulkan__core_8hpp_1aa3dc2cd8b3d76dc145749f941d032a64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkImage</type>
+        <definition>VkImage atlas::vk::create_image</definition>
+        <argsstring>(VkFormat p_format, uint32_t p_width, uint32_t p_height)</argsstring>
+        <name>create_image</name>
+        <qualifiedname>atlas::vk::create_image</qualifiedname>
+        <param>
+          <type>VkFormat</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_width</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="59" column="13" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="59" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="vulkan__core_8hpp_1a58bc382b9be9033ca647148e372efe98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkImageView</type>
+        <definition>VkImageView atlas::vk::create_image_view</definition>
+        <argsstring>(VkImage p_image, VkFormat p_format)</argsstring>
+        <name>create_image_view</name>
+        <qualifiedname>atlas::vk::create_image_view</qualifiedname>
+        <param>
+          <type>VkImage</type>
+          <declname>p_image</declname>
+        </param>
+        <param>
+          <type>VkFormat</type>
+          <declname>p_format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="62" column="17" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="62" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="vulkan__core_8hpp_1a1fb0658e42f09b0d70ccad210d3ecac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkCommandBuffer</type>
+        <definition>VkCommandBuffer atlas::vk::begin_single_time_command_buffer</definition>
+        <argsstring>(const VkCommandPool &amp;p_command_pool)</argsstring>
+        <name>begin_single_time_command_buffer</name>
+        <qualifiedname>atlas::vk::begin_single_time_command_buffer</qualifiedname>
+        <param>
+          <type>const VkCommandPool &amp;</type>
+          <declname>p_command_pool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="64" column="21" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="64" declcolumn="21"/>
+      </memberdef>
+      <memberdef kind="function" id="vulkan__core_8hpp_1a3a85fce4171a4868186eab8bfadfcc43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::end_single_time_command_buffer</definition>
+        <argsstring>(const VkCommandBuffer &amp;p_command_buffer, const VkCommandPool &amp;p_command_pool)</argsstring>
+        <name>end_single_time_command_buffer</name>
+        <qualifiedname>atlas::vk::end_single_time_command_buffer</qualifiedname>
+        <param>
+          <type>const VkCommandBuffer &amp;</type>
+          <declname>p_command_buffer</declname>
+        </param>
+        <param>
+          <type>const VkCommandPool &amp;</type>
+          <declname>p_command_pool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="66" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="66" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="vulkan__core_8hpp_1a27a8e84a0ddd445e646b28dc6833e0b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkCommandPool</type>
+        <definition>VkCommandPool atlas::vk::create_command_pool</definition>
+        <argsstring>()</argsstring>
+        <name>create_command_pool</name>
+        <qualifiedname>atlas::vk::create_command_pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="69" column="19" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="69" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="vulkan__core_8hpp_1a7571dec22260f94e1aec2b5a3119be63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::pipeline_image_barrier</definition>
+        <argsstring>(VkCommandBuffer p_command_buffer, VkImage Image, VkAccessFlags srcAccessmask, VkAccessFlags dstAccessMask, VkImageLayout OldImageLayout, VkImageLayout NewImageLayout, VkPipelineStageFlags srcStageFlags, VkPipelineStageFlags dstStageFlags, VkImageSubresourceRange subresourceRange)</argsstring>
+        <name>pipeline_image_barrier</name>
+        <qualifiedname>atlas::vk::pipeline_image_barrier</qualifiedname>
+        <param>
+          <type>VkCommandBuffer</type>
+          <declname>p_command_buffer</declname>
+        </param>
+        <param>
+          <type>VkImage</type>
+          <declname>Image</declname>
+        </param>
+        <param>
+          <type>VkAccessFlags</type>
+          <declname>srcAccessmask</declname>
+        </param>
+        <param>
+          <type>VkAccessFlags</type>
+          <declname>dstAccessMask</declname>
+        </param>
+        <param>
+          <type>VkImageLayout</type>
+          <declname>OldImageLayout</declname>
+        </param>
+        <param>
+          <type>VkImageLayout</type>
+          <declname>NewImageLayout</declname>
+        </param>
+        <param>
+          <type>VkPipelineStageFlags</type>
+          <declname>srcStageFlags</declname>
+        </param>
+        <param>
+          <type>VkPipelineStageFlags</type>
+          <declname>dstStageFlags</declname>
+        </param>
+        <param>
+          <type>VkImageSubresourceRange</type>
+          <declname>subresourceRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" line="71" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_core.hpp" declline="71" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="drivers_2vulkan_2types_8hpp_1a26c33655c457881c181901a5950c9e59" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ImageLayout</name>
+        <qualifiedname>atlas::vk::ImageLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/types.hpp" line="4" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/types.hpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="drivers_2vulkan_2helper__functions_8hpp_1af6bf0748bca9cd7c4504eb1dcbc3ed8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_check</definition>
+        <argsstring>(VkResult p_result, const char *p_tag, const char *p_filepath, uint32_t p_line, const char *p_function_name)</argsstring>
+        <name>vk_check</name>
+        <qualifiedname>atlas::vk::vk_check</qualifiedname>
+        <param>
+          <type>VkResult</type>
+          <declname>p_result</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>p_tag</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>p_filepath</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>p_function_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Terminates if the result was unsuccessful! </para>
+</simplesect>
+<simplesect kind="note"><para>TODO <mdash/> We shouldn&apos;t std::terminate, look into alternatives. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/helper_functions.hpp" line="9" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/helper_functions.hpp" declline="9" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="drivers_2vulkan_2helper__functions_8hpp_1a6db314099bd9386431f8f7c4c45a8501" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_check_format</definition>
+        <argsstring>(VkFormat p_format, const char *p_filepath, uint32_t p_line, const char *p_function_name)</argsstring>
+        <name>vk_check_format</name>
+        <qualifiedname>atlas::vk::vk_check_format</qualifiedname>
+        <param>
+          <type>VkFormat</type>
+          <declname>p_format</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>p_filepath</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>p_function_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/helper_functions.hpp" line="15" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/helper_functions.hpp" declline="15" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="drivers_2vulkan_2helper__functions_8hpp_1aad0f339c814da45f016e9fbec26d221c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string atlas::vk::vk_queue_flags_to_string</definition>
+        <argsstring>(VkQueueFlagBits p_flags)</argsstring>
+        <name>vk_queue_flags_to_string</name>
+        <qualifiedname>atlas::vk::vk_queue_flags_to_string</qualifiedname>
+        <param>
+          <type>VkQueueFlagBits</type>
+          <declname>p_flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/helper_functions.hpp" line="20" column="17" declfile="TheAtlasEngine/atlas/drivers/vulkan/helper_functions.hpp" declline="20" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="utility_8hpp_1af1a9c265adeca2a010985f547791f2f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::BeginCommandBuffer</definition>
+        <argsstring>(VkCommandBuffer *p_CommandBuffer)</argsstring>
+        <name>BeginCommandBuffer</name>
+        <qualifiedname>atlas::vk::BeginCommandBuffer</qualifiedname>
+        <param>
+          <type>VkCommandBuffer *</type>
+          <declname>p_CommandBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/utility.hpp" line="6" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/utility.hpp" declline="6" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="utility_8hpp_1ae4fb883dc651b67b9411ef48e806876f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::EndCommandBuffer</definition>
+        <argsstring>(VkCommandBuffer *p_CommandBuffer)</argsstring>
+        <name>EndCommandBuffer</name>
+        <qualifiedname>atlas::vk::EndCommandBuffer</qualifiedname>
+        <param>
+          <type>VkCommandBuffer *</type>
+          <declname>p_CommandBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/utility.hpp" line="7" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/utility.hpp" declline="7" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="vulkan__gpu_8hpp_1ac1e8918e93e14e5fb53ad20f08f815c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::Submit</definition>
+        <argsstring>(const std::function&lt; void()&gt; &amp;Function)</argsstring>
+        <name>Submit</name>
+        <qualifiedname>atlas::vk::Submit</qualifiedname>
+        <param>
+          <type>const std::function&lt; void()&gt; &amp;</type>
+          <declname>Function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>   @note These operations provide a way to directly execute commands to the
+GPU.
+   @note These operations should not be called directly outside of the the
+vulkan&apos;s implementation
+   @note As these implementations are specific to the vulkan API
+   @note These submission functions enable us to not only submit our data to
+the GPU directly, but ensures that the tasks we submit are going to be in
+sync
+
+vk::Submit([]{
+</verbatim> This directly sends our information task directly to the GPU });</para>
+<para><verbatim>@note SubmitResourceFree allows us to submit tasks that are used for cleanup
+@note While also ensuring that the operations in which these are submitted
+would be handled for us internally
+@note the deletion queue will probably be implemented with the vulkan driver
+internally vk::SubmitResourceFree([]{
+</verbatim> This directly gets submitted to a queue for handling cleanup for the specific operation Use case is if we wanted to cleanup imgui when at deconstruction for when the application ends, they get called here, and then added to queue for cleanup }); </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_gpu.hpp" line="33" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_gpu.hpp" declline="33" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="vulkan__gpu_8hpp_1a9ece1e65addf35c24433d39ea0265d59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::SubmitResourceFree</definition>
+        <argsstring>(const std::function&lt; void()&gt; &amp;Function)</argsstring>
+        <name>SubmitResourceFree</name>
+        <qualifiedname>atlas::vk::SubmitResourceFree</qualifiedname>
+        <param>
+          <type>const std::function&lt; void()&gt; &amp;</type>
+          <declname>Function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_gpu.hpp" line="35" column="10" declfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_gpu.hpp" declline="35" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/buffer_tutorial.hpp" line="3" column="1"/>
+  </compounddef>
+</doxygen>

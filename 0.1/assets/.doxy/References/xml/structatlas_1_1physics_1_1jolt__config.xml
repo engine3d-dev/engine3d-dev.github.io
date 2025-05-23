@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1physics_1_1jolt__config" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::physics::jolt_config</compoundname>
+    <includes refid="jolt__config_8hpp" local="no">jolt_config.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1aeee75e3c93b13845853c10199f9d7331" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::physics::jolt_config::gravity</definition>
+        <argsstring></argsstring>
+        <name>gravity</name>
+        <qualifiedname>atlas::physics::jolt_config::gravity</qualifiedname>
+        <initializer>= glm::vec3(0.0f, -9.80665f, 0.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="11" column="19" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1a19d422812a07421c4b5be214e56015df" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::jolt_config::fixed_time_step</definition>
+        <argsstring></argsstring>
+        <name>fixed_time_step</name>
+        <qualifiedname>atlas::physics::jolt_config::fixed_time_step</qualifiedname>
+        <initializer>= 1.0f / 60.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="15" column="15" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1a95afa2c57672d57bdacd9bf9b5ed99b4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::physics::jolt_config::use_fixed_timestep</definition>
+        <argsstring></argsstring>
+        <name>use_fixed_timestep</name>
+        <qualifiedname>atlas::physics::jolt_config::use_fixed_timestep</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="16" column="14" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1a41f29150fdadb8eb244829d3a36c5a25" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::physics::jolt_config::position_iterations</definition>
+        <argsstring></argsstring>
+        <name>position_iterations</name>
+        <qualifiedname>atlas::physics::jolt_config::position_iterations</qualifiedname>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="19" column="18" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1a4417f492f12b3f792f6b5f401171ca9d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::physics::jolt_config::velocity_iterations</definition>
+        <argsstring></argsstring>
+        <name>velocity_iterations</name>
+        <qualifiedname>atlas::physics::jolt_config::velocity_iterations</qualifiedname>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="20" column="18" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1add176b86c21293307950c0be480da9f5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::jolt_config::sleep_velocity_threshold</definition>
+        <argsstring></argsstring>
+        <name>sleep_velocity_threshold</name>
+        <qualifiedname>atlas::physics::jolt_config::sleep_velocity_threshold</qualifiedname>
+        <initializer>= 0.05f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="23" column="15" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1a476142776b00e95da0e860577c296839" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::jolt_config::sleep_angular_velocity_threshold</definition>
+        <argsstring></argsstring>
+        <name>sleep_angular_velocity_threshold</name>
+        <qualifiedname>atlas::physics::jolt_config::sleep_angular_velocity_threshold</qualifiedname>
+        <initializer>= 0.05f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="24" column="15" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1abaea9dda0ef93db472c1f9ed50fdaadc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::jolt_config::time_before_sleep</definition>
+        <argsstring></argsstring>
+        <name>time_before_sleep</name>
+        <qualifiedname>atlas::physics::jolt_config::time_before_sleep</qualifiedname>
+        <initializer>= 5.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>In seconds </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="27" column="15" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1a2477a8e63679ce1b33e3864be7d9721b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::jolt_config::world_unit_scale</definition>
+        <argsstring></argsstring>
+        <name>world_unit_scale</name>
+        <qualifiedname>atlas::physics::jolt_config::world_unit_scale</qualifiedname>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="30" column="15" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1a906526906f8208ed56b2a6fb46d3eefc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::jolt_config::contact_bias_factor</definition>
+        <argsstring></argsstring>
+        <name>contact_bias_factor</name>
+        <qualifiedname>atlas::physics::jolt_config::contact_bias_factor</qualifiedname>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="34" column="15" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1ac7cc829a02754389a248d4a37f67db98" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::jolt_config::restitution_threshold</definition>
+        <argsstring></argsstring>
+        <name>restitution_threshold</name>
+        <qualifiedname>atlas::physics::jolt_config::restitution_threshold</qualifiedname>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="35" column="15" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1aab56158e8a0e768ee15c66b05df92a4d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::physics::jolt_config::enable_constraints</definition>
+        <argsstring></argsstring>
+        <name>enable_constraints</name>
+        <qualifiedname>atlas::physics::jolt_config::enable_constraints</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="37" column="14" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1adb2ca1ea41e247ae91715b2af2992b2a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::physics::jolt_config::enable_contacts</definition>
+        <argsstring></argsstring>
+        <name>enable_contacts</name>
+        <qualifiedname>atlas::physics::jolt_config::enable_contacts</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="38" column="14" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1jolt__config_1a9034d033cd967575d7754325212277b1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::physics::jolt_config::enable_collision_callbacks</definition>
+        <argsstring></argsstring>
+        <name>enable_collision_callbacks</name>
+        <qualifiedname>atlas::physics::jolt_config::enable_collision_callbacks</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="39" column="14" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Used to keep global data for player access and use. Tells how physics bodies should act within a given scene by default. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" line="9" column="5" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/data/jolt_config.hpp" bodystart="9" bodyend="40"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1a906526906f8208ed56b2a6fb46d3eefc" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>contact_bias_factor</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1a9034d033cd967575d7754325212277b1" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>enable_collision_callbacks</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1aab56158e8a0e768ee15c66b05df92a4d" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>enable_constraints</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1adb2ca1ea41e247ae91715b2af2992b2a" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>enable_contacts</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1a19d422812a07421c4b5be214e56015df" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>fixed_time_step</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1aeee75e3c93b13845853c10199f9d7331" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>gravity</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1a41f29150fdadb8eb244829d3a36c5a25" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>position_iterations</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1ac7cc829a02754389a248d4a37f67db98" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>restitution_threshold</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1a476142776b00e95da0e860577c296839" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>sleep_angular_velocity_threshold</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1add176b86c21293307950c0be480da9f5" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>sleep_velocity_threshold</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1abaea9dda0ef93db472c1f9ed50fdaadc" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>time_before_sleep</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1a95afa2c57672d57bdacd9bf9b5ed99b4" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>use_fixed_timestep</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1a4417f492f12b3f792f6b5f401171ca9d" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>velocity_iterations</name></member>
+      <member refid="structatlas_1_1physics_1_1jolt__config_1a2477a8e63679ce1b33e3864be7d9721b" prot="public" virt="non-virtual"><scope>atlas::physics::jolt_config</scope><name>world_unit_scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

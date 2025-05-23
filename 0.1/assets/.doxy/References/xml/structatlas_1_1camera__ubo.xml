@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1camera__ubo" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::camera_ubo</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1camera__ubo_1aa132b4e3dd4ab1997b6f9c7fae3c1180" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 atlas::camera_ubo::Projection</definition>
+        <argsstring></argsstring>
+        <name>Projection</name>
+        <qualifiedname>atlas::camera_ubo::Projection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/uniform.hpp" line="7" column="19" bodyfile="TheAtlasEngine/atlas/drivers/uniform.hpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1camera__ubo_1a010ae85c43288833859932b87658ae6c" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 atlas::camera_ubo::View</definition>
+        <argsstring></argsstring>
+        <name>View</name>
+        <qualifiedname>atlas::camera_ubo::View</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/uniform.hpp" line="8" column="19" bodyfile="TheAtlasEngine/atlas/drivers/uniform.hpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/uniform.hpp" line="6" column="5" bodyfile="TheAtlasEngine/atlas/drivers/uniform.hpp" bodystart="6" bodyend="9"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1camera__ubo_1aa132b4e3dd4ab1997b6f9c7fae3c1180" prot="public" virt="non-virtual"><scope>atlas::camera_ubo</scope><name>Projection</name></member>
+      <member refid="structatlas_1_1camera__ubo_1a010ae85c43288833859932b87658ae6c" prot="public" virt="non-virtual"><scope>atlas::camera_ubo</scope><name>View</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

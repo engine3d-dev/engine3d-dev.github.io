@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1application" kind="class" language="C++" prot="public">
+    <compoundname>atlas::application</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1application_1acb86ab1c892f1c36e4a12c70b72abc9c" prot="private" static="no" mutable="no">
+        <type>ref&lt; <ref refid="classatlas_1_1window" kindref="compound">window</ref> &gt;</type>
+        <definition>ref&lt;window&gt; atlas::application::m_window</definition>
+        <argsstring></argsstring>
+        <name>m_window</name>
+        <qualifiedname>atlas::application::m_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="45" column="13" bodyfile="TheAtlasEngine/atlas/core/application.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classatlas_1_1application_1a4cc2ecd0e35de1d68981043c7d47816c" prot="private" static="yes" mutable="no">
+        <type><ref refid="classatlas_1_1application" kindref="compound">application</ref> *</type>
+        <definition>application* atlas::application::s_instance</definition>
+        <argsstring></argsstring>
+        <name>s_instance</name>
+        <qualifiedname>atlas::application::s_instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="46" column="28" bodyfile="TheAtlasEngine/atlas/core/application.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1application_1ae19485062d4a3f65b1850bd06a2a6887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::application::application</definition>
+        <argsstring>(const application_settings &amp;p_settings)</argsstring>
+        <name>application</name>
+        <qualifiedname>atlas::application::application</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1application__settings" kindref="compound">application_settings</ref> &amp;</type>
+          <declname>p_settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="17" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1application_1a547ccac1bbf9801cc498a2f05c36ceb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::application::~application</definition>
+        <argsstring>()</argsstring>
+        <name>~application</name>
+        <qualifiedname>atlas::application::~application</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="18" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1application_1aa9e6a3cba89106ce52725fcdcd754ea5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::application::execute</definition>
+        <argsstring>()</argsstring>
+        <name>execute</name>
+        <qualifiedname>atlas::application::execute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="25" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1application_1aa0007a909759aef8127380e8fbbc7ff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ref&lt; <ref refid="classatlas_1_1swapchain" kindref="compound">swapchain</ref> &gt;</type>
+        <definition>ref&lt; swapchain &gt; atlas::application::get_current_swapchain</definition>
+        <argsstring>()</argsstring>
+        <name>get_current_swapchain</name>
+        <qualifiedname>atlas::application::get_current_swapchain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="34" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classatlas_1_1application_1a5b18bc8ded3f8cf6548420e562fde2bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float atlas::application::delta_time</definition>
+        <argsstring>()</argsstring>
+        <name>delta_time</name>
+        <qualifiedname>atlas::application::delta_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="20" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1application_1a5e02c483903ad756cbc507a59cec9c53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>static float atlas::application::physics_step</definition>
+        <argsstring>()</argsstring>
+        <name>physics_step</name>
+        <qualifiedname>atlas::application::physics_step</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="22" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1application_1a9cac86d9169276457658681d91f86e85" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classatlas_1_1window" kindref="compound">window</ref> &amp;</type>
+        <definition>static window &amp; atlas::application::get_window</definition>
+        <argsstring>()</argsstring>
+        <name>get_window</name>
+        <qualifiedname>atlas::application::get_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="28" column="23" bodyfile="TheAtlasEngine/atlas/core/application.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1application_1a898a315b767ad0555c1860cb13eb5646" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>API</type>
+        <definition>static API atlas::application::current_api</definition>
+        <argsstring>()</argsstring>
+        <name>current_api</name>
+        <qualifiedname>atlas::application::current_api</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="31" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1application_1a4c620fe4dc268da6e25298cb028836df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void atlas::application::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>atlas::application::destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="37" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1application_1a4c0e9f2790cca7588b139e80243a9ca4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t atlas::application::get_aspect_ratio</definition>
+        <argsstring>()</argsstring>
+        <name>get_aspect_ratio</name>
+        <qualifiedname>atlas::application::get_aspect_ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="39" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1application_1ac51bbabf2832482b4c9a9117b2d729c9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::application::set_current_api</definition>
+        <argsstring>(API api)</argsstring>
+        <name>set_current_api</name>
+        <qualifiedname>atlas::application::set_current_api</qualifiedname>
+        <param>
+          <type>API</type>
+          <declname>api</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="42" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/application.hpp" line="15" column="5" bodyfile="TheAtlasEngine/atlas/core/application.hpp" bodystart="15" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1application_1ae19485062d4a3f65b1850bd06a2a6887" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>application</name></member>
+      <member refid="classatlas_1_1application_1a898a315b767ad0555c1860cb13eb5646" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>current_api</name></member>
+      <member refid="classatlas_1_1application_1a5b18bc8ded3f8cf6548420e562fde2bd" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>delta_time</name></member>
+      <member refid="classatlas_1_1application_1a4c620fe4dc268da6e25298cb028836df" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>destroy</name></member>
+      <member refid="classatlas_1_1application_1aa9e6a3cba89106ce52725fcdcd754ea5" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>execute</name></member>
+      <member refid="classatlas_1_1application_1a4c0e9f2790cca7588b139e80243a9ca4" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>get_aspect_ratio</name></member>
+      <member refid="classatlas_1_1application_1aa0007a909759aef8127380e8fbbc7ff2" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>get_current_swapchain</name></member>
+      <member refid="classatlas_1_1application_1a9cac86d9169276457658681d91f86e85" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>get_window</name></member>
+      <member refid="classatlas_1_1application_1acb86ab1c892f1c36e4a12c70b72abc9c" prot="private" virt="non-virtual"><scope>atlas::application</scope><name>m_window</name></member>
+      <member refid="classatlas_1_1application_1a5e02c483903ad756cbc507a59cec9c53" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>physics_step</name></member>
+      <member refid="classatlas_1_1application_1a4cc2ecd0e35de1d68981043c7d47816c" prot="private" virt="non-virtual"><scope>atlas::application</scope><name>s_instance</name></member>
+      <member refid="classatlas_1_1application_1ac51bbabf2832482b4c9a9117b2d729c9" prot="private" virt="non-virtual"><scope>atlas::application</scope><name>set_current_api</name></member>
+      <member refid="classatlas_1_1application_1a547ccac1bbf9801cc498a2f05c36ceb6" prot="public" virt="non-virtual"><scope>atlas::application</scope><name>~application</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1renderpass__properties" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::renderpass_properties</compoundname>
+    <includes refid="render__pass_8hpp" local="no">render_pass.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1renderpass__properties_1a1decb42c97ee718b073610481fbd0b89" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::renderpass_properties::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>atlas::renderpass_properties::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/render_pass.hpp" line="200" column="18" bodyfile="TheAtlasEngine/atlas/drivers/render_pass.hpp" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1renderpass__properties_1aba6183931032a542ee83fb374b81192c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::renderpass_properties::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>atlas::renderpass_properties::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/render_pass.hpp" line="201" column="18" bodyfile="TheAtlasEngine/atlas/drivers/render_pass.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1renderpass__properties_1a1667e1c66d4b92282e3b85c2c09817d5" prot="public" static="no" mutable="no">
+        <type>std::span&lt; ImageFormat &gt;</type>
+        <definition>std::span&lt;ImageFormat&gt; atlas::renderpass_properties::attachments</definition>
+        <argsstring></argsstring>
+        <name>attachments</name>
+        <qualifiedname>atlas::renderpass_properties::attachments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/render_pass.hpp" line="203" column="19" bodyfile="TheAtlasEngine/atlas/drivers/render_pass.hpp" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1renderpass__properties_1a1a9b82586f5fa3a86f06a43c84351fa7" prot="public" static="no" mutable="no">
+        <type>std::span&lt; ShaderAccessOperation &gt;</type>
+        <definition>std::span&lt;ShaderAccessOperation&gt; atlas::renderpass_properties::operations</definition>
+        <argsstring></argsstring>
+        <name>operations</name>
+        <qualifiedname>atlas::renderpass_properties::operations</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/render_pass.hpp" line="204" column="19" bodyfile="TheAtlasEngine/atlas/drivers/render_pass.hpp" bodystart="204" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>To specify our what attachments our render passes will take </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/render_pass.hpp" line="199" column="5" bodyfile="TheAtlasEngine/atlas/drivers/render_pass.hpp" bodystart="199" bodyend="205"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1renderpass__properties_1a1667e1c66d4b92282e3b85c2c09817d5" prot="public" virt="non-virtual"><scope>atlas::renderpass_properties</scope><name>attachments</name></member>
+      <member refid="structatlas_1_1renderpass__properties_1aba6183931032a542ee83fb374b81192c" prot="public" virt="non-virtual"><scope>atlas::renderpass_properties</scope><name>height</name></member>
+      <member refid="structatlas_1_1renderpass__properties_1a1a9b82586f5fa3a86f06a43c84351fa7" prot="public" virt="non-virtual"><scope>atlas::renderpass_properties</scope><name>operations</name></member>
+      <member refid="structatlas_1_1renderpass__properties_1a1decb42c97ee718b073610481fbd0b89" prot="public" virt="non-virtual"><scope>atlas::renderpass_properties</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

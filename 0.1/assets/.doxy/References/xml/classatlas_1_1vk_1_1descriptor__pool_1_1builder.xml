@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1descriptor__pool_1_1builder" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::descriptor_pool::builder</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a7dbaf683a1de8848bd200291cd0da1b5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkDescriptorPoolSize &gt;</type>
+        <definition>std::vector&lt;VkDescriptorPoolSize&gt; atlas::vk::descriptor_pool::builder::poolSizes</definition>
+        <argsstring></argsstring>
+        <name>poolSizes</name>
+        <qualifiedname>atlas::vk::descriptor_pool::builder::poolSizes</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="57" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1ae4672ea784c9061a7c61df4d4a283c60" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::descriptor_pool::builder::maxSets</definition>
+        <argsstring></argsstring>
+        <name>maxSets</name>
+        <qualifiedname>atlas::vk::descriptor_pool::builder::maxSets</qualifiedname>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="58" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1ab6e3793cc874aa6bf88cb7464af58962" prot="private" static="no" mutable="no">
+        <type>VkDescriptorPoolCreateFlags</type>
+        <definition>VkDescriptorPoolCreateFlags atlas::vk::descriptor_pool::builder::poolFlags</definition>
+        <argsstring></argsstring>
+        <name>poolFlags</name>
+        <qualifiedname>atlas::vk::descriptor_pool::builder::poolFlags</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="59" column="41" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a462517232c94f17053943730906d8bc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::descriptor_pool::builder::builder</definition>
+        <argsstring>()=default</argsstring>
+        <name>builder</name>
+        <qualifiedname>atlas::vk::descriptor_pool::builder::builder</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="48" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1aee6a37665f2fd5ee62f9926054653d51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder" kindref="compound">builder</ref> &amp;</type>
+        <definition>builder &amp; atlas::vk::descriptor_pool::builder::addPoolSize</definition>
+        <argsstring>(VkDescriptorType descriptorType, uint32_t count)</argsstring>
+        <name>addPoolSize</name>
+        <qualifiedname>atlas::vk::descriptor_pool::builder::addPoolSize</qualifiedname>
+        <param>
+          <type>VkDescriptorType</type>
+          <declname>descriptorType</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="50" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a9c467f29f735c4984df88ff9560cf83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder" kindref="compound">builder</ref> &amp;</type>
+        <definition>builder &amp; atlas::vk::descriptor_pool::builder::setPoolFlags</definition>
+        <argsstring>(VkDescriptorPoolCreateFlags flags)</argsstring>
+        <name>setPoolFlags</name>
+        <qualifiedname>atlas::vk::descriptor_pool::builder::setPoolFlags</qualifiedname>
+        <param>
+          <type>VkDescriptorPoolCreateFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="52" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a5631970fac1e5c0157f7a47290f9c12e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder" kindref="compound">builder</ref> &amp;</type>
+        <definition>builder &amp; atlas::vk::descriptor_pool::builder::setMaxSets</definition>
+        <argsstring>(uint32_t count)</argsstring>
+        <name>setMaxSets</name>
+        <qualifiedname>atlas::vk::descriptor_pool::builder::setMaxSets</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="53" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a1f03a1558fd13b553a32981bfeafb959" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unique_ptr&lt; <ref refid="classatlas_1_1vk_1_1descriptor__pool" kindref="compound">descriptor_pool</ref> &gt;</type>
+        <definition>std::unique_ptr&lt; descriptor_pool &gt; atlas::vk::descriptor_pool::builder::build</definition>
+        <argsstring>() const</argsstring>
+        <name>build</name>
+        <qualifiedname>atlas::vk::descriptor_pool::builder::build</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="54" column="29"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="46" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="46" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1aee6a37665f2fd5ee62f9926054653d51" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool::builder</scope><name>addPoolSize</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a1f03a1558fd13b553a32981bfeafb959" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool::builder</scope><name>build</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a462517232c94f17053943730906d8bc3" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool::builder</scope><name>builder</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1ae4672ea784c9061a7c61df4d4a283c60" prot="private" virt="non-virtual"><scope>atlas::vk::descriptor_pool::builder</scope><name>maxSets</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1ab6e3793cc874aa6bf88cb7464af58962" prot="private" virt="non-virtual"><scope>atlas::vk::descriptor_pool::builder</scope><name>poolFlags</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a7dbaf683a1de8848bd200291cd0da1b5" prot="private" virt="non-virtual"><scope>atlas::vk::descriptor_pool::builder</scope><name>poolSizes</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a5631970fac1e5c0157f7a47290f9c12e" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool::builder</scope><name>setMaxSets</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__pool_1_1builder_1a9c467f29f735c4984df88ff9560cf83a" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_pool::builder</scope><name>setPoolFlags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

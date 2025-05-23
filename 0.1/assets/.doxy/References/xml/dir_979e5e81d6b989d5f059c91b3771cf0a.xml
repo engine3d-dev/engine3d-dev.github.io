@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_979e5e81d6b989d5f059c91b3771cf0a" kind="dir">
+    <compoundname>TheAtlasEngine/atlas/physics/physics_3d/data</compoundname>
+    <innerfile refid="jolt__config_8hpp">jolt_config.hpp</innerfile>
+    <innerfile refid="jolt__settings_8hpp">jolt_settings.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/physics/physics_3d/data/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1timer" kind="class" language="C++" prot="public">
+    <compoundname>atlas::timer</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1timer_1aaac4be4221b951eb4fa7b769a31745ab" prot="private" static="no" mutable="no">
+        <type>std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;</type>
+        <definition>std::chrono::time_point&lt;std::chrono::high_resolution_clock&gt; atlas::timer::m_stop_watch</definition>
+        <argsstring></argsstring>
+        <name>m_stop_watch</name>
+        <qualifiedname>atlas::timer::m_stop_watch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/timer.hpp" line="21" column="11" bodyfile="TheAtlasEngine/atlas/core/update_handlers/timer.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1timer_1a7f961d61abc97976c6e25c89e299291a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::timer::timer</definition>
+        <argsstring>()</argsstring>
+        <name>timer</name>
+        <qualifiedname>atlas::timer::timer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/timer.hpp" line="8" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1timer_1a875759cdab5b5059ee449e3340818fb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::timer::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <qualifiedname>atlas::timer::reset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/timer.hpp" line="10" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1timer_1a7a846f7d35726294b0e94ed115299f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float atlas::timer::elapsed</definition>
+        <argsstring>()</argsstring>
+        <name>elapsed</name>
+        <qualifiedname>atlas::timer::elapsed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/timer.hpp" line="12" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1timer_1aff0db80cc5ede797f874cdb4cdf876f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float atlas::timer::seconds</definition>
+        <argsstring>()</argsstring>
+        <name>seconds</name>
+        <qualifiedname>atlas::timer::seconds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/timer.hpp" line="14" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1timer_1a192bab8fd0b70a01c91ee8e61027315b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt;</type>
+        <definition>std::chrono::time_point&lt; std::chrono::high_resolution_clock &gt; atlas::timer::current_time</definition>
+        <argsstring>()</argsstring>
+        <name>current_time</name>
+        <qualifiedname>atlas::timer::current_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/timer.hpp" line="17" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/update_handlers/timer.hpp" line="5" column="5" bodyfile="TheAtlasEngine/atlas/core/update_handlers/timer.hpp" bodystart="5" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1timer_1a192bab8fd0b70a01c91ee8e61027315b" prot="public" virt="non-virtual"><scope>atlas::timer</scope><name>current_time</name></member>
+      <member refid="classatlas_1_1timer_1a7a846f7d35726294b0e94ed115299f90" prot="public" virt="non-virtual"><scope>atlas::timer</scope><name>elapsed</name></member>
+      <member refid="classatlas_1_1timer_1aaac4be4221b951eb4fa7b769a31745ab" prot="private" virt="non-virtual"><scope>atlas::timer</scope><name>m_stop_watch</name></member>
+      <member refid="classatlas_1_1timer_1a875759cdab5b5059ee449e3340818fb4" prot="public" virt="non-virtual"><scope>atlas::timer</scope><name>reset</name></member>
+      <member refid="classatlas_1_1timer_1aff0db80cc5ede797f874cdb4cdf876f9" prot="public" virt="non-virtual"><scope>atlas::timer</scope><name>seconds</name></member>
+      <member refid="classatlas_1_1timer_1a7f961d61abc97976c6e25c89e299291a" prot="public" virt="non-virtual"><scope>atlas::timer</scope><name>timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

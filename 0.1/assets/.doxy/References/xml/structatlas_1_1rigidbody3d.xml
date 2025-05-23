@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1rigidbody3d" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::rigidbody3d</compoundname>
+    <includes refid="components_8hpp" local="no">components.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="structatlas_1_1rigidbody3d_1a0444a9875f76f9433c3a3b03e2ead553" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>BodyType</name>
+        <qualifiedname>atlas::rigidbody3d::BodyType</qualifiedname>
+        <enumvalue id="structatlas_1_1rigidbody3d_1a0444a9875f76f9433c3a3b03e2ead553afe6f99ef1ec99efbdc19a9786cf1facc" prot="public">
+          <name>STATIC</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structatlas_1_1rigidbody3d_1a0444a9875f76f9433c3a3b03e2ead553a0fcc90da4811c877ba9f9c12f7d60bc9" prot="public">
+          <name>DYNAMIC</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="structatlas_1_1rigidbody3d_1a0444a9875f76f9433c3a3b03e2ead553a019b36cb8fbb31ba1f7c7b7595eb964d" prot="public">
+          <name>KINEMATIC</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="30" column="9" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1rigidbody3d_1a43cdc3a8107a53f0476769945ebc1e1e" prot="public" static="no" mutable="no">
+        <type>BodyType</type>
+        <definition>BodyType atlas::rigidbody3d::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <qualifiedname>atlas::rigidbody3d::Type</qualifiedname>
+        <initializer>= BodyType::STATIC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="32" column="18" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1rigidbody3d_1a82ff952987be4bf9d3da8aae062b1754" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::rigidbody3d::HasFixation</definition>
+        <argsstring></argsstring>
+        <name>HasFixation</name>
+        <qualifiedname>atlas::rigidbody3d::HasFixation</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="33" column="14" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1rigidbody3d_1a0fce8158b7de39f82e7730a3a99f40e2" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* atlas::rigidbody3d::BodyAtRuntime</definition>
+        <argsstring></argsstring>
+        <name>BodyAtRuntime</name>
+        <qualifiedname>atlas::rigidbody3d::BodyAtRuntime</qualifiedname>
+        <initializer>=
+          nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="34" column="14" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structatlas_1_1rigidbody3d_1a170134d15494d29306bc82773162666d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::rigidbody3d::rigidbody3d</definition>
+        <argsstring>()=default</argsstring>
+        <name>rigidbody3d</name>
+        <qualifiedname>atlas::rigidbody3d::rigidbody3d</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="28" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Our interpretation of the RigidBody3D </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="27" column="5" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="27" bodyend="36"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1rigidbody3d_1a0fce8158b7de39f82e7730a3a99f40e2" prot="public" virt="non-virtual"><scope>atlas::rigidbody3d</scope><name>BodyAtRuntime</name></member>
+      <member refid="structatlas_1_1rigidbody3d_1a0444a9875f76f9433c3a3b03e2ead553" prot="public" virt="non-virtual"><scope>atlas::rigidbody3d</scope><name>BodyType</name></member>
+      <member refid="structatlas_1_1rigidbody3d_1a82ff952987be4bf9d3da8aae062b1754" prot="public" virt="non-virtual"><scope>atlas::rigidbody3d</scope><name>HasFixation</name></member>
+      <member refid="structatlas_1_1rigidbody3d_1a170134d15494d29306bc82773162666d" prot="public" virt="non-virtual"><scope>atlas::rigidbody3d</scope><name>rigidbody3d</name></member>
+      <member refid="structatlas_1_1rigidbody3d_1a43cdc3a8107a53f0476769945ebc1e1e" prot="public" virt="non-virtual"><scope>atlas::rigidbody3d</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

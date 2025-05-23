@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1event_1_1joystick__info" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::event::joystick_info</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1event_1_1joystick__info_1a61aef1b1e8a78d4f8afbdc798a24215a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int atlas::event::joystick_info::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <qualifiedname>atlas::event::joystick_info::ID</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="27" column="13" bodyfile="TheAtlasEngine/atlas/core/event/event.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1event_1_1joystick__info_1a1bc017fa11bf11cd0d56a3068c7bd129" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string atlas::event::joystick_info::JoystickName</definition>
+        <argsstring></argsstring>
+        <name>JoystickName</name>
+        <qualifiedname>atlas::event::joystick_info::JoystickName</qualifiedname>
+        <initializer>= &quot;Default&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="28" column="21" bodyfile="TheAtlasEngine/atlas/core/event/event.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1event_1_1joystick__info_1a4d9fb93f474504e599ca30e0dc19e1f0" prot="public" static="no" mutable="no">
+        <type>std::map&lt; int, <ref refid="structatlas_1_1event_1_1joystick__button" kindref="compound">joystick_button</ref> &gt;</type>
+        <definition>std::map&lt;int, joystick_button&gt; atlas::event::joystick_info::Buttons</definition>
+        <argsstring></argsstring>
+        <name>Buttons</name>
+        <qualifiedname>atlas::event::joystick_info::Buttons</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="29" column="18" bodyfile="TheAtlasEngine/atlas/core/event/event.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1event_1_1joystick__info_1acd2ff5f7e3274428958ebe5e6e6e7abe" prot="public" static="no" mutable="no">
+        <type>std::map&lt; int, bool &gt;</type>
+        <definition>std::map&lt;int, bool&gt; atlas::event::joystick_info::ButtonsDown</definition>
+        <argsstring></argsstring>
+        <name>ButtonsDown</name>
+        <qualifiedname>atlas::event::joystick_info::ButtonsDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="30" column="18" bodyfile="TheAtlasEngine/atlas/core/event/event.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1event_1_1joystick__info_1adc95ecbc3ceb1c86d8be5575389b7e0a" prot="public" static="no" mutable="no">
+        <type>std::map&lt; int, const float * &gt;</type>
+        <definition>std::map&lt;int, const float*&gt; atlas::event::joystick_info::AxesOfController</definition>
+        <argsstring></argsstring>
+        <name>AxesOfController</name>
+        <qualifiedname>atlas::event::joystick_info::AxesOfController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="31" column="18" bodyfile="TheAtlasEngine/atlas/core/event/event.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="26" column="5" bodyfile="TheAtlasEngine/atlas/core/event/event.hpp" bodystart="26" bodyend="32"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1event_1_1joystick__info_1adc95ecbc3ceb1c86d8be5575389b7e0a" prot="public" virt="non-virtual"><scope>atlas::event::joystick_info</scope><name>AxesOfController</name></member>
+      <member refid="structatlas_1_1event_1_1joystick__info_1a4d9fb93f474504e599ca30e0dc19e1f0" prot="public" virt="non-virtual"><scope>atlas::event::joystick_info</scope><name>Buttons</name></member>
+      <member refid="structatlas_1_1event_1_1joystick__info_1acd2ff5f7e3274428958ebe5e6e6e7abe" prot="public" virt="non-virtual"><scope>atlas::event::joystick_info</scope><name>ButtonsDown</name></member>
+      <member refid="structatlas_1_1event_1_1joystick__info_1a61aef1b1e8a78d4f8afbdc798a24215a" prot="public" virt="non-virtual"><scope>atlas::event::joystick_info</scope><name>ID</name></member>
+      <member refid="structatlas_1_1event_1_1joystick__info_1a1bc017fa11bf11cd0d56a3068c7bd129" prot="public" virt="non-virtual"><scope>atlas::event::joystick_info</scope><name>JoystickName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

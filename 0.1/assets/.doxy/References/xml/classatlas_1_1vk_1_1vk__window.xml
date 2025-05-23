@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__window" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_window</compoundname>
+    <basecompoundref refid="classatlas_1_1window" prot="public" virt="non-virtual">atlas::window</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__window_1a2f3a598a49f029de1fc57c76616cb780" prot="private" static="no" mutable="no">
+        <type>GLFWwindow *</type>
+        <definition>GLFWwindow* atlas::vk::vk_window::m_window</definition>
+        <argsstring></argsstring>
+        <name>m_window</name>
+        <qualifiedname>atlas::vk::vk_window::m_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="27" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__window_1aec0536e0d8c5cbf9dab1c523d86da57a" prot="private" static="no" mutable="no">
+        <type>ref&lt; <ref refid="classatlas_1_1swapchain" kindref="compound">swapchain</ref> &gt;</type>
+        <definition>ref&lt;swapchain&gt; atlas::vk::vk_window::m_swapchain</definition>
+        <argsstring></argsstring>
+        <name>m_swapchain</name>
+        <qualifiedname>atlas::vk::vk_window::m_swapchain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="28" column="13" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__window_1ad8ea413858f90dd310f3b2ce81ef19f2" prot="private" static="no" mutable="no">
+        <type>VkSurfaceKHR</type>
+        <definition>VkSurfaceKHR atlas::vk::vk_window::m_surface</definition>
+        <argsstring></argsstring>
+        <name>m_surface</name>
+        <qualifiedname>atlas::vk::vk_window::m_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="29" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__window_1aa87afefd2bec3afa125d6d692d1e0478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_window::vk_window</definition>
+        <argsstring>(uint32_t p_width, uint32_t p_height, const std::string &amp;p_tag)</argsstring>
+        <name>vk_window</name>
+        <qualifiedname>atlas::vk::vk_window::vk_window</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_width</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_height</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="10" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__window_1a8d6a3765676c138e119d9a2ffeeaf193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_window::~vk_window</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~vk_window</name>
+        <qualifiedname>atlas::vk::vk_window::~vk_window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="13" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__window_1a982c5a82299a0f73c6dfc556181bb484" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_window::read_width</definition>
+        <argsstring>() const override</argsstring>
+        <name>read_width</name>
+        <qualifiedname>atlas::vk::vk_window::read_width</qualifiedname>
+        <reimplements refid="classatlas_1_1window_1ab30fe7ffdeb0fc25106e3406887efae3">read_width</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="16" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__window_1a0721e934ca379320b91df92d55e9b819" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_window::read_height</definition>
+        <argsstring>() const override</argsstring>
+        <name>read_height</name>
+        <qualifiedname>atlas::vk::vk_window::read_height</qualifiedname>
+        <reimplements refid="classatlas_1_1window_1ad1fa30193ad81bde108b9e7451ddf313">read_height</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="17" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__window_1a6bd5139067ed3b32352d5957a981e846" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>ref&lt; <ref refid="classatlas_1_1swapchain" kindref="compound">swapchain</ref> &gt;</type>
+        <definition>ref&lt; swapchain &gt; atlas::vk::vk_window::current_swapchain</definition>
+        <argsstring>() override</argsstring>
+        <name>current_swapchain</name>
+        <qualifiedname>atlas::vk::vk_window::current_swapchain</qualifiedname>
+        <reimplements refid="classatlas_1_1window_1a6db4bac5d5b4d4bab9098a360b2b29ed">current_swapchain</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="23" column="13" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__window_1aa3a70a0104b1a9007650f0bd234c69ef" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>GLFWwindow *</type>
+        <definition>GLFWwindow * atlas::vk::vk_window::native_window</definition>
+        <argsstring>() const override</argsstring>
+        <name>native_window</name>
+        <qualifiedname>atlas::vk::vk_window::native_window</qualifiedname>
+        <reimplements refid="classatlas_1_1window_1aa64d122922381e25991c05745fb4a8e5">native_window</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="24" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__window_1ac7956d44b0191fca5938bb6cec6c54f1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void atlas::vk::vk_window::on_resize</definition>
+        <argsstring>()</argsstring>
+        <name>on_resize</name>
+        <qualifiedname>atlas::vk::vk_window::on_resize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="20" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>atlas::vk::vk_window</label>
+        <link refid="classatlas_1_1vk_1_1vk__window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>atlas::window</label>
+        <link refid="classatlas_1_1window"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>atlas::vk::vk_window</label>
+        <link refid="classatlas_1_1vk_1_1vk__window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>atlas::window</label>
+        <link refid="classatlas_1_1window"/>
+      </node>
+    </collaborationgraph>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" line="8" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_window.hpp" bodystart="8" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1window_1a6f1731125250387e86fa3e3f2024ae63" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>close</name></member>
+      <member refid="classatlas_1_1window_1adcb8a166ba94666e427d114ca384d48a" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>create</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1a6bd5139067ed3b32352d5957a981e846" prot="private" virt="virtual"><scope>atlas::vk::vk_window</scope><name>current_swapchain</name></member>
+      <member refid="classatlas_1_1window_1aff0618412330eeb431443ce1d013e72e" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>get_aspect_ratio</name></member>
+      <member refid="classatlas_1_1window_1af74dc71a5678c9c5fc24dd7615f49a7f" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>get_current_swapchain</name></member>
+      <member refid="classatlas_1_1window_1aa308993af953a63055b51bf8a456062c" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>get_height</name></member>
+      <member refid="classatlas_1_1window_1a05891e288ad039260d7cd9625e121f0c" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>get_native_window</name></member>
+      <member refid="classatlas_1_1window_1ac477921e8dbaa1c744fb1a78dbf7ffbb" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>get_width</name></member>
+      <member refid="classatlas_1_1window_1a90248adc5d9ae11b7346fad7f4747295" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>is_active</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1ad8ea413858f90dd310f3b2ce81ef19f2" prot="private" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>m_surface</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1aec0536e0d8c5cbf9dab1c523d86da57a" prot="private" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>m_swapchain</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1a2f3a598a49f029de1fc57c76616cb780" prot="private" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>m_window</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1aa3a70a0104b1a9007650f0bd234c69ef" prot="private" virt="virtual"><scope>atlas::vk::vk_window</scope><name>native_window</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1ac7956d44b0191fca5938bb6cec6c54f1" prot="private" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>on_resize</name></member>
+      <member refid="classatlas_1_1window_1a4db6899b97fcdd97ac2ffc24e660d580" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>operator GLFWwindow *</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1a0721e934ca379320b91df92d55e9b819" prot="private" virt="virtual"><scope>atlas::vk::vk_window</scope><name>read_height</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1a982c5a82299a0f73c6dfc556181bb484" prot="private" virt="virtual"><scope>atlas::vk::vk_window</scope><name>read_width</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1aa87afefd2bec3afa125d6d692d1e0478" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>vk_window</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__window_1a8d6a3765676c138e119d9a2ffeeaf193" prot="public" virt="non-virtual"><scope>atlas::vk::vk_window</scope><name>~vk_window</name></member>
+      <member refid="classatlas_1_1window_1ad412944c4adb12800958704c95bec5ea" prot="public" virt="virtual"><scope>atlas::vk::vk_window</scope><name>~window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

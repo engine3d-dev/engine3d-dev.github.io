@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="physics__3d_2jolt_2jolt__api_8hpp" kind="file" language="C++">
+    <compoundname>jolt_api.hpp</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+    </programlisting>
+    <location file="TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_api.hpp"/>
+  </compounddef>
+</doxygen>

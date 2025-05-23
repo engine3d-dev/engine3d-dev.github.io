@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vertex" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vertex</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vertex_1a9fa536ff688f53d9405a734318af49f0" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::vertex::Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <qualifiedname>atlas::vertex::Position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" line="13" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vertex_1a4f702bf9b35ee365bf72f0135dda4380" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::vertex::Color</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <qualifiedname>atlas::vertex::Color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" line="14" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vertex_1ab0101d217beb1a3ba594bbb4ac3e408b" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::vertex::Normals</definition>
+        <argsstring></argsstring>
+        <name>Normals</name>
+        <qualifiedname>atlas::vertex::Normals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" line="15" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vertex_1a006d7cad9b964a0d28c7e22a953f2aef" prot="public" static="no" mutable="no">
+        <type>glm::vec2</type>
+        <definition>glm::vec2 atlas::vertex::TexCoords</definition>
+        <argsstring></argsstring>
+        <name>TexCoords</name>
+        <qualifiedname>atlas::vertex::TexCoords</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" line="16" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structatlas_1_1vertex_1aeb4d2f600b400f1059b6d5199a5f2688" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::vertex::operator==</definition>
+        <argsstring>(const vertex &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>atlas::vertex::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1vertex" kindref="compound">vertex</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" line="18" column="14" bodyfile="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" line="12" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vertex_buffer.hpp" bodystart="12" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vertex_1a4f702bf9b35ee365bf72f0135dda4380" prot="public" virt="non-virtual"><scope>atlas::vertex</scope><name>Color</name></member>
+      <member refid="structatlas_1_1vertex_1ab0101d217beb1a3ba594bbb4ac3e408b" prot="public" virt="non-virtual"><scope>atlas::vertex</scope><name>Normals</name></member>
+      <member refid="structatlas_1_1vertex_1aeb4d2f600b400f1059b6d5199a5f2688" prot="public" virt="non-virtual"><scope>atlas::vertex</scope><name>operator==</name></member>
+      <member refid="structatlas_1_1vertex_1a9fa536ff688f53d9405a734318af49f0" prot="public" virt="non-virtual"><scope>atlas::vertex</scope><name>Position</name></member>
+      <member refid="structatlas_1_1vertex_1a006d7cad9b964a0d28c7e22a953f2aef" prot="public" virt="non-virtual"><scope>atlas::vertex</scope><name>TexCoords</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

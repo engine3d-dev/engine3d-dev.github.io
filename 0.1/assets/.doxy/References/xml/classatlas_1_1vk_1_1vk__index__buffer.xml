@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__index__buffer" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_index_buffer</compoundname>
+    <basecompoundref refid="classatlas_1_1index__buffer" prot="public" virt="non-virtual">atlas::index_buffer</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__index__buffer_1ab9210233670a4dca2f77af1b00b2b48d" prot="private" static="no" mutable="no">
+        <type>VkBuffer</type>
+        <definition>VkBuffer atlas::vk::vk_index_buffer::m_index_buffer_handler</definition>
+        <argsstring></argsstring>
+        <name>m_index_buffer_handler</name>
+        <qualifiedname>atlas::vk::vk_index_buffer::m_index_buffer_handler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="18" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__index__buffer_1a55cea4c161880c65297318f7857be7f2" prot="private" static="no" mutable="no">
+        <type>VkDeviceMemory</type>
+        <definition>VkDeviceMemory atlas::vk::vk_index_buffer::m_index_device_buffer_memory</definition>
+        <argsstring></argsstring>
+        <name>m_index_device_buffer_memory</name>
+        <qualifiedname>atlas::vk::vk_index_buffer::m_index_device_buffer_memory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="19" column="24" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__index__buffer_1ad05becae49ccd8c2219424011fbeb5a0" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_index_buffer::m_indices_count</definition>
+        <argsstring></argsstring>
+        <name>m_indices_count</name>
+        <qualifiedname>atlas::vk::vk_index_buffer::m_indices_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="20" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__index__buffer_1aea4d483fd0261bb2509295b372937ca7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::vk::vk_index_buffer::m_has_indices</definition>
+        <argsstring></argsstring>
+        <name>m_has_indices</name>
+        <qualifiedname>atlas::vk::vk_index_buffer::m_has_indices</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="21" column="14" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__index__buffer_1ad139223df723ff7673ee855a3c22f8cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_index_buffer::vk_index_buffer</definition>
+        <argsstring>(const std::vector&lt; uint32_t &gt; &amp;p_indices)</argsstring>
+        <name>vk_index_buffer</name>
+        <qualifiedname>atlas::vk::vk_index_buffer::vk_index_buffer</qualifiedname>
+        <param>
+          <type>const std::vector&lt; uint32_t &gt; &amp;</type>
+          <declname>p_indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="7" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__index__buffer_1ae2770368b1de104e0be9739b7fa9e4e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_index_buffer::~vk_index_buffer</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~vk_index_buffer</name>
+        <qualifiedname>atlas::vk::vk_index_buffer::~vk_index_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="8" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__index__buffer_1adad8290a0038d5a52986bf160cfd716b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_index_buffer::bind_to_index_buffer</definition>
+        <argsstring>(const VkCommandBuffer &amp;p_command_buffer) override</argsstring>
+        <name>bind_to_index_buffer</name>
+        <qualifiedname>atlas::vk::vk_index_buffer::bind_to_index_buffer</qualifiedname>
+        <reimplements refid="classatlas_1_1index__buffer_1a737a11aa0a0059140921d7af64e08367">bind_to_index_buffer</reimplements>
+        <param>
+          <type>const VkCommandBuffer &amp;</type>
+          <declname>p_command_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="11" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__index__buffer_1ae850e6073262fc5bce198a0fa38ce61e" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_index_buffer::render_index_buffer</definition>
+        <argsstring>(const VkCommandBuffer &amp;p_command_buffer) override</argsstring>
+        <name>render_index_buffer</name>
+        <qualifiedname>atlas::vk::vk_index_buffer::render_index_buffer</qualifiedname>
+        <reimplements refid="classatlas_1_1index__buffer_1af5b5b8c2a0a8344f2ff7f88b12ab3075">render_index_buffer</reimplements>
+        <param>
+          <type>const VkCommandBuffer &amp;</type>
+          <declname>p_command_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="13" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__index__buffer_1a12d3ed222961b536b85443e10750279f" prot="private" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool atlas::vk::vk_index_buffer::contains_indices</definition>
+        <argsstring>() const override</argsstring>
+        <name>contains_indices</name>
+        <qualifiedname>atlas::vk::vk_index_buffer::contains_indices</qualifiedname>
+        <reimplements refid="classatlas_1_1index__buffer_1acaf02ce4e8de26ba517f3443fc63abe8">contains_indices</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="15" column="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>atlas::index_buffer</label>
+        <link refid="classatlas_1_1index__buffer"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_index_buffer</label>
+        <link refid="classatlas_1_1vk_1_1vk__index__buffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>atlas::index_buffer</label>
+        <link refid="classatlas_1_1index__buffer"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_index_buffer</label>
+        <link refid="classatlas_1_1vk_1_1vk__index__buffer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" line="5" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_index_buffer.hpp" bodystart="5" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1index__buffer_1a0c1580089306f08ca5f3da8593ab4d23" prot="public" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>bind</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__index__buffer_1adad8290a0038d5a52986bf160cfd716b" prot="private" virt="virtual"><scope>atlas::vk::vk_index_buffer</scope><name>bind_to_index_buffer</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__index__buffer_1a12d3ed222961b536b85443e10750279f" prot="private" virt="virtual"><scope>atlas::vk::vk_index_buffer</scope><name>contains_indices</name></member>
+      <member refid="classatlas_1_1index__buffer_1a437dbc0ab1e26930bbe8301d4a294ca1" prot="public" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>create</name></member>
+      <member refid="classatlas_1_1index__buffer_1a5f27fe289d43afa271aee5552859f485" prot="public" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>draw</name></member>
+      <member refid="classatlas_1_1index__buffer_1aecf57ce5f6f538e697581a05ebb88538" prot="public" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>has_indices</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__index__buffer_1aea4d483fd0261bb2509295b372937ca7" prot="private" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>m_has_indices</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__index__buffer_1ab9210233670a4dca2f77af1b00b2b48d" prot="private" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>m_index_buffer_handler</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__index__buffer_1a55cea4c161880c65297318f7857be7f2" prot="private" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>m_index_device_buffer_memory</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__index__buffer_1ad05becae49ccd8c2219424011fbeb5a0" prot="private" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>m_indices_count</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__index__buffer_1ae850e6073262fc5bce198a0fa38ce61e" prot="private" virt="virtual"><scope>atlas::vk::vk_index_buffer</scope><name>render_index_buffer</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__index__buffer_1ad139223df723ff7673ee855a3c22f8cb" prot="public" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>vk_index_buffer</name></member>
+      <member refid="classatlas_1_1index__buffer_1a28bb469f700261905ef02aa8d102efc7" prot="public" virt="virtual"><scope>atlas::vk::vk_index_buffer</scope><name>~index_buffer</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__index__buffer_1ae2770368b1de104e0be9739b7fa9e4e0" prot="public" virt="non-virtual"><scope>atlas::vk::vk_index_buffer</scope><name>~vk_index_buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

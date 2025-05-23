@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__physical__driver" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_physical_driver</compoundname>
+    <innerclass refid="structatlas_1_1vk_1_1vk__physical__driver_1_1queue__family__indices" prot="public">atlas::vk::vk_physical_driver::queue_family_indices</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__physical__driver_1ab09b327c48bab1b0b3b1b594a8a82dfa" prot="private" static="no" mutable="no">
+        <type>VkPhysicalDevice</type>
+        <definition>VkPhysicalDevice atlas::vk::vk_physical_driver::m_physical</definition>
+        <argsstring></argsstring>
+        <name>m_physical</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::m_physical</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="46" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__physical__driver_1a36fce9ae3a250c659f76240ccbc18b69" prot="private" static="no" mutable="no">
+        <type>VkPhysicalDeviceProperties</type>
+        <definition>VkPhysicalDeviceProperties atlas::vk::vk_physical_driver::m_physical_properties</definition>
+        <argsstring></argsstring>
+        <name>m_physical_properties</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::m_physical_properties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="47" column="36" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__physical__driver_1a38db7ef3719093e2fd75dd13c944b67d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkQueueFamilyProperties &gt;</type>
+        <definition>std::vector&lt;VkQueueFamilyProperties&gt; atlas::vk::vk_physical_driver::m_queue_family_properties</definition>
+        <argsstring></argsstring>
+        <name>m_queue_family_properties</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::m_queue_family_properties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="48" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__physical__driver_1acd1b7dd73f5a8bd7290841d28532fe01" prot="private" static="no" mutable="no">
+        <type><ref refid="structatlas_1_1vk_1_1vk__physical__driver_1_1queue__family__indices" kindref="compound">queue_family_indices</ref></type>
+        <definition>queue_family_indices atlas::vk::vk_physical_driver::m_queue_family_indices</definition>
+        <argsstring></argsstring>
+        <name>m_queue_family_indices</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::m_queue_family_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="52" column="30" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__physical__driver_1a11a62345c30063c3efa007f9276d593d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_physical_driver::vk_physical_driver</definition>
+        <argsstring>()=default</argsstring>
+        <name>vk_physical_driver</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::vk_physical_driver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="22" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__physical__driver_1a4545981cded5fb016b141e668dc2a5f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_physical_driver::vk_physical_driver</definition>
+        <argsstring>(const VkInstance &amp;p_instance)</argsstring>
+        <name>vk_physical_driver</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::vk_physical_driver</qualifiedname>
+        <param>
+          <type>const VkInstance &amp;</type>
+          <declname>p_instance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="23" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__physical__driver_1adce1008aec7aff3af5dce7943361c757" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_physical_driver::get_presentation_index</definition>
+        <argsstring>(VkSurfaceKHR p_surface) const</argsstring>
+        <name>get_presentation_index</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::get_presentation_index</qualifiedname>
+        <param>
+          <type>VkSurfaceKHR</type>
+          <declname>p_surface</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="25" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__physical__driver_1a90337c543774c888b62002f477788693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_physical_driver::search_memory_type</definition>
+        <argsstring>(uint32_t p_type_filter, VkMemoryPropertyFlags p_properties)</argsstring>
+        <name>search_memory_type</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::search_memory_type</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_type_filter</declname>
+        </param>
+        <param>
+          <type>VkMemoryPropertyFlags</type>
+          <declname>p_properties</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="27" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__physical__driver_1a615251ca1a68e4e26c4a718d9253951e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structatlas_1_1vk_1_1vk__physical__driver_1_1queue__family__indices" kindref="compound">queue_family_indices</ref></type>
+        <definition>queue_family_indices atlas::vk::vk_physical_driver::get_queue_indices</definition>
+        <argsstring>() const</argsstring>
+        <name>get_queue_indices</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::get_queue_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="30" column="30" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__physical__driver_1a27b7b73c69952ddf50d7c485c9d47746" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPhysicalDeviceProperties</type>
+        <definition>VkPhysicalDeviceProperties atlas::vk::vk_physical_driver::get_properties</definition>
+        <argsstring>() const</argsstring>
+        <name>get_properties</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::get_properties</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="34" column="36" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__physical__driver_1a44de896b9222492d8e8b4eb9f69273b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_physical_driver::operator VkPhysicalDevice</definition>
+        <argsstring>()</argsstring>
+        <name>operator VkPhysicalDevice</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::operator VkPhysicalDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="38" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__physical__driver_1a4ae2ff354770c8b3fa7db4d653c4d895" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_physical_driver::operator VkPhysicalDevice</definition>
+        <argsstring>() const</argsstring>
+        <name>operator VkPhysicalDevice</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::operator VkPhysicalDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="40" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__physical__driver_1ac431902fca2b80c73bfae97fbced271f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structatlas_1_1vk_1_1vk__physical__driver_1_1queue__family__indices" kindref="compound">queue_family_indices</ref></type>
+        <definition>queue_family_indices atlas::vk::vk_physical_driver::select_queue_family_indices</definition>
+        <argsstring>()</argsstring>
+        <name>select_queue_family_indices</name>
+        <qualifiedname>atlas::vk::vk_physical_driver::select_queue_family_indices</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="43" column="30"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" line="14" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_physical_driver.hpp" bodystart="14" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1adce1008aec7aff3af5dce7943361c757" prot="public" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>get_presentation_index</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1a27b7b73c69952ddf50d7c485c9d47746" prot="public" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>get_properties</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1a615251ca1a68e4e26c4a718d9253951e" prot="public" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>get_queue_indices</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1ab09b327c48bab1b0b3b1b594a8a82dfa" prot="private" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>m_physical</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1a36fce9ae3a250c659f76240ccbc18b69" prot="private" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>m_physical_properties</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1acd1b7dd73f5a8bd7290841d28532fe01" prot="private" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>m_queue_family_indices</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1a38db7ef3719093e2fd75dd13c944b67d" prot="private" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>m_queue_family_properties</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1a44de896b9222492d8e8b4eb9f69273b4" prot="public" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>operator VkPhysicalDevice</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1a4ae2ff354770c8b3fa7db4d653c4d895" prot="public" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>operator VkPhysicalDevice</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1a90337c543774c888b62002f477788693" prot="public" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>search_memory_type</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1ac431902fca2b80c73bfae97fbced271f" prot="private" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>select_queue_family_indices</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1a11a62345c30063c3efa007f9276d593d" prot="public" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>vk_physical_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__physical__driver_1a4545981cded5fb016b141e668dc2a5f2" prot="public" virt="non-virtual"><scope>atlas::vk::vk_physical_driver</scope><name>vk_physical_driver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

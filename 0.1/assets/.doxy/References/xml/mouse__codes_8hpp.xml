@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="mouse__codes_8hpp" kind="file" language="C++">
+    <compoundname>mouse_codes.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <includedby refid="event_8hpp" local="no">TheAtlasEngine/atlas/core/event/event.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>TheAtlasEngine/atlas/core/event/mouse_codes.hpp</label>
+        <link refid="mouse__codes_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>TheAtlasEngine/atlas/core/event/event.hpp</label>
+        <link refid="event_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>TheAtlasEngine/atlas/core/event/mouse_codes.hpp</label>
+        <link refid="mouse__codes_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceatlas">atlas</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1event">atlas::event</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="mouse__codes_8hpp_1a6f1fae6b9d766d0ec02a196747fac65f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_0</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_0</name>
+        <initializer>= ::atlas::event::Mouse::Button0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="24" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1a8045299a4baebf4a03e078b23b1075e8" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_1</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_1</name>
+        <initializer>= ::atlas::event::Mouse::Button1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="25" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1ac49e8d3afb716412282bb2884a3e3d7e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_2</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_2</name>
+        <initializer>= ::atlas::event::Mouse::Button2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="26" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1a133d434cb3f70a67ff1953ae1c6d3298" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_3</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_3</name>
+        <initializer>= ::atlas::event::Mouse::Button3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="27" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1a40e375f61e5f6b9f2916ee8e1ae4e3ea" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_4</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_4</name>
+        <initializer>= ::atlas::event::Mouse::Button4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="28" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1a5ccfb25e3fd7ab20d106543525b717f8" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_5</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_5</name>
+        <initializer>= ::atlas::event::Mouse::Button5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="29" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1a526c8fd804496a7b4cd1695208cae8d5" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_6</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_6</name>
+        <initializer>= ::atlas::event::Mouse::Button6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="30" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1a59480fd890a2dc1d5bd3117be977d3d1" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_7</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_7</name>
+        <initializer>= ::atlas::event::Mouse::Button7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="31" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1a8732da6864207af027cea335db69a0f1" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_last</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_last</name>
+        <initializer>= ::atlas::event::Mouse::ButtonLast</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="32" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1ae48865b62371852b65ff841aba5b41cd" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_left</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_left</name>
+        <initializer>= ::atlas::event::Mouse::ButtonLeft</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="33" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1a33e0e2cce15f4ed2799009ac139059f8" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_right</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_right</name>
+        <initializer>=
+  ::atlas::event::Mouse::ButtonRight</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="34" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="mouse__codes_8hpp_1abd0e58b2d85ace29e6a7a368d02ea282" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t mouse_button_middle</definition>
+        <argsstring></argsstring>
+        <name>mouse_button_middle</name>
+        <initializer>=
+  ::atlas::event::Mouse::ButtonMiddle</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="36" column="27" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">atlas::event<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Mouse<sp/>:<sp/>uint32_t<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>glfw3.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button0<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button1<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button2<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button3<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button4<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button5<sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button6<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Button7<sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ButtonLast<sp/>=<sp/>Button7,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ButtonLeft<sp/>=<sp/>Button0,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ButtonRight<sp/>=<sp/>Button1,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ButtonMiddle<sp/>=<sp/>Button2</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>atlas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_0<sp/>=<sp/>::atlas::event::Mouse::Button0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_1<sp/>=<sp/>::atlas::event::Mouse::Button1;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_2<sp/>=<sp/>::atlas::event::Mouse::Button2;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_3<sp/>=<sp/>::atlas::event::Mouse::Button3;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_4<sp/>=<sp/>::atlas::event::Mouse::Button4;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_5<sp/>=<sp/>::atlas::event::Mouse::Button5;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_6<sp/>=<sp/>::atlas::event::Mouse::Button6;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_7<sp/>=<sp/>::atlas::event::Mouse::Button7;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_last<sp/>=<sp/>::atlas::event::Mouse::ButtonLast;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_left<sp/>=<sp/>::atlas::event::Mouse::ButtonLeft;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_right<sp/>=</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>::atlas::event::Mouse::ButtonRight;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>uint32_t<sp/>mouse_button_middle<sp/>=</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>::atlas::event::Mouse::ButtonMiddle;</highlight></codeline>
+    </programlisting>
+    <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp"/>
+  </compounddef>
+</doxygen>

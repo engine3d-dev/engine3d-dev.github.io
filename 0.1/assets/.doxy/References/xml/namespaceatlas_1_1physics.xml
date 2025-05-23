@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceatlas_1_1physics" kind="namespace" language="C++">
+    <compoundname>atlas::physics</compoundname>
+    <innerclass refid="structatlas_1_1physics_1_1jolt__config" prot="public">atlas::physics::jolt_config</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1jolt__settings" prot="public">atlas::physics::jolt_settings</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1JoltPhysicBody" prot="public">atlas::physics::JoltPhysicBody</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1physics__engine" prot="public">atlas::physics::physics_engine</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="physics_2jolt-cpp_2helper__functions_8hpp_1a53c155c5550fc0171039c7669c6c12d3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>JPH::RVec3</type>
+        <definition>JPH::RVec3 atlas::physics::to_rvec3</definition>
+        <argsstring>(const glm::vec3 &amp;p_Value)</argsstring>
+        <name>to_rvec3</name>
+        <qualifiedname>atlas::physics::to_rvec3</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>So after dealing with this, we may need to figure out how we may want to handle these </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" line="38" column="16" declfile="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" declline="38" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="physics_2jolt-cpp_2helper__functions_8hpp_1ae5c29848e61c4ad41ce7fa81b11706fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>JPH::Vec3</type>
+        <definition>JPH::Vec3 atlas::physics::to_vec3</definition>
+        <argsstring>(const glm::vec3 &amp;p_Value)</argsstring>
+        <name>to_vec3</name>
+        <qualifiedname>atlas::physics::to_vec3</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" line="40" column="15" declfile="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" declline="40" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="physics_2jolt-cpp_2helper__functions_8hpp_1a87aa01d72b9183ec360234f0b756ce32" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::physics::to_vec3</definition>
+        <argsstring>(const JPH::Vec3 &amp;p_Value)</argsstring>
+        <name>to_vec3</name>
+        <qualifiedname>atlas::physics::to_vec3</qualifiedname>
+        <param>
+          <type>const JPH::Vec3 &amp;</type>
+          <declname>p_Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" line="43" column="15" declfile="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" declline="43" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="physics_2jolt-cpp_2helper__functions_8hpp_1ac3340b5908c1f8bf152a7dd77bf2e3d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::quat</type>
+        <definition>glm::quat atlas::physics::to_quat</definition>
+        <argsstring>(const JPH::Quat &amp;p_Value)</argsstring>
+        <name>to_quat</name>
+        <qualifiedname>atlas::physics::to_quat</qualifiedname>
+        <param>
+          <type>const JPH::Quat &amp;</type>
+          <declname>p_Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" line="46" column="15" declfile="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" declline="46" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="physics_2jolt-cpp_2helper__functions_8hpp_1a22c736b3492830efe039675fb98d20e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>JPH::Quat</type>
+        <definition>JPH::Quat atlas::physics::to_quat</definition>
+        <argsstring>(glm::quat &amp;p_Value)</argsstring>
+        <name>to_quat</name>
+        <qualifiedname>atlas::physics::to_quat</qualifiedname>
+        <param>
+          <type>glm::quat &amp;</type>
+          <declname>p_Value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" line="48" column="15" declfile="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" declline="48" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="jolt__physics__engine_8hpp_1afb7332d003299cc1b29a987166e9a0b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::create_engine</definition>
+        <argsstring>(const jolt_settings &amp;settings)</argsstring>
+        <name>create_engine</name>
+        <qualifiedname>atlas::physics::create_engine</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1jolt__settings" kindref="compound">jolt_settings</ref> &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Initializes physics global data for a particular scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>physics_object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An entity to allow the user to control the data from the hierarchy. (within the editor) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_physics_engine.hpp" line="13" column="10" declfile="TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_physics_engine.hpp" declline="13" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="physics__api_8hpp_1ae47bcfd2488b43387eb5d6a95f90f9ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::create</definition>
+        <argsstring>(ref&lt; atlas::scene_object &gt; physics_object)</argsstring>
+        <name>create</name>
+        <qualifiedname>atlas::physics::create</qualifiedname>
+        <param>
+          <type>ref&lt; <ref refid="classatlas_1_1scene__object" kindref="compound">atlas::scene_object</ref> &gt;</type>
+          <declname>physics_object</declname>
+        </param>
+        <briefdescription>
+<para>Initializes physics global data for a particular scene. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>physics_object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An entity to allow the user to control the data from the hierarchy. (within the editor) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="12" column="10" declfile="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" declline="12" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/physics/jolt-cpp/helper_functions.hpp" line="31" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1light" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::light</compoundname>
+    <includes refid="components_8hpp" local="no">components.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1light_1ac4e2864005c430489a1d905195a25f79" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::light::Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <qualifiedname>atlas::light::Position</qualifiedname>
+        <initializer>{ 1.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="62" column="19" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>TODO: Make this better (when we do lighting) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="61" column="5" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="61" bodyend="63"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1light_1ac4e2864005c430489a1d905195a25f79" prot="public" virt="non-virtual"><scope>atlas::light</scope><name>Position</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

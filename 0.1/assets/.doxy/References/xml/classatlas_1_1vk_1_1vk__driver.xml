@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__driver" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_driver</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__driver_1a8aabdd33851828c1c66a9b82f10434b4" prot="private" static="no" mutable="no">
+        <type>VkDevice</type>
+        <definition>VkDevice atlas::vk::vk_driver::m_driver</definition>
+        <argsstring></argsstring>
+        <name>m_driver</name>
+        <qualifiedname>atlas::vk::vk_driver::m_driver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" line="20" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__driver_1a0c922778215808ed721d9d4a855e3494" prot="private" static="no" mutable="no">
+        <type>VkQueue</type>
+        <definition>VkQueue atlas::vk::vk_driver::m_graphics_queue</definition>
+        <argsstring></argsstring>
+        <name>m_graphics_queue</name>
+        <qualifiedname>atlas::vk::vk_driver::m_graphics_queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" line="21" column="17" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__driver_1a69852f998c60053fb42412ae9f8b7d9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_driver::vk_driver</definition>
+        <argsstring>()=default</argsstring>
+        <name>vk_driver</name>
+        <qualifiedname>atlas::vk::vk_driver::vk_driver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" line="8" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__driver_1ae76776a76ac7fccd8a52ecf73ec3d207" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_driver::vk_driver</definition>
+        <argsstring>(const vk_physical_driver &amp;p_physical)</argsstring>
+        <name>vk_driver</name>
+        <qualifiedname>atlas::vk::vk_driver::vk_driver</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__physical__driver" kindref="compound">vk_physical_driver</ref> &amp;</type>
+          <declname>p_physical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" line="9" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__driver_1a27bfbcec35b70d60ceee8d07ed95c706" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkQueue</type>
+        <definition>VkQueue atlas::vk::vk_driver::get_graphics_queue</definition>
+        <argsstring>() const</argsstring>
+        <name>get_graphics_queue</name>
+        <qualifiedname>atlas::vk::vk_driver::get_graphics_queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" line="11" column="17" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__driver_1a86e5590859de7a186b856345f0185871" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_driver::operator VkDevice</definition>
+        <argsstring>()</argsstring>
+        <name>operator VkDevice</name>
+        <qualifiedname>atlas::vk::vk_driver::operator VkDevice</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" line="13" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__driver_1a19e2f4b12a7c0e3bdf81ca369635eddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_driver::select_memory_type</definition>
+        <argsstring>(uint32_t p_type_filter, VkMemoryPropertyFlags p_property_flag)</argsstring>
+        <name>select_memory_type</name>
+        <qualifiedname>atlas::vk::vk_driver::select_memory_type</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_type_filter</declname>
+        </param>
+        <param>
+          <type>VkMemoryPropertyFlags</type>
+          <declname>p_property_flag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Returns -1 if there are no flags available/compatible/valid </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" line="16" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" line="6" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/vulkan_driver.hpp" bodystart="6" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1vk__driver_1a27bfbcec35b70d60ceee8d07ed95c706" prot="public" virt="non-virtual"><scope>atlas::vk::vk_driver</scope><name>get_graphics_queue</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__driver_1a8aabdd33851828c1c66a9b82f10434b4" prot="private" virt="non-virtual"><scope>atlas::vk::vk_driver</scope><name>m_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__driver_1a0c922778215808ed721d9d4a855e3494" prot="private" virt="non-virtual"><scope>atlas::vk::vk_driver</scope><name>m_graphics_queue</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__driver_1a86e5590859de7a186b856345f0185871" prot="public" virt="non-virtual"><scope>atlas::vk::vk_driver</scope><name>operator VkDevice</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__driver_1a19e2f4b12a7c0e3bdf81ca369635eddd" prot="public" virt="non-virtual"><scope>atlas::vk::vk_driver</scope><name>select_memory_type</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__driver_1a69852f998c60053fb42412ae9f8b7d9d" prot="public" virt="non-virtual"><scope>atlas::vk::vk_driver</scope><name>vk_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__driver_1ae76776a76ac7fccd8a52ecf73ec3d207" prot="public" virt="non-virtual"><scope>atlas::vk::vk_driver</scope><name>vk_driver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

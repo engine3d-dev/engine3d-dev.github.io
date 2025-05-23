@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1transform" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::transform</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1transform_1a07d2231a87bfdf9a8ef8c6163e93f945" prot="public" static="no" mutable="no">
+        <type>glm::highp_vec3</type>
+        <definition>glm::highp_vec3 atlas::transform::Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <qualifiedname>atlas::transform::Position</qualifiedname>
+        <initializer>{ 0.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="19" column="25" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1transform_1acb0dbf6fe456234d9078c8580eafafca" prot="public" static="no" mutable="no">
+        <type>glm::highp_vec3</type>
+        <definition>glm::highp_vec3 atlas::transform::QuaternionRotation</definition>
+        <argsstring></argsstring>
+        <name>QuaternionRotation</name>
+        <qualifiedname>atlas::transform::QuaternionRotation</qualifiedname>
+        <initializer>{ 0.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="20" column="25" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1transform_1ab436a85d5ff5d3cd21892d56d1c01bae" prot="public" static="no" mutable="no">
+        <type>glm::highp_vec3</type>
+        <definition>glm::highp_vec3 atlas::transform::Rotation</definition>
+        <argsstring></argsstring>
+        <name>Rotation</name>
+        <qualifiedname>atlas::transform::Rotation</qualifiedname>
+        <initializer>{ 0.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="21" column="25" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1transform_1aeb67f9723fd4fb26d1a31a4344733462" prot="public" static="no" mutable="no">
+        <type>glm::highp_vec3</type>
+        <definition>glm::highp_vec3 atlas::transform::Scale</definition>
+        <argsstring></argsstring>
+        <name>Scale</name>
+        <qualifiedname>atlas::transform::Scale</qualifiedname>
+        <initializer>{ 1.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="22" column="25" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1transform_1a267663f194e9dcc7b439562e31e5f702" prot="public" static="no" mutable="no">
+        <type>glm::highp_vec4</type>
+        <definition>glm::highp_vec4 atlas::transform::Color</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <qualifiedname>atlas::transform::Color</qualifiedname>
+        <initializer>{ 1.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="23" column="25" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="18" column="5" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="18" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1transform_1a267663f194e9dcc7b439562e31e5f702" prot="public" virt="non-virtual"><scope>atlas::transform</scope><name>Color</name></member>
+      <member refid="structatlas_1_1transform_1a07d2231a87bfdf9a8ef8c6163e93f945" prot="public" virt="non-virtual"><scope>atlas::transform</scope><name>Position</name></member>
+      <member refid="structatlas_1_1transform_1acb0dbf6fe456234d9078c8580eafafca" prot="public" virt="non-virtual"><scope>atlas::transform</scope><name>QuaternionRotation</name></member>
+      <member refid="structatlas_1_1transform_1ab436a85d5ff5d3cd21892d56d1c01bae" prot="public" virt="non-virtual"><scope>atlas::transform</scope><name>Rotation</name></member>
+      <member refid="structatlas_1_1transform_1aeb67f9723fd4fb26d1a31a4344733462" prot="public" virt="non-virtual"><scope>atlas::transform</scope><name>Scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

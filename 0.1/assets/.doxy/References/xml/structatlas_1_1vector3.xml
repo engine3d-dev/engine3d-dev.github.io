@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vector3" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vector3</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vector3_1ab4f1655d2173003e41a06dec41a695e2" prot="private" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::vector3&lt; T &gt;::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <qualifiedname>atlas::vector3::m_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="72" column="19" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structatlas_1_1vector3_1a36fad63aa6bd7807a13d55499400fab5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vector3&lt; T &gt;::vector3</definition>
+        <argsstring>()=default</argsstring>
+        <name>vector3</name>
+        <qualifiedname>atlas::vector3::vector3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="51" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_1a343b82cd03424214735c11c8553cbdaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vector3&lt; T &gt;::vector3</definition>
+        <argsstring>(const T &amp;p_other)</argsstring>
+        <name>vector3</name>
+        <qualifiedname>atlas::vector3::vector3</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="53" column="9" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="53" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_1ace9fb8eeeb134419f9a23fcdfdb4707d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vector3&lt; T &gt;::vector3</definition>
+        <argsstring>(float x, float y, float z)</argsstring>
+        <name>vector3</name>
+        <qualifiedname>atlas::vector3::vector3</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="56" column="9" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="56" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_1ab22c7eded0c2ec17f158f933e04e9778" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vector3&lt; T &gt;::vector3</definition>
+        <argsstring>(const std::initializer_list&lt; float &gt; &amp;values)</argsstring>
+        <name>vector3</name>
+        <qualifiedname>atlas::vector3::vector3</qualifiedname>
+        <param>
+          <type>const std::initializer_list&lt; float &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="58" column="9" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_1a9124ffc2a4e24bce44a05a46b74de1cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vector3&lt; T &gt;::operator glm::vec3</definition>
+        <argsstring>()</argsstring>
+        <name>operator glm::vec3</name>
+        <qualifiedname>atlas::vector3::vec3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="62" column="9" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_1a6bab67cd0514a6db895745c32d26aae4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::vector3&lt; T &gt;::operator=</definition>
+        <argsstring>(const T &amp;p_other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>atlas::vector3::operator=</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>p_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="64" column="19" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_1ad82c8ad55060d28a906c565706d671f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::vector3&lt; T &gt;::operator==</definition>
+        <argsstring>(const glm::vec3 &amp;p_other)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>atlas::vector3::operator==</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="66" column="14" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="50" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="50" bodyend="73"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vector3_1ab4f1655d2173003e41a06dec41a695e2" prot="private" virt="non-virtual"><scope>atlas::vector3</scope><name>m_value</name></member>
+      <member refid="structatlas_1_1vector3_1a9124ffc2a4e24bce44a05a46b74de1cf" prot="public" virt="non-virtual"><scope>atlas::vector3</scope><name>operator glm::vec3</name></member>
+      <member refid="structatlas_1_1vector3_1a6bab67cd0514a6db895745c32d26aae4" prot="public" virt="non-virtual"><scope>atlas::vector3</scope><name>operator=</name></member>
+      <member refid="structatlas_1_1vector3_1ad82c8ad55060d28a906c565706d671f6" prot="public" virt="non-virtual"><scope>atlas::vector3</scope><name>operator==</name></member>
+      <member refid="structatlas_1_1vector3_1a36fad63aa6bd7807a13d55499400fab5" prot="public" virt="non-virtual"><scope>atlas::vector3</scope><name>vector3</name></member>
+      <member refid="structatlas_1_1vector3_1a343b82cd03424214735c11c8553cbdaa" prot="public" virt="non-virtual"><scope>atlas::vector3</scope><name>vector3</name></member>
+      <member refid="structatlas_1_1vector3_1ace9fb8eeeb134419f9a23fcdfdb4707d" prot="public" virt="non-virtual"><scope>atlas::vector3</scope><name>vector3</name></member>
+      <member refid="structatlas_1_1vector3_1ab22c7eded0c2ec17f158f933e04e9778" prot="public" virt="non-virtual"><scope>atlas::vector3</scope><name>vector3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

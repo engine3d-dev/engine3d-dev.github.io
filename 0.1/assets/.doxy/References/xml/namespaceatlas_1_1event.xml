@@ -1,0 +1,1518 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceatlas_1_1event" kind="namespace" language="C++">
+    <compoundname>atlas::event</compoundname>
+    <innerclass refid="structatlas_1_1event_1_1joystick__button" prot="public">atlas::event::joystick_button</innerclass>
+    <innerclass refid="structatlas_1_1event_1_1joystick__info" prot="public">atlas::event::joystick_info</innerclass>
+    <sectiondef kind="user-defined">
+      <header>event.hpp</header>
+      <description><para><simplesect kind="note"><para>Actual input polling system to poll in differeny sets of key/mouse actions </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>UpdateEvents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handles making sure that all of our events we handle have been successfully updated. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>GetMousePos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>just returns the position of our mouse cursor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+</description>
+      <memberdef kind="enum" id="event_8hpp_1ab94636736bfa8713d99031b04624b09e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>input_state</name>
+        <qualifiedname>atlas::event::input_state</qualifiedname>
+        <enumvalue id="event_8hpp_1ab94636736bfa8713d99031b04624b09eae1d1d8f50755f91bff5077c922b8ae9c" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="event_8hpp_1ab94636736bfa8713d99031b04624b09ea725a0e08857dd1113a3b80ad439dbfac" prot="public">
+          <name>Idle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="event_8hpp_1ab94636736bfa8713d99031b04624b09ea8c0356eef41c79a1e1487c45b223c417" prot="public">
+          <name>Pressed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="event_8hpp_1ab94636736bfa8713d99031b04624b09ea1fd715e59148d04ee580260ba7cfe0bf" prot="public">
+          <name>Released</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="17" column="5" bodyfile="TheAtlasEngine/atlas/core/event/event.hpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1ae703dd3e3405285b7b7ff4f8d94ca5ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::event::is_key_pressed</definition>
+        <argsstring>(int p_key)</argsstring>
+        <name>is_key_pressed</name>
+        <qualifiedname>atlas::event::is_key_pressed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="34" column="10" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="34" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a6016f0064cb28180f8ee8b4f820c9d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::event::is_key_released</definition>
+        <argsstring>(int p_key)</argsstring>
+        <name>is_key_released</name>
+        <qualifiedname>atlas::event::is_key_released</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="36" column="10" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="36" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a9b7c409b479a3c2a8ad60ead7543fe4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::event::is_mouse_pressed</definition>
+        <argsstring>(int p_mouse_code)</argsstring>
+        <name>is_mouse_pressed</name>
+        <qualifiedname>atlas::event::is_mouse_pressed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_mouse_code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="38" column="10" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="38" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a7a4b5c837d33921d95ebbdfbf462bba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::event::is_mouse_released</definition>
+        <argsstring>(int p_mouse_code)</argsstring>
+        <name>is_mouse_released</name>
+        <qualifiedname>atlas::event::is_mouse_released</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_mouse_code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="39" column="10" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="39" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1ad397eb11d06d5ba65166179a4e2be15a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec2</type>
+        <definition>glm::vec2 atlas::event::cursor_position</definition>
+        <argsstring>()</argsstring>
+        <name>cursor_position</name>
+        <qualifiedname>atlas::event::cursor_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="41" column="15" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="41" declcolumn="15"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1aa733f383c0f6b25f558052f16570d0cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::event::is_joystic_present</definition>
+        <argsstring>(int p_controller_id)</argsstring>
+        <name>is_joystic_present</name>
+        <qualifiedname>atlas::event::is_joystic_present</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_controller_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="45" column="10" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="45" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a2a95ad6d7ca7dce77294fea2c09ee762" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * atlas::event::is_joystick_guid</definition>
+        <argsstring>(int p_controller_id)</argsstring>
+        <name>is_joystick_guid</name>
+        <qualifiedname>atlas::event::is_joystick_guid</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_controller_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="47" column="16" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="47" declcolumn="16"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a3c758967056912703d007390e69a05bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float atlas::event::get_joystic_axis</definition>
+        <argsstring>(int p_controller_id, int p_button)</argsstring>
+        <name>get_joystic_axis</name>
+        <qualifiedname>atlas::event::get_joystic_axis</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_controller_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p_button</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="49" column="11" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="49" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a9adad6002a96719a09d6a1d57d2adb56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::event::is_joystick_button_pressed</definition>
+        <argsstring>(int p_button)</argsstring>
+        <name>is_joystick_button_pressed</name>
+        <qualifiedname>atlas::event::is_joystick_button_pressed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_button</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>FIXME: Make button later </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="56" column="10" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="56" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a1a82eff9d9d9342d8260d5c8ef48b87e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::event::is_joystick_button_released</definition>
+        <argsstring>(int p_button)</argsstring>
+        <name>is_joystick_button_released</name>
+        <qualifiedname>atlas::event::is_joystick_button_released</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>p_button</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="58" column="10" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="58" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a4ae93c786be96e42acbe58a52a3338e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::event::update_events</definition>
+        <argsstring>()</argsstring>
+        <name>update_events</name>
+        <qualifiedname>atlas::event::update_events</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="61" column="10" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="61" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="event_8hpp_1a28a1fe94c14510179be50f0523d63c55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::event::wait_for_events</definition>
+        <argsstring>()</argsstring>
+        <name>wait_for_events</name>
+        <qualifiedname>atlas::event::wait_for_events</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="63" column="10" declfile="TheAtlasEngine/atlas/core/event/event.hpp" declline="63" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465c" prot="public" static="no" strong="no">
+        <type>int</type>
+        <name>JoystickCodes</name>
+        <qualifiedname>atlas::event::JoystickCodes</qualifiedname>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465cab5d5da53545ee9a6f686a2b5f8fe2d72" prot="public">
+          <name>Joystick1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465cad18153c09c88e82648448d47e3679d8e" prot="public">
+          <name>Joystick2</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465cac8d72088567b60ecdd7c01a527e8b579" prot="public">
+          <name>Joystick3</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca59a7ee92b43471b535a3d4be49c5cc9f" prot="public">
+          <name>Joystick4</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca58fc50810390dc9cd9e852835e81b71d" prot="public">
+          <name>Joystick5</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca9f08a2c2170579f633114179cb2300b8" prot="public">
+          <name>Joystick6</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca30aa708a0479386b2b28e8247633a743" prot="public">
+          <name>Joystick7</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca96c9579431cf21e34c278307be41efb8" prot="public">
+          <name>Joystick8</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca3cb7b2364f2fbb2fe67ca373d4a2d0b5" prot="public">
+          <name>Joystick9</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca4fd6a9e6ffe752ed00fb87e07a908090" prot="public">
+          <name>Joystick10</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465cacf4e23a4229d83bda7b9f3b1c448fe26" prot="public">
+          <name>Joystick11</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca6afa706a4c2c8b179b1c4d2e59eccf3c" prot="public">
+          <name>Joystick12</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca158e3bf356785b82c72758900bec7142" prot="public">
+          <name>Joystick13</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465cacaee368bd339f88e2628d5d3681a99ad" prot="public">
+          <name>Joystick14</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca91c14cac7e1f986a1e2829b01ebe8e01" prot="public">
+          <name>Joystick15</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465caef8b37f673b683577a6b184019582762" prot="public">
+          <name>Joystick16</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="joystick__codes_8hpp_1add7c2353f27c7696928293acb6a5465ca63eaf06faa178e87e030c005a4aedc16" prot="public">
+          <name>JoystickLAST</name>
+          <initializer>= Joystick16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="5" column="5" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="5" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="enum" id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84" prot="public" static="no" strong="no">
+        <type>uint32_t</type>
+        <name>Key</name>
+        <qualifiedname>atlas::event::Key</qualifiedname>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84adad56b2946e35ba505dbb81daa3ff839" prot="public">
+          <name>Space</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a0b674b4050453f834069507aa182c8c2" prot="public">
+          <name>Apostrophe</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a1e151c97b704c0a70880d2e2fe2e5bb3" prot="public">
+          <name>Comma</name>
+          <initializer>= 44</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ad65d5c4e70ccbb8221013b1dfdf17d8d" prot="public">
+          <name>Minus</name>
+          <initializer>= 45</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a6cd233331fecac955828ea0a54eef5f4" prot="public">
+          <name>Period</name>
+          <initializer>= 46</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84af23cee625f8e2a1e4bd76aef89d51377" prot="public">
+          <name>Slash</name>
+          <initializer>= 47</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aaeeb003504147009691100954d958ffe" prot="public">
+          <name>D0</name>
+          <initializer>= 48</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a40b36084006f9580d3893e384ce5b47f" prot="public">
+          <name>D1</name>
+          <initializer>= 49</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a5097b863297a4eb066ec6d4e92cbac28" prot="public">
+          <name>D2</name>
+          <initializer>= 50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a15caa2821de15f14393883f8b4dc8527" prot="public">
+          <name>D3</name>
+          <initializer>= 51</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a3e5f7770f1bf5e075456aaec208efc82" prot="public">
+          <name>D4</name>
+          <initializer>= 52</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a5102303f5d57f6e1c254dc08efaf87e8" prot="public">
+          <name>D5</name>
+          <initializer>= 53</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a9b35bc31ae83a4cb1453e4be7f48e635" prot="public">
+          <name>D6</name>
+          <initializer>= 54</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84afc8cfe0acdd14f98c151978b14691c5e" prot="public">
+          <name>D7</name>
+          <initializer>= 55</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a906062f99a2376d5c5879cb92e45fa88" prot="public">
+          <name>D8</name>
+          <initializer>= 56</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a66443f00e3f77479a7c0bee82434bb12" prot="public">
+          <name>D9</name>
+          <initializer>= 57</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ae74fa00b89c0552123e0389b614764c2" prot="public">
+          <name>Semicolon</name>
+          <initializer>= 59</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a8f6f604076982b274211ada70fe8b2fc" prot="public">
+          <name>Equal</name>
+          <initializer>= 61</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a26d0269825c91d6c4a10bd3db3523f96" prot="public">
+          <name>A</name>
+          <initializer>= 65</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a2090f19adfb0797081bc1ac47917e8a5" prot="public">
+          <name>B</name>
+          <initializer>= 66</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a40cf0b04af1c67ae6610e9cef22fef6b" prot="public">
+          <name>C</name>
+          <initializer>= 67</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a1daf31b247d46ab2d2661f19af74274e" prot="public">
+          <name>D</name>
+          <initializer>= 68</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ad2b69bda6879cb390a9bef44133d3d4a" prot="public">
+          <name>E</name>
+          <initializer>= 69</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a59cc7b653c75d306b2d8e743e42c8161" prot="public">
+          <name>F</name>
+          <initializer>= 70</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a6cf3d5fde50c5d88429b5c5cbc12ae21" prot="public">
+          <name>G</name>
+          <initializer>= 71</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aaff699f173ca0effeed4490134eafcab" prot="public">
+          <name>H</name>
+          <initializer>= 72</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ae2465426356ffb3dd542bd7c27ca2123" prot="public">
+          <name>I</name>
+          <initializer>= 73</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aa0c24bcaccd376ae74ed22697aa168c5" prot="public">
+          <name>J</name>
+          <initializer>= 74</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ad41ca6d33b01799a76ccbdcf6ae50043" prot="public">
+          <name>K</name>
+          <initializer>= 75</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ae633a49053616216e8ea3c15f6de7c54" prot="public">
+          <name>L</name>
+          <initializer>= 76</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a1a074531cde939d445ae907ccb084a02" prot="public">
+          <name>M</name>
+          <initializer>= 77</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84abcdf5c2eb4ebfdb6482072f1009c4603" prot="public">
+          <name>N</name>
+          <initializer>= 78</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a00ab42e3e22061203105a84b073e6e48" prot="public">
+          <name>O</name>
+          <initializer>= 79</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a720544d2041961ed38009249414efcfe" prot="public">
+          <name>P</name>
+          <initializer>= 80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a8f5f6d0aa2cbce546c016065e4439360" prot="public">
+          <name>Q</name>
+          <initializer>= 81</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a2c0662066e6afbafc4298194acf25660" prot="public">
+          <name>R</name>
+          <initializer>= 82</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a597b2de9eb2b9737befd3598a1fe8b3a" prot="public">
+          <name>S</name>
+          <initializer>= 83</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84adcbdd5b104bcbbcacf87342044ac90ec" prot="public">
+          <name>T</name>
+          <initializer>= 84</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a5437fb4e2fd29db801b8249023610c4b" prot="public">
+          <name>U</name>
+          <initializer>= 85</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a7b1ecfe0bc02902b403b2a3d1138936e" prot="public">
+          <name>V</name>
+          <initializer>= 86</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ac877d520a488b06defe32103cb169aa3" prot="public">
+          <name>W</name>
+          <initializer>= 87</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a96d8a54dc684f02a9e83b55409025378" prot="public">
+          <name>X</name>
+          <initializer>= 88</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a4ebebec20491f1cc11979eaa0e154a69" prot="public">
+          <name>Y</name>
+          <initializer>= 89</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a52c7005b15ad44288a8714be6abb2ebd" prot="public">
+          <name>Z</name>
+          <initializer>= 90</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aa673d7ccfdba32a8d6be31255ebecbfe" prot="public">
+          <name>LeftBracket</name>
+          <initializer>= 91</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ae1876a123c122f513c681f3033a3f8f2" prot="public">
+          <name>Backslash</name>
+          <initializer>= 92</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a92fb348b9f99104860deef9a891cfc13" prot="public">
+          <name>RightBracket</name>
+          <initializer>= 93</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a6ac57009defbf7a32e924a9ec10f5e22" prot="public">
+          <name>GraveAccent</name>
+          <initializer>= 96</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84afa72874b69388648e20f9240ff9f99d7" prot="public">
+          <name>World1</name>
+          <initializer>= 161</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a0a2bf67d730180bacf574992b1212436" prot="public">
+          <name>World2</name>
+          <initializer>= 162</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a2ba164c11ead9073ee309a9f0a935e1f" prot="public">
+          <name>Escape</name>
+          <initializer>= 256</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a8d4bed855d02fd17162a2f1beb6d0397" prot="public">
+          <name>Enter</name>
+          <initializer>= 257</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a7a6474da0af92ad6c3ae2ecb4e1c10b4" prot="public">
+          <name>Tab</name>
+          <initializer>= 258</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a11d979222912fd3bcb5d20ebc381b4e0" prot="public">
+          <name>Backspace</name>
+          <initializer>= 259</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84abd3197e88ad33e739936c6ae74afa129" prot="public">
+          <name>Insert</name>
+          <initializer>= 260</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84af2b1359e1a85fe25e2d5441878f1ed84" prot="public">
+          <name>Delete</name>
+          <initializer>= 261</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a96a511b9d220a4ddd3f7cf769317e56f" prot="public">
+          <name>Right</name>
+          <initializer>= 262</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84af0e1b9822071d6df0745d38367371207" prot="public">
+          <name>Left</name>
+          <initializer>= 263</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a1cc380330051197d997ebce5c34e8774" prot="public">
+          <name>Down</name>
+          <initializer>= 264</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a750a72d2f9b0224c54958a919cd07cd4" prot="public">
+          <name>Up</name>
+          <initializer>= 265</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a1e47a1646578effda200151166712baa" prot="public">
+          <name>PageUp</name>
+          <initializer>= 266</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84abba61ebc3b312eab388c77213142afcb" prot="public">
+          <name>PageDown</name>
+          <initializer>= 267</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a4157488dc96f4e7e302369253d596c2e" prot="public">
+          <name>Home</name>
+          <initializer>= 268</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a2b9371416aa79dd73d3df213d2e7aaf2" prot="public">
+          <name>End</name>
+          <initializer>= 269</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a2007e1bbcc2be92a521904f5a29254e4" prot="public">
+          <name>CapsLock</name>
+          <initializer>= 280</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ae413138e633db222b4b2fd34c476276d" prot="public">
+          <name>ScrollLock</name>
+          <initializer>= 281</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84af89cf615990783b9fd6a4f38b8efb1a0" prot="public">
+          <name>NumLock</name>
+          <initializer>= 282</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a83dbe89f82643b6c7e46a4e513084da0" prot="public">
+          <name>PrintScreen</name>
+          <initializer>= 283</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ac905c7a112f3441f473e165e832c7af1" prot="public">
+          <name>Pause</name>
+          <initializer>= 284</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a9520116d4f1539c84a497840c363a69a" prot="public">
+          <name>F1</name>
+          <initializer>= 290</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ab3e5e24d4f1f5da54bb6dcabca4d76f9" prot="public">
+          <name>F2</name>
+          <initializer>= 291</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a965b3d51be2dee5532d466e7ea60549a" prot="public">
+          <name>F3</name>
+          <initializer>= 292</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a7ef9b24d8fc35aca36de3ed8af3dd365" prot="public">
+          <name>F4</name>
+          <initializer>= 293</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a76731170ad21536cc2f863a11ba4dd99" prot="public">
+          <name>F5</name>
+          <initializer>= 294</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aef3e88192b88550152b13a0050e26d16" prot="public">
+          <name>F6</name>
+          <initializer>= 295</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a3ced075d668b4e25a23cdf701da1141b" prot="public">
+          <name>F7</name>
+          <initializer>= 296</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a83fbc16dc6efd9c525fd32ee35672887" prot="public">
+          <name>F8</name>
+          <initializer>= 297</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a2d6915e7c7c359bce3be660536b84817" prot="public">
+          <name>F9</name>
+          <initializer>= 298</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a75c2a302ba9b7db05aef4ab7ba8ef0f7" prot="public">
+          <name>F10</name>
+          <initializer>= 299</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aa36b2419cb8fc55eca390b7caeb4d9ae" prot="public">
+          <name>F11</name>
+          <initializer>= 300</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a54e6a74cc06deafd2532a5099adb0d8d" prot="public">
+          <name>F12</name>
+          <initializer>= 301</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ad1ec84f99812a3e9fa9daae61f9c44a4" prot="public">
+          <name>F13</name>
+          <initializer>= 302</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a6ac6a53a899447d31b034cd118efb658" prot="public">
+          <name>F14</name>
+          <initializer>= 303</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a30fda5fb994205e40116f8d91e82e282" prot="public">
+          <name>F15</name>
+          <initializer>= 304</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a2ca9eaf643406331215afc4a41ce76c6" prot="public">
+          <name>F16</name>
+          <initializer>= 305</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aa7311a96e1b295f9f330ccb1412ab73c" prot="public">
+          <name>F17</name>
+          <initializer>= 306</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a148360de12b254041ab6884e1c8b3bd6" prot="public">
+          <name>F18</name>
+          <initializer>= 307</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aaeff837267c6637a1ba507f64b7840fe" prot="public">
+          <name>F19</name>
+          <initializer>= 308</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a01354b6c87327418d521f4a5edca3b96" prot="public">
+          <name>F20</name>
+          <initializer>= 309</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aa84313fce7888bffb6c59ef042503934" prot="public">
+          <name>F21</name>
+          <initializer>= 310</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ac8e97d01bcc57490cd213c66a899bf7d" prot="public">
+          <name>F22</name>
+          <initializer>= 311</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84abe8d30706419f0d573419daa5844b2b1" prot="public">
+          <name>F23</name>
+          <initializer>= 312</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a2935b36543a25adb4c4e2b8bb3e374c5" prot="public">
+          <name>F24</name>
+          <initializer>= 313</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a2539fe0de393ea90d49a5f2a64979261" prot="public">
+          <name>F25</name>
+          <initializer>= 314</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ae2b3480c13226203e8cf7ea21e0e35bb" prot="public">
+          <name>KP0</name>
+          <initializer>= 320</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84add9c4589cbd6325611fcba09910b679a" prot="public">
+          <name>KP1</name>
+          <initializer>= 321</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aa05e8a28a96e70f6ac46695454abc2d6" prot="public">
+          <name>KP2</name>
+          <initializer>= 322</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84acc641ce939908bbbb8970e0f35380345" prot="public">
+          <name>KP3</name>
+          <initializer>= 323</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a089d657cf157c510953f631c67f3e57d" prot="public">
+          <name>KP4</name>
+          <initializer>= 324</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aa1b0be98fd8dbecbc4100834b3bb789e" prot="public">
+          <name>KP5</name>
+          <initializer>= 325</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a8ea94cebea56588485ed5237229ed431" prot="public">
+          <name>KP6</name>
+          <initializer>= 326</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84acda0852204e19473c299df89b5e0e096" prot="public">
+          <name>KP7</name>
+          <initializer>= 327</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ac65aad6e365d9fe1fde1c82c3b1cf377" prot="public">
+          <name>KP8</name>
+          <initializer>= 328</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aec36cc180ffb28413e9dd21183f32d2a" prot="public">
+          <name>KP9</name>
+          <initializer>= 329</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a67a2c0fee27c4358b4e74e70b0baf705" prot="public">
+          <name>KPDecimal</name>
+          <initializer>= 330</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a63c5e72b3573c700a0a2f48fca9f85fc" prot="public">
+          <name>KPDivide</name>
+          <initializer>= 331</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a7dfd0f9871260dc26e54f0f786f229d7" prot="public">
+          <name>KPMultiply</name>
+          <initializer>= 332</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a7ce089eecca36b12aaff30d0bdd00786" prot="public">
+          <name>KPSubtract</name>
+          <initializer>= 333</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a06cd278f2bb99847d338427e92824a49" prot="public">
+          <name>KPAdd</name>
+          <initializer>= 334</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84aa88e4f29216868dfddf02fa49a556c53" prot="public">
+          <name>KPEnter</name>
+          <initializer>= 335</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ac9d189ca5ae70b7aa547030b0fbc1494" prot="public">
+          <name>KPEqual</name>
+          <initializer>= 336</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a67facfc65d9501d71844a655903b4161" prot="public">
+          <name>LeftShift</name>
+          <initializer>= 340</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a972e7a769956ee317916e41c2c469081" prot="public">
+          <name>LeftControl</name>
+          <initializer>= 341</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84af1a40cd01d4fcb4b10c1bcdfae64d6c6" prot="public">
+          <name>LeftAlt</name>
+          <initializer>= 342</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a1b9d3a4051dd75f0b55ac0d6521416dc" prot="public">
+          <name>Leftsuper</name>
+          <initializer>= 343</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84adeb0406d45f1fb17e5060e7f52b0b00f" prot="public">
+          <name>RightShift</name>
+          <initializer>= 344</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84ab4370cfcd92dc0c2eb0413edf6ecfd3c" prot="public">
+          <name>RightControl</name>
+          <initializer>= 345</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a133e151605950707a16dc1ecd31a47c5" prot="public">
+          <name>RightAlt</name>
+          <initializer>= 346</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a056e16e2cec5645793700f3f9d223f4f" prot="public">
+          <name>Rightsuper</name>
+          <initializer>= 347</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="key__codes_8hpp_1a8c2e1fcc23c728afd702f2ee52659b84a47b82a9e70d5d3a15c37b6d994b70f20" prot="public">
+          <name>Menu</name>
+          <initializer>= 348</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/key_codes.hpp" line="5" column="5" bodyfile="TheAtlasEngine/atlas/core/event/key_codes.hpp" bodystart="5" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="enum" id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655" prot="public" static="no" strong="no">
+        <type>uint32_t</type>
+        <name>Mouse</name>
+        <qualifiedname>atlas::event::Mouse</qualifiedname>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655aee613cd3f273a07a2fed0eb3cfb01be2" prot="public">
+          <name>Button0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655a5c99d7c5612c8aa93424ac22dfc67caf" prot="public">
+          <name>Button1</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655a8730fd9a379d7c4395194e61fc045c38" prot="public">
+          <name>Button2</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655a9175d127dfbc79a55781ad91f91b1666" prot="public">
+          <name>Button3</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655a7d6e884db3e0f8df19b2520f14d99dd9" prot="public">
+          <name>Button4</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655abbc705a304a85b706d2d597648b96e32" prot="public">
+          <name>Button5</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655a58d71152596c02af3f9d6a78b5eacae4" prot="public">
+          <name>Button6</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655adbf7309e747c0111df820ba627501767" prot="public">
+          <name>Button7</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655a0dd19badd4407fe59623ef0cc6f1669f" prot="public">
+          <name>ButtonLast</name>
+          <initializer>= Button7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655a904309290d01f7e66627fab2c60e5b9a" prot="public">
+          <name>ButtonLeft</name>
+          <initializer>= Button0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655a1b07a38642821746433212271880f1c4" prot="public">
+          <name>ButtonRight</name>
+          <initializer>= Button1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="mouse__codes_8hpp_1a9933513844d0407825a95904fc4fe655a2981069fb7d9542a804be2c76e96fafb" prot="public">
+          <name>ButtonMiddle</name>
+          <initializer>= Button2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" line="5" column="5" bodyfile="TheAtlasEngine/atlas/core/event/mouse_codes.hpp" bodystart="5" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/event/event.hpp" line="8" column="1"/>
+  </compounddef>
+</doxygen>

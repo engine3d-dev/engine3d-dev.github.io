@@ -6,4 +6,4 @@
   - [📝 Code Design](contributor_guide/code_design.md)
 - 📜 Project Information
   - [About](about.md)
-- [API](References/links/)
+- [API](References/namespaceatlas/)

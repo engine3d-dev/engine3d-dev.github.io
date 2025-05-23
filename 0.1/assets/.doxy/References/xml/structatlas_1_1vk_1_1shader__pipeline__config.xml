@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1shader__pipeline__config" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::shader_pipeline_config</compoundname>
+    <includes refid="vulkan__shader__pipeline__config_8hpp" local="no">vulkan_shader_pipeline_config.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1aefa21ac9b5b24ecb7420f4012577f192" prot="public" static="no" mutable="no">
+        <type>VkViewport</type>
+        <definition>VkViewport atlas::vk::shader_pipeline_config::Viewport</definition>
+        <argsstring></argsstring>
+        <name>Viewport</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::Viewport</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="9" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1a19cbbfcbcbb7ec6f13b1b0239c756e1e" prot="public" static="no" mutable="no">
+        <type>VkRect2D</type>
+        <definition>VkRect2D atlas::vk::shader_pipeline_config::Scissor</definition>
+        <argsstring></argsstring>
+        <name>Scissor</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::Scissor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="10" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1ab6359e4387f7dc28810e76be6896bd89" prot="public" static="no" mutable="no">
+        <type>VkPipelineInputAssemblyStateCreateInfo</type>
+        <definition>VkPipelineInputAssemblyStateCreateInfo atlas::vk::shader_pipeline_config::PipelineInputAsmInfo</definition>
+        <argsstring></argsstring>
+        <name>PipelineInputAsmInfo</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::PipelineInputAsmInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="12" column="48" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1ab6dea111441914d994e71863fb19b748" prot="public" static="no" mutable="no">
+        <type>VkPipelineRasterizationStateCreateInfo</type>
+        <definition>VkPipelineRasterizationStateCreateInfo atlas::vk::shader_pipeline_config::PipelineRasterizationCreateInfo</definition>
+        <argsstring></argsstring>
+        <name>PipelineRasterizationCreateInfo</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::PipelineRasterizationCreateInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="13" column="48" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1a7a7809d5610bb04865698cc97a688131" prot="public" static="no" mutable="no">
+        <type>VkPipelineMultisampleStateCreateInfo</type>
+        <definition>VkPipelineMultisampleStateCreateInfo atlas::vk::shader_pipeline_config::PipelineMultisampleCreateInfo</definition>
+        <argsstring></argsstring>
+        <name>PipelineMultisampleCreateInfo</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::PipelineMultisampleCreateInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="14" column="46" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1ab496b89c71faa80905ac4fa6e0d8c28d" prot="public" static="no" mutable="no">
+        <type>VkPipelineColorBlendAttachmentState</type>
+        <definition>VkPipelineColorBlendAttachmentState atlas::vk::shader_pipeline_config::PipelineColorBlendAttachments</definition>
+        <argsstring></argsstring>
+        <name>PipelineColorBlendAttachments</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::PipelineColorBlendAttachments</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="15" column="45" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1a4ba32d1272994fbc6f806e4e319c8be1" prot="public" static="no" mutable="no">
+        <type>VkPipelineColorBlendStateCreateInfo</type>
+        <definition>VkPipelineColorBlendStateCreateInfo atlas::vk::shader_pipeline_config::PipelineColorBlendCreateInfo</definition>
+        <argsstring></argsstring>
+        <name>PipelineColorBlendCreateInfo</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::PipelineColorBlendCreateInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="16" column="45" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1aaf1b396b1c8e6284141cf65ab7165c47" prot="public" static="no" mutable="no">
+        <type>VkPipelineDepthStencilStateCreateInfo</type>
+        <definition>VkPipelineDepthStencilStateCreateInfo atlas::vk::shader_pipeline_config::PipelineDepthStencilCreateInfo</definition>
+        <argsstring></argsstring>
+        <name>PipelineDepthStencilCreateInfo</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::PipelineDepthStencilCreateInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="17" column="47" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1a8a976869c7652c937ac40b1d61c1297e" prot="public" static="no" mutable="no">
+        <type>VkPipelineLayout</type>
+        <definition>VkPipelineLayout atlas::vk::shader_pipeline_config::PipelineLayout</definition>
+        <argsstring></argsstring>
+        <name>PipelineLayout</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::PipelineLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="18" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1a49048b6e5adb6557322516ea1ceedb99" prot="public" static="no" mutable="no">
+        <type>VkRenderPass</type>
+        <definition>VkRenderPass atlas::vk::shader_pipeline_config::PipelineRenderPass</definition>
+        <argsstring></argsstring>
+        <name>PipelineRenderPass</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::PipelineRenderPass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="19" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__pipeline__config_1aa3b016f8638a406a89d7da1d17ee4178" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::shader_pipeline_config::SubpassCount</definition>
+        <argsstring></argsstring>
+        <name>SubpassCount</name>
+        <qualifiedname>atlas::vk::shader_pipeline_config::SubpassCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="20" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Used for specifying how the shader pipeline configuration may look like. </para>
+</simplesect>
+<simplesect kind="note"><para>Used by <ref refid="classatlas_1_1vk_1_1vk__shader" kindref="compound">vk_shader</ref> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" line="8" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/shaders/vulkan_shader_pipeline_config.hpp" bodystart="8" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1ab496b89c71faa80905ac4fa6e0d8c28d" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>PipelineColorBlendAttachments</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1a4ba32d1272994fbc6f806e4e319c8be1" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>PipelineColorBlendCreateInfo</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1aaf1b396b1c8e6284141cf65ab7165c47" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>PipelineDepthStencilCreateInfo</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1ab6359e4387f7dc28810e76be6896bd89" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>PipelineInputAsmInfo</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1a8a976869c7652c937ac40b1d61c1297e" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>PipelineLayout</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1a7a7809d5610bb04865698cc97a688131" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>PipelineMultisampleCreateInfo</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1ab6dea111441914d994e71863fb19b748" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>PipelineRasterizationCreateInfo</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1a49048b6e5adb6557322516ea1ceedb99" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>PipelineRenderPass</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1a19cbbfcbcbb7ec6f13b1b0239c756e1e" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>Scissor</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1aa3b016f8638a406a89d7da1d17ee4178" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>SubpassCount</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__pipeline__config_1aefa21ac9b5b24ecb7420f4012577f192" prot="public" virt="non-virtual"><scope>atlas::vk::shader_pipeline_config</scope><name>Viewport</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

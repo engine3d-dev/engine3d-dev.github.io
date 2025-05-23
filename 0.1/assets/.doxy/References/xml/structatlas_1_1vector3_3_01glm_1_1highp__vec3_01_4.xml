@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vector3&lt; glm::highp_vec3 &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a052cfea7a1082cd6b72344854a9403e8" prot="private" static="no" mutable="no">
+        <type>glm::highp_vec3</type>
+        <definition>glm::highp_vec3 atlas::vector3&lt; glm::highp_vec3 &gt;::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <qualifiedname>atlas::vector3&lt; glm::highp_vec3 &gt;::m_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="138" column="25" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="138" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a6f0c2f8c3b31a7941b81de6a9d21cdf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vector3&lt; glm::highp_vec3 &gt;::vector3</definition>
+        <argsstring>()=default</argsstring>
+        <name>vector3</name>
+        <qualifiedname>atlas::vector3&lt; glm::highp_vec3 &gt;::vector3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="121" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a9ba348f4d9aa5bd86f1913c2c84c494c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vector3&lt; glm::highp_vec3 &gt;::vector3</definition>
+        <argsstring>(const glm::highp_vec3 &amp;p_other)</argsstring>
+        <name>vector3</name>
+        <qualifiedname>atlas::vector3&lt; glm::highp_vec3 &gt;::vector3</qualifiedname>
+        <param>
+          <type>const glm::highp_vec3 &amp;</type>
+          <declname>p_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="123" column="9" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="123" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a708ed0e7d3bf592aef154f22e73a1c1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vector3&lt; glm::highp_vec3 &gt;::operator glm::highp_vec3</definition>
+        <argsstring>()</argsstring>
+        <name>operator glm::highp_vec3</name>
+        <qualifiedname>atlas::vector3&lt; glm::highp_vec3 &gt;::highp_vec3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="126" column="9" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="126" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1ac27883ea0bb0841e1e47d44600d2c34f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>glm::highp_vec3</type>
+        <definition>glm::highp_vec3 atlas::vector3&lt; glm::highp_vec3 &gt;::operator=</definition>
+        <argsstring>(const glm::highp_vec3 &amp;p_other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>atlas::vector3&lt; glm::highp_vec3 &gt;::operator=</qualifiedname>
+        <param>
+          <type>const glm::highp_vec3 &amp;</type>
+          <declname>p_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="128" column="25" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a82400f6c52c73806aa3ab150887ef357" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::vector3&lt; glm::highp_vec3 &gt;::operator==</definition>
+        <argsstring>(const glm::highp_vec3 &amp;p_other)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>atlas::vector3&lt; glm::highp_vec3 &gt;::operator==</qualifiedname>
+        <param>
+          <type>const glm::highp_vec3 &amp;</type>
+          <declname>p_other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="132" column="14" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="120" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="120" bodyend="139"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a052cfea7a1082cd6b72344854a9403e8" prot="private" virt="non-virtual"><scope>atlas::vector3&lt; glm::highp_vec3 &gt;</scope><name>m_value</name></member>
+      <member refid="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a708ed0e7d3bf592aef154f22e73a1c1e" prot="public" virt="non-virtual"><scope>atlas::vector3&lt; glm::highp_vec3 &gt;</scope><name>operator glm::highp_vec3</name></member>
+      <member refid="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1ac27883ea0bb0841e1e47d44600d2c34f" prot="public" virt="non-virtual"><scope>atlas::vector3&lt; glm::highp_vec3 &gt;</scope><name>operator=</name></member>
+      <member refid="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a82400f6c52c73806aa3ab150887ef357" prot="public" virt="non-virtual"><scope>atlas::vector3&lt; glm::highp_vec3 &gt;</scope><name>operator==</name></member>
+      <member refid="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a6f0c2f8c3b31a7941b81de6a9d21cdf9" prot="public" virt="non-virtual"><scope>atlas::vector3&lt; glm::highp_vec3 &gt;</scope><name>vector3</name></member>
+      <member refid="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4_1a9ba348f4d9aa5bd86f1913c2c84c494c" prot="public" virt="non-virtual"><scope>atlas::vector3&lt; glm::highp_vec3 &gt;</scope><name>vector3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

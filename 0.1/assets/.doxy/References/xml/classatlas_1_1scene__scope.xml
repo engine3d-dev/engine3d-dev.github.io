@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1scene__scope" kind="class" language="C++" prot="public">
+    <compoundname>atlas::scene_scope</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1scene__scope_1a570d5bc4cc571536ef7c650e005ffc3f" prot="private" static="no" mutable="no">
+        <type>flecs::world</type>
+        <definition>flecs::world atlas::scene_scope::m_registry</definition>
+        <argsstring></argsstring>
+        <name>m_registry</name>
+        <qualifiedname>atlas::scene_scope::m_registry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="60" column="22" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1scene__scope_1a3b864653a128bb8d9120ad5f58bf6a0d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string atlas::scene_scope::m_tag</definition>
+        <argsstring></argsstring>
+        <name>m_tag</name>
+        <qualifiedname>atlas::scene_scope::m_tag</qualifiedname>
+        <initializer>= &quot;Undefined Tag&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="61" column="21" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1scene__scope_1a769a51ebed395d342b8eb9e431642714" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::scene_scope::scene_scope</definition>
+        <argsstring>()</argsstring>
+        <name>scene_scope</name>
+        <qualifiedname>atlas::scene_scope::scene_scope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="37" column="9" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="37" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1scene__scope_1a08f6d13c602e9fc14e27600dd796bd57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::scene_scope::scene_scope</definition>
+        <argsstring>(const std::string &amp;p_tag)</argsstring>
+        <name>scene_scope</name>
+        <qualifiedname>atlas::scene_scope::scene_scope</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="39" column="9" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="39" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1scene__scope_1a8bcf465cf506ee4f56ddeafb0076e766" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ref&lt; <ref refid="classatlas_1_1scene__object" kindref="compound">scene_object</ref> &gt;</type>
+        <definition>ref&lt; scene_object &gt; atlas::scene_scope::create_new_object</definition>
+        <argsstring>(const std::string &amp;p_tag)</argsstring>
+        <name>create_new_object</name>
+        <qualifiedname>atlas::scene_scope::create_new_object</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="42" column="13" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1scene__scope_1aa5ea793c8bd41ee9a1eac55233a1b7d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Comps</declname>
+            <defname>Comps</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>flecs::query_builder&lt; Comps... &gt;</type>
+        <definition>flecs::query_builder&lt; Comps... &gt; atlas::scene_scope::query_builder</definition>
+        <argsstring>(Args &amp;&amp;... args) const</argsstring>
+        <name>query_builder</name>
+        <qualifiedname>atlas::scene_scope::query_builder</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="47" column="30" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1scene__scope_1a6d3703f1a0e00fba6f5d76a644fc2f07" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual atlas::scene_scope::~scene_scope</definition>
+        <argsstring>()=default</argsstring>
+        <name>~scene_scope</name>
+        <qualifiedname>atlas::scene_scope::~scene_scope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="52" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1scene__scope_1a45c2b22f0d9b3b178dafee5278cb0889" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string atlas::scene_scope::get_tag</definition>
+        <argsstring>()</argsstring>
+        <name>get_tag</name>
+        <qualifiedname>atlas::scene_scope::get_tag</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="54" column="21" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1scene__scope_1a5d4d5a3af662e172070be3377a9c641a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::scene_scope::operator flecs::world</definition>
+        <argsstring>() const</argsstring>
+        <name>operator flecs::world</name>
+        <qualifiedname>atlas::scene_scope::world</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="56" column="9" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1scene__scope_1a2f319bb765c84e64c38f8d9241177991" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::scene_scope::operator flecs::world</definition>
+        <argsstring>()</argsstring>
+        <name>operator flecs::world</name>
+        <qualifiedname>atlas::scene_scope::world</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="57" column="9" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/scene/scene.hpp" line="35" column="5" bodyfile="TheAtlasEngine/atlas/core/scene/scene.hpp" bodystart="35" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1scene__scope_1a8bcf465cf506ee4f56ddeafb0076e766" prot="public" virt="non-virtual"><scope>atlas::scene_scope</scope><name>create_new_object</name></member>
+      <member refid="classatlas_1_1scene__scope_1a45c2b22f0d9b3b178dafee5278cb0889" prot="public" virt="non-virtual"><scope>atlas::scene_scope</scope><name>get_tag</name></member>
+      <member refid="classatlas_1_1scene__scope_1a570d5bc4cc571536ef7c650e005ffc3f" prot="private" virt="non-virtual"><scope>atlas::scene_scope</scope><name>m_registry</name></member>
+      <member refid="classatlas_1_1scene__scope_1a3b864653a128bb8d9120ad5f58bf6a0d" prot="private" virt="non-virtual"><scope>atlas::scene_scope</scope><name>m_tag</name></member>
+      <member refid="classatlas_1_1scene__scope_1a5d4d5a3af662e172070be3377a9c641a" prot="public" virt="non-virtual"><scope>atlas::scene_scope</scope><name>operator flecs::world</name></member>
+      <member refid="classatlas_1_1scene__scope_1a2f319bb765c84e64c38f8d9241177991" prot="public" virt="non-virtual"><scope>atlas::scene_scope</scope><name>operator flecs::world</name></member>
+      <member refid="classatlas_1_1scene__scope_1aa5ea793c8bd41ee9a1eac55233a1b7d5" prot="public" virt="non-virtual"><scope>atlas::scene_scope</scope><name>query_builder</name></member>
+      <member refid="classatlas_1_1scene__scope_1a769a51ebed395d342b8eb9e431642714" prot="public" virt="non-virtual"><scope>atlas::scene_scope</scope><name>scene_scope</name></member>
+      <member refid="classatlas_1_1scene__scope_1a08f6d13c602e9fc14e27600dd796bd57" prot="public" virt="non-virtual"><scope>atlas::scene_scope</scope><name>scene_scope</name></member>
+      <member refid="classatlas_1_1scene__scope_1a6d3703f1a0e00fba6f5d76a644fc2f07" prot="public" virt="virtual"><scope>atlas::scene_scope</scope><name>~scene_scope</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

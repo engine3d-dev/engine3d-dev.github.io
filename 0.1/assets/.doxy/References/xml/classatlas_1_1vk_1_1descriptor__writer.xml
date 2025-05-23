@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1descriptor__writer" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::descriptor_writer</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1descriptor__writer_1a06219064cf468a9de4d21d2e0295fd0a" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__set__layout" kindref="compound">descriptor_set_layout</ref> &amp;</type>
+        <definition>descriptor_set_layout&amp; atlas::vk::descriptor_writer::setLayout</definition>
+        <argsstring></argsstring>
+        <name>setLayout</name>
+        <qualifiedname>atlas::vk::descriptor_writer::setLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="95" column="31" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1descriptor__writer_1af380cfae8183a761e0f789cac85aa024" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__pool" kindref="compound">descriptor_pool</ref> &amp;</type>
+        <definition>descriptor_pool&amp; atlas::vk::descriptor_writer::pool</definition>
+        <argsstring></argsstring>
+        <name>pool</name>
+        <qualifiedname>atlas::vk::descriptor_writer::pool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="96" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1descriptor__writer_1abbfe1a4ae68d59c44d082f7d99405c34" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkWriteDescriptorSet &gt;</type>
+        <definition>std::vector&lt;VkWriteDescriptorSet&gt; atlas::vk::descriptor_writer::writes</definition>
+        <argsstring></argsstring>
+        <name>writes</name>
+        <qualifiedname>atlas::vk::descriptor_writer::writes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="97" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__writer_1a4020e9c3b0d8983590278ff6cef4764b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::descriptor_writer::descriptor_writer</definition>
+        <argsstring>(descriptor_set_layout &amp;setLayout, descriptor_pool &amp;pool)</argsstring>
+        <name>descriptor_writer</name>
+        <qualifiedname>atlas::vk::descriptor_writer::descriptor_writer</qualifiedname>
+        <param>
+          <type><ref refid="classatlas_1_1vk_1_1descriptor__set__layout" kindref="compound">descriptor_set_layout</ref> &amp;</type>
+          <declname>setLayout</declname>
+        </param>
+        <param>
+          <type><ref refid="classatlas_1_1vk_1_1descriptor__pool" kindref="compound">descriptor_pool</ref> &amp;</type>
+          <declname>pool</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="83" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__writer_1a92becb32a695474bd26aa9c802d5bb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__writer" kindref="compound">descriptor_writer</ref> &amp;</type>
+        <definition>descriptor_writer &amp; atlas::vk::descriptor_writer::writeBuffer</definition>
+        <argsstring>(uint32_t binding, VkDescriptorBufferInfo *bufferInfo)</argsstring>
+        <name>writeBuffer</name>
+        <qualifiedname>atlas::vk::descriptor_writer::writeBuffer</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>VkDescriptorBufferInfo *</type>
+          <declname>bufferInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="86" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__writer_1a3e1f7af29ed012ee8fb9eb1d2493a202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__writer" kindref="compound">descriptor_writer</ref> &amp;</type>
+        <definition>descriptor_writer &amp; atlas::vk::descriptor_writer::writeImage</definition>
+        <argsstring>(uint32_t binding, VkDescriptorImageInfo *imageInfo)</argsstring>
+        <name>writeImage</name>
+        <qualifiedname>atlas::vk::descriptor_writer::writeImage</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>VkDescriptorImageInfo *</type>
+          <declname>imageInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="88" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__writer_1a8d9048a383f548c788183f81df980674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::vk::descriptor_writer::build</definition>
+        <argsstring>(VkDescriptorSet &amp;set)</argsstring>
+        <name>build</name>
+        <qualifiedname>atlas::vk::descriptor_writer::build</qualifiedname>
+        <param>
+          <type>VkDescriptorSet &amp;</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="91" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1descriptor__writer_1a5a014be1a5b04838b3e61b590971b31d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::descriptor_writer::overwrite</definition>
+        <argsstring>(VkDescriptorSet &amp;set)</argsstring>
+        <name>overwrite</name>
+        <qualifiedname>atlas::vk::descriptor_writer::overwrite</qualifiedname>
+        <param>
+          <type>VkDescriptorSet &amp;</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="92" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" line="81" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan/descriptor_tutorial.hpp" bodystart="81" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1descriptor__writer_1a8d9048a383f548c788183f81df980674" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_writer</scope><name>build</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__writer_1a4020e9c3b0d8983590278ff6cef4764b" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_writer</scope><name>descriptor_writer</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__writer_1a5a014be1a5b04838b3e61b590971b31d" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_writer</scope><name>overwrite</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__writer_1af380cfae8183a761e0f789cac85aa024" prot="private" virt="non-virtual"><scope>atlas::vk::descriptor_writer</scope><name>pool</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__writer_1a06219064cf468a9de4d21d2e0295fd0a" prot="private" virt="non-virtual"><scope>atlas::vk::descriptor_writer</scope><name>setLayout</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__writer_1a92becb32a695474bd26aa9c802d5bb95" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_writer</scope><name>writeBuffer</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__writer_1a3e1f7af29ed012ee8fb9eb1d2493a202" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_writer</scope><name>writeImage</name></member>
+      <member refid="classatlas_1_1vk_1_1descriptor__writer_1abbfe1a4ae68d59c44d082f7d99405c34" prot="private" virt="non-virtual"><scope>atlas::vk::descriptor_writer</scope><name>writes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

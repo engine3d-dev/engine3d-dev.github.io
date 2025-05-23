@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1shader" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>atlas::shader</compoundname>
+    <derivedcompoundref refid="classatlas_1_1vk_1_1vk__shader" prot="public" virt="non-virtual">atlas::vk::vk_shader</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1shader_1a5a4db3603becf958415d7d41958b1896" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual atlas::shader::~shader</definition>
+        <argsstring>()=default</argsstring>
+        <name>~shader</name>
+        <qualifiedname>atlas::shader::~shader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/shader.hpp" line="10" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1shader_1ab70672551e673fb6854567f97dbd096a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkPipeline</type>
+        <definition>VkPipeline atlas::shader::get_graphics_pipeline</definition>
+        <argsstring>()</argsstring>
+        <name>get_graphics_pipeline</name>
+        <qualifiedname>atlas::shader::get_graphics_pipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/shader.hpp" line="15" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classatlas_1_1shader_1a5c9abddd42b4f3876e42771e6cd40f53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ref&lt; <ref refid="classatlas_1_1shader" kindref="compound">shader</ref> &gt;</type>
+        <definition>static ref&lt; shader &gt; atlas::shader::create</definition>
+        <argsstring>(const std::string &amp;p_vert_shader, const std::string &amp;p_frag_shader, const vk::shader_pipeline_config &amp;p_config)</argsstring>
+        <name>create</name>
+        <qualifiedname>atlas::shader::create</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_vert_shader</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_frag_shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1vk_1_1shader__pipeline__config" kindref="compound">vk::shader_pipeline_config</ref> &amp;</type>
+          <declname>p_config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/shader.hpp" line="11" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1shader_1ad4a95ab111f3461bae53d5fb729258f8" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>VkPipeline</type>
+        <definition>virtual VkPipeline atlas::shader::graphics_pipeline</definition>
+        <argsstring>()=0</argsstring>
+        <name>graphics_pipeline</name>
+        <qualifiedname>atlas::shader::graphics_pipeline</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__shader_1ac1b491cd1352220292b56ea50932af24">graphics_pipeline</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/shader.hpp" line="18" column="28"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>atlas::shader</label>
+        <link refid="classatlas_1_1shader"/>
+      </node>
+      <node id="2">
+        <label>atlas::vk::vk_shader</label>
+        <link refid="classatlas_1_1vk_1_1vk__shader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="TheAtlasEngine/atlas/drivers/shader.hpp" line="8" column="5" bodyfile="TheAtlasEngine/atlas/drivers/shader.hpp" bodystart="8" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1shader_1a5c9abddd42b4f3876e42771e6cd40f53" prot="public" virt="non-virtual"><scope>atlas::shader</scope><name>create</name></member>
+      <member refid="classatlas_1_1shader_1ab70672551e673fb6854567f97dbd096a" prot="public" virt="non-virtual"><scope>atlas::shader</scope><name>get_graphics_pipeline</name></member>
+      <member refid="classatlas_1_1shader_1ad4a95ab111f3461bae53d5fb729258f8" prot="private" virt="pure-virtual"><scope>atlas::shader</scope><name>graphics_pipeline</name></member>
+      <member refid="classatlas_1_1shader_1a5a4db3603becf958415d7d41958b1896" prot="public" virt="virtual"><scope>atlas::shader</scope><name>~shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

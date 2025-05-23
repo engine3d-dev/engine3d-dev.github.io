@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_e4a875ec04a9822d1a20b5830cf2827b" kind="dir">
+    <compoundname>TheAtlasEngine/atlas/core/update_handlers</compoundname>
+    <innerfile refid="global__update_8hpp">global_update.hpp</innerfile>
+    <innerfile refid="parallel__update__manager_8hpp">parallel_update_manager.hpp</innerfile>
+    <innerfile refid="sync__update_8hpp">sync_update.hpp</innerfile>
+    <innerfile refid="thread__manager_8hpp">thread_manager.hpp</innerfile>
+    <innerfile refid="update__handlers_2timer_8hpp">timer.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/update_handlers/"/>
+  </compounddef>
+</doxygen>

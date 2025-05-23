@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1system__registry" kind="class" language="C++" prot="public">
+    <compoundname>atlas::system_registry</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classatlas_1_1system__registry_1a139ce0efc5a505cb8077e9af59c6f76b" prot="private" static="yes" mutable="no">
+        <type><ref refid="classatlas_1_1system__registry" kindref="compound">system_registry</ref> *</type>
+        <definition>system_registry* atlas::system_registry::s_instance</definition>
+        <argsstring></argsstring>
+        <name>s_instance</name>
+        <qualifiedname>atlas::system_registry::s_instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="47" column="32" bodyfile="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1system__registry_1ae611052f9ad8c2e67e94c56bede3fda6" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string atlas::system_registry::m_tag</definition>
+        <argsstring></argsstring>
+        <name>m_tag</name>
+        <qualifiedname>atlas::system_registry::m_tag</qualifiedname>
+        <initializer>= &quot;Undefined&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="48" column="21" bodyfile="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1system__registry_1aa86700632a45edc3737a1cbbece34bfe" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, ref&lt; <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, ref&lt;world_scope&gt; &gt; atlas::system_registry::m_world_registered</definition>
+        <argsstring></argsstring>
+        <name>m_world_registered</name>
+        <qualifiedname>atlas::system_registry::m_world_registered</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="49" column="18" bodyfile="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1system__registry_1a865a67ecb04111cacd143a0ad0e4de47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::system_registry::system_registry</definition>
+        <argsstring>(const std::string &amp;p_tag)</argsstring>
+        <name>system_registry</name>
+        <qualifiedname>atlas::system_registry::system_registry</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="19" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1system__registry_1a008898910fa7c0cd25447fe9b8ac05c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::system_registry::~system_registry</definition>
+        <argsstring>()</argsstring>
+        <name>~system_registry</name>
+        <qualifiedname>atlas::system_registry::~system_registry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="21" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classatlas_1_1system__registry_1ab6d4f71faf209635f1162b639118b07f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ref&lt; <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref> &gt;</type>
+        <definition>static ref&lt; world_scope &gt; atlas::system_registry::create_world</definition>
+        <argsstring>(const std::string &amp;p_tag)</argsstring>
+        <name>create_world</name>
+        <qualifiedname>atlas::system_registry::create_world</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+<para>Instantiates new <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para><ref refid="classatlas_1_1system__registry" kindref="compound">system_registry</ref> does the following:<orderedlist>
+<listitem><para>Creates world scopes</para>
+</listitem><listitem><para>Manages Lifetimes of world objects</para>
+</listitem><listitem><para>Keeps tracks of the refcounting of references to these world objects</para>
+</listitem><listitem><para>Provide globalized access to other worlds </para>
+</listitem></orderedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="33" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1system__registry_1aa4571c79d20d7d13426ebc80a3131bca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ref&lt; <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref> &gt;</type>
+        <definition>static ref&lt; world_scope &gt; atlas::system_registry::get_world</definition>
+        <argsstring>(const std::string &amp;p_tag)</argsstring>
+        <name>get_world</name>
+        <qualifiedname>atlas::system_registry::get_world</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+<para>Searches and returns <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref> if found. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns nullptr if <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref> not found </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="37" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1system__registry_1a9662fb6dc494472e5e1a1d1443322bef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ref&lt; <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref> &gt;</type>
+        <definition>ref&lt; world_scope &gt; atlas::system_registry::search_world</definition>
+        <argsstring>(const std::string &amp;p_tag)</argsstring>
+        <name>search_world</name>
+        <qualifiedname>atlas::system_registry::search_world</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="40" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1system__registry_1ae98acca5da6394297366194bc4872731" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::system_registry::append_world</definition>
+        <argsstring>(const ref&lt; world_scope &gt; &amp;p_world)</argsstring>
+        <name>append_world</name>
+        <qualifiedname>atlas::system_registry::append_world</qualifiedname>
+        <param>
+          <type>const ref&lt; <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref> &gt; &amp;</type>
+          <declname>p_world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="42" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1system__registry_1a1c1aef8465c2bd267c092293a63caa9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ref&lt; <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref> &gt;</type>
+        <definition>ref&lt; world_scope &gt; atlas::system_registry::append_world_scope</definition>
+        <argsstring>(const ref&lt; world_scope &gt; &amp;p_world)</argsstring>
+        <name>append_world_scope</name>
+        <qualifiedname>atlas::system_registry::append_world_scope</qualifiedname>
+        <param>
+          <type>const ref&lt; <ref refid="classatlas_1_1world__scope" kindref="compound">world_scope</ref> &gt; &amp;</type>
+          <declname>p_world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="44" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" line="17" column="5" bodyfile="TheAtlasEngine/atlas/core/system_framework/system_registry.hpp" bodystart="17" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1system__registry_1ae98acca5da6394297366194bc4872731" prot="private" virt="non-virtual"><scope>atlas::system_registry</scope><name>append_world</name></member>
+      <member refid="classatlas_1_1system__registry_1a1c1aef8465c2bd267c092293a63caa9c" prot="private" virt="non-virtual"><scope>atlas::system_registry</scope><name>append_world_scope</name></member>
+      <member refid="classatlas_1_1system__registry_1ab6d4f71faf209635f1162b639118b07f" prot="public" virt="non-virtual"><scope>atlas::system_registry</scope><name>create_world</name></member>
+      <member refid="classatlas_1_1system__registry_1aa4571c79d20d7d13426ebc80a3131bca" prot="public" virt="non-virtual"><scope>atlas::system_registry</scope><name>get_world</name></member>
+      <member refid="classatlas_1_1system__registry_1ae611052f9ad8c2e67e94c56bede3fda6" prot="private" virt="non-virtual"><scope>atlas::system_registry</scope><name>m_tag</name></member>
+      <member refid="classatlas_1_1system__registry_1aa86700632a45edc3737a1cbbece34bfe" prot="private" virt="non-virtual"><scope>atlas::system_registry</scope><name>m_world_registered</name></member>
+      <member refid="classatlas_1_1system__registry_1a139ce0efc5a505cb8077e9af59c6f76b" prot="private" virt="non-virtual"><scope>atlas::system_registry</scope><name>s_instance</name></member>
+      <member refid="classatlas_1_1system__registry_1a9662fb6dc494472e5e1a1d1443322bef" prot="private" virt="non-virtual"><scope>atlas::system_registry</scope><name>search_world</name></member>
+      <member refid="classatlas_1_1system__registry_1a865a67ecb04111cacd143a0ad0e4de47" prot="public" virt="non-virtual"><scope>atlas::system_registry</scope><name>system_registry</name></member>
+      <member refid="classatlas_1_1system__registry_1a008898910fa7c0cd25447fe9b8ac05c3" prot="public" virt="non-virtual"><scope>atlas::system_registry</scope><name>~system_registry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

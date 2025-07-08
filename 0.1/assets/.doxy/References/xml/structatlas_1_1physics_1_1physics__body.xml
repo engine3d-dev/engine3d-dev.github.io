@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1physics_1_1physics__body" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::physics::physics_body</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a1435bab7aff42481e4a7555502041657" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::physics::physics_body::linear_velocity</definition>
+        <argsstring></argsstring>
+        <name>linear_velocity</name>
+        <qualifiedname>atlas::physics::physics_body::linear_velocity</qualifiedname>
+        <initializer>= glm::vec3(0.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="63" column="19" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1ad25b566efb8d1926d5ba649329260db4" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::physics::physics_body::angular_velocity</definition>
+        <argsstring></argsstring>
+        <name>angular_velocity</name>
+        <qualifiedname>atlas::physics::physics_body::angular_velocity</qualifiedname>
+        <initializer>= glm::vec3(0.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="64" column="19" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a8d76ff8a61c66fb2bb3745977647fdb0" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::physics::physics_body::cumulative_force</definition>
+        <argsstring></argsstring>
+        <name>cumulative_force</name>
+        <qualifiedname>atlas::physics::physics_body::cumulative_force</qualifiedname>
+        <initializer>= glm::vec3(0.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="66" column="19" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a01a74d7c2e86514a2de1106cb9d30cec" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::physics::physics_body::cumulative_torque</definition>
+        <argsstring></argsstring>
+        <name>cumulative_torque</name>
+        <qualifiedname>atlas::physics::physics_body::cumulative_torque</qualifiedname>
+        <initializer>= glm::vec3(0.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="67" column="19" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a9d5dacf147f1151a3b9f29f8aa72f666" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::physics_body::mass_factor</definition>
+        <argsstring></argsstring>
+        <name>mass_factor</name>
+        <qualifiedname>atlas::physics::physics_body::mass_factor</qualifiedname>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="69" column="15" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a47d2ddd1952c7fb992675e7bef5772d7" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::physics::physics_body::center_mass_position</definition>
+        <argsstring></argsstring>
+        <name>center_mass_position</name>
+        <qualifiedname>atlas::physics::physics_body::center_mass_position</qualifiedname>
+        <initializer>= glm::vec3(0.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="70" column="19" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a1ab883bb4057ba3259ae952c7812f1c0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::physics_body::linear_damping</definition>
+        <argsstring></argsstring>
+        <name>linear_damping</name>
+        <qualifiedname>atlas::physics::physics_body::linear_damping</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="71" column="15" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a4c810e639c0337e47118cf4ee94cb362" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::physics_body::angular_damping</definition>
+        <argsstring></argsstring>
+        <name>angular_damping</name>
+        <qualifiedname>atlas::physics::physics_body::angular_damping</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="72" column="15" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a814a58fc2c8fb27cb56dc3f99b6127c2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::physics::physics_body::use_gravity</definition>
+        <argsstring></argsstring>
+        <name>use_gravity</name>
+        <qualifiedname>atlas::physics::physics_body::use_gravity</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="74" column="14" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1ae86a2c1092252b9926371417e8f461ff" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::physics_body::gravity_factor</definition>
+        <argsstring></argsstring>
+        <name>gravity_factor</name>
+        <qualifiedname>atlas::physics::physics_body::gravity_factor</qualifiedname>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="75" column="15" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1af26d2dcd9981ff309d2135d04d99560c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t atlas::physics::physics_body::body_type</definition>
+        <argsstring></argsstring>
+        <name>body_type</name>
+        <qualifiedname>atlas::physics::physics_body::body_type</qualifiedname>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="77" column="17" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a2486abaf34b541e6f81b968c8e8874d4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::physics_body::friction</definition>
+        <argsstring></argsstring>
+        <name>friction</name>
+        <qualifiedname>atlas::physics::physics_body::friction</qualifiedname>
+        <initializer>= 0.8f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="78" column="15" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1ae03df1874f4fd93a99ab48c208095b30" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float atlas::physics::physics_body::restitution</definition>
+        <argsstring></argsstring>
+        <name>restitution</name>
+        <qualifiedname>atlas::physics::physics_body::restitution</qualifiedname>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="79" column="15" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a1b5d98f1c17a19048d2f6a1653d9169d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t atlas::physics::physics_body::body_movement_type</definition>
+        <argsstring></argsstring>
+        <name>body_movement_type</name>
+        <qualifiedname>atlas::physics::physics_body::body_movement_type</qualifiedname>
+        <initializer>= body_type::Static</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="81" column="17" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1ab89ce86eec647adc4cea1dea12832bc8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t atlas::physics::physics_body::body_layer_type</definition>
+        <argsstring></argsstring>
+        <name>body_layer_type</name>
+        <qualifiedname>atlas::physics::physics_body::body_layer_type</qualifiedname>
+        <initializer>= body_layer::Moving</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="82" column="17" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1a41e1d12f7674f8d826e453f287c0ea19" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::physics::physics_body::body_id</definition>
+        <argsstring></argsstring>
+        <name>body_id</name>
+        <qualifiedname>atlas::physics::physics_body::body_id</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="84" column="18" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1physics__body_1ae18e356b7482b49ce936f1bd72d881a6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int atlas::physics::physics_body::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>atlas::physics::physics_body::count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="85" column="13" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="62" column="5" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="62" bodyend="86"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a4c810e639c0337e47118cf4ee94cb362" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>angular_damping</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1ad25b566efb8d1926d5ba649329260db4" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>angular_velocity</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a41e1d12f7674f8d826e453f287c0ea19" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>body_id</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1ab89ce86eec647adc4cea1dea12832bc8" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>body_layer_type</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a1b5d98f1c17a19048d2f6a1653d9169d" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>body_movement_type</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1af26d2dcd9981ff309d2135d04d99560c" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>body_type</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a47d2ddd1952c7fb992675e7bef5772d7" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>center_mass_position</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1ae18e356b7482b49ce936f1bd72d881a6" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>count</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a8d76ff8a61c66fb2bb3745977647fdb0" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>cumulative_force</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a01a74d7c2e86514a2de1106cb9d30cec" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>cumulative_torque</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a2486abaf34b541e6f81b968c8e8874d4" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>friction</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1ae86a2c1092252b9926371417e8f461ff" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>gravity_factor</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a1ab883bb4057ba3259ae952c7812f1c0" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>linear_damping</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a1435bab7aff42481e4a7555502041657" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>linear_velocity</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a9d5dacf147f1151a3b9f29f8aa72f666" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>mass_factor</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1ae03df1874f4fd93a99ab48c208095b30" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>restitution</name></member>
+      <member refid="structatlas_1_1physics_1_1physics__body_1a814a58fc2c8fb27cb56dc3f99b6127c2" prot="public" virt="non-virtual"><scope>atlas::physics::physics_body</scope><name>use_gravity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

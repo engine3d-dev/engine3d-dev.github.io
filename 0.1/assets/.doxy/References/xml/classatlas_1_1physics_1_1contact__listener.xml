@@ -1,0 +1,432 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1physics_1_1contact__listener" kind="class" language="C++" prot="public">
+    <compoundname>atlas::physics::contact_listener</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JPH::ContactListener</basecompoundref>
+    <includes refid="jolt__contact__listener_8hpp" local="no">jolt_contact_listener.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1physics_1_1contact__listener_1a35217600350d2e41a110c9a0381e2272" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structatlas_1_1physics_1_1contact__event" kindref="compound">contact_event</ref> &gt;</type>
+        <definition>std::vector&lt;contact_event&gt; atlas::physics::contact_listener::m_contacts_added</definition>
+        <argsstring></argsstring>
+        <name>m_contacts_added</name>
+        <qualifiedname>atlas::physics::contact_listener::m_contacts_added</qualifiedname>
+        <briefdescription>
+<para>A way to gather all the events and organize them each frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="114" column="21" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1physics_1_1contact__listener_1a561766c60bb5a9ad97642a4c11daf98f" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structatlas_1_1physics_1_1contact__event" kindref="compound">contact_event</ref> &gt;</type>
+        <definition>std::vector&lt;contact_event&gt; atlas::physics::contact_listener::m_contacts_persisted</definition>
+        <argsstring></argsstring>
+        <name>m_contacts_persisted</name>
+        <qualifiedname>atlas::physics::contact_listener::m_contacts_persisted</qualifiedname>
+        <briefdescription>
+<para>FIXME: These two are unused and will be used when OnContactPersisted and OncontactRemoved get implemented. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="121" column="21" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1physics_1_1contact__listener_1af9c050c5a6f7f7f18ffbdf39093385d2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structatlas_1_1physics_1_1contact__event" kindref="compound">contact_event</ref> &gt;</type>
+        <definition>std::vector&lt;contact_event&gt; atlas::physics::contact_listener::m_contacts_removed</definition>
+        <argsstring></argsstring>
+        <name>m_contacts_removed</name>
+        <qualifiedname>atlas::physics::contact_listener::m_contacts_removed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="122" column="21" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1physics_1_1contact__listener_1a6cfb52d0c385b763e80d05ed255c7355" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref>&lt; <ref refid="classatlas_1_1scene__scope" kindref="compound">scene_scope</ref> &gt;</type>
+        <definition>ref&lt;scene_scope&gt; atlas::physics::contact_listener::m_scene</definition>
+        <argsstring></argsstring>
+        <name>m_scene</name>
+        <qualifiedname>atlas::physics::contact_listener::m_scene</qualifiedname>
+        <briefdescription>
+<para>Access to this scene. Should be replaced with get_scenes() function. So it can update based on loading and scene changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="129" column="13" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1physics_1_1contact__listener_1a9457f6f109433ec13da38bb70fb7f463" prot="private" static="no" mutable="no">
+        <type>flecs::world</type>
+        <definition>flecs::world atlas::physics::contact_listener::m_registry</definition>
+        <argsstring></argsstring>
+        <name>m_registry</name>
+        <qualifiedname>atlas::physics::contact_listener::m_registry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="130" column="22" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1physics_1_1contact__listener_1a54940843b6087c385874d1b574506a21" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>JPH::ValidateResult</type>
+        <definition>JPH::ValidateResult atlas::physics::contact_listener::OnContactValidate</definition>
+        <argsstring>(const JPH::Body &amp;in_body1, const JPH::Body &amp;in_body2, JPH::RVec3Arg in_base_offset, const JPH::CollideShapeResult &amp;in_collision_result) override</argsstring>
+        <name>OnContactValidate</name>
+        <qualifiedname>atlas::physics::contact_listener::OnContactValidate</qualifiedname>
+        <param>
+          <type>const JPH::Body &amp;</type>
+          <declname>in_body1</declname>
+        </param>
+        <param>
+          <type>const JPH::Body &amp;</type>
+          <declname>in_body2</declname>
+        </param>
+        <param>
+          <type>JPH::RVec3Arg</type>
+          <declname>in_base_offset</declname>
+        </param>
+        <param>
+          <type>const JPH::CollideShapeResult &amp;</type>
+          <declname>in_collision_result</declname>
+        </param>
+        <briefdescription>
+<para>This allows us to make sure that the contacts are valid and not something that went wrong. It plays the role of both sanity check and saftey gaurd since if collisions were to be wrong you would not want that to crash the whole game. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_body1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the object that called it </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_body2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This is the object that body1 collided with </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_base_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This tells how apart the center of the objetcs are </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_collision_result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The details about the collision </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>JPH::ValidateResult </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="30" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1contact__listener_1ab4156d11fa7b69d0d062cc96fa5b99d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::contact_listener::OnContactAdded</definition>
+        <argsstring>(const JPH::Body &amp;body1, const JPH::Body &amp;body2, const JPH::ContactManifold &amp;manifold, JPH::ContactSettings &amp;settings) override</argsstring>
+        <name>OnContactAdded</name>
+        <qualifiedname>atlas::physics::contact_listener::OnContactAdded</qualifiedname>
+        <param>
+          <type>const JPH::Body &amp;</type>
+          <declname>body1</declname>
+        </param>
+        <param>
+          <type>const JPH::Body &amp;</type>
+          <declname>body2</declname>
+        </param>
+        <param>
+          <type>const JPH::ContactManifold &amp;</type>
+          <declname>manifold</declname>
+        </param>
+        <param>
+          <type>JPH::ContactSettings &amp;</type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>This gets triggered each time a collision comes into contact. It is only called once and then removed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Body that called </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>manifold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This class has a lot of stuff including heights, directions, offset etc... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This has some of the body settings these objects have. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1contact__listener_1a78dd782643e4118fd79438dea233fb4f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::contact_listener::OnContactPersisted</definition>
+        <argsstring>(const JPH::Body &amp;in_body1, const JPH::Body &amp;in_body2, const JPH::ContactManifold &amp;in_manifold, JPH::ContactSettings &amp;io_settings) override</argsstring>
+        <name>OnContactPersisted</name>
+        <qualifiedname>atlas::physics::contact_listener::OnContactPersisted</qualifiedname>
+        <param>
+          <type>const JPH::Body &amp;</type>
+          <declname>in_body1</declname>
+        </param>
+        <param>
+          <type>const JPH::Body &amp;</type>
+          <declname>in_body2</declname>
+        </param>
+        <param>
+          <type>const JPH::ContactManifold &amp;</type>
+          <declname>in_manifold</declname>
+        </param>
+        <param>
+          <type>JPH::ContactSettings &amp;</type>
+          <declname>io_settings</declname>
+        </param>
+        <briefdescription>
+<para>This gets called multiple times. It is not in use yet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_body1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Body that called </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_body2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target body </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in_manifold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This class has a lot of stuff including heights, directions, offset etc... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>io_settings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This specifically descibes the settings that contacts should have. FIXME: Still needs to be implemented </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="63" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1contact__listener_1acd7f7470bd020a23cbf683e324d26fb5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::contact_listener::OnContactRemoved</definition>
+        <argsstring>(const JPH::SubShapeIDPair &amp;in_sub_shape_pair) override</argsstring>
+        <name>OnContactRemoved</name>
+        <qualifiedname>atlas::physics::contact_listener::OnContactRemoved</qualifiedname>
+        <param>
+          <type>const JPH::SubShapeIDPair &amp;</type>
+          <declname>in_sub_shape_pair</declname>
+        </param>
+        <briefdescription>
+<para>This is used to clean to shapes and call exiting functions for contact. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in_sub_shape_pair</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pair of shapes that no longer touch. FIXME: Still needs to be implemented </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="74" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1physics_1_1contact__listener_1ae2f69ee2c3355ede142e1cf684b9d717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::physics::contact_listener::contact_listener</definition>
+        <argsstring>()</argsstring>
+        <name>contact_listener</name>
+        <qualifiedname>atlas::physics::contact_listener::contact_listener</qualifiedname>
+        <briefdescription>
+<para>Construct a new contact listener object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="82" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1contact__listener_1a430144b7847c2422ab4c07f15cca2dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::contact_listener::clear_events</definition>
+        <argsstring>()</argsstring>
+        <name>clear_events</name>
+        <qualifiedname>atlas::physics::contact_listener::clear_events</qualifiedname>
+        <briefdescription>
+<para>Deletes all events. Helps reset the collisions on load, etc... </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="88" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1contact__listener_1a179378afdc261a2304e40f9471c110e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::contact_listener::run_events_added</definition>
+        <argsstring>()</argsstring>
+        <name>run_events_added</name>
+        <qualifiedname>atlas::physics::contact_listener::run_events_added</qualifiedname>
+        <briefdescription>
+<para>Calls all events that came into contact this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="94" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1contact__listener_1a0972f895782082c56aeb3937e566ee91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::contact_listener::run_events_persisted</definition>
+        <argsstring>()</argsstring>
+        <name>run_events_persisted</name>
+        <qualifiedname>atlas::physics::contact_listener::run_events_persisted</qualifiedname>
+        <briefdescription>
+<para>Runs all events that came into contact every frame but first and last. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="101" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1contact__listener_1a11360ff91876679836989972bdf43004" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::contact_listener::run_events_removed</definition>
+        <argsstring>()</argsstring>
+        <name>run_events_removed</name>
+        <qualifiedname>atlas::physics::contact_listener::run_events_removed</qualifiedname>
+        <briefdescription>
+<para>Runs all events who stopped contact this frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="107" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is the glue between contact events and jolts contact listener. It takes the calls from jolt through virtual functions and allows users to create children for jolt collision. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>JPH::ContactListener</label>
+      </node>
+      <node id="1">
+        <label>atlas::physics::contact_listener</label>
+        <link refid="classatlas_1_1physics_1_1contact__listener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>JPH::ContactListener</label>
+      </node>
+      <node id="1">
+        <label>atlas::physics::contact_listener</label>
+        <link refid="classatlas_1_1physics_1_1contact__listener"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" line="15" column="5" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp" bodystart="15" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a430144b7847c2422ab4c07f15cca2dbd" prot="public" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>clear_events</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1ae2f69ee2c3355ede142e1cf684b9d717" prot="public" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>contact_listener</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a35217600350d2e41a110c9a0381e2272" prot="private" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>m_contacts_added</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a561766c60bb5a9ad97642a4c11daf98f" prot="private" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>m_contacts_persisted</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1af9c050c5a6f7f7f18ffbdf39093385d2" prot="private" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>m_contacts_removed</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a9457f6f109433ec13da38bb70fb7f463" prot="private" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>m_registry</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a6cfb52d0c385b763e80d05ed255c7355" prot="private" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>m_scene</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1ab4156d11fa7b69d0d062cc96fa5b99d2" prot="private" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>OnContactAdded</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a78dd782643e4118fd79438dea233fb4f" prot="private" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>OnContactPersisted</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1acd7f7470bd020a23cbf683e324d26fb5" prot="private" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>OnContactRemoved</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a54940843b6087c385874d1b574506a21" prot="private" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>OnContactValidate</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a179378afdc261a2304e40f9471c110e1" prot="public" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>run_events_added</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a0972f895782082c56aeb3937e566ee91" prot="public" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>run_events_persisted</name></member>
+      <member refid="classatlas_1_1physics_1_1contact__listener_1a11360ff91876679836989972bdf43004" prot="public" virt="non-virtual"><scope>atlas::physics::contact_listener</scope><name>run_events_removed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

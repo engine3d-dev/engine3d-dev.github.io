@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_58a1ea337b9d91821031c085f16f9af8" kind="dir">
+    <compoundname>TheAtlasEngine/atlas/core/serialize</compoundname>
+    <innerfile refid="serializer_8hpp">serializer.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/serialize/"/>
+  </compounddef>
+</doxygen>

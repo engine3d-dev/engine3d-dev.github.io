@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="renderer__context_8hpp" kind="file" language="C++">
+    <compoundname>renderer_context.hpp</compoundname>
+    <includes local="no">string</includes>
+    <includes refid="core_8hpp" local="no">core/core.hpp</includes>
+    <includes refid="vk__swapchain_8hpp" local="no">drivers/vulkan-cpp/vk_swapchain.hpp</includes>
+    <includes local="no">span</includes>
+    <includes refid="vk__command__buffer_8hpp" local="no">drivers/vulkan-cpp/vk_command_buffer.hpp</includes>
+    <includedby refid="vk__renderer_8hpp" local="no">TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp</includedby>
+    <includedby refid="renderer_8hpp" local="no">TheAtlasEngine/atlas/renderer/renderer.hpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>core/core.hpp</label>
+        <link refid="core_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>core/utilities/types.hpp</label>
+        <link refid="core_2utilities_2types_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TheAtlasEngine/atlas/drivers/renderer_context.hpp</label>
+        <link refid="renderer__context_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>drivers/vulkan-cpp/vk_command_buffer.hpp</label>
+        <link refid="vk__command__buffer_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>drivers/vulkan-cpp/vk_driver.hpp</label>
+        <link refid="vk__driver_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>drivers/vulkan-cpp/vk_physical_driver.hpp</label>
+        <link refid="vk__physical__driver_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>drivers/vulkan-cpp/vk_present_queue.hpp</label>
+        <link refid="vk__present__queue_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>drivers/vulkan-cpp/vk_renderpass.hpp</label>
+        <link refid="vk__renderpass_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>drivers/vulkan-cpp/vk_swapchain.hpp</label>
+        <link refid="vk__swapchain_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>drivers/vulkan-cpp/vk_types.hpp</label>
+        <link refid="vk__types_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cassert</label>
+      </node>
+      <node id="10">
+        <label>cstdint</label>
+      </node>
+      <node id="17">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+      <node id="16">
+        <label>span</label>
+      </node>
+      <node id="6">
+        <label>spdlog/common.h</label>
+      </node>
+      <node id="7">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+      <node id="12">
+        <label>vulkan/vulkan.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>TheAtlasEngine/atlas/core/application.hpp</label>
+        <link refid="application_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TheAtlasEngine/atlas/core/scene/components.hpp</label>
+        <link refid="components_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TheAtlasEngine/atlas/core/scene/scene.hpp</label>
+        <link refid="scene_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TheAtlasEngine/atlas/core/scene/scene_object.hpp</label>
+        <link refid="scene__object_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TheAtlasEngine/atlas/core/scene/world.hpp</label>
+        <link refid="world_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>TheAtlasEngine/atlas/core/serialize/serializer.hpp</label>
+        <link refid="serializer_8hpp_source"/>
+      </node>
+      <node id="9">
+        <label>TheAtlasEngine/atlas/core/system_framework/system_registry.hpp</label>
+        <link refid="system__registry_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>TheAtlasEngine/atlas/drivers/renderer_context.hpp</label>
+        <link refid="renderer__context_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp</label>
+        <link refid="vk__renderer_8hpp_source"/>
+      </node>
+      <node id="11">
+        <label>TheAtlasEngine/atlas/physics/jolt-cpp/jolt_collision.hpp</label>
+        <link refid="jolt__collision_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>TheAtlasEngine/atlas/physics/jolt-cpp/jolt_collision_manager.hpp</label>
+        <link refid="jolt__collision__manager_8hpp_source"/>
+      </node>
+      <node id="13">
+        <label>TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp</label>
+        <link refid="jolt__contact__listener_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_api.hpp</label>
+        <link refid="physics__3d_2jolt_2jolt__api_8hpp_source"/>
+      </node>
+      <node id="14">
+        <label>TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_context.hpp</label>
+        <link refid="jolt__context_8hpp_source"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>TheAtlasEngine/atlas/physics/physics_3d/physics.hpp</label>
+        <link refid="physics_8hpp_source"/>
+      </node>
+      <node id="15">
+        <label>TheAtlasEngine/atlas/physics/physics_3d/physics_engine.hpp</label>
+        <link refid="physics__engine_8hpp_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TheAtlasEngine/atlas/renderer/renderer.hpp</label>
+        <link refid="renderer_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classatlas_1_1render__context" prot="public">atlas::render_context</innerclass>
+    <innernamespace refid="namespaceatlas">atlas</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;core/core.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;drivers/vulkan-cpp/vk_swapchain.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;span&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;drivers/vulkan-cpp/vk_command_buffer.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceatlas" kindref="compound">atlas</ref><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="classatlas_1_1render__context" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classatlas_1_1render__context" kindref="compound">render_context</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classatlas_1_1render__context" kindref="compound">~render_context</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>begin_frame(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classatlas_1_1vk_1_1vk__command__buffer" kindref="compound">vk::vk_command_buffer</ref>&amp;<sp/>p_current,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref>&amp;<sp/>p_swapchain_handler)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>start_frame(p_current,<sp/>p_swapchain_handler);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>end_frame()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>post_frame();<sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_background_color(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;float,<sp/>4&gt;&amp;<sp/>p_color)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>background_color(p_color);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>start_frame(</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classatlas_1_1vk_1_1vk__command__buffer" kindref="compound">vk::vk_command_buffer</ref>&amp;<sp/>p_current,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref>&amp;<sp/>p_swapchain_handler)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>post_frame()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>background_color(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::array&lt;float,<sp/>4&gt;&amp;<sp/>p_color)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>scope&lt;render_context&gt;<sp/>initialize_renderer(</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref>&amp;<sp/>p_swapchain,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p_tag);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp"/>
+  </compounddef>
+</doxygen>

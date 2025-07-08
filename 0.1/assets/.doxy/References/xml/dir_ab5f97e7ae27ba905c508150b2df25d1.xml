@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_ab5f97e7ae27ba905c508150b2df25d1" kind="dir">
+    <compoundname>TheAtlasEngine/atlas/core</compoundname>
+    <innerdir refid="dir_b27da4b5790a8b0d69c02bcd8b78255a">TheAtlasEngine/atlas/core/event</innerdir>
+    <innerdir refid="dir_27ba7cf633e68cf06fb2d9a5a7eda525">TheAtlasEngine/atlas/core/filesystem</innerdir>
+    <innerdir refid="dir_b5becf243c0000df8fbe7c991f964f21">TheAtlasEngine/atlas/core/geometry</innerdir>
+    <innerdir refid="dir_3050860d9c50f9f4f11f08b3bfb0b023">TheAtlasEngine/atlas/core/image</innerdir>
+    <innerdir refid="dir_cd513ce3e965767955df67d416f47de6">TheAtlasEngine/atlas/core/math</innerdir>
+    <innerdir refid="dir_50632568389acd88e20d4049896804e3">TheAtlasEngine/atlas/core/scene</innerdir>
+    <innerdir refid="dir_58a1ea337b9d91821031c085f16f9af8">TheAtlasEngine/atlas/core/serialize</innerdir>
+    <innerdir refid="dir_95144a79d2a75258fa60dac31330b761">TheAtlasEngine/atlas/core/system_framework</innerdir>
+    <innerdir refid="dir_3d5429f92b5f302f4e9406c3e899f86b">TheAtlasEngine/atlas/core/threads</innerdir>
+    <innerdir refid="dir_ec4014881addefdc5691f44c9e98b9f4">TheAtlasEngine/atlas/core/ui</innerdir>
+    <innerdir refid="dir_e4a875ec04a9822d1a20b5830cf2827b">TheAtlasEngine/atlas/core/update_handlers</innerdir>
+    <innerdir refid="dir_5ecaaba7e34420a87db9680718b1325e">TheAtlasEngine/atlas/core/utilities</innerdir>
+    <innerfile refid="api_8hpp">api.hpp</innerfile>
+    <innerfile refid="application_8hpp">application.hpp</innerfile>
+    <innerfile refid="core_8hpp">core.hpp</innerfile>
+    <innerfile refid="engine__logger_8hpp">engine_logger.hpp</innerfile>
+    <innerfile refid="timer_8hpp">timer.hpp</innerfile>
+    <innerfile refid="window_8hpp">window.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/"/>
+  </compounddef>
+</doxygen>

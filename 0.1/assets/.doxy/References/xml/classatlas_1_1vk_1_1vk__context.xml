@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__context" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_context</compoundname>
+    <basecompoundref refid="classatlas_1_1graphics__context" prot="public" virt="non-virtual">atlas::graphics_context</basecompoundref>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__context_1a07c3dc857b598a80c492d6a9adddd111" prot="private" static="yes" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__context" kindref="compound">vk_context</ref> *</type>
+        <definition>vk_context* atlas::vk::vk_context::s_instance</definition>
+        <argsstring></argsstring>
+        <name>s_instance</name>
+        <qualifiedname>atlas::vk::vk_context::s_instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="29" column="27" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__context_1a7ceccda5d511c335aab6891e2f8b917c" prot="private" static="no" mutable="no">
+        <type>VkInstance</type>
+        <definition>VkInstance atlas::vk::vk_context::m_instance_handler</definition>
+        <argsstring></argsstring>
+        <name>m_instance_handler</name>
+        <qualifiedname>atlas::vk::vk_context::m_instance_handler</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="30" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__context_1aa80a1e34290a0036a5720ecacf06c298" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__physical__driver" kindref="compound">vk_physical_driver</ref></type>
+        <definition>vk_physical_driver atlas::vk::vk_context::m_physical</definition>
+        <argsstring></argsstring>
+        <name>m_physical</name>
+        <qualifiedname>atlas::vk::vk_context::m_physical</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="31" column="28" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__context_1a39d78e35ce1a7a11442dd2077b8307d1" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__driver" kindref="compound">vk_driver</ref></type>
+        <definition>vk_driver atlas::vk::vk_context::m_driver</definition>
+        <argsstring></argsstring>
+        <name>m_driver</name>
+        <qualifiedname>atlas::vk::vk_context::m_driver</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="32" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__context_1a2a03c4b70d702ee3222c63d4cdc2e230" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; std::function&lt; void()&gt; &gt;</type>
+        <definition>std::deque&lt;std::function&lt;void()&gt; &gt; atlas::vk::vk_context::m_resources_free</definition>
+        <argsstring></argsstring>
+        <name>m_resources_free</name>
+        <qualifiedname>atlas::vk::vk_context::m_resources_free</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="33" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__context_1a85e7f196dddbbd3797c04143788e63ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_context::vk_context</definition>
+        <argsstring>(const std::string &amp;p_tag)</argsstring>
+        <name>vk_context</name>
+        <qualifiedname>atlas::vk::vk_context::vk_context</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="10" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__context_1a152abed3a57292815b73e4fe31d4c3bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void atlas::vk::vk_context::submit_resource_free</definition>
+        <argsstring>(std::function&lt; void()&gt; &amp;&amp;p_resource)</argsstring>
+        <name>submit_resource_free</name>
+        <qualifiedname>atlas::vk::vk_context::submit_resource_free</qualifiedname>
+        <param>
+          <type>std::function&lt; void()&gt; &amp;&amp;</type>
+          <declname>p_resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="12" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__context_1abd03a4312db299072fb05e0621656b0f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkInstance</type>
+        <definition>static VkInstance atlas::vk::vk_context::handler</definition>
+        <argsstring>()</argsstring>
+        <name>handler</name>
+        <qualifiedname>atlas::vk::vk_context::handler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="14" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__context_1a391b757fb0c983a4f00bacf963ba2b83" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1vk__physical__driver" kindref="compound">vk_physical_driver</ref></type>
+        <definition>static vk_physical_driver atlas::vk::vk_context::physical_driver</definition>
+        <argsstring>()</argsstring>
+        <name>physical_driver</name>
+        <qualifiedname>atlas::vk::vk_context::physical_driver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="16" column="35" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__context_1a9d334599b6a4bc77d4716cab95e36d16" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1vk__driver" kindref="compound">vk_driver</ref></type>
+        <definition>static vk_driver atlas::vk::vk_context::driver_context</definition>
+        <argsstring>()</argsstring>
+        <name>driver_context</name>
+        <qualifiedname>atlas::vk::vk_context::driver_context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="20" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__context_1a2143eff98675e54d2f60edb884f40b94" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_context::resource_free</definition>
+        <argsstring>(std::function&lt; void()&gt; &amp;&amp;p_resource)</argsstring>
+        <name>resource_free</name>
+        <qualifiedname>atlas::vk::vk_context::resource_free</qualifiedname>
+        <param>
+          <type>std::function&lt; void()&gt; &amp;&amp;</type>
+          <declname>p_resource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="23" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__context_1a2e56b93c11c084e1387b0a14102ebb71" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_context::destroy_context</definition>
+        <argsstring>() override</argsstring>
+        <name>destroy_context</name>
+        <qualifiedname>atlas::vk::vk_context::destroy_context</qualifiedname>
+        <reimplements refid="classatlas_1_1graphics__context_1a93dbecba9845614b6038939f4565e972">destroy_context</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="26" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>atlas::graphics_context</label>
+        <link refid="classatlas_1_1graphics__context"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_context</label>
+        <link refid="classatlas_1_1vk_1_1vk__context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>atlas::graphics_context</label>
+        <link refid="classatlas_1_1graphics__context"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_context</label>
+        <link refid="classatlas_1_1vk_1_1vk__context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" line="8" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp" bodystart="8" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1graphics__context_1a860367fda667d21d96fd0a8c3fbb02fc" prot="public" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>destroy</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a2e56b93c11c084e1387b0a14102ebb71" prot="private" virt="virtual"><scope>atlas::vk::vk_context</scope><name>destroy_context</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a9d334599b6a4bc77d4716cab95e36d16" prot="public" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>driver_context</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1abd03a4312db299072fb05e0621656b0f" prot="public" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>handler</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a39d78e35ce1a7a11442dd2077b8307d1" prot="private" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>m_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a7ceccda5d511c335aab6891e2f8b917c" prot="private" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>m_instance_handler</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1aa80a1e34290a0036a5720ecacf06c298" prot="private" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>m_physical</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a2a03c4b70d702ee3222c63d4cdc2e230" prot="private" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>m_resources_free</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a391b757fb0c983a4f00bacf963ba2b83" prot="public" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>physical_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a2143eff98675e54d2f60edb884f40b94" prot="private" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>resource_free</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a07c3dc857b598a80c492d6a9adddd111" prot="private" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>s_instance</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a152abed3a57292815b73e4fe31d4c3bd" prot="public" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>submit_resource_free</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__context_1a85e7f196dddbbd3797c04143788e63ee" prot="public" virt="non-virtual"><scope>atlas::vk::vk_context</scope><name>vk_context</name></member>
+      <member refid="classatlas_1_1graphics__context_1a43a91ed894715b218e3ac55368f8df22" prot="public" virt="virtual"><scope>atlas::vk::vk_context</scope><name>~graphics_context</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

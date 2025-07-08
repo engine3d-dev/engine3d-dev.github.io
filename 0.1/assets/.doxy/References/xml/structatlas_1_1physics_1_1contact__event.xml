@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1physics_1_1contact__event" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::physics::contact_event</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1contact__event_1ac5ad4bac443f89cf00dab3c2ad9d6427" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t atlas::physics::contact_event::entity_a</definition>
+        <argsstring></argsstring>
+        <name>entity_a</name>
+        <qualifiedname>atlas::physics::contact_event::entity_a</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="227" column="18" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1contact__event_1a2299282caee73d79a98cbb7f469df380" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t atlas::physics::contact_event::entity_b</definition>
+        <argsstring></argsstring>
+        <name>entity_b</name>
+        <qualifiedname>atlas::physics::contact_event::entity_b</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="228" column="18" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1contact__event_1aa7852d599a3f75e2c4d5970729876ad9" prot="public" static="no" mutable="no">
+        <type>JPH::ContactManifold</type>
+        <definition>JPH::ContactManifold atlas::physics::contact_event::manifold</definition>
+        <argsstring></argsstring>
+        <name>manifold</name>
+        <qualifiedname>atlas::physics::contact_event::manifold</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="229" column="30" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1contact__event_1a111fa00cce49963c7f8e4d7dff2fa98c" prot="public" static="no" mutable="no">
+        <type>JPH::ContactSettings</type>
+        <definition>JPH::ContactSettings atlas::physics::contact_event::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <qualifiedname>atlas::physics::contact_event::settings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="230" column="30" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="226" column="5" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="226" bodyend="231"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1physics_1_1contact__event_1ac5ad4bac443f89cf00dab3c2ad9d6427" prot="public" virt="non-virtual"><scope>atlas::physics::contact_event</scope><name>entity_a</name></member>
+      <member refid="structatlas_1_1physics_1_1contact__event_1a2299282caee73d79a98cbb7f469df380" prot="public" virt="non-virtual"><scope>atlas::physics::contact_event</scope><name>entity_b</name></member>
+      <member refid="structatlas_1_1physics_1_1contact__event_1aa7852d599a3f75e2c4d5970729876ad9" prot="public" virt="non-virtual"><scope>atlas::physics::contact_event</scope><name>manifold</name></member>
+      <member refid="structatlas_1_1physics_1_1contact__event_1a111fa00cce49963c7f8e4d7dff2fa98c" prot="public" virt="non-virtual"><scope>atlas::physics::contact_event</scope><name>settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

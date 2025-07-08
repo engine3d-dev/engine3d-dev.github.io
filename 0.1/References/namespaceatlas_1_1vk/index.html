@@ -1,0 +1,1681 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Namespace atlas::vk - TheAtlasEngine</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#namespace-atlasvk" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TheAtlasEngine" class="md-header__button md-logo" aria-label="TheAtlasEngine" data-md-component="logo">
+      
+  <img src="../../mkdocs/assets/Preview.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TheAtlasEngine
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Namespace atlas::vk
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/engine3d-dev/TheAtlasEngine" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🏠 Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting_started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📚 Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../user_guide/setup_vscode/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🕹️ User Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contributor_guide/style/" class="md-tabs__link">
+          
+  
+  
+  🚀 Contributor Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/" class="md-tabs__link">
+          
+  
+  
+  📜 Project Information
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../api/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📖 Documentation
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TheAtlasEngine" class="md-nav__button md-logo" aria-label="TheAtlasEngine" data-md-component="logo">
+      
+  <img src="../../mkdocs/assets/Preview.jpg" alt="logo">
+
+    </a>
+    TheAtlasEngine
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/engine3d-dev/TheAtlasEngine" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏠 Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📚 Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_guide/setup_vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🕹️ User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🚀 Contributor Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            🚀 Contributor Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributor_guide/style/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨 Style Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributor_guide/code_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📝 Code Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📜 Project Information
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            📜 Project Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📖 Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="namespace-atlasvk">Namespace atlas::vk</h1>
+<p><a href="../namespaces/"><strong>Namespace List</strong></a> <strong>&gt;</strong> <a href="../namespaceatlas/"><strong>atlas</strong></a> <strong>&gt;</strong> <a href="./"><strong>vk</strong></a></p>
+<h2 id="classes">Classes</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1camera__ubo/"><strong>camera_ubo</strong></a> <br><em>Going to remove this.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1command__buffer__settings/"><strong>command_buffer_settings</strong></a> <br><em>settings for specifying command buffers to construct</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1descriptor__binding__entry/"><strong>descriptor_binding_entry</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1descriptor__binding__point/"><strong>descriptor_binding_point</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1descriptor__set/"><strong>descriptor_set</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1descriptor__set__layout/"><strong>descriptor_set_layout</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1global__ubo/"><strong>global_ubo</strong></a> <br><em>Just for testing purposes for sending this struct over to the shader.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1hud__data/"><strong>hud_data</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1image__extent/"><strong>image_extent</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1imgui__context/"><strong>imgui_context</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1material__uniform/"><strong>material_uniform</strong></a> <br><em>material is going to define properties about how a scene object itself gets rendered</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1mesh/"><strong>mesh</strong></a> <br><em>mesh class specifically defined with vulkan implementations for specific primitives TODO: Whenever we load in a texture that will be laucnhed asyncronously</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1renderpass__attachment/"><strong>renderpass_attachment</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1renderpass__options/"><strong>renderpass_options</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1shader__info/"><strong>shader_info</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1surface__properties/"><strong>surface_properties</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1texture/"><strong>texture</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1texture__extent/"><strong>texture_extent</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1texture__properties/"><strong>texture_properties</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vertex__attribute/"><strong>vertex_attribute</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vertex__attribute__entry/"><strong>vertex_attribute_entry</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vertex__input/"><strong>vertex_input</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a> <br><em>vulkan buffer struct to define the handlers and memory specifications required for buffer handlers in vulkan</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vk__buffer__info/"><strong>vk_buffer_info</strong></a> <br><em>Specifications of the vulkan buffer handlers and the use and memory bits associated with the buffer handlers.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__command__buffer/"><strong>vk_command_buffer</strong></a> <br><em>Vulkan Command Buffers.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__context/"><strong>vk_context</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__driver/"><strong>vk_driver</strong></a> <br><em>vulkan implementation of extracting a logical device</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vk__filter__range/"><strong>vk_filter_range</strong></a> <br><em>Range between min and max for the VkFilter.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__graphics__queue/"><strong>vk_graphics_queue</strong></a> <br><em>graphics queue mainly used for submitting to the graphics family specific queue</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vk__image/"><strong>vk_image</strong></a> <br><em>vulkan image handler with resources; used when handling textures</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vk__image__handle/"><strong>vk_image_handle</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__index__buffer/"><strong>vk_index_buffer</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__physical__driver/"><strong>vk_physical_driver</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__pipeline/"><strong>vk_pipeline</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__present__queue/"><strong>vk_present_queue</strong></a> <br><em>Handles submissions to the specific queue for presentation.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vk__queue__options/"><strong>vk_queue_options</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__renderer/"><strong>vk_renderer</strong></a> <br><em>Something to consider for mesh loading.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__renderpass/"><strong>vk_renderpass</strong></a> <br><em>defines a renderpass operation</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vk__renderpass__options/"><strong>vk_renderpass_options</strong></a> <br><em>Renderpass specifictations for VkRenderpass.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__shader__group/"><strong>vk_shader_group</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">struct</td>
+<td style="text-align: left;"><a href="../structatlas_1_1vk_1_1vk__shader__module/"><strong>vk_shader_module</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__swapchain/"><strong>vk_swapchain</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__uniform__buffer/"><strong>vk_uniform_buffer</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__vertex__buffer/"><strong>vk_vertex_buffer</strong></a> <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">class</td>
+<td style="text-align: left;"><a href="../classatlas_1_1vk_1_1vk__window/"><strong>vk_window</strong></a> <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types">Public Types</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">enum uint8_t</td>
+<td style="text-align: left;"><a href="#enum-attachment_load"><strong>attachment_load</strong></a>  <br><em>Equivalent to VkAttachmentLoadOp.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum uint8_t</td>
+<td style="text-align: left;"><a href="#enum-attachment_store"><strong>attachment_store</strong></a>  <br><em>Equivalent to VkAttachmentStoreOp.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum uint8_t</td>
+<td style="text-align: left;"><a href="#enum-buffer"><strong>buffer</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum uint8_t</td>
+<td style="text-align: left;"><a href="#enum-command_buffer_levels"><strong>command_buffer_levels</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum uint64_t</td>
+<td style="text-align: left;"><a href="#enum-format"><strong>format</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum uint8_t</td>
+<td style="text-align: left;"><a href="#enum-image_layout"><strong>image_layout</strong></a>  <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum uint8_t</td>
+<td style="text-align: left;"><a href="#enum-input_rate"><strong>input_rate</strong></a>  <br><em>Refers to the input rate.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum uint8_t</td>
+<td style="text-align: left;"><a href="#enum-pipeline_bind_point"><strong>pipeline_bind_point</strong></a>  <br><em>Equivalent to VkPipelineBindPoint.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum uint8_t</td>
+<td style="text-align: left;"><a href="#enum-renderpass_type"><strong>renderpass_type</strong></a>  <br><em>this is the expectation of specifying the renderpass attachments</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum uint8_t</td>
+<td style="text-align: left;"><a href="#enum-sample_bit"><strong>sample_bit</strong></a>  <br><em>Equivalent to doing VkSampleCountFlagBits but simplified.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">enum</td>
+<td style="text-align: left;"><a href="#enum-shader_stage"><strong>shader_stage</strong></a>  <br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-functions">Public Functions</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Type</th>
+<th style="text-align: left;">Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-begin_command_buffer"><strong>begin_command_buffer</strong></a> (const VkCommandBuffer &amp; p_command_buffer, VkCommandBufferUsageFlags p_usage_flags) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">int</td>
+<td style="text-align: left;"><a href="#function-bytes_per_texture_format"><strong>bytes_per_texture_format</strong></a> (VkFormat p_format) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-copy"><strong>copy</strong></a> (<a href="../classatlas_1_1vk_1_1vk__command__buffer/"><strong>vk_command_buffer</strong></a> &amp; p_command_buffer, VkImage &amp; p_image, VkBuffer &amp; p_buffer, uint32_t p_width, uint32_t p_height) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-copy"><strong>copy</strong></a> (const <a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a> &amp; p_src, const <a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a> &amp; p_dst, size_t p_size_of_bytes) <br><em>Copies from one buffer source into another buffer source with a specific size of bytes to be stored the buffer that is being copied to.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a></td>
+<td style="text-align: left;"><a href="#function-create_buffer"><strong>create_buffer</strong></a> (const <a href="../structatlas_1_1vk_1_1vk__buffer__info/"><strong>vk_buffer_info</strong></a> &amp; p_info) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structatlas_1_1vk_1_1vk__image/"><strong>vk_image</strong></a></td>
+<td style="text-align: left;"><a href="#function-create_image2d"><strong>create_image2d</strong></a> (uint32_t p_width, uint32_t p_height, VkFormat p_format, VkImageUsageFlags p_usage, VkMemoryPropertyFlagBits p_property) <br><em>Returns</em> <a href="../structatlas_1_1vk_1_1vk__image/"><em><strong>vk_image</strong></em></a> <em>which contains the VkImage and VkImage handlers with image 2D specifications.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structatlas_1_1vk_1_1vk__image__handle/"><strong>vk_image_handle</strong></a></td>
+<td style="text-align: left;"><a href="#function-create_image2d"><strong>create_image2d</strong></a> (const VkDevice &amp; p_driver, const <a href="../structatlas_1_1vk_1_1image__extent/"><strong>image_extent</strong></a> &amp; p_extent) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkImageView</td>
+<td style="text-align: left;"><a href="#function-create_image_view"><strong>create_image_view</strong></a> (const VkImage &amp; p_image, VkFormat p_format, VkImageAspectFlags p_aspect_flags) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkImageView</td>
+<td style="text-align: left;"><a href="#function-create_image_view"><strong>create_image_view</strong></a> (const VkDevice &amp; p_driver, VkImage p_image, VkSurfaceFormatKHR p_surface_format, VkImageAspectFlags p_aspect_flags, VkImageViewType p_view_t, uint32_t p_layer_count, uint32_t p_mip_level=1) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkSampler</td>
+<td style="text-align: left;"><a href="#function-create_sampler"><strong>create_sampler</strong></a> (const <a href="../structatlas_1_1vk_1_1vk__filter__range/"><strong>vk_filter_range</strong></a> &amp; p_range, VkSamplerAddressMode p_address_mode) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkSemaphore</td>
+<td style="text-align: left;"><a href="#function-create_semaphore"><strong>create_semaphore</strong></a> (const VkDevice &amp; p_driver) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkCommandBuffer</td>
+<td style="text-align: left;"><a href="#function-create_single_command_buffer"><strong>create_single_command_buffer</strong></a> (const VkCommandPool &amp; p_command_pool) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkCommandPool</td>
+<td style="text-align: left;"><a href="#function-create_single_command_pool"><strong>create_single_command_pool</strong></a> () <br></td>
+</tr>
+<tr>
+<td style="text-align: right;"><a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a></td>
+<td style="text-align: left;"><a href="#function-create_uniform_buffer"><strong>create_uniform_buffer</strong></a> (uint32_t p_size) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-end_command_buffer"><strong>end_command_buffer</strong></a> (const VkCommandBuffer &amp; p_command_buffer) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-free_buffer"><strong>free_buffer</strong></a> (const VkDevice &amp; p_driver, <a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a> &amp; p_buffer) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-free_image"><strong>free_image</strong></a> (const VkDevice &amp; p_driver, <a href="../structatlas_1_1vk_1_1vk__image/"><strong>vk_image</strong></a> &amp; p_image) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">bool</td>
+<td style="text-align: left;"><a href="#function-has_stencil_attachment"><strong>has_stencil_attachment</strong></a> (VkFormat p_format) <br><em>Validate if the format specified is a stencil attachment.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-image_memory_barrier"><strong>image_memory_barrier</strong></a> (VkCommandBuffer &amp; p_command_buffer, VkImage &amp; p_image, VkFormat p_format, VkImageLayout p_old, VkImageLayout p_new) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-queue_submit"><strong>queue_submit</strong></a> (const VkQueue &amp; p_queue_handle, const std::span&lt; VkCommandBuffer &gt; &amp; p_commands) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkPresentModeKHR</td>
+<td style="text-align: left;"><a href="#function-select_compatible_present_mode"><strong>select_compatible_present_mode</strong></a> (const VkPresentModeKHR &amp; p_request, const std::span&lt; VkPresentModeKHR &gt; &amp; p_modes) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">uint32_t</td>
+<td style="text-align: left;"><a href="#function-select_images_size"><strong>select_images_size</strong></a> (const VkSurfaceCapabilitiesKHR &amp; p_surface_capabilities) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkAttachmentLoadOp</td>
+<td style="text-align: left;"><a href="#function-to_vk_attachment_load"><strong>to_vk_attachment_load</strong></a> (attachment_load p_attachment_type) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkAttachmentStoreOp</td>
+<td style="text-align: left;"><a href="#function-to_vk_attachment_store"><strong>to_vk_attachment_store</strong></a> (const attachment_store &amp; p_attachment_type) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkCommandBufferLevel</td>
+<td style="text-align: left;"><a href="#function-to_vk_command_buffer_level"><strong>to_vk_command_buffer_level</strong></a> (const command_buffer_levels &amp; p_levels) <br><em>Conversion function that returns VkCommandBufferLevel.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkDescriptorType</td>
+<td style="text-align: left;"><a href="#function-to_vk_descriptor_type"><strong>to_vk_descriptor_type</strong></a> (const buffer &amp; p_type) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkFormat</td>
+<td style="text-align: left;"><a href="#function-to_vk_format"><strong>to_vk_format</strong></a> (const format &amp; p_format) <br><em>converts high-level specifications of format to VkFormat</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkImageLayout</td>
+<td style="text-align: left;"><a href="#function-to_vk_image_layout"><strong>to_vk_image_layout</strong></a> (const image_layout &amp; p_layout) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkVertexInputRate</td>
+<td style="text-align: left;"><a href="#function-to_vk_input_rate"><strong>to_vk_input_rate</strong></a> (const input_rate &amp; p_input_rate) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkPipelineBindPoint</td>
+<td style="text-align: left;"><a href="#function-to_vk_pipeline_bind_point"><strong>to_vk_pipeline_bind_point</strong></a> (const pipeline_bind_point &amp; p_bind_point) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkSampleCountFlagBits</td>
+<td style="text-align: left;"><a href="#function-to_vk_sample_count_bits"><strong>to_vk_sample_count_bits</strong></a> (const sample_bit &amp; p_sample_count_bit) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkShaderStageFlags</td>
+<td style="text-align: left;"><a href="#function-to_vk_shader_stage"><strong>to_vk_shader_stage</strong></a> (const shader_stage &amp; p_stage) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">VkShaderStageFlagBits</td>
+<td style="text-align: left;"><a href="#function-to_vk_shader_stage_bits"><strong>to_vk_shader_stage_bits</strong></a> (const shader_stage &amp; p_stage) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-transition_image_layout"><strong>transition_image_layout</strong></a> (VkImage &amp; p_image, VkFormat p_format, VkImageLayout p_old, VkImageLayout p_new) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-transition_image_layout"><strong>transition_image_layout</strong></a> (VkCommandBuffer &amp; p_command_buffer, VkImage &amp; p_image, VkFormat p_format, VkImageLayout p_old, VkImageLayout p_new) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-vk_check"><strong>vk_check</strong></a> (const VkResult &amp; p_result, const std::string &amp; p_name, const std::source_location &amp; p_source=std::source_location::current()) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-vk_check_format"><strong>vk_check_format</strong></a> (VkFormat p_format, const char * p_filepath, uint32_t p_line, const char * p_function_name) <br><em>Checks for valid</em> <code>VkFormat</code> <em>specified.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">std::string</td>
+<td style="text-align: left;"><a href="#function-vk_format_to_string"><strong>vk_format_to_string</strong></a> (VkFormat p_format) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">std::string</td>
+<td style="text-align: left;"><a href="#function-vk_present_mode_to_string"><strong>vk_present_mode_to_string</strong></a> (VkPresentModeKHR p_present_mode) <br></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-write"><strong>write</strong></a> (const <a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a> &amp; p_buffer, const void * p_data, size_t p_size_in_bytes) <br><em>maps the current buffer handler to some block of memory and the byte size for that chunk</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-write"><strong>write</strong></a> (const <a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a> &amp; p_buffer, const std::span&lt; uint32_t &gt; &amp; p_in_buffer) <br><em>Maps buffer handler to chunk of data of type, that is std::span&lt;uint32_t&gt;.</em></td>
+</tr>
+<tr>
+<td style="text-align: right;">void</td>
+<td style="text-align: left;"><a href="#function-write"><strong>write</strong></a> (const <a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a> &amp; p_buffer, const std::span&lt; <a href="../structatlas_1_1vk_1_1vertex__input/"><strong>vertex_input</strong></a> &gt; &amp; p_in_buffer) <br><em>Maps buffer handler to data chunks that contain vertices.</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="public-types-documentation">Public Types Documentation</h2>
+<h3 id="enum-attachment_load">enum attachment_load</h3>
+<p><em>Equivalent to VkAttachmentLoadOp.</em> 
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">attachment_load</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">load</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="n">clear</span><span class="p">,</span>
+<span class="w">    </span><span class="n">dont_care</span><span class="p">,</span>
+<span class="w">    </span><span class="n">none_khr</span><span class="p">,</span>
+<span class="w">    </span><span class="n">none_ext</span><span class="p">,</span>
+<span class="w">    </span><span class="n">max_enum</span>
+<span class="p">};</span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="enum-attachment_store">enum attachment_store</h3>
+<p><em>Equivalent to VkAttachmentStoreOp.</em> 
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">attachment_store</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">store</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="n">dont_care</span><span class="p">,</span>
+<span class="w">    </span><span class="n">none_khr</span><span class="p">,</span>
+<span class="w">    </span><span class="n">none_qcom</span><span class="p">,</span>
+<span class="w">    </span><span class="n">none_ext</span><span class="p">,</span>
+<span class="w">    </span><span class="n">max_enum</span>
+<span class="p">};</span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="enum-buffer">enum buffer</h3>
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">buffer</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">uniform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="n">storage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">combined_image_sampler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">    </span><span class="n">sampled_image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span>
+<span class="p">};</span>
+</code></pre></div>
+<hr>
+
+<h3 id="enum-command_buffer_levels">enum command_buffer_levels</h3>
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">command_buffer_levels</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">primary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="n">secondary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">max_enum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
+<span class="p">};</span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>Primary</code> submission: immediately to vulkan queue for executing on device execution: vkQueueSubmit primarily submits primary command buffers</li>
+<li><code>Seconary</code> submission: Cannot be submitted directly to vulkan queue execution: Indirect execution by being called from primary command buffers using <code>vkCmdExecuteCommands</code></li>
+</ul>
+<p>When executed within render-pass instance, they inherit renderpass/subpass state from primary command buffer</p>
+<p>Can be allocated and recorded in parallel, which can leverage devices that support multi-core processing</p>
+<p>Have independent lifetimes that can be managed independently of primary command buffers, allowing for more flexible resource management </p>
+<hr>
+
+<h3 id="enum-format">enum format</h3>
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">format</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">rgb32_sfloat</span><span class="p">,</span>
+<span class="w">    </span><span class="n">rg32_sfloat</span>
+<span class="p">};</span>
+</code></pre></div>
+<hr>
+
+<h3 id="enum-image_layout">enum image_layout</h3>
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">image_layout</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">undefined</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="n">general</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">color_optimal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">    </span><span class="n">depth_stencil_optimal</span><span class="w"> </span><span class="o">=</span>
+<span class="w">          </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">    </span><span class="n">depth_stencil_read_only_optimal</span><span class="w"> </span><span class="o">=</span>
+<span class="w">          </span><span class="mi">4</span>
+<span class="p">};</span>
+</code></pre></div>
+<hr>
+
+<h3 id="enum-input_rate">enum input_rate</h3>
+<p><em>Refers to the input rate.</em> 
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">input_rate</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">vertex</span><span class="p">,</span>
+<span class="w">    </span><span class="n">instance</span><span class="p">,</span>
+<span class="w">    </span><span class="n">max_enum</span>
+<span class="p">};</span>
+</code></pre></div></p>
+<p>vertex - refers to most common rate. Indicates GPU to move next data entry (next vertex data) into a buffer for every single vertex that's processed.
+* Used for vertex attributes that change per vertex on the mesh
+* vertex attribute-only data
+* Per-object based specification in the next data entry</p>
+<p>instance - refers to data entry per-instance. Specifying to the GPU that the data entry in the buffer is to be after the instance of the object itself.
+* Typically used for instanced rendering. Specfying next entry of data to be after instanced drawn, could be shared. Therefore instance is an option to choose from if vertex data is across as a per-instance basis.</p>
+<p>instance-based specification next data entry </p>
+<hr>
+
+<h3 id="enum-pipeline_bind_point">enum pipeline_bind_point</h3>
+<p><em>Equivalent to VkPipelineBindPoint.</em> 
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">pipeline_bind_point</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">graphics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="n">compute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">ray_tracing_khr</span><span class="p">,</span>
+<span class="w">    </span><span class="n">subpass_shading_hauwei</span><span class="p">,</span>
+<span class="w">    </span><span class="n">ray_tracing_nv</span><span class="p">,</span>
+<span class="w">    </span><span class="n">max_enum</span>
+<span class="p">};</span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="enum-renderpass_type">enum renderpass_type</h3>
+<p><em>this is the expectation of specifying the renderpass attachments</em> 
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">renderpass_type</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">color</span><span class="p">,</span>
+<span class="w">    </span><span class="n">depth</span>
+<span class="p">};</span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="enum-sample_bit">enum sample_bit</h3>
+<p><em>Equivalent to doing VkSampleCountFlagBits but simplified.</em> 
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">sample_bit</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">count_1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">count_2</span><span class="p">,</span>
+<span class="w">    </span><span class="n">count_4</span><span class="p">,</span>
+<span class="w">    </span><span class="n">count_8</span><span class="p">,</span>
+<span class="w">    </span><span class="n">count_16</span><span class="p">,</span>
+<span class="w">    </span><span class="n">count_32</span><span class="p">,</span>
+<span class="w">    </span><span class="n">count_64</span><span class="p">,</span>
+<span class="w">    </span><span class="n">max_enum</span>
+<span class="p">};</span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="enum-shader_stage">enum shader_stage</h3>
+<div class="highlight"><pre><span></span><code><span class="k">enum</span><span class="w"> </span><span class="nc">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">undefined</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span>
+<span class="w">    </span><span class="n">vertex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">    </span><span class="n">fragment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="p">};</span>
+</code></pre></div>
+<hr>
+<h2 id="public-functions-documentation">Public Functions Documentation</h2>
+<h3 id="function-begin_command_buffer">function begin_command_buffer</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">begin_command_buffer</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkCommandBuffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_command_buffer</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkCommandBufferUsageFlags</span><span class="w"> </span><span class="n">p_usage_flags</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-bytes_per_texture_format">function bytes_per_texture_format</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">bytes_per_texture_format</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>the bytes of the texture format specified by the parameter "VkFormat" </p>
+<hr>
+
+<h3 id="function-copy">function copy</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">copy</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">vk_command_buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_command_buffer</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImage</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkBuffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_buffer</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">p_width</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">p_height</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-copy_1">function copy</h3>
+<p><em>Copies from one buffer source into another buffer source with a specific size of bytes to be stored the buffer that is being copied to.</em> 
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">copy</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">vk_buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_src</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">vk_buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_dst</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">p_size_of_bytes</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="function-create_buffer">function create_buffer</h3>
+<div class="highlight"><pre><span></span><code><span class="n">vk_buffer</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_buffer</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">vk_buffer_info</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_info</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>new <a href="../structatlas_1_1vk_1_1vk__buffer/"><strong>vk_buffer</strong></a> handler </p>
+<hr>
+
+<h3 id="function-create_image2d">function create_image2d</h3>
+<p><em>Returns</em> <a href="../structatlas_1_1vk_1_1vk__image/"><em><strong>vk_image</strong></em></a> <em>which contains the VkImage and VkImage handlers with image 2D specifications.</em>
+<div class="highlight"><pre><span></span><code><span class="n">vk_image</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_image2d</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">p_width</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">p_height</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageUsageFlags</span><span class="w"> </span><span class="n">p_usage</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkMemoryPropertyFlagBits</span><span class="w"> </span><span class="n">p_property</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="function-create_image2d_1">function create_image2d</h3>
+<div class="highlight"><pre><span></span><code><span class="n">vk_image_handle</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_image2d</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkDevice</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_driver</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">image_extent</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_extent</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>p_driver</code> current logical device to associate this image creation to </li>
+<li><code>p_extent</code> image extent of properties required for creating the image </li>
+</ul>
+<hr>
+
+<h3 id="function-create_image_view">function create_image_view</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkImageView</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_image_view</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkImage</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageAspectFlags</span><span class="w"> </span><span class="n">p_aspect_flags</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>p_image</code> is the image handler to create a view handler from </li>
+<li><code>p_format</code> specify format to create the VkImageView handler from </li>
+<li><code>p_aspect_flag</code> to specify the data this VkImageView handler will contain </li>
+</ul>
+<hr>
+
+<h3 id="function-create_image_view_1">function create_image_view</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkImageView</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_image_view</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkDevice</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_driver</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImage</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkSurfaceFormatKHR</span><span class="w"> </span><span class="n">p_surface_format</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageAspectFlags</span><span class="w"> </span><span class="n">p_aspect_flags</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageViewType</span><span class="w"> </span><span class="n">p_view_t</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">p_layer_count</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">p_mip_level</span><span class="o">=</span><span class="mi">1</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>new VkImageView handler object </p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>p_driver</code> the driver to create the new handler </li>
+<li><code>p_surface_format</code> specify a surface format to create the VkImageView handler with </li>
+<li><code>p_aspect_flag</code> to specify what kind of aspect of data this VkImageView will contain </li>
+<li><code>p_mip_level</code> default to 1; used to set mip levels if required </li>
+</ul>
+<hr>
+
+<h3 id="function-create_sampler">function create_sampler</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkSampler</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_sampler</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">vk_filter_range</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_range</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkSamplerAddressMode</span><span class="w"> </span><span class="n">p_address_mode</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-create_semaphore">function create_semaphore</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkSemaphore</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_semaphore</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkDevice</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_driver</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>new semaphore handle </p>
+<hr>
+
+<h3 id="function-create_single_command_buffer">function create_single_command_buffer</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkCommandBuffer</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_single_command_buffer</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkCommandPool</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_command_pool</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-create_single_command_pool">function create_single_command_pool</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkCommandPool</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_single_command_pool</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-create_uniform_buffer">function create_uniform_buffer</h3>
+<div class="highlight"><pre><span></span><code><span class="n">vk_buffer</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">create_uniform_buffer</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">p_size</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>vulkan buffer handler that is initialized as a uniform buffer handler </p>
+<hr>
+
+<h3 id="function-end_command_buffer">function end_command_buffer</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">end_command_buffer</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkCommandBuffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_command_buffer</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-free_buffer">function free_buffer</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">free_buffer</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkDevice</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_driver</span><span class="p">,</span>
+<span class="w">    </span><span class="n">vk_buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_buffer</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-free_image">function free_image</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">free_image</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkDevice</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_driver</span><span class="p">,</span>
+<span class="w">    </span><span class="n">vk_image</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_image</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-has_stencil_attachment">function has_stencil_attachment</h3>
+<p><em>Validate if the format specified is a stencil attachment.</em> 
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">has_stencil_attachment</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="function-image_memory_barrier">function image_memory_barrier</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">image_memory_barrier</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">VkCommandBuffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_command_buffer</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImage</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_old</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_new</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-queue_submit">function queue_submit</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">queue_submit</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkQueue</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_queue_handle</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">span</span><span class="o">&lt;</span><span class="w"> </span><span class="n">VkCommandBuffer</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_commands</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-select_compatible_present_mode">function select_compatible_present_mode</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkPresentModeKHR</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">select_compatible_present_mode</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkPresentModeKHR</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_request</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">span</span><span class="o">&lt;</span><span class="w"> </span><span class="n">VkPresentModeKHR</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_modes</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p><code>VkPresentModeKHR</code> by selecting the current compatiable presentation modes available </p>
+<hr>
+
+<h3 id="function-select_images_size">function select_images_size</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">uint32_t</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">select_images_size</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkSurfaceCapabilitiesKHR</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_surface_capabilities</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>the image size based on the capabilities of the vulkan <code>VkSurfaceKHR</code> that is supported </p>
+<hr>
+
+<h3 id="function-to_vk_attachment_load">function to_vk_attachment_load</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkAttachmentLoadOp</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_attachment_load</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">attachment_load</span><span class="w"> </span><span class="n">p_attachment_type</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-to_vk_attachment_store">function to_vk_attachment_store</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkAttachmentStoreOp</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_attachment_store</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">attachment_store</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_attachment_type</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-to_vk_command_buffer_level">function to_vk_command_buffer_level</h3>
+<p><em>Conversion function that returns VkCommandBufferLevel.</em> 
+<div class="highlight"><pre><span></span><code><span class="n">VkCommandBufferLevel</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_command_buffer_level</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">command_buffer_levels</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_levels</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="function-to_vk_descriptor_type">function to_vk_descriptor_type</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkDescriptorType</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_descriptor_type</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_type</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>Returns the VkDescriptorType that represents a "handle" the shader resource is acecssing </p>
+<hr>
+
+<h3 id="function-to_vk_format">function to_vk_format</h3>
+<p><em>converts high-level specifications of format to VkFormat</em> 
+<div class="highlight"><pre><span></span><code><span class="n">VkFormat</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_format</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">format</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_format</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="function-to_vk_image_layout">function to_vk_image_layout</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_image_layout</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">image_layout</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_layout</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-to_vk_input_rate">function to_vk_input_rate</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkVertexInputRate</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_input_rate</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">input_rate</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_input_rate</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-to_vk_pipeline_bind_point">function to_vk_pipeline_bind_point</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkPipelineBindPoint</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_pipeline_bind_point</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">pipeline_bind_point</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_bind_point</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-to_vk_sample_count_bits">function to_vk_sample_count_bits</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkSampleCountFlagBits</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_sample_count_bits</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">sample_bit</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_sample_count_bit</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-to_vk_shader_stage">function to_vk_shader_stage</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkShaderStageFlags</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_shader_stage</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">shader_stage</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_stage</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-to_vk_shader_stage_bits">function to_vk_shader_stage_bits</h3>
+<div class="highlight"><pre><span></span><code><span class="n">VkShaderStageFlagBits</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">to_vk_shader_stage_bits</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">shader_stage</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_stage</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-transition_image_layout">function transition_image_layout</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">transition_image_layout</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">VkImage</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_old</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_new</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-transition_image_layout_1">function transition_image_layout</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">transition_image_layout</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">VkCommandBuffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_command_buffer</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImage</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_old</span><span class="p">,</span>
+<span class="w">    </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_new</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<hr>
+
+<h3 id="function-vk_check">function vk_check</h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">vk_check</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">VkResult</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_result</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_name</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">source_location</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_source</span><span class="o">=</span><span class="n">std</span><span class="o">::</span><span class="n">source_location</span><span class="o">::</span><span class="n">current</span><span class="p">()</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><code>p_result</code> checks if the result of a vulkan handler was created correctly </li>
+<li><code>p_name</code> used for debugging of which handler failed </li>
+<li><code>p_source</code> is the location of the call-site that invoked vk_check </li>
+</ul>
+<hr>
+
+<h3 id="function-vk_check_format">function vk_check_format</h3>
+<p><em>Checks for valid</em> <code>VkFormat</code> <em>specified.</em>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">vk_check_format</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">p_filepath</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">p_line</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">p_function_name</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="function-vk_format_to_string">function vk_format_to_string</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">vk_format_to_string</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>stringified version of the <code>VkFormat</code> </p>
+<hr>
+
+<h3 id="function-vk_present_mode_to_string">function vk_present_mode_to_string</h3>
+<div class="highlight"><pre><span></span><code><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">vk_present_mode_to_string</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="n">VkPresentModeKHR</span><span class="w"> </span><span class="n">p_present_mode</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p><strong>Returns:</strong></p>
+<p>stringified version of the <code>VkPresentModeKHR</code> </p>
+<hr>
+
+<h3 id="function-write">function write</h3>
+<p><em>maps the current buffer handler to some block of memory and the byte size for that chunk</em> 
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">vk_buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_buffer</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">p_data</span><span class="p">,</span>
+<span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">p_size_in_bytes</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="function-write_1">function write</h3>
+<p><em>Maps buffer handler to chunk of data of type, that is std::span&lt;uint32_t&gt;.</em> 
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">vk_buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_buffer</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">span</span><span class="o">&lt;</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_in_buffer</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<h3 id="function-write_2">function write</h3>
+<p><em>Maps buffer handler to data chunks that contain vertices.</em> 
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">atlas</span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">vk_buffer</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_buffer</span><span class="p">,</span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">span</span><span class="o">&lt;</span><span class="w"> </span><span class="n">vertex_input</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_in_buffer</span>
+<span class="p">)</span><span class="w"> </span>
+</code></pre></div></p>
+<hr>
+
+<hr />
+<p>The documentation for this class was generated from the following file <code>TheAtlasEngine/atlas/drivers/vulkan-cpp/helper_functions.hpp</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/engine3d-dev" target="_blank" rel="noopener">Aaron Herr</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/engine3d-dev/TheAtlasEngine" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.tabs.link", "toc.integrate", "navigation.tracking", "navigation.footer"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

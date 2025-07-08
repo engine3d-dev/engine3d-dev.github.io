@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__renderpass" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_renderpass</compoundname>
+    <includes refid="vk__renderpass_8hpp" local="no">vk_renderpass.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderpass_1a6b71fda37d74595635e561e9faa78160" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__driver" kindref="compound">vk_driver</ref></type>
+        <definition>vk_driver atlas::vk::vk_renderpass::m_driver</definition>
+        <argsstring></argsstring>
+        <name>m_driver</name>
+        <qualifiedname>atlas::vk::vk_renderpass::m_driver</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="47" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderpass_1a889aad0caa7936ae724db113d70fb9cd" prot="private" static="no" mutable="no">
+        <type><ref refid="structatlas_1_1vk_1_1vk__renderpass__options" kindref="compound">vk_renderpass_options</ref></type>
+        <definition>vk_renderpass_options atlas::vk::vk_renderpass::m_renderpass_options</definition>
+        <argsstring></argsstring>
+        <name>m_renderpass_options</name>
+        <qualifiedname>atlas::vk::vk_renderpass::m_renderpass_options</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="48" column="31" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderpass_1abc2cfbde497c851fb7b1501b8c772974" prot="private" static="no" mutable="no">
+        <type>VkRenderPass</type>
+        <definition>VkRenderPass atlas::vk::vk_renderpass::m_renderpass_handler</definition>
+        <argsstring></argsstring>
+        <name>m_renderpass_handler</name>
+        <qualifiedname>atlas::vk::vk_renderpass::m_renderpass_handler</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="49" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderpass_1abae17f4ad508af2d31fb14e6e925dbec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_renderpass::vk_renderpass</definition>
+        <argsstring>()=default</argsstring>
+        <name>vk_renderpass</name>
+        <qualifiedname>atlas::vk::vk_renderpass::vk_renderpass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="18" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderpass_1a8731f920ffd4bc8326965c5724457852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_renderpass::vk_renderpass</definition>
+        <argsstring>(const vk_renderpass_options &amp;p_renderpass_options)</argsstring>
+        <name>vk_renderpass</name>
+        <qualifiedname>atlas::vk::vk_renderpass::vk_renderpass</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1vk_1_1vk__renderpass__options" kindref="compound">vk_renderpass_options</ref> &amp;</type>
+          <declname>p_renderpass_options</declname>
+        </param>
+        <briefdescription>
+<para>Invokes configure when constructing new renderpass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="21" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderpass_1ad05bf21dbfe1683680b70ec426b55617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_renderpass::configure</definition>
+        <argsstring>(const vk_renderpass_options &amp;p_renderpass_options)</argsstring>
+        <name>configure</name>
+        <qualifiedname>atlas::vk::vk_renderpass::configure</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1vk_1_1vk__renderpass__options" kindref="compound">vk_renderpass_options</ref> &amp;</type>
+          <declname>p_renderpass_options</declname>
+        </param>
+        <briefdescription>
+<para>contsructs new renderpass and configures it with the following attachments </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderpass_1ad44c9504a192a632871bbdbbd835f8d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_renderpass::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>atlas::vk::vk_renderpass::destroy</qualifiedname>
+        <briefdescription>
+<para>contsructs new renderpass and configures it with the following attachments </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderpass_1a35a5017215746fe2fa82b0726723c7e1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_renderpass::operator VkRenderPass</definition>
+        <argsstring>() const</argsstring>
+        <name>operator VkRenderPass</name>
+        <qualifiedname>atlas::vk::vk_renderpass::operator VkRenderPass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="42" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderpass_1aaf6662f454387254dc5b3ca3ef32abd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_renderpass::operator VkRenderPass</definition>
+        <argsstring>()</argsstring>
+        <name>operator VkRenderPass</name>
+        <qualifiedname>atlas::vk::vk_renderpass::operator VkRenderPass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="44" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>defines a renderpass operation </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classatlas_1_1vk_1_1vk__renderpass" kindref="compound">vk_renderpass</ref> </para>
+<para>Handles </para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" line="16" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderpass.hpp" bodystart="16" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1vk__renderpass_1ad05bf21dbfe1683680b70ec426b55617" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderpass</scope><name>configure</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderpass_1ad44c9504a192a632871bbdbbd835f8d7" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderpass</scope><name>destroy</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderpass_1a6b71fda37d74595635e561e9faa78160" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderpass</scope><name>m_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderpass_1abc2cfbde497c851fb7b1501b8c772974" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderpass</scope><name>m_renderpass_handler</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderpass_1a889aad0caa7936ae724db113d70fb9cd" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderpass</scope><name>m_renderpass_options</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderpass_1a35a5017215746fe2fa82b0726723c7e1" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderpass</scope><name>operator VkRenderPass</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderpass_1aaf6662f454387254dc5b3ca3ef32abd3" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderpass</scope><name>operator VkRenderPass</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderpass_1abae17f4ad508af2d31fb14e6e925dbec" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderpass</scope><name>vk_renderpass</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderpass_1a8731f920ffd4bc8326965c5724457852" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderpass</scope><name>vk_renderpass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

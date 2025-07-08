@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__command__buffer" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_command_buffer</compoundname>
+    <includes refid="vk__command__buffer_8hpp" local="no">vk_command_buffer.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__command__buffer_1ab842a8175bd9fb5ba9781adc08122e37" prot="private" static="no" mutable="no">
+        <type>VkDevice</type>
+        <definition>VkDevice atlas::vk::vk_command_buffer::m_driver</definition>
+        <argsstring></argsstring>
+        <name>m_driver</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::m_driver</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="51" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__command__buffer_1af83a4cdfef6dde37bd84bcdd9ba88f89" prot="private" static="no" mutable="no">
+        <type>VkCommandBuffer</type>
+        <definition>VkCommandBuffer atlas::vk::vk_command_buffer::m_command_buffer_handler</definition>
+        <argsstring></argsstring>
+        <name>m_command_buffer_handler</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::m_command_buffer_handler</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="52" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__command__buffer_1acc5d88e06d1348765f1b717f83012609" prot="private" static="no" mutable="no">
+        <type>VkCommandPool</type>
+        <definition>VkCommandPool atlas::vk::vk_command_buffer::m_command_pool</definition>
+        <argsstring></argsstring>
+        <name>m_command_pool</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::m_command_pool</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="53" column="23" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__command__buffer_1a90f4c7c31130bb3d821f3e6155a73a26" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_command_buffer::m_begin_end_count</definition>
+        <argsstring></argsstring>
+        <name>m_begin_end_count</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::m_begin_end_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="54" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__command__buffer_1a175f2cbbff89e4e78d0f64867cd78187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_command_buffer::vk_command_buffer</definition>
+        <argsstring>()=default</argsstring>
+        <name>vk_command_buffer</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::vk_command_buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="22" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__command__buffer_1a91d56ec21d8e2a92a9e1409ba697f842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_command_buffer::vk_command_buffer</definition>
+        <argsstring>(const command_buffer_settings &amp;p_settings)</argsstring>
+        <name>vk_command_buffer</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::vk_command_buffer</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1vk_1_1command__buffer__settings" kindref="compound">command_buffer_settings</ref> &amp;</type>
+          <declname>p_settings</declname>
+        </param>
+        <briefdescription>
+<para>Constructs new command buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="25" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__command__buffer_1a6ddb2da35c21c5dcaeb90ec454cd9bd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_command_buffer::begin</definition>
+        <argsstring>(const VkCommandBufferUsageFlags &amp;p_usage_flags)</argsstring>
+        <name>begin</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::begin</qualifiedname>
+        <param>
+          <type>const VkCommandBufferUsageFlags &amp;</type>
+          <declname>p_usage_flags</declname>
+        </param>
+        <briefdescription>
+<para>Indication when for this command buffer to start recording (writing) commands to this command buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="29" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__command__buffer_1a1558fe38868fcf3f329a49513827708e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_command_buffer::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::end</qualifiedname>
+        <briefdescription>
+<para>Indication when the command buffer to stop recording (write) commands to this buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="33" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__command__buffer_1aaeca52493b6ca69c21ef8f5503b124da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::vk::vk_command_buffer::is_valid</definition>
+        <argsstring>() const</argsstring>
+        <name>is_valid</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::is_valid</qualifiedname>
+        <briefdescription>
+<para>Enable to check for command buffers if they are valid. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="36" column="15" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__command__buffer_1af2b633a3df2fbee6875224b59dbf10c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_command_buffer::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::destroy</qualifiedname>
+        <briefdescription>
+<para>API for explicitly invoking cleanup on the command buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="41" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__command__buffer_1abad3bcff71e9350baa77cc4cf25d60b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_command_buffer::operator VkCommandBuffer</definition>
+        <argsstring>() const</argsstring>
+        <name>operator VkCommandBuffer</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::operator VkCommandBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="43" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__command__buffer_1a5d2dc7a7f3491b4363d19566c5135f06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_command_buffer::operator VkCommandBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>operator VkCommandBuffer</name>
+        <qualifiedname>atlas::vk::vk_command_buffer::operator VkCommandBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="48" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Vulkan Command Buffers. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Use this to create a command buffer according to vulkan specifications</para>
+<para>vulkan command buffer is how vulkan submits commands specifically directly or indirectly to the GPU via <computeroutput>vkQueueSubmit</computeroutput></para>
+<para>Command buffers in vulkan only know about the queue family they are associated with, their primary flag, and allocation operation associated with. </para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" line="20" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_command_buffer.hpp" bodystart="20" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1a6ddb2da35c21c5dcaeb90ec454cd9bd5" prot="public" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>begin</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1af2b633a3df2fbee6875224b59dbf10c2" prot="public" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>destroy</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1a1558fe38868fcf3f329a49513827708e" prot="public" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>end</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1aaeca52493b6ca69c21ef8f5503b124da" prot="public" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>is_valid</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1a90f4c7c31130bb3d821f3e6155a73a26" prot="private" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>m_begin_end_count</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1af83a4cdfef6dde37bd84bcdd9ba88f89" prot="private" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>m_command_buffer_handler</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1acc5d88e06d1348765f1b717f83012609" prot="private" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>m_command_pool</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1ab842a8175bd9fb5ba9781adc08122e37" prot="private" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>m_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1abad3bcff71e9350baa77cc4cf25d60b0" prot="public" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>operator VkCommandBuffer</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1a5d2dc7a7f3491b4363d19566c5135f06" prot="public" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>operator VkCommandBuffer</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1a175f2cbbff89e4e78d0f64867cd78187" prot="public" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>vk_command_buffer</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__command__buffer_1a91d56ec21d8e2a92a9e1409ba697f842" prot="public" virt="non-virtual"><scope>atlas::vk::vk_command_buffer</scope><name>vk_command_buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

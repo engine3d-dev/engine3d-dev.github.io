@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1imgui__context" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::imgui_context</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1imgui__context_1a573aa5549943c90e39672478ec619fdd" prot="private" static="no" mutable="no">
+        <type>VkInstance</type>
+        <definition>VkInstance atlas::vk::imgui_context::m_instance</definition>
+        <argsstring></argsstring>
+        <name>m_instance</name>
+        <qualifiedname>atlas::vk::imgui_context::m_instance</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="70" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1imgui__context_1a5bd3226fa62c28bef7a8ecd853ae1ef7" prot="private" static="no" mutable="no">
+        <type>VkPhysicalDevice</type>
+        <definition>VkPhysicalDevice atlas::vk::imgui_context::m_physical</definition>
+        <argsstring></argsstring>
+        <name>m_physical</name>
+        <qualifiedname>atlas::vk::imgui_context::m_physical</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="71" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1imgui__context_1a8b357baf8a11a0a0c554093d379d7575" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__driver" kindref="compound">vk_driver</ref></type>
+        <definition>vk_driver atlas::vk::imgui_context::m_driver</definition>
+        <argsstring></argsstring>
+        <name>m_driver</name>
+        <qualifiedname>atlas::vk::imgui_context::m_driver</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="72" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1imgui__context_1ab0aa09b64cb7a820d453f396d9757be6" prot="private" static="no" mutable="no">
+        <type>VkSwapchainKHR</type>
+        <definition>VkSwapchainKHR atlas::vk::imgui_context::m_current_swapchain_handler</definition>
+        <argsstring></argsstring>
+        <name>m_current_swapchain_handler</name>
+        <qualifiedname>atlas::vk::imgui_context::m_current_swapchain_handler</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="73" column="24" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1imgui__context_1aa0e0071177e4243c988da84a0dd9f085" prot="private" static="no" mutable="no">
+        <type>VkDescriptorPool</type>
+        <definition>VkDescriptorPool atlas::vk::imgui_context::m_desc_pool</definition>
+        <argsstring></argsstring>
+        <name>m_desc_pool</name>
+        <qualifiedname>atlas::vk::imgui_context::m_desc_pool</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="75" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1imgui__context_1a50cc39dae87444895896aeb063c58919" prot="private" static="no" mutable="no">
+        <type>VkCommandBuffer</type>
+        <definition>VkCommandBuffer atlas::vk::imgui_context::m_current_command</definition>
+        <argsstring></argsstring>
+        <name>m_current_command</name>
+        <qualifiedname>atlas::vk::imgui_context::m_current_command</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="76" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" bodystart="76" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1imgui__context_1a82cb5d369c4a0585e5d3f1ba02bd6067" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::imgui_context::imgui_context</definition>
+        <argsstring>()=default</argsstring>
+        <name>imgui_context</name>
+        <qualifiedname>atlas::vk::imgui_context::imgui_context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="20" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1imgui__context_1aa0426e7d0a5b525ea50cceb319f48029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::imgui_context::imgui_context</definition>
+        <argsstring>(GLFWwindow *p_window_handler, const vk_swapchain &amp;p_current_swapchain_handler, const VkRenderPass &amp;p_current_renderpass)</argsstring>
+        <name>imgui_context</name>
+        <qualifiedname>atlas::vk::imgui_context::imgui_context</qualifiedname>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>p_window_handler</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk_swapchain</ref> &amp;</type>
+          <declname>p_current_swapchain_handler</declname>
+        </param>
+        <param>
+          <type>const VkRenderPass &amp;</type>
+          <declname>p_current_renderpass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="21" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1imgui__context_1a64ca8dce4eac1b16059f623259054add" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::imgui_context::recreate</definition>
+        <argsstring>(GLFWwindow *p_window_handler, const uint32_t &amp;p_image_size, const VkRenderPass &amp;p_current_renderpass)</argsstring>
+        <name>recreate</name>
+        <qualifiedname>atlas::vk::imgui_context::recreate</qualifiedname>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>p_window_handler</declname>
+        </param>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_image_size</declname>
+        </param>
+        <param>
+          <type>const VkRenderPass &amp;</type>
+          <declname>p_current_renderpass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="25" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1imgui__context_1a508acdecf8a2dbbe24086656ab8f8f78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::imgui_context::begin</definition>
+        <argsstring>(const VkCommandBuffer &amp;p_current, const uint32_t &amp;p_current_frame_idx)</argsstring>
+        <name>begin</name>
+        <qualifiedname>atlas::vk::imgui_context::begin</qualifiedname>
+        <param>
+          <type>const VkCommandBuffer &amp;</type>
+          <declname>p_current</declname>
+        </param>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_current_frame_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="29" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1imgui__context_1a2f2e6716dbb5eb4e96d2365b77132e45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::imgui_context::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>atlas::vk::imgui_context::end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="31" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1imgui__context_1a38cac707a6dd1cadfb0d258e65af0d70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::imgui_context::draw_hud</definition>
+        <argsstring>(const hud_data &amp;p_test, const window_settings &amp;p_settings)</argsstring>
+        <name>draw_hud</name>
+        <qualifiedname>atlas::vk::imgui_context::draw_hud</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1vk_1_1hud__data" kindref="compound">hud_data</ref> &amp;</type>
+          <declname>p_test</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1window__settings" kindref="compound">window_settings</ref> &amp;</type>
+          <declname>p_settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="66" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" line="18" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_imgui.hpp" bodystart="18" bodyend="77"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1a508acdecf8a2dbbe24086656ab8f8f78" prot="public" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>begin</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1a38cac707a6dd1cadfb0d258e65af0d70" prot="public" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>draw_hud</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1a2f2e6716dbb5eb4e96d2365b77132e45" prot="public" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>end</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1a82cb5d369c4a0585e5d3f1ba02bd6067" prot="public" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>imgui_context</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1aa0426e7d0a5b525ea50cceb319f48029" prot="public" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>imgui_context</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1a50cc39dae87444895896aeb063c58919" prot="private" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>m_current_command</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1ab0aa09b64cb7a820d453f396d9757be6" prot="private" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>m_current_swapchain_handler</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1aa0e0071177e4243c988da84a0dd9f085" prot="private" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>m_desc_pool</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1a8b357baf8a11a0a0c554093d379d7575" prot="private" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>m_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1a573aa5549943c90e39672478ec619fdd" prot="private" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>m_instance</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1a5bd3226fa62c28bef7a8ecd853ae1ef7" prot="private" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>m_physical</name></member>
+      <member refid="classatlas_1_1vk_1_1imgui__context_1a64ca8dce4eac1b16059f623259054add" prot="public" virt="non-virtual"><scope>atlas::vk::imgui_context</scope><name>recreate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

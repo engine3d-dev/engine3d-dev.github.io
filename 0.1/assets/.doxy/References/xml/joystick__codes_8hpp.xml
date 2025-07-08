@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="joystick__codes_8hpp" kind="file" language="C++">
+    <compoundname>joystick_codes.hpp</compoundname>
+    <includes local="no">cstdint</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>TheAtlasEngine/atlas/core/event/joystick_codes.hpp</label>
+        <link refid="joystick__codes_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstdint</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceatlas">atlas</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1event">atlas::event</innernamespace>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="joystick__codes_8hpp_1a724a35c6c85c178dff24c8ce503d25f0" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_1</definition>
+        <argsstring></argsstring>
+        <name>joystick_1</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="42" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1a2174b9483b9e3e105242b10550550586" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_2</definition>
+        <argsstring></argsstring>
+        <name>joystick_2</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="43" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1af7b38ca1a9c0e01c4d4cfab921843792" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_3</definition>
+        <argsstring></argsstring>
+        <name>joystick_3</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="44" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1a40a555a703a2bdefbc27771118cdf6c3" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_4</definition>
+        <argsstring></argsstring>
+        <name>joystick_4</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="45" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1a18852662c5ae16acc8158534a7bba00d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_5</definition>
+        <argsstring></argsstring>
+        <name>joystick_5</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="46" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1a5f1f923194ff61e14d45000c53358bef" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_6</definition>
+        <argsstring></argsstring>
+        <name>joystick_6</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="47" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1a23714374b574a530c7505d6c75d8543e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_7</definition>
+        <argsstring></argsstring>
+        <name>joystick_7</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="48" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1aad65437dc38bc7d98443818faff62205" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_8</definition>
+        <argsstring></argsstring>
+        <name>joystick_8</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="49" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1acfcd09aadd6e483d146c77aba275e8b4" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_9</definition>
+        <argsstring></argsstring>
+        <name>joystick_9</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="50" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1aa349b56a3ad85f2b15c86fc9d5ebd7a5" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_10</definition>
+        <argsstring></argsstring>
+        <name>joystick_10</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="51" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1ac128c8d2d9e4aeb6f2da836004c782b4" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_11</definition>
+        <argsstring></argsstring>
+        <name>joystick_11</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="52" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1a3f4efff9f7bdd0164ca6126e297d246a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_12</definition>
+        <argsstring></argsstring>
+        <name>joystick_12</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="53" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1ad4f4ae791c3c4239a875fa5b29091659" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_13</definition>
+        <argsstring></argsstring>
+        <name>joystick_13</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="54" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1ab07ab65ad7806258e91441ff09d0ec57" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_14</definition>
+        <argsstring></argsstring>
+        <name>joystick_14</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="55" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1aef59065901eb1c2c884e984865eeeca2" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_15</definition>
+        <argsstring></argsstring>
+        <name>joystick_15</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="56" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1ac3cf448c198c57cd5982e37bd2ead2ee" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_16</definition>
+        <argsstring></argsstring>
+        <name>joystick_16</name>
+        <initializer>= ::atlas::event::JoystickCodes::Joystick16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="57" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joystick__codes_8hpp_1a8ec80f7e2e3cd3f604f9c8371f6af3bc" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int joystick_last</definition>
+        <argsstring></argsstring>
+        <name>joystick_last</name>
+        <initializer>=
+  ::atlas::event::JoystickCodes::JoystickLAST</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" line="58" column="22" bodyfile="TheAtlasEngine/atlas/core/event/joystick_codes.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">atlas::event<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>JoystickCodes<sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick1<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick2<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick3<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick4<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick5<sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick6<sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick7<sp/>=<sp/>6,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick8<sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick9<sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick10<sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick11<sp/>=<sp/>10,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick12<sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick13<sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick14<sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick15<sp/>=<sp/>14,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joystick16<sp/>=<sp/>15,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>JoystickLAST<sp/>=<sp/>Joystick16,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>atlas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_1<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_2<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick2;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_3<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick3;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_4<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick4;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_5<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick5;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_6<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick6;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_7<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick7;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_8<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick8;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_9<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick9;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_10<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick10;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_11<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick11;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_12<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick12;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_13<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick13;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_14<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick14;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_15<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick15;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_16<sp/>=<sp/>::atlas::event::JoystickCodes::Joystick16;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>joystick_last<sp/>=</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>::atlas::event::JoystickCodes::JoystickLAST;</highlight></codeline>
+    </programlisting>
+    <location file="TheAtlasEngine/atlas/core/event/joystick_codes.hpp"/>
+  </compounddef>
+</doxygen>

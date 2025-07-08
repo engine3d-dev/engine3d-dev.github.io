@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1physics_1_1object__vs__broadphase__layer" kind="class" language="C++" prot="public" final="yes">
+    <compoundname>atlas::physics::object_vs_broadphase_layer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">JPH::ObjectVsBroadPhaseLayerFilter</basecompoundref>
+    <includes refid="jolt__broad__phase_8hpp" local="no">jolt_broad_phase.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1physics_1_1object__vs__broadphase__layer_1acd2bd398c59dfea2afa9e551ce7f1396" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::physics::object_vs_broadphase_layer::ShouldCollide</definition>
+        <argsstring>(JPH::ObjectLayer p_in_layer1, JPH::BroadPhaseLayer p_in_layer2) const override</argsstring>
+        <name>ShouldCollide</name>
+        <qualifiedname>atlas::physics::object_vs_broadphase_layer::ShouldCollide</qualifiedname>
+        <param>
+          <type>JPH::ObjectLayer</type>
+          <declname>p_in_layer1</declname>
+        </param>
+        <param>
+          <type>JPH::BroadPhaseLayer</type>
+          <declname>p_in_layer2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/jolt/interface/jolt_broad_phase.hpp" line="120" column="15" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/jolt/interface/jolt_broad_phase.hpp" bodystart="120" bodyend="134"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is used to tell Jolt what can or cannot collide. As of right now the list is static therfore the layers do not need a dynamic set up. This will change when the object layers become user definable. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="remark"><para>To give an example, there might exist something like this in the config of the editor: <verbatim>     Dynamic Kenmatic  Static
+</verbatim> Dynamic ✅ ✅ ✅ Kenmatic ✅ ✅ Static ✅</para>
+</simplesect>
+Where the interactions can partially be defined and controlled by the developer of the game. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>JPH::ObjectVsBroadPhaseLayerFilter</label>
+      </node>
+      <node id="1">
+        <label>atlas::physics::object_vs_broadphase_layer</label>
+        <link refid="classatlas_1_1physics_1_1object__vs__broadphase__layer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>JPH::ObjectVsBroadPhaseLayerFilter</label>
+      </node>
+      <node id="1">
+        <label>atlas::physics::object_vs_broadphase_layer</label>
+        <link refid="classatlas_1_1physics_1_1object__vs__broadphase__layer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="TheAtlasEngine/atlas/physics/physics_3d/jolt/interface/jolt_broad_phase.hpp" line="117" column="5" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/jolt/interface/jolt_broad_phase.hpp" bodystart="118" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1physics_1_1object__vs__broadphase__layer_1acd2bd398c59dfea2afa9e551ce7f1396" prot="public" virt="non-virtual"><scope>atlas::physics::object_vs_broadphase_layer</scope><name>ShouldCollide</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

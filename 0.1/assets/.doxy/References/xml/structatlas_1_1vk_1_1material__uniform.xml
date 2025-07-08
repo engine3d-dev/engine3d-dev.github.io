@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1material__uniform" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::material_uniform</compoundname>
+    <includes refid="vk__types_8hpp" local="no">vk_types.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1material__uniform_1a7d805d757bd1379dad6fbb621bec300c" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 atlas::vk::material_uniform::model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <qualifiedname>atlas::vk::material_uniform::model</qualifiedname>
+        <initializer>{ 1.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="357" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="357" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1material__uniform_1afcf7a9370d8e9067082b758aaee2d71e" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 atlas::vk::material_uniform::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>atlas::vk::material_uniform::color</qualifiedname>
+        <initializer>{ 1.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="358" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="358" bodyend="358"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>material is going to define properties about how a scene object itself gets rendered </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="356" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="356" bodyend="360"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1material__uniform_1afcf7a9370d8e9067082b758aaee2d71e" prot="public" virt="non-virtual"><scope>atlas::vk::material_uniform</scope><name>color</name></member>
+      <member refid="structatlas_1_1vk_1_1material__uniform_1a7d805d757bd1379dad6fbb621bec300c" prot="public" virt="non-virtual"><scope>atlas::vk::material_uniform</scope><name>model</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

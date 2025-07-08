@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_95144a79d2a75258fa60dac31330b761" kind="dir">
+    <compoundname>TheAtlasEngine/atlas/core/system_framework</compoundname>
+    <innerfile refid="system__registry_8hpp">system_registry.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/system_framework/"/>
+  </compounddef>
+</doxygen>

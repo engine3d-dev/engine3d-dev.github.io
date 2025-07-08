@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1vk__image" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_image</compoundname>
+    <includes refid="vk__types_8hpp" local="no">vk_types.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vk__image_1a1674e716678b26251e44afdd4a79f865" prot="public" static="no" mutable="no">
+        <type>VkImage</type>
+        <definition>VkImage atlas::vk::vk_image::image</definition>
+        <argsstring></argsstring>
+        <name>image</name>
+        <qualifiedname>atlas::vk::vk_image::image</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="84" column="17" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vk__image_1ad992b0265d82bc36f75e8fd65ec2b4e7" prot="public" static="no" mutable="no">
+        <type>VkImageView</type>
+        <definition>VkImageView atlas::vk::vk_image::image_view</definition>
+        <argsstring></argsstring>
+        <name>image_view</name>
+        <qualifiedname>atlas::vk::vk_image::image_view</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="85" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vk__image_1a91bf7e4140fed466279190be442f7088" prot="public" static="no" mutable="no">
+        <type>VkSampler</type>
+        <definition>VkSampler atlas::vk::vk_image::sampler</definition>
+        <argsstring></argsstring>
+        <name>sampler</name>
+        <qualifiedname>atlas::vk::vk_image::sampler</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="86" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vk__image_1a90260ed377f934267c25c6708b970660" prot="public" static="no" mutable="no">
+        <type>VkDeviceMemory</type>
+        <definition>VkDeviceMemory atlas::vk::vk_image::device_memory</definition>
+        <argsstring></argsstring>
+        <name>device_memory</name>
+        <qualifiedname>atlas::vk::vk_image::device_memory</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="87" column="24" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>vulkan image handler with resources; used when handling textures </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="83" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="83" bodyend="88"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1vk__image_1a90260ed377f934267c25c6708b970660" prot="public" virt="non-virtual"><scope>atlas::vk::vk_image</scope><name>device_memory</name></member>
+      <member refid="structatlas_1_1vk_1_1vk__image_1a1674e716678b26251e44afdd4a79f865" prot="public" virt="non-virtual"><scope>atlas::vk::vk_image</scope><name>image</name></member>
+      <member refid="structatlas_1_1vk_1_1vk__image_1ad992b0265d82bc36f75e8fd65ec2b4e7" prot="public" virt="non-virtual"><scope>atlas::vk::vk_image</scope><name>image_view</name></member>
+      <member refid="structatlas_1_1vk_1_1vk__image_1a91bf7e4140fed466279190be442f7088" prot="public" virt="non-virtual"><scope>atlas::vk::vk_image</scope><name>sampler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

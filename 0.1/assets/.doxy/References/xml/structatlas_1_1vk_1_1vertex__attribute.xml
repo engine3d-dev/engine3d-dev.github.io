@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1vertex__attribute" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::vertex_attribute</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vertex__attribute_1a91184f14896c6d324919adc59fa8ea61" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vertex_attribute::binding</definition>
+        <argsstring></argsstring>
+        <name>binding</name>
+        <qualifiedname>atlas::vk::vertex_attribute::binding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="282" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vertex__attribute_1a9a7873256cfa9162844d96341d97c7cf" prot="public" static="no" mutable="no">
+        <type>std::span&lt; <ref refid="structatlas_1_1vk_1_1vertex__attribute__entry" kindref="compound">vertex_attribute_entry</ref> &gt;</type>
+        <definition>std::span&lt;vertex_attribute_entry&gt; atlas::vk::vertex_attribute::entries</definition>
+        <argsstring></argsstring>
+        <name>entries</name>
+        <qualifiedname>atlas::vk::vertex_attribute::entries</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="283" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vertex__attribute_1a844194c6fefac83ac3a0196e407231d3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vertex_attribute::stride</definition>
+        <argsstring></argsstring>
+        <name>stride</name>
+        <qualifiedname>atlas::vk::vertex_attribute::stride</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="284" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vertex__attribute_1a30c6e60191121fade6f1183ab6240167" prot="public" static="no" mutable="no">
+        <type>input_rate</type>
+        <definition>input_rate atlas::vk::vertex_attribute::input_rate</definition>
+        <argsstring></argsstring>
+        <name>input_rate</name>
+        <qualifiedname>atlas::vk::vertex_attribute::input_rate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="285" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="285" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="281" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="281" bodyend="286"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1vertex__attribute_1a91184f14896c6d324919adc59fa8ea61" prot="public" virt="non-virtual"><scope>atlas::vk::vertex_attribute</scope><name>binding</name></member>
+      <member refid="structatlas_1_1vk_1_1vertex__attribute_1a9a7873256cfa9162844d96341d97c7cf" prot="public" virt="non-virtual"><scope>atlas::vk::vertex_attribute</scope><name>entries</name></member>
+      <member refid="structatlas_1_1vk_1_1vertex__attribute_1a30c6e60191121fade6f1183ab6240167" prot="public" virt="non-virtual"><scope>atlas::vk::vertex_attribute</scope><name>input_rate</name></member>
+      <member refid="structatlas_1_1vk_1_1vertex__attribute_1a844194c6fefac83ac3a0196e407231d3" prot="public" virt="non-virtual"><scope>atlas::vk::vertex_attribute</scope><name>stride</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1texture__properties" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::texture_properties</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1texture__properties_1a2077f0b7f0d4f9a247f5e528664d46fa" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::texture_properties::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>atlas::vk::texture_properties::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="299" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1texture__properties_1a55689bc6aa94367874484a0f0d27dc23" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::texture_properties::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>atlas::vk::texture_properties::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="300" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1texture__properties_1ac482262998718caa300acb2d251f21b9" prot="public" static="no" mutable="no">
+        <type>VkImageUsageFlagBits</type>
+        <definition>VkImageUsageFlagBits atlas::vk::texture_properties::usage</definition>
+        <argsstring></argsstring>
+        <name>usage</name>
+        <qualifiedname>atlas::vk::texture_properties::usage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="301" column="30" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1texture__properties_1aca290818550e12fd2991029e8f7301fe" prot="public" static="no" mutable="no">
+        <type>VkMemoryPropertyFlagBits</type>
+        <definition>VkMemoryPropertyFlagBits atlas::vk::texture_properties::property</definition>
+        <argsstring></argsstring>
+        <name>property</name>
+        <qualifiedname>atlas::vk::texture_properties::property</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="302" column="34" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1texture__properties_1aaa58ba782475ec573206a65d516bc206" prot="public" static="no" mutable="no">
+        <type>VkFormat</type>
+        <definition>VkFormat atlas::vk::texture_properties::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>atlas::vk::texture_properties::format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="303" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="303" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="298" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="298" bodyend="304"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1texture__properties_1aaa58ba782475ec573206a65d516bc206" prot="public" virt="non-virtual"><scope>atlas::vk::texture_properties</scope><name>format</name></member>
+      <member refid="structatlas_1_1vk_1_1texture__properties_1a55689bc6aa94367874484a0f0d27dc23" prot="public" virt="non-virtual"><scope>atlas::vk::texture_properties</scope><name>height</name></member>
+      <member refid="structatlas_1_1vk_1_1texture__properties_1aca290818550e12fd2991029e8f7301fe" prot="public" virt="non-virtual"><scope>atlas::vk::texture_properties</scope><name>property</name></member>
+      <member refid="structatlas_1_1vk_1_1texture__properties_1ac482262998718caa300acb2d251f21b9" prot="public" virt="non-virtual"><scope>atlas::vk::texture_properties</scope><name>usage</name></member>
+      <member refid="structatlas_1_1vk_1_1texture__properties_1a2077f0b7f0d4f9a247f5e528664d46fa" prot="public" virt="non-virtual"><scope>atlas::vk::texture_properties</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

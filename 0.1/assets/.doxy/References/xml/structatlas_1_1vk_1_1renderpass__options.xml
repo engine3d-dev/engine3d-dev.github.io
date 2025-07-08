@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1renderpass__options" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::renderpass_options</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__options_1aceb75a1cf7d33b912864590a5caaff20" prot="public" static="no" mutable="no">
+        <type>std::span&lt; VkClearColorValue &gt;</type>
+        <definition>std::span&lt;VkClearColorValue&gt; atlas::vk::renderpass_options::clear_values</definition>
+        <argsstring></argsstring>
+        <name>clear_values</name>
+        <qualifiedname>atlas::vk::renderpass_options::clear_values</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="254" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="254" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__options_1a1e5fa9d7de88b290fb1e4389bfcdeae4" prot="public" static="no" mutable="no">
+        <type>std::span&lt; <ref refid="structatlas_1_1vk_1_1renderpass__attachment" kindref="compound">renderpass_attachment</ref> &gt;</type>
+        <definition>std::span&lt;renderpass_attachment&gt; atlas::vk::renderpass_options::color_attachments</definition>
+        <argsstring></argsstring>
+        <name>color_attachments</name>
+        <qualifiedname>atlas::vk::renderpass_options::color_attachments</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="255" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="255" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__options_1ae1cac933436d63418c6c6fc395d21adb" prot="public" static="no" mutable="no">
+        <type>std::span&lt; <ref refid="structatlas_1_1vk_1_1renderpass__attachment" kindref="compound">renderpass_attachment</ref> &gt;</type>
+        <definition>std::span&lt;renderpass_attachment&gt; atlas::vk::renderpass_options::depth_attachments</definition>
+        <argsstring></argsstring>
+        <name>depth_attachments</name>
+        <qualifiedname>atlas::vk::renderpass_options::depth_attachments</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="256" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="256" bodyend="256"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="253" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="253" bodyend="257"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1renderpass__options_1aceb75a1cf7d33b912864590a5caaff20" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_options</scope><name>clear_values</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__options_1a1e5fa9d7de88b290fb1e4389bfcdeae4" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_options</scope><name>color_attachments</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__options_1ae1cac933436d63418c6c6fc395d21adb" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_options</scope><name>depth_attachments</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1image__extent" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::image_extent</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1image__extent_1af19a2dcdfc3144ccf65e7a9e9c50fec6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::image_extent::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>atlas::vk::image_extent::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="71" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1image__extent_1a1dad8e711152f266919edec8b1705ce8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::image_extent::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>atlas::vk::image_extent::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="72" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1image__extent_1a5f06b6919a4bceaf271d10511d3adea3" prot="public" static="no" mutable="no">
+        <type>VkDeviceMemory</type>
+        <definition>VkDeviceMemory atlas::vk::image_extent::device_memory</definition>
+        <argsstring></argsstring>
+        <name>device_memory</name>
+        <qualifiedname>atlas::vk::image_extent::device_memory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="73" column="24" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1image__extent_1a978da583e69a8887f92f7b706eb8cc5a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::image_extent::mip_level</definition>
+        <argsstring></argsstring>
+        <name>mip_level</name>
+        <qualifiedname>atlas::vk::image_extent::mip_level</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="74" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="70" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="70" bodyend="75"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1image__extent_1a5f06b6919a4bceaf271d10511d3adea3" prot="public" virt="non-virtual"><scope>atlas::vk::image_extent</scope><name>device_memory</name></member>
+      <member refid="structatlas_1_1vk_1_1image__extent_1a1dad8e711152f266919edec8b1705ce8" prot="public" virt="non-virtual"><scope>atlas::vk::image_extent</scope><name>height</name></member>
+      <member refid="structatlas_1_1vk_1_1image__extent_1a978da583e69a8887f92f7b706eb8cc5a" prot="public" virt="non-virtual"><scope>atlas::vk::image_extent</scope><name>mip_level</name></member>
+      <member refid="structatlas_1_1vk_1_1image__extent_1af19a2dcdfc3144ccf65e7a9e9c50fec6" prot="public" virt="non-virtual"><scope>atlas::vk::image_extent</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

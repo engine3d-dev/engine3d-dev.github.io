@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1renderpass__attachment" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::renderpass_attachment</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1ae3b705c36a1560cc948ce2c9f97ce38f" prot="public" static="no" mutable="no">
+        <type>renderpass_type</type>
+        <definition>renderpass_type atlas::vk::renderpass_attachment::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="226" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1aa03fe65ac7d1d0f85414d2941b811e47" prot="public" static="no" mutable="no">
+        <type>image_layout</type>
+        <definition>image_layout atlas::vk::renderpass_attachment::layout</definition>
+        <argsstring></argsstring>
+        <name>layout</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="227" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1acf0bdaf5f2a38f7578bd95336be8d759" prot="public" static="no" mutable="no">
+        <type>format</type>
+        <definition>format atlas::vk::renderpass_attachment::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::format</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="228" column="16" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1a2c61e9276b26225640fa1d5b93f96a7e" prot="public" static="no" mutable="no">
+        <type>sample_bit</type>
+        <definition>sample_bit atlas::vk::renderpass_attachment::sample_count</definition>
+        <argsstring></argsstring>
+        <name>sample_count</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::sample_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="229" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1ad82d5a2cf876a0a99f6a1dd419b8202f" prot="public" static="no" mutable="no">
+        <type>attachment_load</type>
+        <definition>attachment_load atlas::vk::renderpass_attachment::load</definition>
+        <argsstring></argsstring>
+        <name>load</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::load</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="230" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1ab30d93e4e9442e20c8ce0e6c5f32d097" prot="public" static="no" mutable="no">
+        <type>attachment_store</type>
+        <definition>attachment_store atlas::vk::renderpass_attachment::store</definition>
+        <argsstring></argsstring>
+        <name>store</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::store</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="231" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1a12d2f15704f54389f6b4cbbedb5e414e" prot="public" static="no" mutable="no">
+        <type>attachment_load</type>
+        <definition>attachment_load atlas::vk::renderpass_attachment::stencil_load</definition>
+        <argsstring></argsstring>
+        <name>stencil_load</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::stencil_load</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="232" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1a0f7d0c2f36f8e702331990daaa5e16c0" prot="public" static="no" mutable="no">
+        <type>attachment_store</type>
+        <definition>attachment_store atlas::vk::renderpass_attachment::stencil_store</definition>
+        <argsstring></argsstring>
+        <name>stencil_store</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::stencil_store</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="233" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1aa49ad047ff0c3919f109f5b70214a47a" prot="public" static="no" mutable="no">
+        <type>image_layout</type>
+        <definition>image_layout atlas::vk::renderpass_attachment::initial</definition>
+        <argsstring></argsstring>
+        <name>initial</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::initial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="234" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1renderpass__attachment_1abb9bfed1c1dd2946908e85ae1b21fab6" prot="public" static="no" mutable="no">
+        <type>image_layout</type>
+        <definition>image_layout atlas::vk::renderpass_attachment::finalize</definition>
+        <argsstring></argsstring>
+        <name>finalize</name>
+        <qualifiedname>atlas::vk::renderpass_attachment::finalize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="235" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="235" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="225" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="225" bodyend="236"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1abb9bfed1c1dd2946908e85ae1b21fab6" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>finalize</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1acf0bdaf5f2a38f7578bd95336be8d759" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>format</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1aa49ad047ff0c3919f109f5b70214a47a" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>initial</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1aa03fe65ac7d1d0f85414d2941b811e47" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>layout</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1ad82d5a2cf876a0a99f6a1dd419b8202f" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>load</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1a2c61e9276b26225640fa1d5b93f96a7e" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>sample_count</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1a12d2f15704f54389f6b4cbbedb5e414e" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>stencil_load</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1a0f7d0c2f36f8e702331990daaa5e16c0" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>stencil_store</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1ab30d93e4e9442e20c8ce0e6c5f32d097" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>store</name></member>
+      <member refid="structatlas_1_1vk_1_1renderpass__attachment_1ae3b705c36a1560cc948ce2c9f97ce38f" prot="public" virt="non-virtual"><scope>atlas::vk::renderpass_attachment</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

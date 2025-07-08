@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1material" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::material</compoundname>
+    <includes refid="components_8hpp" local="no">components.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1material_1aa69d7ea203b804fe3faa10f83af79269" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 atlas::material::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>atlas::material::color</qualifiedname>
+        <initializer>{ 1.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="88" column="19" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1material_1afb57c50b7883a65b6e7d355fe083a6be" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string atlas::material::model_path</definition>
+        <argsstring></argsstring>
+        <name>model_path</name>
+        <qualifiedname>atlas::material::model_path</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="89" column="21" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1material_1aa18c0b00ba95da7e4853812d8895ea14" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string atlas::material::texture_path</definition>
+        <argsstring></argsstring>
+        <name>texture_path</name>
+        <qualifiedname>atlas::material::texture_path</qualifiedname>
+        <initializer>=
+          &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="90" column="21" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1material_1abc2dbefe03170346500a1b53753ae5b1" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; atlas::material::texture_filepaths</definition>
+        <argsstring></argsstring>
+        <name>texture_filepaths</name>
+        <qualifiedname>atlas::material::texture_filepaths</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="92" column="21" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1material_1ad64bd9c9dbad71b5bf02fcdbf6444a87" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::material::model_reload</definition>
+        <argsstring></argsstring>
+        <name>model_reload</name>
+        <qualifiedname>atlas::material::model_reload</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="93" column="14" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1material_1a6a248a69aa93be72f6b783b3c6fae3ef" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::material::texture_reload</definition>
+        <argsstring></argsstring>
+        <name>texture_reload</name>
+        <qualifiedname>atlas::material::texture_reload</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="94" column="14" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Contains our render target as the mesh TODO: IMPORTANT: NEED TO CHANGE HOW THIS WORKSS!! IMPORTANT: flecs gives you a lifetime issue if it doesnt have a default constructor implictly added to a struct/class </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="87" column="5" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="87" bodyend="95"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1material_1aa69d7ea203b804fe3faa10f83af79269" prot="public" virt="non-virtual"><scope>atlas::material</scope><name>color</name></member>
+      <member refid="structatlas_1_1material_1afb57c50b7883a65b6e7d355fe083a6be" prot="public" virt="non-virtual"><scope>atlas::material</scope><name>model_path</name></member>
+      <member refid="structatlas_1_1material_1ad64bd9c9dbad71b5bf02fcdbf6444a87" prot="public" virt="non-virtual"><scope>atlas::material</scope><name>model_reload</name></member>
+      <member refid="structatlas_1_1material_1abc2dbefe03170346500a1b53753ae5b1" prot="public" virt="non-virtual"><scope>atlas::material</scope><name>texture_filepaths</name></member>
+      <member refid="structatlas_1_1material_1aa18c0b00ba95da7e4853812d8895ea14" prot="public" virt="non-virtual"><scope>atlas::material</scope><name>texture_path</name></member>
+      <member refid="structatlas_1_1material_1a6a248a69aa93be72f6b783b3c6fae3ef" prot="public" virt="non-virtual"><scope>atlas::material</scope><name>texture_reload</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

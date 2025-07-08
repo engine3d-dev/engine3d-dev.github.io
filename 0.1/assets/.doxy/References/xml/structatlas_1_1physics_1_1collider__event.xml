@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1physics_1_1collider__event" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::physics::collider_event</compoundname>
+    <includes refid="jolt__components_8hpp" local="no">jolt_components.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1collider__event_1a8fa8f910503ebf700b5c9e88542d7f16" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t atlas::physics::collider_event::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>atlas::physics::collider_event::id</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="97" column="18" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is a replacement for an event system to handle collider. It will be replaced by an event system once we have functional one up and running. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Its point is to associate entities with user made jolt collisions. </para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="96" column="5" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="96" bodyend="98"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1physics_1_1collider__event_1a8fa8f910503ebf700b5c9e88542d7f16" prot="public" virt="non-virtual"><scope>atlas::physics::collider_event</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

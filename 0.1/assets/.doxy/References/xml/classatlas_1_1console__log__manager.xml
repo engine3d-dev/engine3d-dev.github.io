@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1console__log__manager" kind="class" language="C++" prot="public">
+    <compoundname>atlas::console_log_manager</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classatlas_1_1console__log__manager_1a1ada4f88833fd10ace7548efebc7df43" prot="private" static="yes" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref>&lt; spdlog::logger &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, ref&lt;spdlog::logger&gt; &gt; atlas::console_log_manager::s_loggers</definition>
+        <argsstring></argsstring>
+        <name>s_loggers</name>
+        <qualifiedname>atlas::console_log_manager::s_loggers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>std::string is the tag of the log&apos;s location. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/engine_logger.hpp" line="34" column="35" bodyfile="TheAtlasEngine/atlas/core/engine_logger.hpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classatlas_1_1console__log__manager_1aac5abb903e382cdb4b427739c48fcfa2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void atlas::console_log_manager::initialize_logger_manager</definition>
+        <argsstring>(const std::string &amp;pattern=&quot;%^[%T] %n: %v%$&quot;)</argsstring>
+        <name>initialize_logger_manager</name>
+        <qualifiedname>atlas::console_log_manager::initialize_logger_manager</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>pattern</declname>
+          <defval>&quot;%^[%T] %n: %v%$&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Used for initiating this console logger across engine3d supplying the pattern and application to dedicate log messages to </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/engine_logger.hpp" line="23" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1console__log__manager_1af1fa67557a76e5caec4703ece94e19ca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void atlas::console_log_manager::set_current_logger</definition>
+        <argsstring>(const std::string &amp;p_tag=&quot;Undefined g_Tag in console_logger&quot;)</argsstring>
+        <name>set_current_logger</name>
+        <qualifiedname>atlas::console_log_manager::set_current_logger</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+          <defval>&quot;Undefined g_Tag in console_logger&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/engine_logger.hpp" line="26" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1console__log__manager_1a4fe4da226bdf208e4a63db7f1e49b25a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void atlas::console_log_manager::create_new_logger</definition>
+        <argsstring>(const std::string &amp;p_tag=&quot;Undefined Tag&quot;)</argsstring>
+        <name>create_new_logger</name>
+        <qualifiedname>atlas::console_log_manager::create_new_logger</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+          <defval>&quot;Undefined Tag&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/engine_logger.hpp" line="28" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1console__log__manager_1aab4e4fe756f59f7298e6e98d01e916fc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref>&lt; spdlog::logger &gt;</type>
+        <definition>static ref&lt; spdlog::logger &gt; atlas::console_log_manager::get</definition>
+        <argsstring>(const std::string &amp;p_tag)</argsstring>
+        <name>get</name>
+        <qualifiedname>atlas::console_log_manager::get</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/engine_logger.hpp" line="30" column="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/engine_logger.hpp" line="19" column="5" bodyfile="TheAtlasEngine/atlas/core/engine_logger.hpp" bodystart="19" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1console__log__manager_1a4fe4da226bdf208e4a63db7f1e49b25a" prot="public" virt="non-virtual"><scope>atlas::console_log_manager</scope><name>create_new_logger</name></member>
+      <member refid="classatlas_1_1console__log__manager_1aab4e4fe756f59f7298e6e98d01e916fc" prot="public" virt="non-virtual"><scope>atlas::console_log_manager</scope><name>get</name></member>
+      <member refid="classatlas_1_1console__log__manager_1aac5abb903e382cdb4b427739c48fcfa2" prot="public" virt="non-virtual"><scope>atlas::console_log_manager</scope><name>initialize_logger_manager</name></member>
+      <member refid="classatlas_1_1console__log__manager_1a1ada4f88833fd10ace7548efebc7df43" prot="private" virt="non-virtual"><scope>atlas::console_log_manager</scope><name>s_loggers</name></member>
+      <member refid="classatlas_1_1console__log__manager_1af1fa67557a76e5caec4703ece94e19ca" prot="public" virt="non-virtual"><scope>atlas::console_log_manager</scope><name>set_current_logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

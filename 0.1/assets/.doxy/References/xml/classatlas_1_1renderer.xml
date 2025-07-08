@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1renderer" kind="class" language="C++" prot="public">
+    <compoundname>atlas::renderer</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classatlas_1_1renderer_1a4a52bec0f4a6e226b0ce34a463864009" prot="private" static="yes" mutable="no">
+        <type><ref refid="classatlas_1_1renderer" kindref="compound">renderer</ref> *</type>
+        <definition>renderer* atlas::renderer::s_instance</definition>
+        <argsstring></argsstring>
+        <name>s_instance</name>
+        <qualifiedname>atlas::renderer::s_instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/renderer/renderer.hpp" line="37" column="25" bodyfile="TheAtlasEngine/atlas/renderer/renderer.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1renderer_1a84db2b3a7f7f8088a7511c2ac57d962f" prot="private" static="no" mutable="no">
+        <type>scope&lt; <ref refid="classatlas_1_1render__context" kindref="compound">render_context</ref> &gt;</type>
+        <definition>scope&lt;render_context&gt; atlas::renderer::m_render_context</definition>
+        <argsstring></argsstring>
+        <name>m_render_context</name>
+        <qualifiedname>atlas::renderer::m_render_context</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/renderer/renderer.hpp" line="38" column="15" bodyfile="TheAtlasEngine/atlas/renderer/renderer.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1renderer_1a9254e999e5878e4701248581c536cc47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::renderer::renderer</definition>
+        <argsstring>()=default</argsstring>
+        <name>renderer</name>
+        <qualifiedname>atlas::renderer::renderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/renderer/renderer.hpp" line="19" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1renderer_1a8c4c8a3ca248ec9fe9d80031b3734dbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::renderer::renderer</definition>
+        <argsstring>(const vk::vk_swapchain &amp;p_swapchain, const std::string &amp;p_tag=&quot;Renderer&quot;)</argsstring>
+        <name>renderer</name>
+        <qualifiedname>atlas::renderer::renderer</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref> &amp;</type>
+          <declname>p_swapchain</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+          <defval>&quot;Renderer&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/renderer/renderer.hpp" line="20" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1renderer_1a33fa2f53ae3d5a50ca256b6972eb0999" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::renderer::begin</definition>
+        <argsstring>(const vk::vk_command_buffer &amp;p_current, const vk::vk_swapchain &amp;p_current_rp)</argsstring>
+        <name>begin</name>
+        <qualifiedname>atlas::renderer::begin</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__command__buffer" kindref="compound">vk::vk_command_buffer</ref> &amp;</type>
+          <declname>p_current</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref> &amp;</type>
+          <declname>p_current_rp</declname>
+        </param>
+        <briefdescription>
+<para>Indicates to the renderer is at the start of the next frame to prepare workloads before next frame is processeed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/renderer/renderer.hpp" line="26" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1renderer_1aa711047abb3213651b8e71d4d3665648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::renderer::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>atlas::renderer::end</qualifiedname>
+        <briefdescription>
+<para>Indications when the renderer has reached the end of the frame. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/renderer/renderer.hpp" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1renderer_1a6ab9f74cc6a7f28dbe7811b4b366b6d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::renderer::set_background_color</definition>
+        <argsstring>(const std::array&lt; float, 4 &gt; &amp;p_color)</argsstring>
+        <name>set_background_color</name>
+        <qualifiedname>atlas::renderer::set_background_color</qualifiedname>
+        <param>
+          <type>const std::array&lt; float, 4 &gt; &amp;</type>
+          <declname>p_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/renderer/renderer.hpp" line="34" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/renderer/renderer.hpp" line="17" column="5" bodyfile="TheAtlasEngine/atlas/renderer/renderer.hpp" bodystart="17" bodyend="39"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1renderer_1a33fa2f53ae3d5a50ca256b6972eb0999" prot="public" virt="non-virtual"><scope>atlas::renderer</scope><name>begin</name></member>
+      <member refid="classatlas_1_1renderer_1aa711047abb3213651b8e71d4d3665648" prot="public" virt="non-virtual"><scope>atlas::renderer</scope><name>end</name></member>
+      <member refid="classatlas_1_1renderer_1a84db2b3a7f7f8088a7511c2ac57d962f" prot="private" virt="non-virtual"><scope>atlas::renderer</scope><name>m_render_context</name></member>
+      <member refid="classatlas_1_1renderer_1a9254e999e5878e4701248581c536cc47" prot="public" virt="non-virtual"><scope>atlas::renderer</scope><name>renderer</name></member>
+      <member refid="classatlas_1_1renderer_1a8c4c8a3ca248ec9fe9d80031b3734dbf" prot="public" virt="non-virtual"><scope>atlas::renderer</scope><name>renderer</name></member>
+      <member refid="classatlas_1_1renderer_1a4a52bec0f4a6e226b0ce34a463864009" prot="private" virt="non-virtual"><scope>atlas::renderer</scope><name>s_instance</name></member>
+      <member refid="classatlas_1_1renderer_1a6ab9f74cc6a7f28dbe7811b4b366b6d5" prot="public" virt="non-virtual"><scope>atlas::renderer</scope><name>set_background_color</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

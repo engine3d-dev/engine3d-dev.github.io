@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::physics::matrix4&lt; JPH::Mat44 &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1a13f01a2b02241b0f453708d426bb0bed" prot="private" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 atlas::physics::matrix4&lt; JPH::Mat44 &gt;::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <qualifiedname>atlas::physics::matrix4&lt; JPH::Mat44 &gt;::m_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="189" column="19" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1a4177f52b9ed067b9ed9c6bf9dfc1d031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::physics::matrix4&lt; JPH::Mat44 &gt;::matrix4</definition>
+        <argsstring>()=default</argsstring>
+        <name>matrix4</name>
+        <qualifiedname>atlas::physics::matrix4&lt; JPH::Mat44 &gt;::matrix4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="163" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1a6b3f95878ceea0c22d0c5e4c4ae7d543" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::physics::matrix4&lt; JPH::Mat44 &gt;::matrix4</definition>
+        <argsstring>(const JPH::Mat44 &amp;m)</argsstring>
+        <name>matrix4</name>
+        <qualifiedname>atlas::physics::matrix4&lt; JPH::Mat44 &gt;::matrix4</qualifiedname>
+        <param>
+          <type>const JPH::Mat44 &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="165" column="9" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="165" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1a8219bc2249dbc430104a8ecb0f0a3d84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::physics::matrix4&lt; JPH::Mat44 &gt;::operator glm::mat4</definition>
+        <argsstring>() const</argsstring>
+        <name>operator glm::mat4</name>
+        <qualifiedname>atlas::physics::matrix4&lt; JPH::Mat44 &gt;::mat4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="173" column="9" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="173" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1aa3babfcc9723e614085c888388af81be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 atlas::physics::matrix4&lt; JPH::Mat44 &gt;::operator=</definition>
+        <argsstring>(const JPH::Mat44 &amp;m)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>atlas::physics::matrix4&lt; JPH::Mat44 &gt;::operator=</qualifiedname>
+        <param>
+          <type>const JPH::Mat44 &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="175" column="19" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="175" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1ad92161b6d209d1aa091243d6fe1a05b3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::physics::matrix4&lt; JPH::Mat44 &gt;::operator==</definition>
+        <argsstring>(const glm::mat4 &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>atlas::physics::matrix4&lt; JPH::Mat44 &gt;::operator==</qualifiedname>
+        <param>
+          <type>const glm::mat4 &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="184" column="14" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="184" bodyend="186"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/physics/types.hpp" line="162" column="5" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="162" bodyend="190"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1a13f01a2b02241b0f453708d426bb0bed" prot="private" virt="non-virtual"><scope>atlas::physics::matrix4&lt; JPH::Mat44 &gt;</scope><name>m_value</name></member>
+      <member refid="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1a4177f52b9ed067b9ed9c6bf9dfc1d031" prot="public" virt="non-virtual"><scope>atlas::physics::matrix4&lt; JPH::Mat44 &gt;</scope><name>matrix4</name></member>
+      <member refid="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1a6b3f95878ceea0c22d0c5e4c4ae7d543" prot="public" virt="non-virtual"><scope>atlas::physics::matrix4&lt; JPH::Mat44 &gt;</scope><name>matrix4</name></member>
+      <member refid="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1a8219bc2249dbc430104a8ecb0f0a3d84" prot="public" virt="non-virtual"><scope>atlas::physics::matrix4&lt; JPH::Mat44 &gt;</scope><name>operator glm::mat4</name></member>
+      <member refid="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1aa3babfcc9723e614085c888388af81be" prot="public" virt="non-virtual"><scope>atlas::physics::matrix4&lt; JPH::Mat44 &gt;</scope><name>operator=</name></member>
+      <member refid="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4_1ad92161b6d209d1aa091243d6fe1a05b3" prot="public" virt="non-virtual"><scope>atlas::physics::matrix4&lt; JPH::Mat44 &gt;</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

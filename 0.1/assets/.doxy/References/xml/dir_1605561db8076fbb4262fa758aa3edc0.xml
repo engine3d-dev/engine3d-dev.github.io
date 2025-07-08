@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_1605561db8076fbb4262fa758aa3edc0" kind="dir">
+    <compoundname>TheAtlasEngine/atlas/drivers</compoundname>
+    <innerdir refid="dir_47b67bd74134333dd9ae7c9592fa3f49">TheAtlasEngine/atlas/drivers/vulkan-cpp</innerdir>
+    <innerfile refid="graphics__context_8hpp">graphics_context.hpp</innerfile>
+    <innerfile refid="renderer__context_8hpp">renderer_context.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1graphics__context" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>atlas::graphics_context</compoundname>
+    <derivedcompoundref refid="classatlas_1_1vk_1_1vk__context" prot="public" virt="non-virtual">atlas::vk::vk_context</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1graphics__context_1a43a91ed894715b218e3ac55368f8df22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual atlas::graphics_context::~graphics_context</definition>
+        <argsstring>()=default</argsstring>
+        <name>~graphics_context</name>
+        <qualifiedname>atlas::graphics_context::~graphics_context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/graphics_context.hpp" line="7" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1graphics__context_1a860367fda667d21d96fd0a8c3fbb02fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::graphics_context::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>atlas::graphics_context::destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/graphics_context.hpp" line="9" column="14" bodyfile="TheAtlasEngine/atlas/drivers/graphics_context.hpp" bodystart="9" bodyend="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1graphics__context_1a93dbecba9845614b6038939f4565e972" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::graphics_context::destroy_context</definition>
+        <argsstring>()=0</argsstring>
+        <name>destroy_context</name>
+        <qualifiedname>atlas::graphics_context::destroy_context</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__context_1a2e56b93c11c084e1387b0a14102ebb71">destroy_context</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/graphics_context.hpp" line="12" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>atlas::graphics_context</label>
+        <link refid="classatlas_1_1graphics__context"/>
+      </node>
+      <node id="2">
+        <label>atlas::vk::vk_context</label>
+        <link refid="classatlas_1_1vk_1_1vk__context"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="TheAtlasEngine/atlas/drivers/graphics_context.hpp" line="5" column="5" bodyfile="TheAtlasEngine/atlas/drivers/graphics_context.hpp" bodystart="5" bodyend="13"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1graphics__context_1a860367fda667d21d96fd0a8c3fbb02fc" prot="public" virt="non-virtual"><scope>atlas::graphics_context</scope><name>destroy</name></member>
+      <member refid="classatlas_1_1graphics__context_1a93dbecba9845614b6038939f4565e972" prot="private" virt="pure-virtual"><scope>atlas::graphics_context</scope><name>destroy_context</name></member>
+      <member refid="classatlas_1_1graphics__context_1a43a91ed894715b218e3ac55368f8df22" prot="public" virt="virtual"><scope>atlas::graphics_context</scope><name>~graphics_context</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

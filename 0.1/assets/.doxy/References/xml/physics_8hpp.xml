@@ -1,0 +1,583 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="physics_8hpp" kind="file" language="C++">
+    <compoundname>physics.hpp</compoundname>
+    <includes refid="physics__engine_8hpp" local="no">physics/physics_3d/physics_engine.hpp</includes>
+    <includes refid="jolt__components_8hpp" local="no">physics/jolt-cpp/jolt_components.hpp</includes>
+    <includes refid="scene__object_8hpp" local="no">core/scene/scene_object.hpp</includes>
+    <incdepgraph>
+      <node id="54">
+        <label>components/transform.hpp</label>
+        <link refid="transform_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>core/api.hpp</label>
+        <link refid="api_8hpp_source"/>
+      </node>
+      <node id="24">
+        <label>core/application.hpp</label>
+        <link refid="application_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>core/core.hpp</label>
+        <link refid="core_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>core/engine_logger.hpp</label>
+        <link refid="engine__logger_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>core/geometry/mesh.hpp</label>
+        <link refid="core_2geometry_2mesh_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>core/scene/components.hpp</label>
+        <link refid="components_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>core/scene/entity.hpp</label>
+        <link refid="entity_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>core/scene/scene.hpp</label>
+        <link refid="scene_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>core/scene/scene_object.hpp</label>
+        <link refid="scene__object_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>core/utilities/types.hpp</label>
+        <link refid="core_2utilities_2types_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>core/window.hpp</label>
+        <link refid="window_8hpp_source"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>drivers/renderer_context.hpp</label>
+        <link refid="renderer__context_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>drivers/vulkan-cpp/vk_command_buffer.hpp</label>
+        <link refid="vk__command__buffer_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>drivers/vulkan-cpp/vk_driver.hpp</label>
+        <link refid="vk__driver_8hpp_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>drivers/vulkan-cpp/vk_imgui.hpp</label>
+        <link refid="vk__imgui_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>drivers/vulkan-cpp/vk_physical_driver.hpp</label>
+        <link refid="vk__physical__driver_8hpp_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>drivers/vulkan-cpp/vk_present_queue.hpp</label>
+        <link refid="vk__present__queue_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>drivers/vulkan-cpp/vk_renderpass.hpp</label>
+        <link refid="vk__renderpass_8hpp_source"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>drivers/vulkan-cpp/vk_swapchain.hpp</label>
+        <link refid="vk__swapchain_8hpp_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>drivers/vulkan-cpp/vk_types.hpp</label>
+        <link refid="vk__types_8hpp_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>physics/jolt-cpp/jolt-imports.hpp</label>
+        <link refid="jolt-imports_8hpp_source"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>physics/jolt-cpp/jolt_components.hpp</label>
+        <link refid="jolt__components_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>physics/jolt-cpp/jolt_contact_listener.hpp</label>
+        <link refid="jolt__contact__listener_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>physics/physics_3d/jolt/interface/jolt_broad_phase.hpp</label>
+        <link refid="jolt__broad__phase_8hpp_source"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>physics/physics_3d/jolt/jolt_context.hpp</label>
+        <link refid="jolt__context_8hpp_source"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TheAtlasEngine/atlas/physics/physics_3d/physics.hpp</label>
+        <link refid="physics_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>physics/physics_3d/physics_api.hpp</label>
+        <link refid="physics__api_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>physics/physics_3d/physics_context.hpp</label>
+        <link refid="physics__context_8hpp_source"/>
+      </node>
+      <node id="2">
+        <label>physics/physics_3d/physics_engine.hpp</label>
+        <link refid="physics__engine_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>renderer/renderer.hpp</label>
+        <link refid="renderer_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="58">
+        <label>Jolt/Core/Core.h</label>
+      </node>
+      <node id="65">
+        <label>Jolt/Core/Factory.h</label>
+      </node>
+      <node id="62">
+        <label>Jolt/Core/IssueReporting.h</label>
+      </node>
+      <node id="60">
+        <label>Jolt/Core/JobSystemThreadPool.h</label>
+      </node>
+      <node id="66">
+        <label>Jolt/Core/Memory.h</label>
+      </node>
+      <node id="63">
+        <label>Jolt/Core/TempAllocator.h</label>
+      </node>
+      <node id="12">
+        <label>Jolt/Jolt.h</label>
+      </node>
+      <node id="77">
+        <label>Jolt/Math/MathTypes.h</label>
+      </node>
+      <node id="79">
+        <label>Jolt/Math/Quat.h</label>
+      </node>
+      <node id="78">
+        <label>Jolt/Math/Real.h</label>
+      </node>
+      <node id="69">
+        <label>Jolt/Physics/Body/BodyCreationSettings.h</label>
+      </node>
+      <node id="59">
+        <label>Jolt/Physics/Body/BodyInterface.h</label>
+      </node>
+      <node id="68">
+        <label>Jolt/Physics/Collision/BroadPhase/BroadPhaseLayer.h</label>
+      </node>
+      <node id="14">
+        <label>Jolt/Physics/Collision/ContactListener.h</label>
+      </node>
+      <node id="67">
+        <label>Jolt/Physics/Collision/ObjectLayer.h</label>
+      </node>
+      <node id="71">
+        <label>Jolt/Physics/Collision/Shape/BoxShape.h</label>
+      </node>
+      <node id="73">
+        <label>Jolt/Physics/Collision/Shape/CapsuleShape.h</label>
+      </node>
+      <node id="72">
+        <label>Jolt/Physics/Collision/Shape/ConvexShape.h</label>
+      </node>
+      <node id="74">
+        <label>Jolt/Physics/Collision/Shape/ScaledShape.h</label>
+      </node>
+      <node id="70">
+        <label>Jolt/Physics/Collision/Shape/Shape.h</label>
+      </node>
+      <node id="75">
+        <label>Jolt/Physics/Collision/Shape/SphereShape.h</label>
+      </node>
+      <node id="76">
+        <label>Jolt/Physics/EActivation.h</label>
+      </node>
+      <node id="61">
+        <label>Jolt/Physics/PhysicsSettings.h</label>
+      </node>
+      <node id="13">
+        <label>Jolt/Physics/PhysicsSystem.h</label>
+      </node>
+      <node id="64">
+        <label>Jolt/RegisterTypes.h</label>
+      </node>
+      <node id="4">
+        <label>cassert</label>
+      </node>
+      <node id="10">
+        <label>cstdint</label>
+      </node>
+      <node id="51">
+        <label>flecs.h</label>
+      </node>
+      <node id="19">
+        <label>fmt/os.h</label>
+      </node>
+      <node id="20">
+        <label>fmt/ostream.h</label>
+      </node>
+      <node id="45">
+        <label>glm/ext/quaternion_transform.hpp</label>
+      </node>
+      <node id="9">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="47">
+        <label>glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="48">
+        <label>glm/gtc/type_ptr.hpp</label>
+      </node>
+      <node id="49">
+        <label>glm/gtx/matrix_decompose.hpp</label>
+      </node>
+      <node id="46">
+        <label>glm/gtx/quaternion.hpp</label>
+      </node>
+      <node id="21">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>memory</label>
+      </node>
+      <node id="36">
+        <label>span</label>
+      </node>
+      <node id="6">
+        <label>spdlog/common.h</label>
+      </node>
+      <node id="7">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="30">
+        <label>string</label>
+      </node>
+      <node id="11">
+        <label>thread</label>
+      </node>
+      <node id="57">
+        <label>type_traits</label>
+      </node>
+      <node id="52">
+        <label>variant</label>
+      </node>
+      <node id="34">
+        <label>vector</label>
+      </node>
+      <node id="28">
+        <label>vulkan/vulkan.h</label>
+      </node>
+      <node id="41">
+        <label>vulkan/vulkan.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceatlas">atlas</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1physics">atlas::physics</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;physics/physics_3d/physics_engine.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;physics/jolt-cpp/jolt_components.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;core/scene/scene_object.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceatlas_1_1physics" kindref="compound">atlas::physics</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="namespaceatlas_1_1physics_1a9f072b934e4e84fc59edf453a0b34ee4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceatlas_1_1physics_1a9f072b934e4e84fc59edf453a0b34ee4" kindref="member">physics_backend</ref><sp/>:<sp/>uint8_t<sp/>{<sp/>JoltBackend<sp/>};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespaceatlas_1_1physics_1acf238359b66c337755302fd9d023b2d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref&lt;physics_engine&gt;</ref><sp/><ref refid="namespaceatlas_1_1physics_1acf238359b66c337755302fd9d023b2d5" kindref="member">initialize_engine</ref>(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref&lt;scene_object&gt;</ref>&amp;<sp/>p_physics_object,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>flecs::world&amp;<sp/>p_registery);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="namespaceatlas_1_1physics_1a475c95cbc2ab477bca4717d844a779d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceatlas_1_1physics_1a475c95cbc2ab477bca4717d844a779d8" kindref="member">add_force</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::vec3&amp;<sp/>force,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref>&amp;<sp/>body);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>add_force_world_point(glm::vec3<sp/>force,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>glm::vec3<sp/>position,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>physics_body<sp/>body);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="namespaceatlas_1_1physics_1ab6cb77fb00b6bd4df4356ec6dc82481e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceatlas_1_1physics_1ab6cb77fb00b6bd4df4356ec6dc82481e" kindref="member">add_velocity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::vec3&amp;<sp/>velocity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref>&amp;<sp/>body);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>add_angular_velocity(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::vec3&amp;<sp/>angular_velocity,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref>&amp;<sp/>body);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_velocity(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::vec3&amp;<sp/>velocity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref>&amp;<sp/>body);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_angular_velocity(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::vec3&amp;<sp/>angular_velocity,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref>&amp;<sp/>body);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp"/>
+  </compounddef>
+</doxygen>

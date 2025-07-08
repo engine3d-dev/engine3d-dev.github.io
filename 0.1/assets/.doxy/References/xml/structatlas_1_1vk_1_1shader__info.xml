@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1shader__info" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::shader_info</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__info_1a078eeba69a6674fea5f3c6f2ae11d2c2" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string atlas::vk::shader_info::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <qualifiedname>atlas::vk::shader_info::source</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="289" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1shader__info_1a5b6274cf243324b7457d24db39bb2da9" prot="public" static="no" mutable="no">
+        <type>shader_stage</type>
+        <definition>shader_stage atlas::vk::shader_info::stage</definition>
+        <argsstring></argsstring>
+        <name>stage</name>
+        <qualifiedname>atlas::vk::shader_info::stage</qualifiedname>
+        <initializer>= undefined</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="290" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="290" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="288" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="288" bodyend="291"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1shader__info_1a078eeba69a6674fea5f3c6f2ae11d2c2" prot="public" virt="non-virtual"><scope>atlas::vk::shader_info</scope><name>source</name></member>
+      <member refid="structatlas_1_1vk_1_1shader__info_1a5b6274cf243324b7457d24db39bb2da9" prot="public" virt="non-virtual"><scope>atlas::vk::shader_info</scope><name>stage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

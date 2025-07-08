@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1render__context" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>atlas::render_context</compoundname>
+    <derivedcompoundref refid="classatlas_1_1vk_1_1vk__renderer" prot="public" virt="non-virtual">atlas::vk::vk_renderer</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1render__context_1a5de557fdcfea0233f76246da478ccf39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual atlas::render_context::~render_context</definition>
+        <argsstring>()=default</argsstring>
+        <name>~render_context</name>
+        <qualifiedname>atlas::render_context::~render_context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp" line="33" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1render__context_1a3f9ffaf9eec2d9524a3a2779fd8aa714" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::render_context::begin_frame</definition>
+        <argsstring>(const vk::vk_command_buffer &amp;p_current, const vk::vk_swapchain &amp;p_swapchain_handler)</argsstring>
+        <name>begin_frame</name>
+        <qualifiedname>atlas::render_context::begin_frame</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__command__buffer" kindref="compound">vk::vk_command_buffer</ref> &amp;</type>
+          <declname>p_current</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref> &amp;</type>
+          <declname>p_swapchain_handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp" line="35" column="14" bodyfile="TheAtlasEngine/atlas/drivers/renderer_context.hpp" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1render__context_1a9c190ca4aa1f92c1e1280d67105af938" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::render_context::end_frame</definition>
+        <argsstring>()</argsstring>
+        <name>end_frame</name>
+        <qualifiedname>atlas::render_context::end_frame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp" line="40" column="14" bodyfile="TheAtlasEngine/atlas/drivers/renderer_context.hpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1render__context_1aaab83cc7f2394698267ee26f94b1519b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::render_context::set_background_color</definition>
+        <argsstring>(const std::array&lt; float, 4 &gt; &amp;p_color)</argsstring>
+        <name>set_background_color</name>
+        <qualifiedname>atlas::render_context::set_background_color</qualifiedname>
+        <param>
+          <type>const std::array&lt; float, 4 &gt; &amp;</type>
+          <declname>p_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp" line="42" column="14" bodyfile="TheAtlasEngine/atlas/drivers/renderer_context.hpp" bodystart="42" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1render__context_1a2f2edb76801c86638cdc44ff4cb52481" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::render_context::start_frame</definition>
+        <argsstring>(const vk::vk_command_buffer &amp;p_current, const vk::vk_swapchain &amp;p_swapchain_handler)=0</argsstring>
+        <name>start_frame</name>
+        <qualifiedname>atlas::render_context::start_frame</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__renderer_1a0df7df34baf01203c63840953aa72426">start_frame</reimplementedby>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__command__buffer" kindref="compound">vk::vk_command_buffer</ref> &amp;</type>
+          <declname>p_current</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref> &amp;</type>
+          <declname>p_swapchain_handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp" line="47" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1render__context_1a13cb7537bb31bdf17ee3f6464929e44b" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::render_context::post_frame</definition>
+        <argsstring>()=0</argsstring>
+        <name>post_frame</name>
+        <qualifiedname>atlas::render_context::post_frame</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__renderer_1a241585ecc3f52d06dd3beaea1854ee5c">post_frame</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp" line="50" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1render__context_1abbd1196b44673508239b037abef3d03a" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::render_context::background_color</definition>
+        <argsstring>(const std::array&lt; float, 4 &gt; &amp;p_color)=0</argsstring>
+        <name>background_color</name>
+        <qualifiedname>atlas::render_context::background_color</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__renderer_1a20671ddbba8e0840c786f90202d7413d">background_color</reimplementedby>
+        <param>
+          <type>const std::array&lt; float, 4 &gt; &amp;</type>
+          <declname>p_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp" line="52" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>atlas::render_context</label>
+        <link refid="classatlas_1_1render__context"/>
+      </node>
+      <node id="2">
+        <label>atlas::vk::vk_renderer</label>
+        <link refid="classatlas_1_1vk_1_1vk__renderer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp" line="31" column="5" bodyfile="TheAtlasEngine/atlas/drivers/renderer_context.hpp" bodystart="31" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1render__context_1abbd1196b44673508239b037abef3d03a" prot="private" virt="pure-virtual"><scope>atlas::render_context</scope><name>background_color</name></member>
+      <member refid="classatlas_1_1render__context_1a3f9ffaf9eec2d9524a3a2779fd8aa714" prot="public" virt="non-virtual"><scope>atlas::render_context</scope><name>begin_frame</name></member>
+      <member refid="classatlas_1_1render__context_1a9c190ca4aa1f92c1e1280d67105af938" prot="public" virt="non-virtual"><scope>atlas::render_context</scope><name>end_frame</name></member>
+      <member refid="classatlas_1_1render__context_1a13cb7537bb31bdf17ee3f6464929e44b" prot="private" virt="pure-virtual"><scope>atlas::render_context</scope><name>post_frame</name></member>
+      <member refid="classatlas_1_1render__context_1aaab83cc7f2394698267ee26f94b1519b" prot="public" virt="non-virtual"><scope>atlas::render_context</scope><name>set_background_color</name></member>
+      <member refid="classatlas_1_1render__context_1a2f2edb76801c86638cdc44ff4cb52481" prot="private" virt="pure-virtual"><scope>atlas::render_context</scope><name>start_frame</name></member>
+      <member refid="classatlas_1_1render__context_1a5de557fdcfea0233f76246da478ccf39" prot="public" virt="virtual"><scope>atlas::render_context</scope><name>~render_context</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

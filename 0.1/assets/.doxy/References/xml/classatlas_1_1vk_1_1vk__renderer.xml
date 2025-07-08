@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__renderer" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_renderer</compoundname>
+    <basecompoundref refid="classatlas_1_1render__context" prot="public" virt="non-virtual">atlas::render_context</basecompoundref>
+    <includes refid="vk__renderer_8hpp" local="no">vk_renderer.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1ae66f64cfd29d4fece7aabf20335e024d" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk_swapchain</ref></type>
+        <definition>vk_swapchain atlas::vk::vk_renderer::m_main_swapchain</definition>
+        <argsstring></argsstring>
+        <name>m_main_swapchain</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_main_swapchain</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="55" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a6458151ec712b14eb9dc0e02800daab8" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__command__buffer" kindref="compound">vk_command_buffer</ref></type>
+        <definition>vk_command_buffer atlas::vk::vk_renderer::m_current_command_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_current_command_buffer</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_current_command_buffer</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="56" column="27" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a7e2a551626d4060ce7a1328c31271736" prot="private" static="no" mutable="no">
+        <type>VkClearColorValue</type>
+        <definition>VkClearColorValue atlas::vk::vk_renderer::m_color</definition>
+        <argsstring></argsstring>
+        <name>m_color</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="57" column="27" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1aa20f5c97d10e791742ca3e088fe0b3b2" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__shader__group" kindref="compound">vk_shader_group</ref></type>
+        <definition>vk_shader_group atlas::vk::vk_renderer::m_shader_group</definition>
+        <argsstring></argsstring>
+        <name>m_shader_group</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_shader_group</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="59" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a7403404377b976b70357b47ccbcf1b1e" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__pipeline" kindref="compound">vk_pipeline</ref></type>
+        <definition>vk_pipeline atlas::vk::vk_renderer::m_main_pipeline</definition>
+        <argsstring></argsstring>
+        <name>m_main_pipeline</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_main_pipeline</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="60" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a81298798aff0aa617cf2ea68541e5a9a" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_renderer::m_image_count</definition>
+        <argsstring></argsstring>
+        <name>m_image_count</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_image_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="61" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1aded96d656c3432b08e466b40ce7eb70b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classatlas_1_1vk_1_1vk__uniform__buffer" kindref="compound">vk_uniform_buffer</ref> &gt;</type>
+        <definition>std::vector&lt;vk_uniform_buffer&gt; atlas::vk::vk_renderer::m_global_uniforms</definition>
+        <argsstring></argsstring>
+        <name>m_global_uniforms</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_global_uniforms</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="64" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1ade363a9f22dab55ca70adc5406c06150" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1descriptor__set" kindref="compound">descriptor_set</ref></type>
+        <definition>descriptor_set atlas::vk::vk_renderer::m_global_descriptor</definition>
+        <argsstring></argsstring>
+        <name>m_global_descriptor</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_global_descriptor</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="65" column="24" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a377e53f6f0b0caab2bed52d471e8aefc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkDescriptorSetLayout &gt;</type>
+        <definition>std::vector&lt;VkDescriptorSetLayout&gt; atlas::vk::vk_renderer::m_geometry_descriptor_layout</definition>
+        <argsstring></argsstring>
+        <name>m_geometry_descriptor_layout</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_geometry_descriptor_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="69" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a01c1d9fa3347b9b0bd18c9a0beab2452" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="classatlas_1_1vk_1_1mesh" kindref="compound">mesh</ref> &gt;</type>
+        <definition>std::map&lt;std::string, mesh&gt; atlas::vk::vk_renderer::m_cached_meshes</definition>
+        <argsstring></argsstring>
+        <name>m_cached_meshes</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_cached_meshes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="75" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a9e121141db80951532d500d5e14a5d84" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, std::map&lt; std::string, <ref refid="classatlas_1_1vk_1_1descriptor__set" kindref="compound">descriptor_set</ref> &gt; &gt;</type>
+        <definition>std::map&lt;std::string, std::map&lt;std::string, descriptor_set&gt; &gt; atlas::vk::vk_renderer::m_mesh_descriptors</definition>
+        <argsstring></argsstring>
+        <name>m_mesh_descriptors</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_mesh_descriptors</qualifiedname>
+        <briefdescription>
+<para>contains groups of descriptor resources that correspond to a specific geometry Format of the entity is hash_table&lt;entity_name: string, &lt;resource_name, descriptor&gt;&gt; Example: m_mesh_descriptors[entity_name][&quot;material&quot;].bind(some data);, this gets entity_name and the material and bind that to the mesh This can be expanded to use lighting so if there are point light resources, then you correspond that to a name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is grouping the resources that correspond to a specific mesh </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="93" column="11" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1ad1a08d06b92f08ac56b389c097fe902d" prot="private" static="no" mutable="no">
+        <type><ref refid="structatlas_1_1vk_1_1descriptor__set__layout" kindref="compound">descriptor_set_layout</ref></type>
+        <definition>descriptor_set_layout atlas::vk::vk_renderer::m_material_descriptor_layout</definition>
+        <argsstring></argsstring>
+        <name>m_material_descriptor_layout</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_material_descriptor_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="94" column="31" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a287d229f37d8aa80e811d85ddd8db7b1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::vk::vk_renderer::m_begin_initialize</definition>
+        <argsstring></argsstring>
+        <name>m_begin_initialize</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_begin_initialize</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="96" column="14" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1ae46aa5b547fd808cdafa2f291eacbd44" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_renderer::m_current_frame</definition>
+        <argsstring></argsstring>
+        <name>m_current_frame</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_current_frame</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="97" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a1486a04416f4230abf90b815be9bcf0f" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1camera" kindref="compound">camera</ref></type>
+        <definition>camera atlas::vk::vk_renderer::m_camera</definition>
+        <argsstring></argsstring>
+        <name>m_camera</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_camera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="98" column="16" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__renderer_1a9b39d0446a8c1c8a9a3f83328f35f051" prot="private" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 atlas::vk::vk_renderer::m_model</definition>
+        <argsstring></argsstring>
+        <name>m_model</name>
+        <qualifiedname>atlas::vk::vk_renderer::m_model</qualifiedname>
+        <initializer>= { 1.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="99" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="99" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderer_1a9111e4e34dac4ac4f36191aacc902d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_renderer::vk_renderer</definition>
+        <argsstring>(const vk_swapchain &amp;p_swapchain, const std::string &amp;p_tag)</argsstring>
+        <name>vk_renderer</name>
+        <qualifiedname>atlas::vk::vk_renderer::vk_renderer</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk_swapchain</ref> &amp;</type>
+          <declname>p_swapchain</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="44" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderer_1ad9ac38fdce185da1f504c45367369dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_renderer::~vk_renderer</definition>
+        <argsstring>() override=default</argsstring>
+        <name>~vk_renderer</name>
+        <qualifiedname>atlas::vk::vk_renderer::~vk_renderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="46" column="9"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderer_1a0df7df34baf01203c63840953aa72426" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_renderer::start_frame</definition>
+        <argsstring>(const vk_command_buffer &amp;p_current, const vk_swapchain &amp;p_swapchain_handler) override</argsstring>
+        <name>start_frame</name>
+        <qualifiedname>atlas::vk::vk_renderer::start_frame</qualifiedname>
+        <reimplements refid="classatlas_1_1render__context_1a2f2edb76801c86638cdc44ff4cb52481">start_frame</reimplements>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__command__buffer" kindref="compound">vk_command_buffer</ref> &amp;</type>
+          <declname>p_current</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk_swapchain</ref> &amp;</type>
+          <declname>p_swapchain_handler</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="49" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderer_1a241585ecc3f52d06dd3beaea1854ee5c" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_renderer::post_frame</definition>
+        <argsstring>() override</argsstring>
+        <name>post_frame</name>
+        <qualifiedname>atlas::vk::vk_renderer::post_frame</qualifiedname>
+        <reimplements refid="classatlas_1_1render__context_1a13cb7537bb31bdf17ee3f6464929e44b">post_frame</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="51" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__renderer_1a20671ddbba8e0840c786f90202d7413d" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_renderer::background_color</definition>
+        <argsstring>(const std::array&lt; float, 4 &gt; &amp;p_color) override</argsstring>
+        <name>background_color</name>
+        <qualifiedname>atlas::vk::vk_renderer::background_color</qualifiedname>
+        <reimplements refid="classatlas_1_1render__context_1abbd1196b44673508239b037abef3d03a">background_color</reimplements>
+        <param>
+          <type>const std::array&lt; float, 4 &gt; &amp;</type>
+          <declname>p_color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="52" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Something to consider for mesh loading. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>How will meshes get loaded?</para>
+<para>There are a few ways for considering for the base approach, which are: TODO: These are things to think about how this may happen because I want to make this lightweight in the sense the data isnt continuously being modified. Taking a looking at minimizing the loading state of vulkan implementation-specific meshes<itemizedlist>
+<listitem><para>While also making the way how mesh components are being added the same as before</para>
+</listitem></itemizedlist>
+</para>
+<para>Something to avoid is the entities containing the geometry data itself but being able to reference to their respective geometry data that are getting submitted to the GPU</para>
+<para><itemizedlist>
+<listitem><para>Batching ID&apos;s into hash table that contains the actual geometry data<itemizedlist>
+<listitem><para>Using ID to search up the mesh loaded and cached into the map, then reuse that geometry whenever the uniforms are changed</para>
+</listitem><listitem><para>This way we aren&apos;t reloading in the same mesh multiple times, treating the hash table as a slot of the mesh contained within that scene</para>
+</listitem><listitem><para>Potentially std::map&lt;std::string, std::map&lt;std::string, vk::mesh_metadata&gt;&gt; m_geometries<itemizedlist>
+<listitem><para>Idea is the std::string is the geometries within this scene, the data format is: &lt;scene_str, &lt;mesh_str, mesh_metadata&gt;&gt; </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>atlas::render_context</label>
+        <link refid="classatlas_1_1render__context"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_renderer</label>
+        <link refid="classatlas_1_1vk_1_1vk__renderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>atlas::render_context</label>
+        <link refid="classatlas_1_1render__context"/>
+      </node>
+      <node id="1">
+        <label>atlas::vk::vk_renderer</label>
+        <link refid="classatlas_1_1vk_1_1vk__renderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" line="42" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp" bodystart="42" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a20671ddbba8e0840c786f90202d7413d" prot="private" virt="virtual"><scope>atlas::vk::vk_renderer</scope><name>background_color</name></member>
+      <member refid="classatlas_1_1render__context_1a3f9ffaf9eec2d9524a3a2779fd8aa714" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>begin_frame</name></member>
+      <member refid="classatlas_1_1render__context_1a9c190ca4aa1f92c1e1280d67105af938" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>end_frame</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a287d229f37d8aa80e811d85ddd8db7b1" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_begin_initialize</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a01c1d9fa3347b9b0bd18c9a0beab2452" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_cached_meshes</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a1486a04416f4230abf90b815be9bcf0f" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_camera</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a7e2a551626d4060ce7a1328c31271736" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_color</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a6458151ec712b14eb9dc0e02800daab8" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_current_command_buffer</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1ae46aa5b547fd808cdafa2f291eacbd44" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_current_frame</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a377e53f6f0b0caab2bed52d471e8aefc" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_geometry_descriptor_layout</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1ade363a9f22dab55ca70adc5406c06150" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_global_descriptor</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1aded96d656c3432b08e466b40ce7eb70b" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_global_uniforms</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a81298798aff0aa617cf2ea68541e5a9a" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_image_count</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a7403404377b976b70357b47ccbcf1b1e" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_main_pipeline</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1ae66f64cfd29d4fece7aabf20335e024d" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_main_swapchain</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1ad1a08d06b92f08ac56b389c097fe902d" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_material_descriptor_layout</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a9e121141db80951532d500d5e14a5d84" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_mesh_descriptors</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a9b39d0446a8c1c8a9a3f83328f35f051" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_model</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1aa20f5c97d10e791742ca3e088fe0b3b2" prot="private" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>m_shader_group</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a241585ecc3f52d06dd3beaea1854ee5c" prot="private" virt="virtual"><scope>atlas::vk::vk_renderer</scope><name>post_frame</name></member>
+      <member refid="classatlas_1_1render__context_1aaab83cc7f2394698267ee26f94b1519b" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>set_background_color</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a0df7df34baf01203c63840953aa72426" prot="private" virt="virtual"><scope>atlas::vk::vk_renderer</scope><name>start_frame</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1a9111e4e34dac4ac4f36191aacc902d8f" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>vk_renderer</name></member>
+      <member refid="classatlas_1_1render__context_1a5de557fdcfea0233f76246da478ccf39" prot="public" virt="virtual"><scope>atlas::vk::vk_renderer</scope><name>~render_context</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__renderer_1ad9ac38fdce185da1f504c45367369dc4" prot="public" virt="non-virtual"><scope>atlas::vk::vk_renderer</scope><name>~vk_renderer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1texture" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::texture</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1texture_1a33c0c3259a1bd921d219cc7d6a20de13" prot="private" static="no" mutable="no">
+        <type>VkDevice</type>
+        <definition>VkDevice atlas::vk::texture::m_driver</definition>
+        <argsstring></argsstring>
+        <name>m_driver</name>
+        <qualifiedname>atlas::vk::texture::m_driver</qualifiedname>
+        <initializer>= {}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="45" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1texture_1af478f3b376b13c1a30905f6be210ce84" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::vk::texture::m_is_image_loaded</definition>
+        <argsstring></argsstring>
+        <name>m_is_image_loaded</name>
+        <qualifiedname>atlas::vk::texture::m_is_image_loaded</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="46" column="14" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1texture_1ad37078fdb5044a21702a913044463733" prot="private" static="no" mutable="no">
+        <type><ref refid="structatlas_1_1vk_1_1vk__image" kindref="compound">vk_image</ref></type>
+        <definition>vk_image atlas::vk::texture::m_texture_image</definition>
+        <argsstring></argsstring>
+        <name>m_texture_image</name>
+        <qualifiedname>atlas::vk::texture::m_texture_image</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="47" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1texture_1a2c8167b42617f2318b679f946aefa5e7" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::texture::m_width</definition>
+        <argsstring></argsstring>
+        <name>m_width</name>
+        <qualifiedname>atlas::vk::texture::m_width</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="49" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1texture_1a3124fe71aee27b390f9b2bea1f695f9e" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::texture::m_height</definition>
+        <argsstring></argsstring>
+        <name>m_height</name>
+        <qualifiedname>atlas::vk::texture::m_height</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="50" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1a6418d14ab42243c9eb378cc4ff30e1c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::texture::texture</definition>
+        <argsstring>()=default</argsstring>
+        <name>texture</name>
+        <qualifiedname>atlas::vk::texture::texture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="18" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1a10df0256726fd4fb02ca40f29c371fac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::texture::texture</definition>
+        <argsstring>(const texture_extent &amp;p_extent)</argsstring>
+        <name>texture</name>
+        <qualifiedname>atlas::vk::texture::texture</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1vk_1_1texture__extent" kindref="compound">texture_extent</ref> &amp;</type>
+          <declname>p_extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="19" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1a7d678cae57bba5f062191c1cee05631d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::texture::texture</definition>
+        <argsstring>(const std::filesystem::path &amp;p_filepath)</argsstring>
+        <name>texture</name>
+        <qualifiedname>atlas::vk::texture::texture</qualifiedname>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>p_filepath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="20" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1aa16475ad24faadd7af59b2efa15a4598" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::texture::create</definition>
+        <argsstring>(const std::filesystem::path &amp;p_path)</argsstring>
+        <name>create</name>
+        <qualifiedname>atlas::vk::texture::create</qualifiedname>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1ad4984d540edcd1b7063e4ad0cc4dbc54" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::vk::texture::loaded</definition>
+        <argsstring>() const</argsstring>
+        <name>loaded</name>
+        <qualifiedname>atlas::vk::texture::loaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="24" column="15" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1af049d62c85975055f6eb90281c54af49" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structatlas_1_1vk_1_1vk__image" kindref="compound">vk_image</ref></type>
+        <definition>vk_image atlas::vk::texture::data</definition>
+        <argsstring>() const</argsstring>
+        <name>data</name>
+        <qualifiedname>atlas::vk::texture::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="26" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1a4ff806763887311976ce016fe46e42f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkImageView</type>
+        <definition>VkImageView atlas::vk::texture::image_view</definition>
+        <argsstring>() const</argsstring>
+        <name>image_view</name>
+        <qualifiedname>atlas::vk::texture::image_view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="28" column="22" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1a37f0f0ac3e8a78b87ff68caa1a91f483" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkImage</type>
+        <definition>VkImage atlas::vk::texture::image</definition>
+        <argsstring>() const</argsstring>
+        <name>image</name>
+        <qualifiedname>atlas::vk::texture::image</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="32" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1a9979ca02a0a206ebe9119c686707086f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkSampler</type>
+        <definition>VkSampler atlas::vk::texture::sampler</definition>
+        <argsstring>() const</argsstring>
+        <name>sampler</name>
+        <qualifiedname>atlas::vk::texture::sampler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="34" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1a887ca21d2e50cc318a96eb81169412a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::texture::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>atlas::vk::texture::destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="38" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1a90731c9ac11cd6836fb1b203cb6deae1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::texture::width</definition>
+        <argsstring>() const</argsstring>
+        <name>width</name>
+        <qualifiedname>atlas::vk::texture::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="40" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1texture_1ad0715da59e083a4513ee1b291af0280a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::texture::height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <qualifiedname>atlas::vk::texture::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="42" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" line="16" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_texture.hpp" bodystart="16" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1texture_1aa16475ad24faadd7af59b2efa15a4598" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>create</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1af049d62c85975055f6eb90281c54af49" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>data</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a887ca21d2e50cc318a96eb81169412a2" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>destroy</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1ad0715da59e083a4513ee1b291af0280a" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>height</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a37f0f0ac3e8a78b87ff68caa1a91f483" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>image</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a4ff806763887311976ce016fe46e42f2" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>image_view</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1ad4984d540edcd1b7063e4ad0cc4dbc54" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>loaded</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a33c0c3259a1bd921d219cc7d6a20de13" prot="private" virt="non-virtual"><scope>atlas::vk::texture</scope><name>m_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a3124fe71aee27b390f9b2bea1f695f9e" prot="private" virt="non-virtual"><scope>atlas::vk::texture</scope><name>m_height</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1af478f3b376b13c1a30905f6be210ce84" prot="private" virt="non-virtual"><scope>atlas::vk::texture</scope><name>m_is_image_loaded</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1ad37078fdb5044a21702a913044463733" prot="private" virt="non-virtual"><scope>atlas::vk::texture</scope><name>m_texture_image</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a2c8167b42617f2318b679f946aefa5e7" prot="private" virt="non-virtual"><scope>atlas::vk::texture</scope><name>m_width</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a9979ca02a0a206ebe9119c686707086f" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>sampler</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a6418d14ab42243c9eb378cc4ff30e1c7" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>texture</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a10df0256726fd4fb02ca40f29c371fac" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>texture</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a7d678cae57bba5f062191c1cee05631d" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>texture</name></member>
+      <member refid="classatlas_1_1vk_1_1texture_1a90731c9ac11cd6836fb1b203cb6deae1" prot="public" virt="non-virtual"><scope>atlas::vk::texture</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceatlas_1_1physics" kind="namespace" language="C++">
+    <compoundname>atlas::physics</compoundname>
+    <innerclass refid="classatlas_1_1physics_1_1broad__phase__layer__interface" prot="public">atlas::physics::broad_phase_layer_interface</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1collider__body" prot="public">atlas::physics::collider_body</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1collider__event" prot="public">atlas::physics::collider_event</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1contact__event" prot="public">atlas::physics::contact_event</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1contact__listener" prot="public">atlas::physics::contact_listener</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1jolt__api" prot="public">atlas::physics::jolt_api</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1jolt__collision" prot="public">atlas::physics::jolt_collision</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1jolt__collision__manager" prot="public">atlas::physics::jolt_collision_manager</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1jolt__config" prot="public">atlas::physics::jolt_config</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1jolt__context" prot="public">atlas::physics::jolt_context</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1jolt__settings" prot="public">atlas::physics::jolt_settings</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1matrix4" prot="public">atlas::physics::matrix4</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4" prot="public">atlas::physics::matrix4&lt; JPH::Mat44 &gt;</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1object__layer__pair__filter" prot="public">atlas::physics::object_layer_pair_filter</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1object__vs__broadphase__layer" prot="public">atlas::physics::object_vs_broadphase_layer</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1physics__api" prot="public">atlas::physics::physics_api</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1physics__body" prot="public">atlas::physics::physics_body</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1physics__context" prot="public">atlas::physics::physics_context</innerclass>
+    <innerclass refid="classatlas_1_1physics_1_1physics__engine" prot="public">atlas::physics::physics_engine</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1quaternion" prot="public">atlas::physics::quaternion</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1vector3" prot="public">atlas::physics::vector3</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Double3_01_4" prot="public">atlas::physics::vector3&lt; JPH::Double3 &gt;</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1DVec3_01_4" prot="public">atlas::physics::vector3&lt; JPH::DVec3 &gt;</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4" prot="public">atlas::physics::vector3&lt; JPH::Float3 &gt;</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Vec3_01_4" prot="public">atlas::physics::vector3&lt; JPH::Vec3 &gt;</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1vector4" prot="public">atlas::physics::vector4</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1vector4_3_01JPH_1_1Float4_01_4" prot="public">atlas::physics::vector4&lt; JPH::Float4 &gt;</innerclass>
+    <innerclass refid="structatlas_1_1physics_1_1vector4_3_01JPH_1_1Vec4_01_4" prot="public">atlas::physics::vector4&lt; JPH::Vec4 &gt;</innerclass>
+    <sectiondef kind="user-defined">
+      <header>Collider Shape</header>
+      <description><para>Required in order for collision types to be synced with jolts shape filters </para>
+</description>
+      <memberdef kind="enum" id="namespaceatlas_1_1physics_1a90b9cf02ed59f762ba36473cda601c25" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>collider_shape</name>
+        <qualifiedname>atlas::physics::collider_shape</qualifiedname>
+        <enumvalue id="namespaceatlas_1_1physics_1a90b9cf02ed59f762ba36473cda601c25a3cfce651e667ab85486dd42a8185f98a" prot="public">
+          <name>Box</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a90b9cf02ed59f762ba36473cda601c25ab7095f057db3fefa7325ad93a04e14fd" prot="public">
+          <name>Sphere</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a90b9cf02ed59f762ba36473cda601c25a4880c0f12c06dd6d142e7a40b041bf1a" prot="public">
+          <name>Capsule</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="17" column="5" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="17" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceatlas_1_1physics_1a8b3f59549c0a7a0b39d1f09d25eb0dcc" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>thread_system</name>
+        <qualifiedname>atlas::physics::thread_system</qualifiedname>
+        <enumvalue id="namespaceatlas_1_1physics_1a8b3f59549c0a7a0b39d1f09d25eb0dccaa0cea81867350aa312316cd4a5176ff3" prot="public">
+          <name>Default</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a8b3f59549c0a7a0b39d1f09d25eb0dcca443f037015eac70d45adb36051f98af8" prot="public">
+          <name>JobSystem</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="23" column="5" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="user-defined">
+      <header>Collider Body</header>
+      <description><para>Some of this data is not required depending on the shape</para>
+<para><simplesect kind="remark"><para>If there is a way to hide or disable certains action in the editor depending on the collider_shape, it would be good to do so in this circumstance. </para>
+</simplesect>
+</para>
+</description>
+      <memberdef kind="enum" id="namespaceatlas_1_1physics_1a0cc8d2020f1cf32fbc7ec704e29650cc" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>body_type</name>
+        <qualifiedname>atlas::physics::body_type</qualifiedname>
+        <enumvalue id="namespaceatlas_1_1physics_1a0cc8d2020f1cf32fbc7ec704e29650ccaf0d0cd7a41a34abb2c60f230c84930f6" prot="public">
+          <name>Static</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a0cc8d2020f1cf32fbc7ec704e29650ccaa656311e77670b1d2ef80511d193a742" prot="public">
+          <name>Kenmatic</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a0cc8d2020f1cf32fbc7ec704e29650cca5d4b1873e49c45fdb4d8b7bec750629d" prot="public">
+          <name>Dynamic</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a0cc8d2020f1cf32fbc7ec704e29650cca3dbaa007796a2fef4aa84557da7818b6" prot="public">
+          <name>BodyNum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="50" column="5" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceatlas_1_1physics_1a01d5131c8e0bf772b7f2437815c80262" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>body_layer</name>
+        <qualifiedname>atlas::physics::body_layer</qualifiedname>
+        <enumvalue id="namespaceatlas_1_1physics_1a01d5131c8e0bf772b7f2437815c80262ac109fd68c0bdd60eec5202ebfcd57df8" prot="public">
+          <name>NonMoving</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a01d5131c8e0bf772b7f2437815c80262a91d55040c6888750645a393bbc1475a0" prot="public">
+          <name>Moving</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a01d5131c8e0bf772b7f2437815c80262aecb592b237edad66bb5ed5d7207137f4" prot="public">
+          <name>LayerNum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" line="52" column="5" bodyfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_components.hpp" bodystart="52" bodyend="52"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceatlas_1_1physics_1a79760ba4638828b4658ab15be4ee01a1" prot="public" static="no" strong="yes">
+        <type>std::uint8_t</type>
+        <name>ObjectLayer</name>
+        <qualifiedname>atlas::physics::ObjectLayer</qualifiedname>
+        <enumvalue id="namespaceatlas_1_1physics_1a79760ba4638828b4658ab15be4ee01a1a143403388975bfe5f221d5907d224c42" prot="public">
+          <name>NonMoving</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a79760ba4638828b4658ab15be4ee01a1adefe967ad0373b2274fc298f19125ca7" prot="public">
+          <name>Moving</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1a79760ba4638828b4658ab15be4ee01a1ab57debb025c8ce53ab21cdb12e6fec42" prot="public">
+          <name>NumLayers</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This contains a few important comparisons having to do with setting up the oct-trees correctly as well as the filtering and collision interaction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>Most of these contain implicit conversions which might lead to unexpected behavior. This should probably be fixed or atleast checked eventually. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/jolt/interface/jolt_broad_phase.hpp" line="18" column="5" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/jolt/interface/jolt_broad_phase.hpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceatlas_1_1physics_1af18bdc72bb3cce29b6126c9ec21a3f2b" prot="public" static="no" strong="yes">
+        <type>std::uint8_t</type>
+        <name>BroadPhaseLayers</name>
+        <qualifiedname>atlas::physics::BroadPhaseLayers</qualifiedname>
+        <enumvalue id="namespaceatlas_1_1physics_1af18bdc72bb3cce29b6126c9ec21a3f2ba143403388975bfe5f221d5907d224c42" prot="public">
+          <name>NonMoving</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1af18bdc72bb3cce29b6126c9ec21a3f2badefe967ad0373b2274fc298f19125ca7" prot="public">
+          <name>Moving</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1_1physics_1af18bdc72bb3cce29b6126c9ec21a3f2bab57debb025c8ce53ab21cdb12e6fec42" prot="public">
+          <name>NumLayers</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/jolt/interface/jolt_broad_phase.hpp" line="24" column="5" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/jolt/interface/jolt_broad_phase.hpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceatlas_1_1physics_1a9f072b934e4e84fc59edf453a0b34ee4" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>physics_backend</name>
+        <qualifiedname>atlas::physics::physics_backend</qualifiedname>
+        <enumvalue id="namespaceatlas_1_1physics_1a9f072b934e4e84fc59edf453a0b34ee4ad0bb18d83f3d140e8576f7de028e9bba" prot="public">
+          <name>JoltBackend</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>This is the manager of all three api for physics. It contians the scope for all physics engine related functions. It passes the jolt_vlaues to engine and gives them to the user api. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" line="14" column="5" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" bodystart="14" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1afd58be22db87612de1c293ed80fa1083" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::trace_impl</definition>
+        <argsstring>(const char *p_in_fmt,...)</argsstring>
+        <name>trace_impl</name>
+        <qualifiedname>atlas::physics::trace_impl</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>p_in_fmt</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Enforced by JPH to handle assert and give users and ourselves a way to track where those asserts are coming from in Jolt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_error_handler.hpp" line="18" column="10" declfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_error_handler.hpp" declline="18" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1a8fe8448765aded5cd3c1f3c1509900e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::physics::assert_failed_impl</definition>
+        <argsstring>(const char *p_in_expression, const char *p_in_message, const char *p_in_file, unsigned int p_in_line)</argsstring>
+        <name>assert_failed_impl</name>
+        <qualifiedname>atlas::physics::assert_failed_impl</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>p_in_expression</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>p_in_message</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>p_in_file</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>p_in_line</declname>
+        </param>
+        <briefdescription>
+<para>Allows for custom desciptions and messages when Asserts fail. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_in_expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The failing arguement </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_in_message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message provided </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_in_file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file the assert is in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_in_line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The line the assert is on </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_error_handler.hpp" line="30" column="10" declfile="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_error_handler.hpp" declline="30" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1a7d88a9d7ee4cf0664037f312eb3e6869" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>JPH::Vec3</type>
+        <definition>JPH::Vec3 atlas::physics::to_jph</definition>
+        <argsstring>(const glm::vec3 &amp;v)</argsstring>
+        <name>to_jph</name>
+        <qualifiedname>atlas::physics::to_jph</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_helper.hpp" line="35" column="22" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_helper.hpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1aa003a14f3bbbf11cdccf85fd1c92d216" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>JPH::Quat</type>
+        <definition>JPH::Quat atlas::physics::to_jph</definition>
+        <argsstring>(const glm::vec4 &amp;q)</argsstring>
+        <name>to_jph</name>
+        <qualifiedname>atlas::physics::to_jph</qualifiedname>
+        <param>
+          <type>const glm::vec4 &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_helper.hpp" line="39" column="22" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_helper.hpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1acf238359b66c337755302fd9d023b2d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref>&lt; <ref refid="classatlas_1_1physics_1_1physics__engine" kindref="compound">physics_engine</ref> &gt;</type>
+        <definition>ref&lt; physics_engine &gt; atlas::physics::initialize_engine</definition>
+        <argsstring>(const ref&lt; scene_object &gt; &amp;p_physics_object, flecs::world &amp;p_registery)</argsstring>
+        <name>initialize_engine</name>
+        <qualifiedname>atlas::physics::initialize_engine</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref>&lt; <ref refid="classatlas_1_1scene__object" kindref="compound">scene_object</ref> &gt; &amp;</type>
+          <declname>p_physics_object</declname>
+        </param>
+        <param>
+          <type>flecs::world &amp;</type>
+          <declname>p_registery</declname>
+        </param>
+        <briefdescription>
+<para>Creates the engine and all three api - collision, user, and engine api. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_physics_object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p_registery</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>ref&lt;physics_engine&gt; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" line="24" column="9" declfile="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" declline="24" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1a475c95cbc2ab477bca4717d844a779d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::add_force</definition>
+        <argsstring>(const glm::vec3 &amp;force, const physics_body &amp;body)</argsstring>
+        <name>add_force</name>
+        <qualifiedname>atlas::physics::add_force</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>These functions are the generic functions implmented in jolt but should be able to switch to any engine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" line="33" column="10" declfile="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" declline="33" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1ab6cb77fb00b6bd4df4356ec6dc82481e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::add_velocity</definition>
+        <argsstring>(const glm::vec3 &amp;velocity, const physics_body &amp;body)</argsstring>
+        <name>add_velocity</name>
+        <qualifiedname>atlas::physics::add_velocity</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>FIXME: This is a difficult funciton that requires locks and waiting multiple frames before running. So it is later. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" line="44" column="10" declfile="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" declline="44" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1a33459fd075e5e9d4fd63718cc3e0f956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::add_angular_velocity</definition>
+        <argsstring>(const glm::vec3 &amp;angular_velocity, const physics_body &amp;body)</argsstring>
+        <name>add_angular_velocity</name>
+        <qualifiedname>atlas::physics::add_angular_velocity</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>angular_velocity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" line="46" column="10" declfile="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" declline="46" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1a5954f07347ddd289b1a33288bdfaf779" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::set_velocity</definition>
+        <argsstring>(const glm::vec3 &amp;velocity, const physics_body &amp;body)</argsstring>
+        <name>set_velocity</name>
+        <qualifiedname>atlas::physics::set_velocity</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" line="49" column="10" declfile="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" declline="49" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1_1physics_1a1f07a13e606e72a9339b6f46afb55748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::set_angular_velocity</definition>
+        <argsstring>(const glm::vec3 &amp;angular_velocity, const physics_body &amp;body)</argsstring>
+        <name>set_angular_velocity</name>
+        <qualifiedname>atlas::physics::set_angular_velocity</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>angular_velocity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" line="51" column="10" declfile="TheAtlasEngine/atlas/physics/physics_3d/physics.hpp" declline="51" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Handles error handling with in jolt. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Types are still be filled out. When this is completed to_jph() can be removed.</para>
+<para>This is the how the user is able to call functions relating to jolt. It is the api calls for the user. Most of them running in runtime. With a couple effecting config which is a system wide change. This api is deticated to user interaction, however a few functions will be used by both the engine and the user.</para>
+<para><simplesect kind="note"><para>FIXME: Should have a custom definition for how we want to handle and print JPH_ASSERTS(). </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/physics/jolt-cpp/jolt_collision.hpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1window" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>atlas::window</compoundname>
+    <derivedcompoundref refid="classatlas_1_1vk_1_1vk__window" prot="public" virt="non-virtual">atlas::vk::vk_window</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1window_1ad412944c4adb12800958704c95bec5ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual atlas::window::~window</definition>
+        <argsstring>()=default</argsstring>
+        <name>~window</name>
+        <qualifiedname>atlas::window::~window</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="13" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1a9fc9ed495c4b4b651d5b7af66310d13a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::window::width</definition>
+        <argsstring>() const</argsstring>
+        <name>width</name>
+        <qualifiedname>atlas::window::width</qualifiedname>
+        <briefdescription>
+<para>Returns the width dimension of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="16" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1a332740b85bed565c1dcbdac48336b37b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::window::height</definition>
+        <argsstring>() const</argsstring>
+        <name>height</name>
+        <qualifiedname>atlas::window::height</qualifiedname>
+        <briefdescription>
+<para>Returns the height dimension of the window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="19" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1adbe677205309e0cfa825a3fb02dc1dd9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::window::available</definition>
+        <argsstring>() const</argsstring>
+        <name>available</name>
+        <qualifiedname>atlas::window::available</qualifiedname>
+        <briefdescription>
+<para>Checks if window is available to close. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="24" column="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1abf48aa92d390d25dc2272be9e2ed5c3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float atlas::window::aspect_ratio</definition>
+        <argsstring>() const</argsstring>
+        <name>aspect_ratio</name>
+        <qualifiedname>atlas::window::aspect_ratio</qualifiedname>
+        <briefdescription>
+<para>Returns the aspect ratio of the current window. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="27" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1adb5995a2b39a46ea467cc0522d467b7c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::window::acquired_next_frame</definition>
+        <argsstring>()</argsstring>
+        <name>acquired_next_frame</name>
+        <qualifiedname>atlas::window::acquired_next_frame</qualifiedname>
+        <briefdescription>
+<para>Returns the available presentable image to use, retrieve index that image is called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="33" column="19" bodyfile="TheAtlasEngine/atlas/core/window.hpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1aa4c457d6db5c089cf2d00774f8e2beeb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref></type>
+        <definition>vk::vk_swapchain atlas::window::current_swapchain</definition>
+        <argsstring>() const</argsstring>
+        <name>current_swapchain</name>
+        <qualifiedname>atlas::window::current_swapchain</qualifiedname>
+        <briefdescription>
+<para>Returns the window&apos;s currently selected swapchain. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="40" column="27" bodyfile="TheAtlasEngine/atlas/core/window.hpp" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1afe1fba086f03e752a28b625451fa22e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1vk__command__buffer" kindref="compound">vk::vk_command_buffer</ref></type>
+        <definition>vk::vk_command_buffer atlas::window::active_command_buffer</definition>
+        <argsstring>(uint32_t p_frame_idx)</argsstring>
+        <name>active_command_buffer</name>
+        <qualifiedname>atlas::window::active_command_buffer</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_frame_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="44" column="31" bodyfile="TheAtlasEngine/atlas/core/window.hpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1a43f9400cc3be6f22bdda5d5e25fba0d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::window::operator GLFWwindow *</definition>
+        <argsstring>() const</argsstring>
+        <name>operator GLFWwindow *</name>
+        <qualifiedname>atlas::window::operator GLFWwindow *</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="48" column="9" bodyfile="TheAtlasEngine/atlas/core/window.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1a4db6899b97fcdd97ac2ffc24e660d580" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::window::operator GLFWwindow *</definition>
+        <argsstring>()</argsstring>
+        <name>operator GLFWwindow *</name>
+        <qualifiedname>atlas::window::operator GLFWwindow *</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="50" column="9" bodyfile="TheAtlasEngine/atlas/core/window.hpp" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1a6f1731125250387e86fa3e3f2024ae63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::window::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <qualifiedname>atlas::window::close</qualifiedname>
+        <briefdescription>
+<para>Closing the window operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="55" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1a064fb62ceaa5d1f75676018776061dbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::window::present</definition>
+        <argsstring>(const uint32_t &amp;p_current_frame_idx)</argsstring>
+        <name>present</name>
+        <qualifiedname>atlas::window::present</qualifiedname>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_current_frame_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p_current_frame_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is the current frame index for the next available image </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="61" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1window_1afd2bf84707fdea398cf2b58164a59d6a" prot="private" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="structatlas_1_1window__settings" kindref="compound">window_settings</ref></type>
+        <definition>virtual window_settings atlas::window::settings</definition>
+        <argsstring>() const =0</argsstring>
+        <name>settings</name>
+        <qualifiedname>atlas::window::settings</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__window_1aa51e430af1bf2cddb44283eafe9e52df">settings</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="64" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1aa64d122922381e25991c05745fb4a8e5" prot="private" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>GLFWwindow *</type>
+        <definition>virtual GLFWwindow * atlas::window::native_window</definition>
+        <argsstring>() const =0</argsstring>
+        <name>native_window</name>
+        <qualifiedname>atlas::window::native_window</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__window_1aa3a70a0104b1a9007650f0bd234c69ef">native_window</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="65" column="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1acc88ae6a796ec83173ae4dd91f8a432a" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>uint32_t</type>
+        <definition>virtual uint32_t atlas::window::read_acquired_next_frame</definition>
+        <argsstring>()=0</argsstring>
+        <name>read_acquired_next_frame</name>
+        <qualifiedname>atlas::window::read_acquired_next_frame</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__window_1a06fe7d7b3bd08a3cd0e480b4ad92d8bd">read_acquired_next_frame</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="66" column="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1a7a01b7c75e961c34400ff641e64c284c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref></type>
+        <definition>virtual vk::vk_swapchain atlas::window::window_swapchain</definition>
+        <argsstring>() const =0</argsstring>
+        <name>window_swapchain</name>
+        <qualifiedname>atlas::window::window_swapchain</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__window_1a29492358be9176e481b42504a454d7a9">window_swapchain</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="67" column="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1a65d92a757a428a1194fe477f5c5c2efd" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1vk__command__buffer" kindref="compound">vk::vk_command_buffer</ref></type>
+        <definition>virtual vk::vk_command_buffer atlas::window::current_active_command_buffer</definition>
+        <argsstring>(const uint32_t &amp;p_frame_idx)=0</argsstring>
+        <name>current_active_command_buffer</name>
+        <qualifiedname>atlas::window::current_active_command_buffer</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__window_1a6b2fc8408f1399467a54dc14050c53bd">current_active_command_buffer</reimplementedby>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_frame_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="69" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1window_1a4c45e25e1167dfe72ae474e601262602" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::window::presentation_process</definition>
+        <argsstring>(const uint32_t &amp;p_current_frame)=0</argsstring>
+        <name>presentation_process</name>
+        <qualifiedname>atlas::window::presentation_process</qualifiedname>
+        <reimplementedby refid="classatlas_1_1vk_1_1vk__window_1a41dabc8b497f023e12bbc0f5f97bc122">presentation_process</reimplementedby>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_current_frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="70" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>atlas::vk::vk_window</label>
+        <link refid="classatlas_1_1vk_1_1vk__window"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>atlas::window</label>
+        <link refid="classatlas_1_1window"/>
+      </node>
+    </inheritancegraph>
+    <location file="TheAtlasEngine/atlas/core/window.hpp" line="11" column="5" bodyfile="TheAtlasEngine/atlas/core/window.hpp" bodystart="11" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1window_1adb5995a2b39a46ea467cc0522d467b7c" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>acquired_next_frame</name></member>
+      <member refid="classatlas_1_1window_1afe1fba086f03e752a28b625451fa22e9" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>active_command_buffer</name></member>
+      <member refid="classatlas_1_1window_1abf48aa92d390d25dc2272be9e2ed5c3c" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>aspect_ratio</name></member>
+      <member refid="classatlas_1_1window_1adbe677205309e0cfa825a3fb02dc1dd9" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>available</name></member>
+      <member refid="classatlas_1_1window_1a6f1731125250387e86fa3e3f2024ae63" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>close</name></member>
+      <member refid="classatlas_1_1window_1a65d92a757a428a1194fe477f5c5c2efd" prot="private" virt="pure-virtual"><scope>atlas::window</scope><name>current_active_command_buffer</name></member>
+      <member refid="classatlas_1_1window_1aa4c457d6db5c089cf2d00774f8e2beeb" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>current_swapchain</name></member>
+      <member refid="classatlas_1_1window_1a332740b85bed565c1dcbdac48336b37b" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>height</name></member>
+      <member refid="classatlas_1_1window_1aa64d122922381e25991c05745fb4a8e5" prot="private" virt="pure-virtual"><scope>atlas::window</scope><name>native_window</name></member>
+      <member refid="classatlas_1_1window_1a43f9400cc3be6f22bdda5d5e25fba0d5" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>operator GLFWwindow *</name></member>
+      <member refid="classatlas_1_1window_1a4db6899b97fcdd97ac2ffc24e660d580" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>operator GLFWwindow *</name></member>
+      <member refid="classatlas_1_1window_1a064fb62ceaa5d1f75676018776061dbf" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>present</name></member>
+      <member refid="classatlas_1_1window_1a4c45e25e1167dfe72ae474e601262602" prot="private" virt="pure-virtual"><scope>atlas::window</scope><name>presentation_process</name></member>
+      <member refid="classatlas_1_1window_1acc88ae6a796ec83173ae4dd91f8a432a" prot="private" virt="pure-virtual"><scope>atlas::window</scope><name>read_acquired_next_frame</name></member>
+      <member refid="classatlas_1_1window_1afd2bf84707fdea398cf2b58164a59d6a" prot="private" virt="pure-virtual"><scope>atlas::window</scope><name>settings</name></member>
+      <member refid="classatlas_1_1window_1a9fc9ed495c4b4b651d5b7af66310d13a" prot="public" virt="non-virtual"><scope>atlas::window</scope><name>width</name></member>
+      <member refid="classatlas_1_1window_1a7a01b7c75e961c34400ff641e64c284c" prot="private" virt="pure-virtual"><scope>atlas::window</scope><name>window_swapchain</name></member>
+      <member refid="classatlas_1_1window_1ad412944c4adb12800958704c95bec5ea" prot="public" virt="virtual"><scope>atlas::window</scope><name>~window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

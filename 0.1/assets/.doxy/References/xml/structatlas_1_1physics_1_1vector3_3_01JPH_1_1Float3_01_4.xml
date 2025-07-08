@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::physics::vector3&lt; JPH::Float3 &gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1a3437266c9b3367a6b8e5979641cfa0dd" prot="private" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::physics::vector3&lt; JPH::Float3 &gt;::m_value</definition>
+        <argsstring></argsstring>
+        <name>m_value</name>
+        <qualifiedname>atlas::physics::vector3&lt; JPH::Float3 &gt;::m_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="58" column="19" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1aca12ca5a7b828447a2f03ba815d13a9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::physics::vector3&lt; JPH::Float3 &gt;::vector3</definition>
+        <argsstring>()=default</argsstring>
+        <name>vector3</name>
+        <qualifiedname>atlas::physics::vector3&lt; JPH::Float3 &gt;::vector3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="42" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1afe7a315caa5fcc44e14f8f47f79efe21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::physics::vector3&lt; JPH::Float3 &gt;::vector3</definition>
+        <argsstring>(const JPH::Float3 &amp;v)</argsstring>
+        <name>vector3</name>
+        <qualifiedname>atlas::physics::vector3&lt; JPH::Float3 &gt;::vector3</qualifiedname>
+        <param>
+          <type>const JPH::Float3 &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="44" column="9" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1aefcf164940f5eb590a21a4097a63972d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::physics::vector3&lt; JPH::Float3 &gt;::operator glm::vec3</definition>
+        <argsstring>() const</argsstring>
+        <name>operator glm::vec3</name>
+        <qualifiedname>atlas::physics::vector3&lt; JPH::Float3 &gt;::vec3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="46" column="9" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1a42db746d3f28adc36a4a2a3ae2e92c25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::physics::vector3&lt; JPH::Float3 &gt;::operator=</definition>
+        <argsstring>(const JPH::Float3 &amp;v)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>atlas::physics::vector3&lt; JPH::Float3 &gt;::operator=</qualifiedname>
+        <param>
+          <type>const JPH::Float3 &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="48" column="19" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1a01fc9d87b1167d1416246b7bb2f7a397" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::physics::vector3&lt; JPH::Float3 &gt;::operator==</definition>
+        <argsstring>(const glm::vec3 &amp;other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>atlas::physics::vector3&lt; JPH::Float3 &gt;::operator==</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/types.hpp" line="53" column="14" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="53" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/physics/types.hpp" line="41" column="5" bodyfile="TheAtlasEngine/atlas/physics/types.hpp" bodystart="41" bodyend="59"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1a3437266c9b3367a6b8e5979641cfa0dd" prot="private" virt="non-virtual"><scope>atlas::physics::vector3&lt; JPH::Float3 &gt;</scope><name>m_value</name></member>
+      <member refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1aefcf164940f5eb590a21a4097a63972d" prot="public" virt="non-virtual"><scope>atlas::physics::vector3&lt; JPH::Float3 &gt;</scope><name>operator glm::vec3</name></member>
+      <member refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1a42db746d3f28adc36a4a2a3ae2e92c25" prot="public" virt="non-virtual"><scope>atlas::physics::vector3&lt; JPH::Float3 &gt;</scope><name>operator=</name></member>
+      <member refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1a01fc9d87b1167d1416246b7bb2f7a397" prot="public" virt="non-virtual"><scope>atlas::physics::vector3&lt; JPH::Float3 &gt;</scope><name>operator==</name></member>
+      <member refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1aca12ca5a7b828447a2f03ba815d13a9c" prot="public" virt="non-virtual"><scope>atlas::physics::vector3&lt; JPH::Float3 &gt;</scope><name>vector3</name></member>
+      <member refid="structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4_1afe7a315caa5fcc44e14f8f47f79efe21" prot="public" virt="non-virtual"><scope>atlas::physics::vector3&lt; JPH::Float3 &gt;</scope><name>vector3</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

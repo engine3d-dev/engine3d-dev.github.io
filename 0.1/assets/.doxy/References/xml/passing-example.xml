@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="passing-example" kind="example">
+    <compoundname>passing</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Defines the filter of items to pick from the file dialog &quot;obj;jpg&quot; will only allow to select these files with those extensions <programlisting filename="passing"></programlisting> </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/core/filesystem/file_dialog.hpp"/>
+  </compounddef>
+</doxygen>

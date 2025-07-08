@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1mesh" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::mesh</compoundname>
+    <includes refid="drivers_2vulkan-cpp_2mesh_8hpp" local="no">mesh.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1mesh_1aaa78138f804e293b09e12427ef99d5ee" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classatlas_1_1vk_1_1texture" kindref="compound">texture</ref> &gt;</type>
+        <definition>std::vector&lt;texture&gt; atlas::vk::mesh::m_textures</definition>
+        <argsstring></argsstring>
+        <name>m_textures</name>
+        <qualifiedname>atlas::vk::mesh::m_textures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="64" column="21" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1mesh_1a73e17a8c3116747380a7b7be97010b1c" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__vertex__buffer" kindref="compound">vk_vertex_buffer</ref></type>
+        <definition>vk_vertex_buffer atlas::vk::mesh::m_vbo</definition>
+        <argsstring></argsstring>
+        <name>m_vbo</name>
+        <qualifiedname>atlas::vk::mesh::m_vbo</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="65" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1mesh_1a123ceff86c94a3a482e0946b8fdffc45" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__index__buffer" kindref="compound">vk_index_buffer</ref></type>
+        <definition>vk_index_buffer atlas::vk::mesh::m_ibo</definition>
+        <argsstring></argsstring>
+        <name>m_ibo</name>
+        <qualifiedname>atlas::vk::mesh::m_ibo</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="66" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" bodystart="66" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1mesh_1a6fa441872b69cfc7eb59e4f1cc013398" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__uniform__buffer" kindref="compound">vk_uniform_buffer</ref></type>
+        <definition>vk_uniform_buffer atlas::vk::mesh::m_geoemtry_ubo</definition>
+        <argsstring></argsstring>
+        <name>m_geoemtry_ubo</name>
+        <qualifiedname>atlas::vk::mesh::m_geoemtry_ubo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="67" column="27" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1mesh_1a2943077de54c78e8a6a9806330e93b1e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool atlas::vk::mesh::m_model_loaded</definition>
+        <argsstring></argsstring>
+        <name>m_model_loaded</name>
+        <qualifiedname>atlas::vk::mesh::m_model_loaded</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="68" column="14" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" bodystart="68" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a8e576be13da744e15e060ac21a4e77a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::mesh::mesh</definition>
+        <argsstring>()=default</argsstring>
+        <name>mesh</name>
+        <qualifiedname>atlas::vk::mesh::mesh</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="31" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a96995968856b3e9b70b4390fd3896af1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::mesh::mesh</definition>
+        <argsstring>(const std::span&lt; vertex_input &gt; &amp;p_vertices, const std::span&lt; uint32_t &gt; &amp;p_indices)</argsstring>
+        <name>mesh</name>
+        <qualifiedname>atlas::vk::mesh::mesh</qualifiedname>
+        <param>
+          <type>const std::span&lt; <ref refid="structatlas_1_1vk_1_1vertex__input" kindref="compound">vertex_input</ref> &gt; &amp;</type>
+          <declname>p_vertices</declname>
+        </param>
+        <param>
+          <type>const std::span&lt; uint32_t &gt; &amp;</type>
+          <declname>p_indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="32" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1ad6b46bfb6292a9d81fd50047da89b7fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::mesh::mesh</definition>
+        <argsstring>(const std::filesystem::path &amp;p_filename)</argsstring>
+        <name>mesh</name>
+        <qualifiedname>atlas::vk::mesh::mesh</qualifiedname>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>p_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="34" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a06072f45bb19e5b1779e7258447fcc54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::mesh::reload_mesh</definition>
+        <argsstring>(const std::filesystem::path &amp;p_path)</argsstring>
+        <name>reload_mesh</name>
+        <qualifiedname>atlas::vk::mesh::reload_mesh</qualifiedname>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <briefdescription>
+<para>Reload mesh vertices and indices when requested. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="37" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1aa8995cf949cae91305bb026bd71f0211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::mesh::initialize_uniforms</definition>
+        <argsstring>(uint32_t p_size_bytes_ubo)</argsstring>
+        <name>initialize_uniforms</name>
+        <qualifiedname>atlas::vk::mesh::initialize_uniforms</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>p_size_bytes_ubo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="39" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a78236d7a0a89f0084ca33b669e9f89f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::mesh::update_uniform</definition>
+        <argsstring>(const material_uniform &amp;p_material_ubo)</argsstring>
+        <name>update_uniform</name>
+        <qualifiedname>atlas::vk::mesh::update_uniform</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1vk_1_1material__uniform" kindref="compound">material_uniform</ref> &amp;</type>
+          <declname>p_material_ubo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="41" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a552343b1ae36dd81e16b734c385ad671" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classatlas_1_1vk_1_1vk__uniform__buffer" kindref="compound">vk_uniform_buffer</ref></type>
+        <definition>vk_uniform_buffer atlas::vk::mesh::material_ubo</definition>
+        <argsstring>() const</argsstring>
+        <name>material_ubo</name>
+        <qualifiedname>atlas::vk::mesh::material_ubo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="43" column="28" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1af68635e2ecb0661b1d31b7a81f7c2abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::mesh::draw</definition>
+        <argsstring>(const VkCommandBuffer &amp;p_command_buffer)</argsstring>
+        <name>draw</name>
+        <qualifiedname>atlas::vk::mesh::draw</qualifiedname>
+        <param>
+          <type>const VkCommandBuffer &amp;</type>
+          <declname>p_command_buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="47" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a723d5738fb9b427a0c93084193303eb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::mesh::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>atlas::vk::mesh::destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="49" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a18faa8917da7f8c6d78f70c66cb16e37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::mesh::add_texture</definition>
+        <argsstring>(const std::filesystem::path &amp;p_path)</argsstring>
+        <name>add_texture</name>
+        <qualifiedname>atlas::vk::mesh::add_texture</qualifiedname>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>p_path</declname>
+        </param>
+        <briefdescription>
+<para>Loading single texture with specified std::filesystem::path. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="52" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a4e210d63b9fca2f62d88d6fed3c9df9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::span&lt; <ref refid="classatlas_1_1vk_1_1texture" kindref="compound">texture</ref> &gt;</type>
+        <definition>std::span&lt; texture &gt; atlas::vk::mesh::read_textures</definition>
+        <argsstring>()</argsstring>
+        <name>read_textures</name>
+        <qualifiedname>atlas::vk::mesh::read_textures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="54" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a9073c83c66e37df93ca7771ea25054c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::vk::mesh::loaded</definition>
+        <argsstring>() const</argsstring>
+        <name>loaded</name>
+        <qualifiedname>atlas::vk::mesh::loaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if mesh geometry model loaded succesfully </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="57" column="15" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1ae148a3c7e32940ec9f4c047e7874d5fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::mesh::load_obj</definition>
+        <argsstring>(const std::filesystem::path &amp;p_filename)</argsstring>
+        <name>load_obj</name>
+        <qualifiedname>atlas::vk::mesh::load_obj</qualifiedname>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>p_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="60" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1mesh_1a891b3763df7ed810295f43eca73f26ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::mesh::load_gltf</definition>
+        <argsstring>(const std::filesystem::path &amp;p_filename)</argsstring>
+        <name>load_gltf</name>
+        <qualifiedname>atlas::vk::mesh::load_gltf</qualifiedname>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>p_filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="61" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>mesh class specifically defined with vulkan implementations for specific primitives TODO: Whenever we load in a texture that will be laucnhed asyncronously </para>
+    </briefdescription>
+    <detaileddescription>
+<para>mesh class will contain metadata needed by vulkan specifications Ways to communicate through vulkan by only supplying information needed to update this mesh</para>
+<para>Represents a renderable object <ndash/> supporting various material types, etc TODO - For now we have a map&lt;name: string, material_source&gt;, this should be expanded to a proper material system for blending various materials </para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" line="29" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/mesh.hpp" bodystart="29" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1mesh_1a18faa8917da7f8c6d78f70c66cb16e37" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>add_texture</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a723d5738fb9b427a0c93084193303eb7" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>destroy</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1af68635e2ecb0661b1d31b7a81f7c2abb" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>draw</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1aa8995cf949cae91305bb026bd71f0211" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>initialize_uniforms</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a891b3763df7ed810295f43eca73f26ed" prot="private" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>load_gltf</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1ae148a3c7e32940ec9f4c047e7874d5fb" prot="private" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>load_obj</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a9073c83c66e37df93ca7771ea25054c4" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>loaded</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a6fa441872b69cfc7eb59e4f1cc013398" prot="private" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>m_geoemtry_ubo</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a123ceff86c94a3a482e0946b8fdffc45" prot="private" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>m_ibo</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a2943077de54c78e8a6a9806330e93b1e" prot="private" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>m_model_loaded</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1aaa78138f804e293b09e12427ef99d5ee" prot="private" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>m_textures</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a73e17a8c3116747380a7b7be97010b1c" prot="private" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>m_vbo</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a552343b1ae36dd81e16b734c385ad671" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>material_ubo</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a8e576be13da744e15e060ac21a4e77a1" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>mesh</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a96995968856b3e9b70b4390fd3896af1" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>mesh</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1ad6b46bfb6292a9d81fd50047da89b7fd" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>mesh</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a4e210d63b9fca2f62d88d6fed3c9df9f" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>read_textures</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a06072f45bb19e5b1779e7258447fcc54" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>reload_mesh</name></member>
+      <member refid="classatlas_1_1vk_1_1mesh_1a78236d7a0a89f0084ca33b669e9f89f5" prot="public" virt="non-virtual"><scope>atlas::vk::mesh</scope><name>update_uniform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

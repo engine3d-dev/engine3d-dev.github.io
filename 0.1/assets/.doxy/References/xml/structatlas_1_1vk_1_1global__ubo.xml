@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1global__ubo" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::global_ubo</compoundname>
+    <includes refid="vk__types_8hpp" local="no">vk_types.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1global__ubo_1ad6a4161a21df02206fb2e7fea7b89de0" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 atlas::vk::global_ubo::mvp</definition>
+        <argsstring></argsstring>
+        <name>mvp</name>
+        <qualifiedname>atlas::vk::global_ubo::mvp</qualifiedname>
+        <initializer>= { 1.f }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="348" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="348" bodyend="348"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Just for testing purposes for sending this struct over to the shader. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="347" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="347" bodyend="349"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1global__ubo_1ad6a4161a21df02206fb2e7fea7b89de0" prot="public" virt="non-virtual"><scope>atlas::vk::global_ubo</scope><name>mvp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

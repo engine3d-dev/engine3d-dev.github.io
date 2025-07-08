@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1physics_1_1physics__api" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>atlas::physics::physics_api</compoundname>
+    <derivedcompoundref refid="classatlas_1_1physics_1_1jolt__api" prot="public" virt="non-virtual">atlas::physics::jolt_api</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1ad2e3d671fd96fc07559567834dc0d123" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::physics_api::update_jolt_values</definition>
+        <argsstring>()</argsstring>
+        <name>update_jolt_values</name>
+        <qualifiedname>atlas::physics::physics_api::update_jolt_values</qualifiedname>
+        <briefdescription>
+<para>Allows for flecs values to sync with jolt without running into collisions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Takes all transforms, rigidbodies, and collider bodies that changed and updates jolt.</para>
+</simplesect>
+<simplesect kind="note"><para>should be called either by the user to sync events or just before physics_update() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="17" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1aaafd2deb501e9563abbaeed49467cef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::physics_api::update_atlas_values</definition>
+        <argsstring>()</argsstring>
+        <name>update_atlas_values</name>
+        <qualifiedname>atlas::physics::physics_api::update_atlas_values</qualifiedname>
+        <briefdescription>
+<para>Allows for jolt values to sync with flecs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>should be called either by user to sync events or just after physics_update() </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="25" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1aa4cf16dd7994f267cfa5ce12ab2cd5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::physics_api::add_force_by_body</definition>
+        <argsstring>(const glm::vec3 &amp;p_force, const physics_body &amp;p_body)</argsstring>
+        <name>add_force_by_body</name>
+        <qualifiedname>atlas::physics::physics_api::add_force_by_body</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_force</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>p_body</declname>
+        </param>
+        <briefdescription>
+<para>Calls the corresponding virtuals. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="32" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a86e258ef558e68afb25eb8da143be7bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::physics_api::add_linear_velocity_by_body</definition>
+        <argsstring>(const glm::vec3 &amp;p_velocity, const physics_body &amp;p_body)</argsstring>
+        <name>add_linear_velocity_by_body</name>
+        <qualifiedname>atlas::physics::physics_api::add_linear_velocity_by_body</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_velocity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>p_body</declname>
+        </param>
+        <briefdescription>
+<para>FIXME: This one is really complicated because it needs to try over multiple frames. And locks are requried. So will be implemented later. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="43" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a09d7dcca44b4442dd360ce9b5e4c52ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::physics_api::add_angular_velocity_by_body</definition>
+        <argsstring>(const glm::vec3 &amp;p_angular_velocity, const physics_body &amp;p_body)</argsstring>
+        <name>add_angular_velocity_by_body</name>
+        <qualifiedname>atlas::physics::physics_api::add_angular_velocity_by_body</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_angular_velocity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>p_body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="46" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1af7e29b8e6a92e4ab1edc8e7334a259d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::physics_api::set_linear_velocity_by_body</definition>
+        <argsstring>(const glm::vec3 &amp;p_velocity, const physics_body &amp;p_body)</argsstring>
+        <name>set_linear_velocity_by_body</name>
+        <qualifiedname>atlas::physics::physics_api::set_linear_velocity_by_body</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_velocity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>p_body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="49" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a27d46baea2e674cc994388eae335064a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::physics::physics_api::set_angular_velocity_by_body</definition>
+        <argsstring>(const glm::vec3 &amp;p_angular_velocity, const physics_body &amp;p_body)</argsstring>
+        <name>set_angular_velocity_by_body</name>
+        <qualifiedname>atlas::physics::physics_api::set_angular_velocity_by_body</qualifiedname>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_angular_velocity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structatlas_1_1physics_1_1physics__body" kindref="compound">physics_body</ref> &amp;</type>
+          <declname>p_body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="52" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1ae570e15aa3e6d9285ce70b2acdb06f2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual atlas::physics::physics_api::~physics_api</definition>
+        <argsstring>()=default</argsstring>
+        <name>~physics_api</name>
+        <qualifiedname>atlas::physics::physics_api::~physics_api</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="55" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a9007e7819b3ba0fbf43773e06c58c344" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::physics::physics_api::retrieve_values</definition>
+        <argsstring>()=0</argsstring>
+        <name>retrieve_values</name>
+        <qualifiedname>atlas::physics::physics_api::retrieve_values</qualifiedname>
+        <reimplementedby refid="classatlas_1_1physics_1_1jolt__api_1ac50e0a29ec771a156ee9676a786eb55d">retrieve_values</reimplementedby>
+        <briefdescription>
+<para>Retrieves Flecs values for Jolt. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="62" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a67b6983833e5ff07fcc3e39a41fccdb2" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::physics::physics_api::return_values</definition>
+        <argsstring>()=0</argsstring>
+        <name>return_values</name>
+        <qualifiedname>atlas::physics::physics_api::return_values</qualifiedname>
+        <reimplementedby refid="classatlas_1_1physics_1_1jolt__api_1ad19002777da3a30f2ee0859ddc66f750">return_values</reimplementedby>
+        <briefdescription>
+<para>Returns jolt values to flecs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="68" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a19c2c7aa7af621501957a01ad2728fa1" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::physics::physics_api::add_force</definition>
+        <argsstring>(const glm::vec3 &amp;p_force, const uint32_t &amp;p_body_id)=0</argsstring>
+        <name>add_force</name>
+        <qualifiedname>atlas::physics::physics_api::add_force</qualifiedname>
+        <reimplementedby refid="classatlas_1_1physics_1_1jolt__api_1ab4913b81486366e14487c3748c039c56">add_force</reimplementedby>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_force</declname>
+        </param>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_body_id</declname>
+        </param>
+        <briefdescription>
+<para>Adds a force to a single body/entity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="74" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a42c3066f7913d667fa3dd2b9985261cb" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::physics::physics_api::add_linear_velocity</definition>
+        <argsstring>(const glm::vec3 &amp;p_velocity, const uint32_t &amp;p_body_id)=0</argsstring>
+        <name>add_linear_velocity</name>
+        <qualifiedname>atlas::physics::physics_api::add_linear_velocity</qualifiedname>
+        <reimplementedby refid="classatlas_1_1physics_1_1jolt__api_1a293def70ca6764aabd69f12b0672cb54">add_linear_velocity</reimplementedby>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_velocity</declname>
+        </param>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_body_id</declname>
+        </param>
+        <briefdescription>
+<para>Adds a force at a world position. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>FIXME: This one is really complicated because it needs to try over multiple frames. And locks are requried. So will be implemented later.</para>
+<para>Sets linear velocity of one object </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="94" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a9683ccad9ea22ee8e0c1ef7c4c7c3be0" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::physics::physics_api::add_angular_velocity</definition>
+        <argsstring>(const glm::vec3 &amp;angular_velocity, const uint32_t &amp;body_id)=0</argsstring>
+        <name>add_angular_velocity</name>
+        <qualifiedname>atlas::physics::physics_api::add_angular_velocity</qualifiedname>
+        <reimplementedby refid="classatlas_1_1physics_1_1jolt__api_1acd41294bda9bbf38997439a6e4844a01">add_angular_velocity</reimplementedby>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>angular_velocity</declname>
+        </param>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>body_id</declname>
+        </param>
+        <briefdescription>
+<para>Adds angular velocity of one object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="101" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a1e76d086b3951ef700d17bab5677941a" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::physics::physics_api::set_linear_velocity</definition>
+        <argsstring>(const glm::vec3 &amp;p_velocity, const uint32_t &amp;p_body_id)=0</argsstring>
+        <name>set_linear_velocity</name>
+        <qualifiedname>atlas::physics::physics_api::set_linear_velocity</qualifiedname>
+        <reimplementedby refid="classatlas_1_1physics_1_1jolt__api_1aa8c4cc8d3a4b3097f65c731306df4fe8">set_linear_velocity</reimplementedby>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>p_velocity</declname>
+        </param>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>p_body_id</declname>
+        </param>
+        <briefdescription>
+<para>Adds linear velocity of one object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="108" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1physics_1_1physics__api_1a70f6f856648bcb76d268bc4ef0e4c98f" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void atlas::physics::physics_api::set_angular_velocity</definition>
+        <argsstring>(const glm::vec3 &amp;angular_velocity, const uint32_t &amp;body_id)=0</argsstring>
+        <name>set_angular_velocity</name>
+        <qualifiedname>atlas::physics::physics_api::set_angular_velocity</qualifiedname>
+        <reimplementedby refid="classatlas_1_1physics_1_1jolt__api_1aa587786dc59443ed8c156ae07ee6f7db">set_angular_velocity</reimplementedby>
+        <param>
+          <type>const glm::vec3 &amp;</type>
+          <declname>angular_velocity</declname>
+        </param>
+        <param>
+          <type>const uint32_t &amp;</type>
+          <declname>body_id</declname>
+        </param>
+        <briefdescription>
+<para>Sets angular velocity of one object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="115" column="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>atlas::physics::jolt_api</label>
+        <link refid="classatlas_1_1physics_1_1jolt__api"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>atlas::physics::physics_api</label>
+        <link refid="classatlas_1_1physics_1_1physics__api"/>
+      </node>
+    </inheritancegraph>
+    <location file="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" line="6" column="5" bodyfile="TheAtlasEngine/atlas/physics/physics_3d/physics_api.hpp" bodystart="6" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a9683ccad9ea22ee8e0c1ef7c4c7c3be0" prot="private" virt="pure-virtual"><scope>atlas::physics::physics_api</scope><name>add_angular_velocity</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a09d7dcca44b4442dd360ce9b5e4c52ea" prot="public" virt="non-virtual"><scope>atlas::physics::physics_api</scope><name>add_angular_velocity_by_body</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a19c2c7aa7af621501957a01ad2728fa1" prot="private" virt="pure-virtual"><scope>atlas::physics::physics_api</scope><name>add_force</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1aa4cf16dd7994f267cfa5ce12ab2cd5c7" prot="public" virt="non-virtual"><scope>atlas::physics::physics_api</scope><name>add_force_by_body</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a42c3066f7913d667fa3dd2b9985261cb" prot="private" virt="pure-virtual"><scope>atlas::physics::physics_api</scope><name>add_linear_velocity</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a86e258ef558e68afb25eb8da143be7bb" prot="public" virt="non-virtual"><scope>atlas::physics::physics_api</scope><name>add_linear_velocity_by_body</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a9007e7819b3ba0fbf43773e06c58c344" prot="private" virt="pure-virtual"><scope>atlas::physics::physics_api</scope><name>retrieve_values</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a67b6983833e5ff07fcc3e39a41fccdb2" prot="private" virt="pure-virtual"><scope>atlas::physics::physics_api</scope><name>return_values</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a70f6f856648bcb76d268bc4ef0e4c98f" prot="private" virt="pure-virtual"><scope>atlas::physics::physics_api</scope><name>set_angular_velocity</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a27d46baea2e674cc994388eae335064a" prot="public" virt="non-virtual"><scope>atlas::physics::physics_api</scope><name>set_angular_velocity_by_body</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1a1e76d086b3951ef700d17bab5677941a" prot="private" virt="pure-virtual"><scope>atlas::physics::physics_api</scope><name>set_linear_velocity</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1af7e29b8e6a92e4ab1edc8e7334a259d2" prot="public" virt="non-virtual"><scope>atlas::physics::physics_api</scope><name>set_linear_velocity_by_body</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1aaafd2deb501e9563abbaeed49467cef6" prot="public" virt="non-virtual"><scope>atlas::physics::physics_api</scope><name>update_atlas_values</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1ad2e3d671fd96fc07559567834dc0d123" prot="public" virt="non-virtual"><scope>atlas::physics::physics_api</scope><name>update_jolt_values</name></member>
+      <member refid="classatlas_1_1physics_1_1physics__api_1ae570e15aa3e6d9285ce70b2acdb06f2e" prot="public" virt="virtual"><scope>atlas::physics::physics_api</scope><name>~physics_api</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

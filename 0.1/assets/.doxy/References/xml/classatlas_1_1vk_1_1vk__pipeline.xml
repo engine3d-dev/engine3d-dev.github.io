@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classatlas_1_1vk_1_1vk__pipeline" kind="class" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_pipeline</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__pipeline_1ac5d76217b62d43b183ce4faa392ac966" prot="private" static="no" mutable="no">
+        <type>VkDevice</type>
+        <definition>VkDevice atlas::vk::vk_pipeline::m_driver</definition>
+        <argsstring></argsstring>
+        <name>m_driver</name>
+        <qualifiedname>atlas::vk::vk_pipeline::m_driver</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="37" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__pipeline_1adb9f8e7dcc6b3de3fc77ac04da092d6d" prot="private" static="no" mutable="no">
+        <type>VkPipelineLayout</type>
+        <definition>VkPipelineLayout atlas::vk::vk_pipeline::m_pipeline_layout</definition>
+        <argsstring></argsstring>
+        <name>m_pipeline_layout</name>
+        <qualifiedname>atlas::vk::vk_pipeline::m_pipeline_layout</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="38" column="26" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__pipeline_1ac51bbd53477a4f3dde712129ec326af0" prot="private" static="no" mutable="no">
+        <type>VkPipeline</type>
+        <definition>VkPipeline atlas::vk::vk_pipeline::m_pipeline_handler</definition>
+        <argsstring></argsstring>
+        <name>m_pipeline_handler</name>
+        <qualifiedname>atlas::vk::vk_pipeline::m_pipeline_handler</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="39" column="20" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__pipeline_1a69bfb625ef7a70b0effafa41f8a588e8" prot="private" static="no" mutable="no">
+        <type><ref refid="classatlas_1_1vk_1_1vk__shader__group" kindref="compound">vk_shader_group</ref></type>
+        <definition>vk_shader_group atlas::vk::vk_pipeline::m_shader_group</definition>
+        <argsstring></argsstring>
+        <name>m_shader_group</name>
+        <qualifiedname>atlas::vk::vk_pipeline::m_shader_group</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="40" column="25" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classatlas_1_1vk_1_1vk__pipeline_1a07486bdfdae5bd3b25afb875c811d26e" prot="private" static="no" mutable="no">
+        <type>std::span&lt; VkDescriptorSetLayout &gt;</type>
+        <definition>std::span&lt;VkDescriptorSetLayout&gt; atlas::vk::vk_pipeline::m_descriptor_layouts</definition>
+        <argsstring></argsstring>
+        <name>m_descriptor_layouts</name>
+        <qualifiedname>atlas::vk::vk_pipeline::m_descriptor_layouts</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="42" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1a1561c41bdcb2db1000b783912db6da73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_pipeline::vk_pipeline</definition>
+        <argsstring>()=default</argsstring>
+        <name>vk_pipeline</name>
+        <qualifiedname>atlas::vk::vk_pipeline::vk_pipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="10" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1a2a86e97aa3d6d89de311d0ab6f00f721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_pipeline::vk_pipeline</definition>
+        <argsstring>(const VkRenderPass &amp;p_renderpass, vk_shader_group &amp;p_shader_group)</argsstring>
+        <name>vk_pipeline</name>
+        <qualifiedname>atlas::vk::vk_pipeline::vk_pipeline</qualifiedname>
+        <param>
+          <type>const VkRenderPass &amp;</type>
+          <declname>p_renderpass</declname>
+        </param>
+        <param>
+          <type><ref refid="classatlas_1_1vk_1_1vk__shader__group" kindref="compound">vk_shader_group</ref> &amp;</type>
+          <declname>p_shader_group</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="11" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1ab70d1c2c7923aafd0606c23978671d89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_pipeline::vk_pipeline</definition>
+        <argsstring>(const VkRenderPass &amp;p_renderpass, const vk_shader_group &amp;p_shader_group, const std::span&lt; VkDescriptorSetLayout &gt; &amp;p_descriptor_layout)</argsstring>
+        <name>vk_pipeline</name>
+        <qualifiedname>atlas::vk::vk_pipeline::vk_pipeline</qualifiedname>
+        <param>
+          <type>const VkRenderPass &amp;</type>
+          <declname>p_renderpass</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__shader__group" kindref="compound">vk_shader_group</ref> &amp;</type>
+          <declname>p_shader_group</declname>
+        </param>
+        <param>
+          <type>const std::span&lt; VkDescriptorSetLayout &gt; &amp;</type>
+          <declname>p_descriptor_layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="13" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1a842b5f623444881d26bd2b9052aaac04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_pipeline::create</definition>
+        <argsstring>(const VkRenderPass &amp;p_renderpass)</argsstring>
+        <name>create</name>
+        <qualifiedname>atlas::vk::vk_pipeline::create</qualifiedname>
+        <param>
+          <type>const VkRenderPass &amp;</type>
+          <declname>p_renderpass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="18" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1a850ae57a597a9dd5eb11c8c584c653e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_pipeline::bind</definition>
+        <argsstring>(const VkCommandBuffer &amp;p_current)</argsstring>
+        <name>bind</name>
+        <qualifiedname>atlas::vk::vk_pipeline::bind</qualifiedname>
+        <param>
+          <type>const VkCommandBuffer &amp;</type>
+          <declname>p_current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="20" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1ae6c2ba017a0a2caac8a3b3b9c6c36799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::vk::vk_pipeline::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>atlas::vk::vk_pipeline::destroy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="22" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1a2f6eed75670a5cae7191d63dff79d0f5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineLayout</type>
+        <definition>VkPipelineLayout atlas::vk::vk_pipeline::get_layout</definition>
+        <argsstring>() const</argsstring>
+        <name>get_layout</name>
+        <qualifiedname>atlas::vk::vk_pipeline::get_layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="24" column="27" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1a280eab9f34ba61ca13a8553448363fae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>VkPipelineLayout</type>
+        <definition>VkPipelineLayout atlas::vk::vk_pipeline::layout</definition>
+        <argsstring>() const</argsstring>
+        <name>layout</name>
+        <qualifiedname>atlas::vk::vk_pipeline::layout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="28" column="27" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1a49cea34b20d450896d79cc3e03d1ddc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_pipeline::operator VkPipeline</definition>
+        <argsstring>()</argsstring>
+        <name>operator VkPipeline</name>
+        <qualifiedname>atlas::vk::vk_pipeline::operator VkPipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="32" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classatlas_1_1vk_1_1vk__pipeline_1a0807949e7b0cedc49105af53d975a26c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>atlas::vk::vk_pipeline::operator VkPipeline</definition>
+        <argsstring>() const</argsstring>
+        <name>operator VkPipeline</name>
+        <qualifiedname>atlas::vk::vk_pipeline::operator VkPipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="34" column="9" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" line="8" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_pipeline.hpp" bodystart="8" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a850ae57a597a9dd5eb11c8c584c653e0" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>bind</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a842b5f623444881d26bd2b9052aaac04" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>create</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1ae6c2ba017a0a2caac8a3b3b9c6c36799" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>destroy</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a2f6eed75670a5cae7191d63dff79d0f5" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>get_layout</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a280eab9f34ba61ca13a8553448363fae" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>layout</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a07486bdfdae5bd3b25afb875c811d26e" prot="private" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>m_descriptor_layouts</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1ac5d76217b62d43b183ce4faa392ac966" prot="private" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>m_driver</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1ac51bbd53477a4f3dde712129ec326af0" prot="private" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>m_pipeline_handler</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1adb9f8e7dcc6b3de3fc77ac04da092d6d" prot="private" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>m_pipeline_layout</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a69bfb625ef7a70b0effafa41f8a588e8" prot="private" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>m_shader_group</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a49cea34b20d450896d79cc3e03d1ddc4" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>operator VkPipeline</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a0807949e7b0cedc49105af53d975a26c" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>operator VkPipeline</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a1561c41bdcb2db1000b783912db6da73" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>vk_pipeline</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1a2a86e97aa3d6d89de311d0ab6f00f721" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>vk_pipeline</name></member>
+      <member refid="classatlas_1_1vk_1_1vk__pipeline_1ab70d1c2c7923aafd0606c23978671d89" prot="public" virt="non-virtual"><scope>atlas::vk::vk_pipeline</scope><name>vk_pipeline</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

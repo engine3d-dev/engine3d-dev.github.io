@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1vk__queue__options" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::vk_queue_options</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vk__queue__options_1ac25b520e371ab5b105865516af0e492a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_queue_options::family_index</definition>
+        <argsstring></argsstring>
+        <name>family_index</name>
+        <qualifiedname>atlas::vk::vk_queue_options::family_index</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="103" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1vk__queue__options_1ac1e310b2a77cb24c58d47bb33aa1c937" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::vk_queue_options::queue_index</definition>
+        <argsstring></argsstring>
+        <name>queue_index</name>
+        <qualifiedname>atlas::vk::vk_queue_options::queue_index</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="104" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="101" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="101" bodyend="105"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1vk__queue__options_1ac25b520e371ab5b105865516af0e492a" prot="public" virt="non-virtual"><scope>atlas::vk::vk_queue_options</scope><name>family_index</name></member>
+      <member refid="structatlas_1_1vk_1_1vk__queue__options_1ac1e310b2a77cb24c58d47bb33aa1c937" prot="public" virt="non-virtual"><scope>atlas::vk::vk_queue_options</scope><name>queue_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

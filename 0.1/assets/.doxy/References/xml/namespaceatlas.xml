@@ -1,0 +1,798 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceatlas" kind="namespace" language="C++">
+    <compoundname>atlas</compoundname>
+    <innerclass refid="classatlas_1_1application" prot="public">atlas::application</innerclass>
+    <innerclass refid="structatlas_1_1application__settings" prot="public">atlas::application_settings</innerclass>
+    <innerclass refid="structatlas_1_1box__collider3d" prot="public">atlas::box_collider3d</innerclass>
+    <innerclass refid="classatlas_1_1camera" prot="public">atlas::camera</innerclass>
+    <innerclass refid="classatlas_1_1console__log__manager" prot="public">atlas::console_log_manager</innerclass>
+    <innerclass refid="classatlas_1_1entity__t" prot="public">atlas::entity_t</innerclass>
+    <innerclass refid="classatlas_1_1graphics__context" prot="public">atlas::graphics_context</innerclass>
+    <innerclass refid="classatlas_1_1interpolation" prot="public">atlas::interpolation</innerclass>
+    <innerclass refid="structatlas_1_1light" prot="public">atlas::light</innerclass>
+    <innerclass refid="structatlas_1_1material" prot="public">atlas::material</innerclass>
+    <innerclass refid="structatlas_1_1math__generic" prot="public">atlas::math_generic</innerclass>
+    <innerclass refid="structatlas_1_1matrix2" prot="public">atlas::matrix2</innerclass>
+    <innerclass refid="structatlas_1_1matrix3" prot="public">atlas::matrix3</innerclass>
+    <innerclass refid="structatlas_1_1matrix4" prot="public">atlas::matrix4</innerclass>
+    <innerclass refid="classatlas_1_1mesh" prot="public">atlas::mesh</innerclass>
+    <innerclass refid="structatlas_1_1reload" prot="public">atlas::reload</innerclass>
+    <innerclass refid="classatlas_1_1render__context" prot="public">atlas::render_context</innerclass>
+    <innerclass refid="classatlas_1_1renderer" prot="public">atlas::renderer</innerclass>
+    <innerclass refid="structatlas_1_1rigidbody3d" prot="public">atlas::rigidbody3d</innerclass>
+    <innerclass refid="classatlas_1_1scene__object" prot="public">atlas::scene_object</innerclass>
+    <innerclass refid="classatlas_1_1scene__scope" prot="public">atlas::scene_scope</innerclass>
+    <innerclass refid="classatlas_1_1serializer" prot="public">atlas::serializer</innerclass>
+    <innerclass refid="classatlas_1_1system__registry" prot="public">atlas::system_registry</innerclass>
+    <innerclass refid="structatlas_1_1tag" prot="public">atlas::tag</innerclass>
+    <innerclass refid="classatlas_1_1thread" prot="public">atlas::thread</innerclass>
+    <innerclass refid="classatlas_1_1timer" prot="public">atlas::timer</innerclass>
+    <innerclass refid="structatlas_1_1transform" prot="public">atlas::transform</innerclass>
+    <innerclass refid="structatlas_1_1transform__physics" prot="public">atlas::transform_physics</innerclass>
+    <innerclass refid="structatlas_1_1vector2" prot="public">atlas::vector2</innerclass>
+    <innerclass refid="structatlas_1_1vector2_3_01glm_1_1highp__vec2_01_4" prot="public">atlas::vector2&lt; glm::highp_vec2 &gt;</innerclass>
+    <innerclass refid="structatlas_1_1vector3" prot="public">atlas::vector3</innerclass>
+    <innerclass refid="structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4" prot="public">atlas::vector3&lt; glm::highp_vec3 &gt;</innerclass>
+    <innerclass refid="structatlas_1_1vector3_3_01JPH_1_1Vec3_01_4" prot="public">atlas::vector3&lt; JPH::Vec3 &gt;</innerclass>
+    <innerclass refid="structatlas_1_1vector4" prot="public">atlas::vector4</innerclass>
+    <innerclass refid="structatlas_1_1vector4_3_01glm_1_1highp__vec4_01_4" prot="public">atlas::vector4&lt; glm::highp_vec4 &gt;</innerclass>
+    <innerclass refid="classatlas_1_1window" prot="public">atlas::window</innerclass>
+    <innerclass refid="structatlas_1_1window__settings" prot="public">atlas::window_settings</innerclass>
+    <innerclass refid="classatlas_1_1world__scope" prot="public">atlas::world_scope</innerclass>
+    <innernamespace refid="namespaceatlas_1_1event">atlas::event</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1filesystem">atlas::filesystem</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1physics">atlas::physics</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1sync__update">atlas::sync_update</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1ui">atlas::ui</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1vk">atlas::vk</innernamespace>
+    <sectiondef kind="user-defined">
+      <header>Sync Update Manager (SUM)</header>
+      <description><para><simplesect kind="note"><para>Essentially our way of handling differerent state of updates </para>
+</simplesect>
+<simplesect kind="note"><para>Synchronized container to ensure those different updates are synced correctly </para>
+</simplesect>
+</para>
+</description>
+      <memberdef kind="function" id="namespaceatlas_1ad25a2986bc4bd35c2fc0e1b105769929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UObject</type>
+          </param>
+          <param>
+            <type>typename UCallable</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void atlas::sync</definition>
+        <argsstring>(UObject *p_instance, const UCallable &amp;p_callable)</argsstring>
+        <name>sync</name>
+        <qualifiedname>atlas::sync</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>p_instance</declname>
+        </param>
+        <param>
+          <type>const UCallable &amp;</type>
+          <declname>p_callable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>These are public functions that users can utilize </para>
+</simplesect>
+<simplesect kind="note"><para>If users are using anything within the sync_update namespace. They shouldn&apos;t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/sync_update.hpp" line="88" column="10" bodyfile="TheAtlasEngine/atlas/core/update_handlers/sync_update.hpp" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1ad9f2304d648f9158aa6b2d67b2a20980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UObject</type>
+          </param>
+          <param>
+            <type>typename UCallable</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void atlas::sync_physics</definition>
+        <argsstring>(UObject *p_instance, const UCallable &amp;p_callable)</argsstring>
+        <name>sync_physics</name>
+        <qualifiedname>atlas::sync_physics</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>p_instance</declname>
+        </param>
+        <param>
+          <type>const UCallable &amp;</type>
+          <declname>p_callable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/sync_update.hpp" line="93" column="10" bodyfile="TheAtlasEngine/atlas/core/update_handlers/sync_update.hpp" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1a7abd023a5f99cd46fb199b38a5ac5f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UObject</type>
+          </param>
+          <param>
+            <type>typename UCallable</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void atlas::post</definition>
+        <argsstring>(UObject *p_instance, const UCallable &amp;p_callable)</argsstring>
+        <name>post</name>
+        <qualifiedname>atlas::post</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>p_instance</declname>
+        </param>
+        <param>
+          <type>const UCallable &amp;</type>
+          <declname>p_callable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/sync_update.hpp" line="98" column="10" bodyfile="TheAtlasEngine/atlas/core/update_handlers/sync_update.hpp" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1a7d6d9e533620da125be66e85303e9423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename UObject</type>
+          </param>
+          <param>
+            <type>typename UCallable</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void atlas::attach</definition>
+        <argsstring>(UObject *p_instance, const UCallable &amp;p_callable)</argsstring>
+        <name>attach</name>
+        <qualifiedname>atlas::attach</qualifiedname>
+        <param>
+          <type>UObject *</type>
+          <declname>p_instance</declname>
+        </param>
+        <param>
+          <type>const UCallable &amp;</type>
+          <declname>p_callable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/update_handlers/sync_update.hpp" line="103" column="10" bodyfile="TheAtlasEngine/atlas/core/update_handlers/sync_update.hpp" bodystart="103" bodyend="105"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceatlas_1a368fa117f7f8a6e30553416c0cb4b8ff" prot="public" static="no" strong="no">
+        <type></type>
+        <name>api</name>
+        <qualifiedname>atlas::api</qualifiedname>
+        <enumvalue id="namespaceatlas_1a368fa117f7f8a6e30553416c0cb4b8ffa6efa757783e6f9a0198de81390b31d77" prot="public">
+          <name>vulkan</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1a368fa117f7f8a6e30553416c0cb4b8ffaf135ec27bc6c4ddc77107b3442f19f6e" prot="public">
+          <name>dx11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1a368fa117f7f8a6e30553416c0cb4b8ffa8be707ac14ca2489c9406773d5b07d17" prot="public">
+          <name>fx12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1a368fa117f7f8a6e30553416c0cb4b8ffa69429f08833690b6bb64e2c59371a9a1" prot="public">
+          <name>undefined</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/api.hpp" line="4" column="5" bodyfile="TheAtlasEngine/atlas/core/api.hpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceatlas_1a28947fa433bdadc351976cdfeabd4a90" prot="public" static="no" strong="no">
+        <type></type>
+        <name>CameraMovement</name>
+        <qualifiedname>atlas::CameraMovement</qualifiedname>
+        <enumvalue id="namespaceatlas_1a28947fa433bdadc351976cdfeabd4a90a2f3972de0be337ebea6ec59d9266f325" prot="public">
+          <name>forward</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1a28947fa433bdadc351976cdfeabd4a90a942e1dd2ba6cff90a721216e4151fa4c" prot="public">
+          <name>backward</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1a28947fa433bdadc351976cdfeabd4a90a51f177e37af811961702a473c4ded8cb" prot="public">
+          <name>left</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1a28947fa433bdadc351976cdfeabd4a90a1032b593f6becf1b62fb17f3aa9486aa" prot="public">
+          <name>right</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1a28947fa433bdadc351976cdfeabd4a90a431d7390fb36bcdc5f0feeb645df8196" prot="public">
+          <name>up</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceatlas_1a28947fa433bdadc351976cdfeabd4a90a06a66778db045f1e650ce32094f2b36d" prot="public">
+          <name>down</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/scene/components.hpp" line="54" column="5" bodyfile="TheAtlasEngine/atlas/core/scene/components.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::shared_ptr&lt; T &gt;</type>
+        <definition>using atlas::ref = typedef std::shared_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>ref</name>
+        <qualifiedname>atlas::ref</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Some aliases for the smart pointers </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/core.hpp" line="35" column="5" bodyfile="TheAtlasEngine/atlas/core/core.hpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1a4afc188a3d4786bb7c07ee4141bff3d5" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::unique_ptr&lt; T &gt;</type>
+        <definition>using atlas::scope = typedef std::unique_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>scope</name>
+        <qualifiedname>atlas::scope</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/core.hpp" line="43" column="5" bodyfile="TheAtlasEngine/atlas/core/core.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1a1c31947bfb2701c4331e1e0e60785531" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::weak_ptr&lt; T &gt;</type>
+        <definition>using atlas::weak_ptr = typedef std::weak_ptr&lt;T&gt;</definition>
+        <argsstring></argsstring>
+        <name>weak_ptr</name>
+        <qualifiedname>atlas::weak_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/core.hpp" line="51" column="5" bodyfile="TheAtlasEngine/atlas/core/core.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1aae41b0ae30161f6a31a86e4c17467e36" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>Size</declname>
+            <defname>Size</defname>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structatlas_1_1math__generic" kindref="compound">math_generic</ref>&lt; glm::vec&lt; Size, T &gt; &gt;</type>
+        <definition>using atlas::vec = typedef math_generic&lt;glm::vec&lt;Size, T&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>vec</name>
+        <qualifiedname>atlas::vec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>By default we use glm </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="177" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1ad7f5f272d67a5a3f275dae62bd4da4ce" prot="public" static="no">
+        <type><ref refid="structatlas_1_1vector2" kindref="compound">vector2</ref>&lt; glm::vec2 &gt;</type>
+        <definition>using atlas::vec2 = typedef vector2&lt;glm::vec2&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec2</name>
+        <qualifiedname>atlas::vec2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="178" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1a311e422ecbd32a20f8a598813f87f173" prot="public" static="no">
+        <type><ref refid="structatlas_1_1vector3" kindref="compound">vector3</ref>&lt; glm::vec3 &gt;</type>
+        <definition>using atlas::vec3 = typedef vector3&lt;glm::vec3&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec3</name>
+        <qualifiedname>atlas::vec3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="179" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1abb3f4e4526a5b821bc1584d8b13784f6" prot="public" static="no">
+        <type><ref refid="structatlas_1_1vector4" kindref="compound">vector4</ref>&lt; glm::vec4 &gt;</type>
+        <definition>using atlas::vec4 = typedef vector4&lt;glm::vec4&gt;</definition>
+        <argsstring></argsstring>
+        <name>vec4</name>
+        <qualifiedname>atlas::vec4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="180" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1ad3a9641cf1f27a58a09471c060deacf0" prot="public" static="no">
+        <type><ref refid="structatlas_1_1vector2" kindref="compound">vector2</ref>&lt; glm::highp_vec2 &gt;</type>
+        <definition>using atlas::highp_vec2 = typedef vector2&lt;glm::highp_vec2&gt;</definition>
+        <argsstring></argsstring>
+        <name>highp_vec2</name>
+        <qualifiedname>atlas::highp_vec2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="182" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1aa98ae56c4846eb04e5bb4464a33ed7b7" prot="public" static="no">
+        <type><ref refid="structatlas_1_1vector3" kindref="compound">vector3</ref>&lt; glm::highp_vec3 &gt;</type>
+        <definition>using atlas::highp_vec3 = typedef vector3&lt;glm::highp_vec3&gt;</definition>
+        <argsstring></argsstring>
+        <name>highp_vec3</name>
+        <qualifiedname>atlas::highp_vec3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="183" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1ae1fa22c65b60f60d690636be3556f492" prot="public" static="no">
+        <type><ref refid="structatlas_1_1vector4" kindref="compound">vector4</ref>&lt; glm::highp_vec4 &gt;</type>
+        <definition>using atlas::highp_vec4 = typedef vector4&lt;glm::highp_vec4&gt;</definition>
+        <argsstring></argsstring>
+        <name>highp_vec4</name>
+        <qualifiedname>atlas::highp_vec4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="184" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1abcf070ed4defada03dd89aaaf1569a1e" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>size_t</type>
+            <declname>C</declname>
+            <defname>C</defname>
+          </param>
+          <param>
+            <type>size_t</type>
+            <declname>R</declname>
+            <defname>R</defname>
+          </param>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structatlas_1_1math__generic" kindref="compound">math_generic</ref>&lt; glm::mat&lt; C, R, T &gt; &gt;</type>
+        <definition>using atlas::mat = typedef math_generic&lt;glm::mat&lt;C, R, T&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>mat</name>
+        <qualifiedname>atlas::mat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="187" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1affc9c83015d085c02efffa214b016973" prot="public" static="no">
+        <type><ref refid="structatlas_1_1matrix2" kindref="compound">matrix2</ref>&lt; glm::mat2 &gt;</type>
+        <definition>using atlas::mat2 = typedef matrix2&lt;glm::mat2&gt;</definition>
+        <argsstring></argsstring>
+        <name>mat2</name>
+        <qualifiedname>atlas::mat2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="189" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1a0dfcb094b5b83c65d4f50dc2324a9d02" prot="public" static="no">
+        <type><ref refid="structatlas_1_1matrix3" kindref="compound">matrix3</ref>&lt; glm::mat3 &gt;</type>
+        <definition>using atlas::mat3 = typedef matrix3&lt;glm::mat3&gt;</definition>
+        <argsstring></argsstring>
+        <name>mat3</name>
+        <qualifiedname>atlas::mat3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="190" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceatlas_1a606c2766084a296fb79c933c106a6cb0" prot="public" static="no">
+        <type><ref refid="structatlas_1_1matrix4" kindref="compound">matrix4</ref>&lt; glm::mat4 &gt;</type>
+        <definition>using atlas::mat4 = typedef matrix4&lt;glm::mat4&gt;</definition>
+        <argsstring></argsstring>
+        <name>mat4</name>
+        <qualifiedname>atlas::mat4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/math/types.hpp" line="191" column="5" bodyfile="TheAtlasEngine/atlas/core/math/types.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceatlas_1a93f00c5a43e87bc188cc192d5cb10bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref>&lt; <ref refid="classatlas_1_1application" kindref="compound">application</ref> &gt;</type>
+        <definition>ref&lt; application &gt; atlas::initialize_application</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_application</name>
+        <qualifiedname>atlas::initialize_application</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/application.hpp" line="60" column="9" declfile="TheAtlasEngine/atlas/core/application.hpp" declline="60" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1af8f5592d3dad9dd211ae30d25ff6634a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>T</declname>
+            <defname>T</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void atlas::core_assert</definition>
+        <argsstring>(bool x, T &amp;&amp;... args)</argsstring>
+        <name>core_assert</name>
+        <qualifiedname>atlas::core_assert</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/core.hpp" line="23" column="17" bodyfile="TheAtlasEngine/atlas/core/core.hpp" bodystart="23" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1ab4a5cb6a241a7b75c3c9074bf60e2057" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref>&lt; T &gt;</type>
+        <definition>constexpr ref&lt; T &gt; atlas::create_ref</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>create_ref</name>
+        <qualifiedname>atlas::create_ref</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/core.hpp" line="38" column="19" bodyfile="TheAtlasEngine/atlas/core/core.hpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1af6b7affde94e24d047712cc9c74cdf2b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr scope&lt; T &gt;</type>
+        <definition>constexpr scope&lt; T &gt; atlas::create_scope</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>create_scope</name>
+        <qualifiedname>atlas::create_scope</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/core.hpp" line="46" column="21" bodyfile="TheAtlasEngine/atlas/core/core.hpp" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1ad9f60f357b5babfe5d9a914d5c09c24b" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr weak_ptr&lt; T &gt;</type>
+        <definition>constexpr weak_ptr&lt; T &gt; atlas::create_weak_ptr</definition>
+        <argsstring>(Args &amp;&amp;... args)</argsstring>
+        <name>create_weak_ptr</name>
+        <qualifiedname>atlas::create_weak_ptr</qualifiedname>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/core.hpp" line="54" column="24" bodyfile="TheAtlasEngine/atlas/core/core.hpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1a6d9da6de89399f829ffb91a5c473fab7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>weak_ptr&lt; T &gt;</type>
+        <definition>weak_ptr&lt; T &gt; atlas::to_weak_ptr</definition>
+        <argsstring>(const U &amp;p_value)</argsstring>
+        <name>to_weak_ptr</name>
+        <qualifiedname>atlas::to_weak_ptr</qualifiedname>
+        <param>
+          <type>const U &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/core.hpp" line="59" column="14" bodyfile="TheAtlasEngine/atlas/core/core.hpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1acad3bfb22d572c83924632695820d2c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Rest</declname>
+            <defname>Rest</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void atlas::hash_combine</definition>
+        <argsstring>(size_t &amp;seed, const T &amp;v, const Rest &amp;... rest)</argsstring>
+        <name>hash_combine</name>
+        <qualifiedname>atlas::hash_combine</qualifiedname>
+        <param>
+          <type>size_t &amp;</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const Rest &amp;...</type>
+          <declname>rest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/utilities/hash.hpp" line="7" column="10" bodyfile="TheAtlasEngine/atlas/core/utilities/hash.hpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1a77e029bfc960c855162bb9f64332f995" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref>&lt; <ref refid="classatlas_1_1window" kindref="compound">window</ref> &gt;</type>
+        <definition>ref&lt; window &gt; atlas::create_window</definition>
+        <argsstring>(const window_settings &amp;p_settings)</argsstring>
+        <name>create_window</name>
+        <qualifiedname>atlas::create_window</qualifiedname>
+        <param>
+          <type>const <ref refid="structatlas_1_1window__settings" kindref="compound">window_settings</ref> &amp;</type>
+          <declname>p_settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/window.hpp" line="73" column="9" declfile="TheAtlasEngine/atlas/core/window.hpp" declline="73" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1a53d091866b8220d17ce93c0d8a3522fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref>&lt; <ref refid="classatlas_1_1graphics__context" kindref="compound">graphics_context</ref> &gt;</type>
+        <definition>ref&lt; graphics_context &gt; atlas::initialize_context</definition>
+        <argsstring>(const std::string &amp;p_tag)</argsstring>
+        <name>initialize_context</name>
+        <qualifiedname>atlas::initialize_context</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/graphics_context.hpp" line="15" column="9" declfile="TheAtlasEngine/atlas/drivers/graphics_context.hpp" declline="15" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1a295aa0ddd01da9fec124caa3db500c99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>scope&lt; <ref refid="classatlas_1_1render__context" kindref="compound">render_context</ref> &gt;</type>
+        <definition>scope&lt; render_context &gt; atlas::initialize_renderer</definition>
+        <argsstring>(const vk::vk_swapchain &amp;p_swapchain, const std::string &amp;p_tag)</argsstring>
+        <name>initialize_renderer</name>
+        <qualifiedname>atlas::initialize_renderer</qualifiedname>
+        <param>
+          <type>const <ref refid="classatlas_1_1vk_1_1vk__swapchain" kindref="compound">vk::vk_swapchain</ref> &amp;</type>
+          <declname>p_swapchain</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/renderer_context.hpp" line="55" column="11" declfile="TheAtlasEngine/atlas/drivers/renderer_context.hpp" declline="55" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceatlas_1ad929d2dc9ea4acaafdc16caac9112790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::get_thread_count</definition>
+        <argsstring>()</argsstring>
+        <name>get_thread_count</name>
+        <qualifiedname>atlas::get_thread_count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/thread_utils/thread_utils.hpp" line="5" column="14" declfile="TheAtlasEngine/atlas/thread_utils/thread_utils.hpp" declline="5" declcolumn="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>This is just a class abstraction idea</para>
+</simplesect>
+class swapchain { public: virtual ~swapchain();</para>
+<para>uint32_t read_acquired_next_image();</para>
+<para>private: virtual uint32_t swapchain_read_acquried_image() = 0; };</para>
+<para>Here are responsibilities I want the renderer/vk_renderer to have Task graph for command buffer submission/execution API&apos;s are going to be using defer_submit API&apos;s are potentially (with ???) using immediate_submit </para>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/components/transform.hpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,302 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="core_8hpp" kind="file" language="C++">
+    <compoundname>core.hpp</compoundname>
+    <includes local="no">cassert</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">spdlog/common.h</includes>
+    <includes local="no">spdlog/spdlog.h</includes>
+    <includedby refid="engine__logger_8hpp" local="no">TheAtlasEngine/atlas/core/engine_logger.hpp</includedby>
+    <includedby refid="world_8hpp" local="no">TheAtlasEngine/atlas/core/scene/world.hpp</includedby>
+    <includedby refid="serializer_8hpp" local="no">TheAtlasEngine/atlas/core/serialize/serializer.hpp</includedby>
+    <includedby refid="window_8hpp" local="no">TheAtlasEngine/atlas/core/window.hpp</includedby>
+    <includedby refid="graphics__context_8hpp" local="no">TheAtlasEngine/atlas/drivers/graphics_context.hpp</includedby>
+    <includedby refid="renderer__context_8hpp" local="no">TheAtlasEngine/atlas/drivers/renderer_context.hpp</includedby>
+    <includedby refid="physics__3d_2jolt_2jolt__api_8hpp" local="no">TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_api.hpp</includedby>
+    <includedby refid="jolt__context_8hpp" local="no">TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_context.hpp</includedby>
+    <includedby refid="physics__engine_8hpp" local="no">TheAtlasEngine/atlas/physics/physics_3d/physics_engine.hpp</includedby>
+    <includedby refid="renderer_8hpp" local="no">TheAtlasEngine/atlas/renderer/renderer.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>TheAtlasEngine/atlas/core/core.hpp</label>
+        <link refid="core_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cassert</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>spdlog/common.h</label>
+      </node>
+      <node id="5">
+        <label>spdlog/spdlog.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="17">
+        <label>TheAtlasEngine/atlas/core/application.hpp</label>
+        <link refid="application_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TheAtlasEngine/atlas/core/core.hpp</label>
+        <link refid="core_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TheAtlasEngine/atlas/core/engine_logger.hpp</label>
+        <link refid="engine__logger_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>TheAtlasEngine/atlas/core/scene/components.hpp</label>
+        <link refid="components_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TheAtlasEngine/atlas/core/scene/scene.hpp</label>
+        <link refid="scene_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>TheAtlasEngine/atlas/core/scene/scene_object.hpp</label>
+        <link refid="scene__object_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TheAtlasEngine/atlas/core/scene/world.hpp</label>
+        <link refid="world_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TheAtlasEngine/atlas/core/serialize/serializer.hpp</label>
+        <link refid="serializer_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>TheAtlasEngine/atlas/core/system_framework/system_registry.hpp</label>
+        <link refid="system__registry_8hpp_source"/>
+      </node>
+      <node id="14">
+        <label>TheAtlasEngine/atlas/core/update_handlers/sync_update.hpp</label>
+        <link refid="sync__update_8hpp_source"/>
+      </node>
+      <node id="16">
+        <label>TheAtlasEngine/atlas/core/window.hpp</label>
+        <link refid="window_8hpp_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>TheAtlasEngine/atlas/drivers/graphics_context.hpp</label>
+        <link refid="graphics__context_8hpp_source"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>TheAtlasEngine/atlas/drivers/renderer_context.hpp</label>
+        <link refid="renderer__context_8hpp_source"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_context.hpp</label>
+        <link refid="vk__context_8hpp_source"/>
+      </node>
+      <node id="19">
+        <label>TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_renderer.hpp</label>
+        <link refid="vk__renderer_8hpp_source"/>
+      </node>
+      <node id="21">
+        <label>TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_window.hpp</label>
+        <link refid="vk__window_8hpp_source"/>
+      </node>
+      <node id="7">
+        <label>TheAtlasEngine/atlas/physics/jolt-cpp/jolt_collision.hpp</label>
+        <link refid="jolt__collision_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TheAtlasEngine/atlas/physics/jolt-cpp/jolt_collision_manager.hpp</label>
+        <link refid="jolt__collision__manager_8hpp_source"/>
+      </node>
+      <node id="9">
+        <label>TheAtlasEngine/atlas/physics/jolt-cpp/jolt_contact_listener.hpp</label>
+        <link refid="jolt__contact__listener_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_api.hpp</label>
+        <link refid="physics__3d_2jolt_2jolt__api_8hpp_source"/>
+      </node>
+      <node id="10">
+        <label>TheAtlasEngine/atlas/physics/physics_3d/jolt/jolt_context.hpp</label>
+        <link refid="jolt__context_8hpp_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>TheAtlasEngine/atlas/physics/physics_3d/physics.hpp</label>
+        <link refid="physics_8hpp_source"/>
+      </node>
+      <node id="11">
+        <label>TheAtlasEngine/atlas/physics/physics_3d/physics_engine.hpp</label>
+        <link refid="physics__engine_8hpp_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>TheAtlasEngine/atlas/renderer/renderer.hpp</label>
+        <link refid="renderer_8hpp_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>TheAtlasEngine/atlas/thread_utils/thread.hpp</label>
+        <link refid="thread__utils_2thread_8hpp_source"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceatlas">atlas</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="core_8hpp_1a0697ee40f69dc5dab56d13131f4c4835" prot="public" static="no">
+        <name>ENGINE_API</name>
+        <initializer>__attribute__((visibility(&quot;default&quot;)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/core/core.hpp" line="15" column="9" bodyfile="TheAtlasEngine/atlas/core/core.hpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;spdlog/common.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;spdlog/spdlog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceatlas" kindref="compound">atlas</ref><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ENGINE_PLATFORM_WINDOWS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ENGINE_BUILD_DLL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENGINE_API<sp/>__declspec(dllexport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENGINE_API<sp/>__declspec(dllimport)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/></highlight><highlight class="comment">//<sp/>If<sp/>we<sp/>are<sp/>on<sp/>either<sp/>Linux/Mac<sp/>OS,<sp/>since<sp/>they<sp/>use<sp/>__attributes__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ENGINE_API<sp/>__attribute__((visibility(&quot;default&quot;)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ATLAS_DEBUG_BUILD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATLAS_DEBUG_BUILD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>core_assert(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>x,<sp/>T&amp;&amp;...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>const<sp/>char*<sp/>filename<sp/>=<sp/>__FILE__;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>auto<sp/>line<sp/>=<sp/>__LINE__;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!x)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>spdlog::critical(&quot;assertion:<sp/>{}&quot;,<sp/>fmt,<sp/>std::forward&lt;T&gt;(args)...,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>filename,<sp/>line);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::critical(</highlight><highlight class="stringliteral">&quot;assertion<sp/>failed:<sp/>{}&quot;</highlight><highlight class="normal">,<sp/>std::forward&lt;T&gt;(args)...);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="35" refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref</ref><sp/>=<sp/>std::shared_ptr&lt;T&gt;;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/><ref refid="namespaceatlas_1ab3da5cb9c9a3e605fab407b9dad31db3" kindref="member">ref&lt;T&gt;</ref><sp/>create_ref(Args&amp;&amp;...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_shared&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">scope<sp/>=<sp/>std::unique_ptr&lt;T&gt;;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>scope&lt;T&gt;<sp/>create_scope(Args&amp;&amp;...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::make_unique&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">weak_ptr<sp/>=<sp/>std::weak_ptr&lt;T&gt;;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/>weak_ptr&lt;T&gt;<sp/>create_weak_ptr(Args&amp;&amp;...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::weak_ptr&lt;T&gt;(std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>weak_ptr&lt;T&gt;<sp/>to_weak_ptr(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>U&amp;<sp/>p_value)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>CreateWeakPtr&lt;T&gt;(p_value);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="TheAtlasEngine/atlas/core/core.hpp"/>
+  </compounddef>
+</doxygen>

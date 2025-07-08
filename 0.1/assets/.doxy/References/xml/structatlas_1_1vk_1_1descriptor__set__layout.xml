@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structatlas_1_1vk_1_1descriptor__set__layout" kind="struct" language="C++" prot="public">
+    <compoundname>atlas::vk::descriptor_set_layout</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1descriptor__set__layout_1a0fb83cd3f3acf1da22100c81c94ae1ed" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::descriptor_set_layout::allocate_count</definition>
+        <argsstring></argsstring>
+        <name>allocate_count</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::allocate_count</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="318" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1descriptor__set__layout_1ac55d503ef902a05c5cfd90487c35d28f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::descriptor_set_layout::max_sets</definition>
+        <argsstring></argsstring>
+        <name>max_sets</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::max_sets</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="319" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1descriptor__set__layout_1abab98fa5ecc3462b495a50b579f63a6c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t atlas::vk::descriptor_set_layout::size_bytes</definition>
+        <argsstring></argsstring>
+        <name>size_bytes</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::size_bytes</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="320" column="18" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structatlas_1_1vk_1_1descriptor__set__layout_1a82c1e541da500be701161e44377b40d9" prot="public" static="no" mutable="no">
+        <type>std::span&lt; <ref refid="structatlas_1_1vk_1_1descriptor__binding__entry" kindref="compound">descriptor_binding_entry</ref> &gt;</type>
+        <definition>std::span&lt;descriptor_binding_entry&gt; atlas::vk::descriptor_set_layout::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <qualifiedname>atlas::vk::descriptor_set_layout::entry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="321" column="19" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="321" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" line="317" column="5" bodyfile="TheAtlasEngine/atlas/drivers/vulkan-cpp/vk_types.hpp" bodystart="317" bodyend="322"/>
+    <listofallmembers>
+      <member refid="structatlas_1_1vk_1_1descriptor__set__layout_1a0fb83cd3f3acf1da22100c81c94ae1ed" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>allocate_count</name></member>
+      <member refid="structatlas_1_1vk_1_1descriptor__set__layout_1a82c1e541da500be701161e44377b40d9" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>entry</name></member>
+      <member refid="structatlas_1_1vk_1_1descriptor__set__layout_1ac55d503ef902a05c5cfd90487c35d28f" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>max_sets</name></member>
+      <member refid="structatlas_1_1vk_1_1descriptor__set__layout_1abab98fa5ecc3462b495a50b579f63a6c" prot="public" virt="non-virtual"><scope>atlas::vk::descriptor_set_layout</scope><name>size_bytes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

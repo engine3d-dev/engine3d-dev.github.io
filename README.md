@@ -1,6 +1,6 @@
 # engine3d-dev.github.io
 
-Organizational repository for documentation for TheAtlasEngine for any static information
+Documentatino website for TheAtlasEngine to provide information on guidelines and development environment setup.
 
 ## Instructions
 

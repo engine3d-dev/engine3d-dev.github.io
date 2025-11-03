@@ -1,127 +1,78 @@
-# 📝 Core Engine Design
+# 📝 Core Designs in TheAtlasEngine
 -----
-## **Interfaces**
 
-Interfaces are the foundation of how the api-agnostic API's may work if they have vary defined backends. They present a generalized ideal of a particular aspect of computing.
+# **No Virtual Runtime Polymorphism for game state**
 
-For example, a graphics API such as vulkan, directX, and metal. They both contain their own varied version of a command buffer. In Vulkan it is referred to as **VkCommandBuffer**, DirectX referred to as **ID3D12GraphicsCommandList**, and metal it is referred to as **MTLCommandBuffer**.
+We do not use virtual runtime polymorphism to represent our game state. Reasons for this is because we believe that we did not want to use a heirarchy system to ensure the state of the user-defined game object are executed.
 
-Which each of this implementation may be operated differently that is widely dependent on their API's.
+If we used virtual polymorphism, what this would bring is the final object will carry the information of the base classes it inherits into the final object. Making the vtable larger because of the virtual API's that it needs to be aware of. I believe this can turn to be quite a complex approach to modeling game objects around.
 
-This following guideline should be kept in mind when creating interfaces.
+Here were reasons I chose not to leverage runtime polymorphism:
+* Large vtables carried to the final object at the bottom of the heirarchy system
+* Dependencies required to model around every known state a game object could potentially be in
+* Code bloat due to coupling the game object tied to a heirarchy system for also managing its state.
 
-Here is an example of some interfaces in libhal. It is recommended to look at these to get an idea of how the interfaces could be written.
+!!! preface
 
-- [atlas::render_context]()
+    This DOES NOT mean we fully only use data-driven in our codebase, as we do use virtual polymorphism.
 
+## **Game objects are Data-Driven**
 
-## **Designing and Making Interfaces**
+Game objects themselves are data-driven, which do not store any state related to the game logic behavior that is written by the user.
 
-Using vtables are quite small and only require a single pointer lookup. The initial idea that comes to mind with vtables is minimize least number of lookups that needs to be made to virtual functions if possible.
+Theses are both reasons I chose to move away from virtual runtime polymorphism for game objects:
+* Minimize and reduce dependencies needed for game object creation
+* Slim down dependencies which gets passed into the final object's vtable
+* Reduce code boilerplate by reducing decoupling from those dependencies
+* Use only what you need with creating game objects.
+* Game objects are data-driven that get processed
 
-**why?**
+## Callbacks for **Representing Game State**
 
-Each virtual function in an interface will require a v-table entry (a pointer) in the v-table of each implementation of an interface. Specific sections of the binary. More you have to store in space.
+Rather then modeling around using runtime polymorphism. Which relies in having a heirarchy system for every potential state a game object can be in.
 
-**Consider**
+TheAtlasEngine makes use of callbacks to provide users the flexibility and minimal requirements in writing their game logic. While giving the choice to decide when their logic should be executed at different framerates.
 
-Having an interface for graphics for supporting multiple graphics API called `render_context`. This render_context could be an interface that may be used for implement the different graphics-api backends such as Vulkan, Metal, and DirectX3D.
+**Registration Callbacks** do not couple how you name your function, require you to specify any parameters for when your logic gets executed, or any other coupled requirements. Goal behind the callback was so as the user, you did not have to specify a requirements to get your logic to be executed.
 
-These are implementations that will have common API's to do equivalent operations. The interface will have common API's for operations such as writing data to a vertex, index, or uniform buffer.
+In the demonstration below, is how the callback system works. Removing
 
-The fundamental idea is interfaces should be used to allow a generalized API that internal state of the engine could interact without touching or using any api-dependent code within the engine. That should be completely handle and communicated via those abstraction layers around those API's.
-
-
-
-## **Inheritance Not Used for Game Objects**
-
-Why are we not using inheritance to express game object state?
-
-As game objects grow more complex, especially in modern game engines. Inheritance in game engines have been used to determine a variety of states game objects could be in. Including using virtual functions and inheritance to express relationships between the variety of complex states game objects can go into.
-
-What are the issues that comes from this design?
-
-To further learn why I went with a data-oriented design approach in atlas. It is because
-
-
-
-
-
-## **Interfaces Not Used for Actors/Objects**
-
-Typically it is seen natural to have scene objects inherit from some virtual class to define a `UActor` (like unreal). As other engines will have their own variation of this.
-
-In this engine, I wanted to have a different look at building games, using a completely different approach in making games that does not have users by default be binded to a contract having them inherit a base class.
-
-
-These are caveuats I should mention below.
-
-- One of the biggest issue isn't just the binded contract devs have to make every time they need to make a new actor. Its also the size each actor now carries. What does this mean?
-    - This means that if you look at Unreal's and other engines they have their own variation of how they handle actors. Usually when creating custom actors that inherit, they carry the size of the objects they not only inherit of even if those functions do not get used.
-    - Which means bloated in class size in bytes.
-
-- Amount of lookups in the vtable is quite high because lets look at particles for example.
-    - If we have particles that may vary in different aspects of geometry, mesh, assets, etc. The amount of difference in data can actually be widely expansive. What initially would happen is we'd have to lookup the vtable entry to get information about the actor every time we need something
-    - When we already know its memory location and where this scene object is located, we could minimize these caveuts and initially minimizing code bloatware of binary sizes because we are not creating actors through inheritance.
-
-Given this example.
-
-In game engines today, you will have some variation following this approach.
+<details>
+    <summary> Register Callbacks Code Example </summary>
 
 ```C++
-
-class MyActor : public AActor {
+class main_scene : public atlas::scene {
 public:
-    /* do other pre-init state initialization needed in implementation */
-protected:
-    virtual void BeginPlay() override { /* do stuff when begin play ticked */ }
-};
-```
+    main_scene(std::string_view p_name) : atlas::scene(p_name) {
+        // execution at scene pre-load stage
+        atlas::register_start(this, &main_scene::preload);
 
+        // execute main_scene::game_inputs at general update framerate
+        atlas::register_update(this, &main_scene::game_inputs);
 
+        // execute main_scene::physics_logic at fixed physics framerates
+        atlas::register_physics(this, &main_scene::physics_logic);
 
-## **Different Perspective Creating Game Objects**
+        // execute main_scene::ui_update at deferred frame update time
+        atlas::register_ui(this, &main_scene::ui_update);
+    }
 
-As game object state grows more complex. TheAtlasEngine strives to allow game object to contain the data associated with. Rather the game objects themselves contain state. It is because game object state can be widely complex and making an attempt to try expressing these state for the objects in the form of inheritance and virtual functions can lead to caveauts that I want to research into.
+    void preload() {
+        // execute during level's pre-load early on in the event execution process
+    }
 
-These caveauts involve code bloat, complex and high increase of vtables, complex contracts users are by default signed into when trying to make their own game objects.
-
-Approaching with a data-oriented design in mind. This way it could simplify what users need has to do for setting up a game object. Simplifying means of how these objects get created, lifetime managements of these objects, when these objects get updated. As time update frequency matters and giving users that control when their objects state get update is direct.
-
-**Concerns Removed When Creating Objects**
-```C++
-// Creating custom scene to contain user-defined game objects in this given scene
-class level_scene : public scene_scope{
-public:
-    level_scene(const std::string& p_tag) : scene_scope(p_tag) {
-        // Creating entity "Camera Entity" to this scene while setting the lifetime of this object to be managed by scene_scope
-        m_camera = this->create_new_entity("Camera Entity");
-
-        // Creating entity "Sphere Entity" to this scene while setting the lifetime of this object to be managed by scene_scope
-        m_sphere = this->create_new_entity("Sphere Entity");
-
-
-        // This registers our update callable and associates the address of our current scene
-        // then calling this function
-        atlas::sync(this, &level_scene::update);
-
-        // physics() gets called during the interval of physics steps since the timing
-        // for physics can be different compared to logic during update
-        atlas::sync_physics(this, &level_scene::physics);
+    void game_inputs() {
+        // code is ran during the runtime general framerate
     }
 
 
-    void update() {
-        // Running our update logic for being called
+    void physics_logic() {
+        // code is ran during the physics fixed framerate
     }
 
-    void physics() {
-        // Running physics logic at the right time interval physics should run at.
+    void ui_update() {
+        // code for UI such as HUD's or overlays can go here
     }
-
-private:
-    atlas::ref<atlas::scene_object> m_camera;
-    atlas::ref<atlas::scene_object> m_sphere;
 };
 
 ```

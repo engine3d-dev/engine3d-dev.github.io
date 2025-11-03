@@ -4,6 +4,7 @@
 - 🚀 Contributor Guides
   - [🎨 Style Guide](contributor_guide/style.md)
   - [📝 Code Design](contributor_guide/code_design.md)
+  - [philosophy](contributor_guide/philosophy.md)
 - 📜 Project Information
   - [About](about.md)
-- [📖 Documentation](api.md)
+- [📖 Docs](api.md)

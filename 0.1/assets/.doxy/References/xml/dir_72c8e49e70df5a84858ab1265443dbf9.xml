@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_72c8e49e70df5a84858ab1265443dbf9" kind="dir">
+    <compoundname>TheAtlasEngine/src/atlas/core</compoundname>
+    <innerdir refid="dir_b8e6e82d89ee66e9ca545e81d513e939">TheAtlasEngine/src/atlas/core/event</innerdir>
+    <innerdir refid="dir_f130aa4281de8b0a0ce4fe6bb2f3ff76">TheAtlasEngine/src/atlas/core/filesystem</innerdir>
+    <innerdir refid="dir_b50d2704714c2c2d879ccbd8a82452ca">TheAtlasEngine/src/atlas/core/image</innerdir>
+    <innerdir refid="dir_fc6e8c66c05c843f66c0bec401a38de9">TheAtlasEngine/src/atlas/core/math</innerdir>
+    <innerdir refid="dir_8d4914c5e7dfa41cebb35065bb0be3d0">TheAtlasEngine/src/atlas/core/platforms</innerdir>
+    <innerdir refid="dir_909c0b2c0140e856eaa37e8f470b8792">TheAtlasEngine/src/atlas/core/scene</innerdir>
+    <innerdir refid="dir_b056caa509fb4971186501a08c712a21">TheAtlasEngine/src/atlas/core/serialize</innerdir>
+    <innerdir refid="dir_53c06e91a2ea408e8b37a84b8b632614">TheAtlasEngine/src/atlas/core/system</innerdir>
+    <innerdir refid="dir_820a1cd67b5638ff1fcd3240ccaeff22">TheAtlasEngine/src/atlas/core/ui</innerdir>
+    <innerdir refid="dir_4112b34ff4c6cd2019ee1a1b55bd7baf">TheAtlasEngine/src/atlas/core/utilities</innerdir>
+    <innerfile refid="application_8cpp">application.cpp</innerfile>
+    <innerfile refid="engine__logger_8cpp">engine_logger.cpp</innerfile>
+    <innerfile refid="timer_8cpp">timer.cpp</innerfile>
+    <innerfile refid="window_8cpp">window.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/src/atlas/core/"/>
+  </compounddef>
+</doxygen>

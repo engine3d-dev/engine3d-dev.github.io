@@ -32,6 +32,9 @@ else
     git clone https://github.com/engine3d-dev/TheAtlasEngine
 fi
 
+# Copies Doxyfile to TheAtlasEngine directory to modify it for the documentation website
+cp Doxyfile TheAtlasEngine/Doxyfile
+
 # Generating the doxygen documentation from the specified Doxyfile in the repository
 doxygen TheAtlasEngine/Doxyfile
 

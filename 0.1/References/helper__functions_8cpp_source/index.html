@@ -1,0 +1,1473 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>File helper_functions.cpp - TheAtlasEngine</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#file-helper_functionscpp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TheAtlasEngine" class="md-header__button md-logo" aria-label="TheAtlasEngine" data-md-component="logo">
+      
+  <img src="../../mkdocs/assets/Preview.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TheAtlasEngine
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              File helper_functions.cpp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/engine3d-dev/TheAtlasEngine" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🏠 Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting_started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📚 Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../user_guide/setup_vscode/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🕹️ User Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contributor_guide/style/" class="md-tabs__link">
+          
+  
+  
+  🚀 Contributor Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/" class="md-tabs__link">
+          
+  
+  
+  📜 Project Information
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../html/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📖 Docs
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TheAtlasEngine" class="md-nav__button md-logo" aria-label="TheAtlasEngine" data-md-component="logo">
+      
+  <img src="../../mkdocs/assets/Preview.jpg" alt="logo">
+
+    </a>
+    TheAtlasEngine
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/engine3d-dev/TheAtlasEngine" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🏠 Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📚 Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_guide/setup_vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🕹️ User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    🚀 Contributor Guides
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            🚀 Contributor Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributor_guide/style/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🎨 Style Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributor_guide/code_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📝 Code Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributor_guide/philosophy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    philosophy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    📜 Project Information
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            📜 Project Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📖 Docs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="file-helper_functionscpp">File helper_functions.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_846b40a516a2a471658ccbe09e530d2e/"><strong>atlas</strong></a> <strong>&gt;</strong> <a href="../dir_608dc5b7aaba5a488a1cee762bfade26/"><strong>drivers</strong></a> <strong>&gt;</strong> <a href="../dir_328caf802809d01e7397181570d57cd0/"><strong>vulkan-cpp</strong></a> <strong>&gt;</strong> <a href="../helper__functions_8cpp/"><strong>helper_functions.cpp</strong></a></p>
+<p><a href="../helper__functions_8cpp/">Go to the documentation of this file</a></p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;drivers/vulkan-cpp/helper_functions.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vulkan/vulkan_core.h&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;drivers/vulkan-cpp/vk_context.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;core/engine_logger.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;filesystem&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">atlas</span><span class="o">::</span><span class="nn">vk</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">vk_check</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">VkResult</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_result</span><span class="p">,</span>
+<span class="w">                  </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_name</span><span class="p">,</span>
+<span class="w">                  </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">source_location</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_source</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_result</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">VK_SUCCESS</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">console_log_error_tagged</span><span class="p">(</span>
+<span class="w">              </span><span class="s">&quot;vulkan&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="s">&quot;File {} on line {} failed VkResult check&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="n">std</span><span class="o">::</span><span class="n">filesystem</span><span class="o">::</span><span class="n">relative</span><span class="p">(</span><span class="n">p_source</span><span class="p">.</span><span class="n">file_name</span><span class="p">()).</span><span class="n">string</span><span class="p">(),</span>
+<span class="w">              </span><span class="n">p_source</span><span class="p">.</span><span class="n">line</span><span class="p">());</span>
+<span class="w">            </span><span class="n">console_log_error_tagged</span><span class="p">(</span><span class="s">&quot;vulkan&quot;</span><span class="p">,</span>
+<span class="w">                                     </span><span class="s">&quot;Current Function Location = {}&quot;</span><span class="p">,</span>
+<span class="w">                                     </span><span class="n">p_source</span><span class="p">.</span><span class="n">function_name</span><span class="p">());</span>
+<span class="w">            </span><span class="n">console_log_error_tagged</span><span class="p">(</span>
+<span class="w">              </span><span class="s">&quot;vulkan&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;{} VkResult returned: {}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">p_name</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">p_result</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">has_stencil_attachment</span><span class="p">(</span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">((</span><span class="n">p_format</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_FORMAT_D32_SFLOAT_S8_UINT</span><span class="p">)</span><span class="w"> </span><span class="o">||</span>
+<span class="w">                </span><span class="p">(</span><span class="n">p_format</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_FORMAT_D24_UNORM_S8_UINT</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">vk_format_to_string</span><span class="p">(</span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">p_format</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_UNDEFINED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_UNDEFINED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R4G4_UNORM_PACK8</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R4G4_UNORM_PACK8&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R4G4B4A4_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R4G4B4A4_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B4G4R4A4_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B4G4R4A4_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R5G6B5_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R5G6B5_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B5G6R5_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B5G6R5_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R5G5B5A1_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R5G5B5A1_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B5G5R5A1_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B5G5R5A1_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A1R5G5B5_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A1R5G5B5_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8_SRGB</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8_SRGB&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8_SRGB</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8_SRGB&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8_SRGB</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8_SRGB&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8_SRGB</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8_SRGB&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8A8_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8A8_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8A8_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8A8_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8A8_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8A8_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8A8_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8A8_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8A8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8A8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8A8_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8A8_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R8G8B8A8_SRGB</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R8G8B8A8_SRGB&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8A8_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8A8_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8A8_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8A8_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8A8_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8A8_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8A8_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8A8_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8A8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8A8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8A8_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8A8_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8A8_SRGB</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8A8_SRGB&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A8B8G8R8_UNORM_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A8B8G8R8_UNORM_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A8B8G8R8_SNORM_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A8B8G8R8_SNORM_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A8B8G8R8_USCALED_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A8B8G8R8_USCALED_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A8B8G8R8_SSCALED_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A8B8G8R8_SSCALED_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A8B8G8R8_UINT_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A8B8G8R8_UINT_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A8B8G8R8_SINT_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A8B8G8R8_SINT_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A8B8G8R8_SRGB_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A8B8G8R8_SRGB_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2R10G10B10_UNORM_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2R10G10B10_UNORM_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2R10G10B10_SNORM_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2R10G10B10_SNORM_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2R10G10B10_USCALED_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2R10G10B10_USCALED_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2R10G10B10_SSCALED_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2R10G10B10_SSCALED_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2R10G10B10_UINT_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2R10G10B10_UINT_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2R10G10B10_SINT_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2R10G10B10_SINT_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2B10G10R10_UNORM_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2B10G10R10_UNORM_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2B10G10R10_SNORM_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2B10G10R10_SNORM_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2B10G10R10_USCALED_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2B10G10R10_USCALED_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2B10G10R10_SSCALED_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2B10G10R10_SSCALED_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2B10G10R10_UINT_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2B10G10R10_UINT_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A2B10G10R10_SINT_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A2B10G10R10_SINT_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16A16_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16A16_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16A16_SNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16A16_SNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16A16_USCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16A16_USCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16A16_SSCALED</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16A16_SSCALED&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16A16_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16A16_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16A16_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16A16_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16B16A16_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16B16A16_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32G32_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32G32_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32G32_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32G32_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32G32_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32G32_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32G32B32_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32G32B32_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32G32B32_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32G32B32_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32G32B32_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32G32B32_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32G32B32A32_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32G32B32A32_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32G32B32A32_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32G32B32A32_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R32G32B32A32_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R32G32B32A32_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64G64_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64G64_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64G64_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64G64_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64G64_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64G64_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64G64B64_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64G64B64_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64G64B64_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64G64B64_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64G64B64_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64G64B64_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64G64B64A64_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64G64B64A64_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64G64B64A64_SINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64G64B64A64_SINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R64G64B64A64_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R64G64B64A64_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B10G11R11_UFLOAT_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B10G11R11_UFLOAT_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_E5B9G9R9_UFLOAT_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_E5B9G9R9_UFLOAT_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_D16_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_D16_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_X8_D24_UNORM_PACK32</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_X8_D24_UNORM_PACK32&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_D32_SFLOAT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_D32_SFLOAT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_S8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_S8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_D16_UNORM_S8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_D16_UNORM_S8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_D24_UNORM_S8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_D24_UNORM_S8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_D32_SFLOAT_S8_UINT</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_D32_SFLOAT_S8_UINT&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC1_RGB_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC1_RGB_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC1_RGB_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC1_RGB_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC1_RGBA_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC1_RGBA_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC1_RGBA_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC1_RGBA_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC2_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC2_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC2_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC2_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC3_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC3_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC3_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC3_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC4_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC4_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC4_SNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC4_SNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC5_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC5_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC5_SNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC5_SNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC6H_UFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC6H_UFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC6H_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC6H_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC7_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC7_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_BC7_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_BC7_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ETC2_R8G8B8_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ETC2_R8G8B8_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ETC2_R8G8B8_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ETC2_R8G8B8_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ETC2_R8G8B8A1_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ETC2_R8G8B8A1_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ETC2_R8G8B8A1_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ETC2_R8G8B8A1_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ETC2_R8G8B8A8_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ETC2_R8G8B8A8_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ETC2_R8G8B8A8_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_EAC_R11_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_EAC_R11_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_EAC_R11_SNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_EAC_R11_SNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_EAC_R11G11_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_EAC_R11G11_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_EAC_R11G11_SNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_EAC_R11G11_SNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_4x4_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_4x4_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_4x4_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_4x4_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_5x4_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_5x4_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_5x4_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_5x4_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_5x5_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_5x5_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_5x5_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_5x5_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_6x5_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_6x5_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_6x5_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_6x5_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_6x6_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_6x6_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_6x6_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_6x6_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_8x5_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_8x5_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_8x5_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_8x5_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_8x6_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_8x6_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_8x6_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_8x6_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_8x8_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_8x8_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_8x8_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_8x8_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x5_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x5_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x5_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x5_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x6_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x6_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x6_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x6_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x8_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x8_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x8_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x8_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x10_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x10_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x10_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x10_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_12x10_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_12x10_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_12x10_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_12x10_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_12x12_UNORM_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_12x12_UNORM_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_12x12_SRGB_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_12x12_SRGB_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G8B8G8R8_422_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G8B8G8R8_422_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B8G8R8G8_422_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B8G8R8G8_422_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G8_B8_R8_3PLANE_420_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G8_B8R8_2PLANE_420_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G8_B8R8_2PLANE_420_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G8_B8_R8_3PLANE_422_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G8_B8R8_2PLANE_422_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G8_B8R8_2PLANE_422_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G8_B8_R8_3PLANE_444_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R10X6_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R10X6_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R10X6G10X6_UNORM_2PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R10X6G10X6_UNORM_2PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R10X6G10X6B10X6A10X6_UNORM_4PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G10X6B10X6G10X6R10X6_422_UNORM_4PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B10X6G10X6R10X6G10X6_422_UNORM_4PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_420_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G10X6_B10X6R10X6_2PLANE_420_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_422_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G10X6_B10X6R10X6_2PLANE_422_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G10X6_B10X6_R10X6_3PLANE_444_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R12X4_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R12X4_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R12X4G12X4_UNORM_2PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R12X4G12X4_UNORM_2PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R12X4G12X4B12X4A12X4_UNORM_4PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G12X4B12X4G12X4R12X4_422_UNORM_4PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B12X4G12X4R12X4G12X4_422_UNORM_4PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_420_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G12X4_B12X4R12X4_2PLANE_420_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_422_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G12X4_B12X4R12X4_2PLANE_422_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G12X4_B12X4_R12X4_3PLANE_444_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G16B16G16R16_422_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G16B16G16R16_422_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_B16G16R16G16_422_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_B16G16R16G16_422_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G16_B16_R16_3PLANE_420_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G16_B16R16_2PLANE_420_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G16_B16R16_2PLANE_420_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G16_B16_R16_3PLANE_422_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G16_B16R16_2PLANE_422_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G16_B16R16_2PLANE_422_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G16_B16_R16_3PLANE_444_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G8_B8R8_2PLANE_444_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G8_B8R8_2PLANE_444_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G10X6_B10X6R10X6_2PLANE_444_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G10X6_B10X6R10X6_2PLANE_444_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G12X4_B12X4R12X4_2PLANE_444_UNORM_3PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G12X4_B12X4R12X4_2PLANE_444_UNORM_3PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_G16_B16R16_2PLANE_444_UNORM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_G16_B16R16_2PLANE_444_UNORM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A4R4G4B4_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A4R4G4B4_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A4B4G4R4_UNORM_PACK16</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A4B4G4R4_UNORM_PACK16&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_4x4_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_4x4_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_5x4_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_5x4_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_5x5_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_5x5_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_6x5_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_6x5_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_6x6_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_6x6_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_8x5_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_8x5_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_8x6_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_8x6_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_8x8_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_8x8_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x5_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x5_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x6_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x6_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x8_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x8_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_10x10_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_10x10_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_12x10_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_12x10_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_ASTC_12x12_SFLOAT_BLOCK</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_ASTC_12x12_SFLOAT_BLOCK&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_PVRTC1_2BPP_UNORM_BLOCK_IMG</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_PVRTC1_2BPP_UNORM_BLOCK_IMG&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_PVRTC1_4BPP_UNORM_BLOCK_IMG</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_PVRTC1_4BPP_UNORM_BLOCK_IMG&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_PVRTC2_2BPP_UNORM_BLOCK_IMG</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_PVRTC2_2BPP_UNORM_BLOCK_IMG&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_PVRTC2_4BPP_UNORM_BLOCK_IMG</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_PVRTC2_4BPP_UNORM_BLOCK_IMG&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_PVRTC1_2BPP_SRGB_BLOCK_IMG</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_PVRTC1_2BPP_SRGB_BLOCK_IMG&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_PVRTC1_4BPP_SRGB_BLOCK_IMG</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_PVRTC1_4BPP_SRGB_BLOCK_IMG&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_PVRTC2_2BPP_SRGB_BLOCK_IMG</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_PVRTC2_2BPP_SRGB_BLOCK_IMG&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_PVRTC2_4BPP_SRGB_BLOCK_IMG</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_PVRTC2_4BPP_SRGB_BLOCK_IMG&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_R16G16_SFIXED5_NV</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_R16G16_SFIXED5_NV&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A1B5G5R5_UNORM_PACK16_KHR</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A1B5G5R5_UNORM_PACK16_KHR&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_A8_UNORM_KHR</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_A8_UNORM_KHR&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">VK_FORMAT_MAX_ENUM</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VK_FORMAT_MAX_ENUM&quot;</span><span class="p">;</span>
+<span class="w">            </span><span class="k">default</span><span class="o">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="s">&quot;VkFormat Specified Invalid!!!&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="nf">select_images_size</span><span class="p">(</span>
+<span class="w">      </span><span class="k">const</span><span class="w"> </span><span class="n">VkSurfaceCapabilitiesKHR</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_surface_capabilities</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">requested_images</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_surface_capabilities</span><span class="p">.</span><span class="n">minImageCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+
+<span class="w">        </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">final_image_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">p_surface_capabilities</span><span class="p">.</span><span class="n">maxImageCount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">and</span>
+<span class="w">            </span><span class="p">(</span><span class="n">requested_images</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">p_surface_capabilities</span><span class="p">.</span><span class="n">maxImageCount</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">final_image_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_surface_capabilities</span><span class="p">.</span><span class="n">maxImageCount</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">final_image_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">requested_images</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">final_image_count</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">transition_image_layout</span><span class="p">(</span><span class="n">VkCommandBuffer</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_command_buffer</span><span class="p">,</span>
+<span class="w">                                 </span><span class="n">VkImage</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span>
+<span class="w">                                 </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">,</span>
+<span class="w">                                 </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_old</span><span class="p">,</span>
+<span class="w">                                 </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_new</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="n">image_memory_barrier</span><span class="p">(</span><span class="n">p_command_buffer</span><span class="p">,</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span><span class="w"> </span><span class="n">p_format</span><span class="p">,</span><span class="w"> </span><span class="n">p_old</span><span class="p">,</span><span class="w"> </span><span class="n">p_new</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">image_memory_barrier</span><span class="p">(</span><span class="n">VkCommandBuffer</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_command_buffer</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">VkImage</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">VkFormat</span><span class="w"> </span><span class="n">p_format</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_old</span><span class="p">,</span>
+<span class="w">                              </span><span class="n">VkImageLayout</span><span class="w"> </span><span class="n">p_new</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">VkImageMemoryBarrier</span><span class="w"> </span><span class="n">image_memory_barrier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">sType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">pNext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">oldLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_old</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">newLayout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_new</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">srcQueueFamilyIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_QUEUE_FAMILY_IGNORED</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">dstQueueFamilyIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_QUEUE_FAMILY_IGNORED</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">image</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_image</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">subresourceRange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">aspectMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_IMAGE_ASPECT_COLOR_BIT</span><span class="p">,</span>
+<span class="w">                                  </span><span class="p">.</span><span class="n">baseMipLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                                  </span><span class="p">.</span><span class="n">levelCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                                  </span><span class="p">.</span><span class="n">baseArrayLayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                                  </span><span class="p">.</span><span class="n">layerCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="n">VkPipelineStageFlags</span><span class="w"> </span><span class="n">source_stage</span><span class="p">;</span>
+<span class="w">        </span><span class="n">VkPipelineStageFlags</span><span class="w"> </span><span class="n">dst_stages</span><span class="p">;</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL</span><span class="w"> </span><span class="o">||</span>
+<span class="w">            </span><span class="p">(</span><span class="n">p_format</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_FORMAT_D16_UNORM</span><span class="p">)</span><span class="w"> </span><span class="o">||</span>
+<span class="w">            </span><span class="p">(</span><span class="n">p_format</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_FORMAT_X8_D24_UNORM_PACK32</span><span class="p">)</span><span class="w"> </span><span class="o">||</span>
+<span class="w">            </span><span class="p">(</span><span class="n">p_format</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_FORMAT_D32_SFLOAT</span><span class="p">)</span><span class="w"> </span><span class="o">||</span>
+<span class="w">            </span><span class="p">(</span><span class="n">p_format</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_FORMAT_S8_UINT</span><span class="p">)</span><span class="w"> </span><span class="o">||</span>
+<span class="w">            </span><span class="p">(</span><span class="n">p_format</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_FORMAT_D16_UNORM_S8_UINT</span><span class="p">)</span><span class="w"> </span><span class="o">||</span>
+<span class="w">            </span><span class="p">(</span><span class="n">p_format</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_FORMAT_D24_UNORM_S8_UINT</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">subresourceRange</span><span class="p">.</span><span class="n">aspectMask</span><span class="w"> </span><span class="o">=</span>
+<span class="w">              </span><span class="n">VK_IMAGE_ASPECT_DEPTH_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">has_stencil_attachment</span><span class="p">(</span><span class="n">p_format</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">subresourceRange</span><span class="p">.</span><span class="n">aspectMask</span><span class="w"> </span><span class="o">|=</span>
+<span class="w">                  </span><span class="n">VK_IMAGE_ASPECT_STENCIL_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">subresourceRange</span><span class="p">.</span><span class="n">aspectMask</span><span class="w"> </span><span class="o">=</span>
+<span class="w">              </span><span class="n">VK_IMAGE_ASPECT_COLOR_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_UNDEFINED</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">            </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_SHADER_READ_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_TOP_OF_PIPE_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_UNDEFINED</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                 </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_GENERAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_SHADER_READ_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_TRANSFER_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_UNDEFINED</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">            </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_TRANSFER_WRITE_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_TOP_OF_PIPE_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_TRANSFER_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="c1">// Convert back from read-only to updateable</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                 </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_SHADER_READ_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_TRANSFER_WRITE_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_TRANSFER_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="c1">// Convert from updateable texture to shader read-only</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                 </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_TRANSFER_WRITE_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_SHADER_READ_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_TRANSFER_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="c1">// Convert depth texture from undefined state to depth-stencil buffer</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_UNDEFINED</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                 </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span>
+<span class="w">              </span><span class="n">VK_ACCESS_DEPTH_STENCIL_ATTACHMENT_READ_BIT</span><span class="w"> </span><span class="o">|</span>
+<span class="w">              </span><span class="n">VK_ACCESS_DEPTH_STENCIL_ATTACHMENT_WRITE_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_TOP_OF_PIPE_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_EARLY_FRAGMENT_TESTS_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="c1">// Wait for render pass to complete</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                 </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span>
+<span class="w">              </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// VK_ACCESS_SHADER_READ_BIT;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_ALL_GRAPHICS_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="c1">// Convert back from read-only to color attachment</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                 </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_SHADER_READ_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span>
+<span class="w">              </span><span class="n">VK_ACCESS_COLOR_ATTACHMENT_WRITE_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="c1">// Convert from updateable texture to shader read-only</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_COLOR_ATTACHMENT_OPTIMAL</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                 </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span>
+<span class="w">              </span><span class="n">VK_ACCESS_COLOR_ATTACHMENT_WRITE_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_SHADER_READ_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_COLOR_ATTACHMENT_OUTPUT_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="c1">// Convert back from read-only to depth attachment</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                 </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_SHADER_READ_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span>
+<span class="w">              </span><span class="n">VK_ACCESS_DEPTH_STENCIL_ATTACHMENT_WRITE_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_LATE_FRAGMENT_TESTS_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="c1">// Convert from updateable depth texture to shader read-only</span>
+<span class="w">        </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_old</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_DEPTH_STENCIL_ATTACHMENT_OPTIMAL</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+<span class="w">                 </span><span class="n">p_new</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">srcAccessMask</span><span class="w"> </span><span class="o">=</span>
+<span class="w">              </span><span class="n">VK_ACCESS_DEPTH_STENCIL_ATTACHMENT_WRITE_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">image_memory_barrier</span><span class="p">.</span><span class="n">dstAccessMask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_ACCESS_SHADER_READ_BIT</span><span class="p">;</span>
+
+<span class="w">            </span><span class="n">source_stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_LATE_FRAGMENT_TESTS_BIT</span><span class="p">;</span>
+<span class="w">            </span><span class="n">dst_stages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_PIPELINE_STAGE_FRAGMENT_SHADER_BIT</span><span class="p">;</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="n">vkCmdPipelineBarrier</span><span class="p">(</span><span class="n">p_command_buffer</span><span class="p">,</span>
+<span class="w">                             </span><span class="n">source_stage</span><span class="p">,</span>
+<span class="w">                             </span><span class="n">dst_stages</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                             </span><span class="k">nullptr</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                             </span><span class="k">nullptr</span><span class="p">,</span>
+<span class="w">                             </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                             </span><span class="o">&amp;</span><span class="n">image_memory_barrier</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/engine3d-dev" target="_blank" rel="noopener">Aaron Herr</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/engine3d-dev/TheAtlasEngine" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "content.tabs.link", "toc.integrate", "navigation.tracking", "navigation.footer"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

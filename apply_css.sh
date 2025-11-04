@@ -16,7 +16,7 @@ find "$HTML_DIR" -name "*.html" -type f | while read html_file; do
         # Insert the custom CSS link after doxygen.css
         # if [[ "$OSTYPE" == "darwin"* ]]; then
             # macOS
-            sed -i '' '/doxygen.css/a\
+            sed -i '' '/general.css/a\
 <link href="css_themes/general.css" rel="stylesheet" type="text/css" />
 ' "$html_file"
         # else

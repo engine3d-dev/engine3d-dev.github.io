@@ -39,4 +39,8 @@ cp Doxyfile TheAtlasEngine/Doxyfile
 doxygen TheAtlasEngine/Doxyfile
 
 # Copying the doxygen documentation to the mkdocs/html directory
-cp -R doxygen_output/html mkdocs/html
+cp -R docs/html mkdocs/html
+
+
+chmod +x apply_css.sh
+./apply_css.sh

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_f130aa4281de8b0a0ce4fe6bb2f3ff76" kind="dir">
+    <compoundname>TheAtlasEngine/src/atlas/core/filesystem</compoundname>
+    <innerfile refid="file__dialog_8cpp">file_dialog.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/src/atlas/core/filesystem/"/>
+  </compounddef>
+</doxygen>

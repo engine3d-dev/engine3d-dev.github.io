@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceatlas_1_1ui" kind="namespace" language="C++">
+    <compoundname>atlas::ui</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="widgets_8cpp_1a4470331e4c39de3f85cb6f845e7a95ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool atlas::ui::begin_popup_context_window</definition>
+        <argsstring>(const char *str_id, ImGuiMouseButton mb, bool over_items)</argsstring>
+        <name>begin_popup_context_window</name>
+        <qualifiedname>atlas::ui::begin_popup_context_window</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>str_id</declname>
+        </param>
+        <param>
+          <type>ImGuiMouseButton</type>
+          <declname>mb</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>over_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" line="5" column="10" bodyfile="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" bodystart="5" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="widgets_8cpp_1ad0775b8ac5ba53624b8325b1a436831c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::ui::draw_vec3</definition>
+        <argsstring>(const std::string &amp;p_tag, glm::vec3 &amp;p_position, float p_reset_value)</argsstring>
+        <name>draw_vec3</name>
+        <qualifiedname>atlas::ui::draw_vec3</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <param>
+          <type>glm::vec3 &amp;</type>
+          <declname>p_position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>p_reset_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" line="12" column="10" bodyfile="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" bodystart="12" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="widgets_8cpp_1ac159fee0b09ff382b510b703bef7dbaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::ui::draw_vec4</definition>
+        <argsstring>(const std::string &amp;p_tag, glm::vec4 &amp;p_value, float p_reset_value)</argsstring>
+        <name>draw_vec4</name>
+        <qualifiedname>atlas::ui::draw_vec4</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <param>
+          <type>glm::vec4 &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>p_reset_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" line="96" column="10" bodyfile="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" bodystart="96" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="widgets_8cpp_1a9a59962418d04d8460d7a3f6e37d63ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::ui::draw_float</definition>
+        <argsstring>(const std::string &amp;p_tag, float &amp;p_value, float reset_value)</argsstring>
+        <name>draw_float</name>
+        <qualifiedname>atlas::ui::draw_float</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <param>
+          <type>float &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>reset_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" line="180" column="10" bodyfile="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" bodystart="180" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="widgets_8cpp_1ad18a355c27a2b3c07508b3ba0733f2a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::ui::draw_input_text</definition>
+        <argsstring>(std::string &amp;p_value)</argsstring>
+        <name>draw_input_text</name>
+        <qualifiedname>atlas::ui::draw_input_text</qualifiedname>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" line="223" column="10" bodyfile="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" bodystart="223" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="widgets_8cpp_1a797d4b9f331d7506b805dc10a70be0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::ui::draw_text</definition>
+        <argsstring>(const std::string &amp;p_value)</argsstring>
+        <name>draw_text</name>
+        <qualifiedname>atlas::ui::draw_text</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" line="231" column="10" bodyfile="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" bodystart="231" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="widgets_8cpp_1af4d3fa5b0a88148f50fc9c5ef36e7141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::ui::dockspace_window</definition>
+        <argsstring>(GLFWwindow *p_window)</argsstring>
+        <name>dockspace_window</name>
+        <qualifiedname>atlas::ui::dockspace_window</qualifiedname>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>p_window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" line="235" column="10" bodyfile="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" bodystart="235" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="widgets_8cpp_1a49417ba76d3ec9ab0ced5bd27975bb85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void atlas::ui::button_open_file_dialog</definition>
+        <argsstring>(const std::string &amp;p_tag, std::string &amp;p_filename, const std::string &amp;p_filter)</argsstring>
+        <name>button_open_file_dialog</name>
+        <qualifiedname>atlas::ui::button_open_file_dialog</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_tag</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>p_filename</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_filter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" line="287" column="10" bodyfile="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" bodystart="287" bodyend="293"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/src/atlas/core/ui/widgets.cpp" line="4" column="1"/>
+  </compounddef>
+</doxygen>

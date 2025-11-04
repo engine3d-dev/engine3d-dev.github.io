@@ -44,12 +44,12 @@ plugins:
   - mkdoxy:
       projects:
         References: # name of project must be alphanumeric + numbers (without spaces)
-          src-dirs: ./TheAtlasEngine/atlas # path to source code (support multiple paths separated by space) => INPUT
+          src-dirs: ./TheAtlasEngine/src # path to source code (support multiple paths separated by space) => INPUT
           full-doc: True # if you want to generate full documentation
-          doxy-cfg: # standard doxygen configuration (key: value)
-            FILE_PATTERNS: "*.hpp*" # specify file patterns to filter out
-            RECURSIVE: True # recursive search in source directories
-            EXCLUDE_PATTERNS: "*.md" # exclude markdown files
+          # doxy-cfg: # standard doxygen configuration (key: value)
+            # FILE_PATTERNS: "*.hpp*" # specify file patterns to filter out
+            # RECURSIVE: True # recursive search in source directories
+            # EXCLUDE_PATTERNS: "*.md" # exclude markdown files
   - search
   - literate-nav:
       nav_file: summary.md

@@ -36,13 +36,17 @@ See [private virtual methods](http://www.gotw.ca/publications/mill18.htm) for mo
 
 ## S.4. Avoid using `bool` as
 
-NOTE: This is still in-progress
+`bool` is fine if it is the only parameter and it acts as a lexical switch, for an example:
 
-<!-- ### S.4.1 a parameter
+```C++
+// Resize window event has occurred
+m_swapchain.resize(true);
 
-See the article ["Clean code: The cursoe of a boolean parameter"](https://medium.com/@amlcurran/clean-code-the-curse-of-a-boolean-parameter-c237a830b7a3) for why bool parameters are awful.
+// Resize window event has not occurred
+m_swapchain.resize(false);
+```
 
- -->
+See the article ["Clean code: The curse of a boolean parameter"](https://medium.com/@amlcurran/clean-code-the-curse-of-a-boolean-parameter-c237a830b7a3) for why bool parameters are awful.
 
 ## S.5. Include guards
 
@@ -87,12 +91,11 @@ Example of how this should look:
 #include <span>
 
 // C++ library header s
-#include <atlas/application.hpp>
-#include <atlas/core/event/event.hpp>
+#include <core/application.hpp>
+#include <core/event/event.hpp>
 
 // Local project
-#include "game-template/content/custom_scene.hpp"
-#include "game-template/content/custom_actor.hpp"
+#include "main_scene.hpp"
 
 // actual code goes here
 ```
@@ -149,27 +152,25 @@ Class within the project should not have reference member variables like so:
 
 class my_scene {
 public:
-    my_scene(flecs::registry& p_registry) : m_registry(p_registry) {}
+    my_scene(event::bus& p_bus) : m_bus(p_bus) {}
 
 private:
-    flecs::registry& m_registry;
+    event::bus& m_bus; // ❌ Bad! Don't do this!
 };
 ```
-
-
 
 Reference members implicitly delete copy constructors of a class they are
 within because they are themselves are not copyable. You cannot reassign a
 reference after it's made.
 
-Instead take the parameter as a reference but save its address as a pointer.
+Instead take the parameter as a reference but save its address as a pointer. Which contains the address to that object.
 
 ```C++
-class my_scene {
+class scene {
 public:
-    my_scene(flecs::registry& p_registry) : m_registry(&p_registry) {}
+    my_scene(event::bus& p_bus) : m_bus(&p_bus) {}
 
 private:
-    flecs::registry* m_registry;
+    event::bus* m_bus; // ✅ Good!
 };
 ```

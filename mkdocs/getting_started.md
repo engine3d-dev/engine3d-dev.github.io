@@ -5,7 +5,7 @@
 These are needed before working to get TheAtlasEngine building successfully on your platform.
 
 * `python`: 3.12 or above
-* `conan`: 2.10.0 or above
+* `conan`: 2.18.0 or above
 * `llvm`: 17 or above
 * `CMake` Build tool for the project
 * `git`: Version control
@@ -14,9 +14,7 @@ These are needed before working to get TheAtlasEngine building successfully on y
 
     !!! info
 
-        Needs to install Visual Studio's installer before using the `winget` command
-
-        Visual studio is required only on Windows for getting C++ to work
+        `winget` command is to install Visual Studio with minimal default C++ configurations installation
 
     Run this `winget` command to setup C++ with Visual Studio installer in powershell (in admin mode)
 
@@ -36,17 +34,17 @@ These are needed before working to get TheAtlasEngine building successfully on y
         If `choco` command does not work after running this script try closing and reopening powershell again.
         When `choco` prompts you to run install scripts from the commands below, enter `all` so it can install everything.
     
-    Install `git` (powershell must be admin):
+    Install `git` (powershell must be **admin**):
     ```powershell
     choco install git
     ```
     
-    Install `python` (powershell must be admin):
+    Install `python` (powershell must be **admin**):
     ```powershell
-    choco install python --version=3.12.0
+    choco install python --version=3.18.0
     ```
     
-    Install `llvm` (powershell must be admin):
+    Install `llvm` (powershell must be **admin**):
 
     !!! error
         If you get this error make sure that your environment variable is set to LLVM's clang.exe and clang++.exe filepath.
@@ -62,11 +60,12 @@ These are needed before working to get TheAtlasEngine building successfully on y
         is not a full path to an existing compiler tool.
         ```
 
+    Installing llvm toolchain (powershell must be in **admin**)
     ```powershell
     choco install llvm
     ```
     
-    Install `conan` (powershell must be admin)
+    Install `conan` (powershell must be **admin**)
     ```powershell
     pip install "conan>=2.10.2"
     ```
@@ -94,7 +93,7 @@ These are needed before working to get TheAtlasEngine building successfully on y
         mingw is installed because we need `mingw32-make.exe` as dependencies will default to using "MinGW Makefiles" generator specified.
         which means that their CMake will look for `mingw32-make.exe` specific make executables instead of `make.exe`
 
-    Install mingw
+    Install mingw (powershell must be in **admin**)
     ```powershell
     choco install mingw
     ```
@@ -105,13 +104,14 @@ These are needed before working to get TheAtlasEngine building successfully on y
 
         Using this `winget` command will install Vulkan's installer, set it up for you, and set the environment path variable.
     
-    Installing Vulkan's installer from the terminal in powershell. (in admin mode)
+    Get Vulkan's installer. (powershell must be in **admin**)
     ```powershell
     winget install --id=KhronosGroup.VulkanSDK -e
     ```
 
-    !!! tip
-        Once you have completely finish installing. DONT FORGET to refresh your powershell before building the TheAtlasEngine project.
+    !!! important
+
+        DO NOT FORGET to refresh or close out of your terminal before compiling. Once installation has been completed.
 
 
 === "Ubuntu 20.0+"
@@ -134,7 +134,8 @@ These are needed before working to get TheAtlasEngine building successfully on y
     sudo apt install libc++-17-dev libc++abi-17-dev
     ```
 
-    Installing Linux Prerequisites
+    <details>
+        <summary> Installing Linux Prerequisites </summary>
 
     ```bash
     sudo apt install -y lsb-release wget software-properties-common gnupg libgtk2.0-dev libgl1-mesa-dev
@@ -142,17 +143,18 @@ These are needed before working to get TheAtlasEngine building successfully on y
     sudo apt install -y software-properties-common
     sudo add-apt-repository ppa:deadsnakes/ppa
     ```
+    </details>
     
-    !!! info
+    <details>
+        <summary> If your using 20.04, you have to upgrade Python to 3.10 </summary>
     
-        If your using 20.04, you have to upgrade Python to 3.10
-    
-        ```bash
-        sudo apt update
-        sudo apt install software-properties-common -y
-        sudo add-apt-repository ppa:deadsnakes/ppa
-        sudo apt install Python3.10
-        ```
+    ```bash
+    sudo apt update
+    sudo apt install software-properties-common -y
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo apt install Python3.10
+    ```
+    </details>
     
     Install pipx which is used to install conan
 
@@ -163,12 +165,12 @@ These are needed before working to get TheAtlasEngine building successfully on y
     Installing conan
 
     ```bash
-    pipx install "conan>=2.10.1"
+    pipx install "conan>=2.18.1"
     ```
 
-    !!! tip
+    !!! important
 
-        On linux vulkan is not needed to be installed, conan handles that
+        If you are installing to compile TheAtlasEngine. Conan already installs Vulkan for you automatically.
 
 
 === "MacOS X"
@@ -187,7 +189,7 @@ These are needed before working to get TheAtlasEngine building successfully on y
     Install conan:
     
     ```zsh
-    pipx install "conan>=2.10.2"
+    pipx install "conan>=2.18.2"
     ```
     
     Make `clang-tidy` available on the command line:
@@ -202,9 +204,9 @@ These are needed before working to get TheAtlasEngine building successfully on y
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
     ```
 
-    !!! info
+    !!! note
 
-        metal-cpp does not need to be installed because conan handles this for you
+        On MacOS there are plans in using metal (metal-cpp) instead of Vulkan. Which conan also handles for you.
 
 ---
 
@@ -253,7 +255,15 @@ Once the development environment is completed. Then go to the [repos](https://gi
 
 ## **Changing Build Type**
 
-The build type determines level of optimizations for the project you are building for. TheAtlasEngine by default is Release is because performance is one of the most important aspects of the project.
+The build type determines level of optimizations for the project you are building for. TheAtlasEngine by default is `Release` is because performance is one of the most important aspects of the project.
+
+It is highly recommended during developing of features to build with `Debug` enabled.
+
+!!! tip
+    
+    `-b missing` only used during your first build.
+
+    Means to install any missing dependency binaries into conan cache before compiling the project.
 
 You can change `build_type` to the following types:
 
@@ -262,17 +272,3 @@ You can change `build_type` to the following types:
 * `Release`: Turns on optimizations and favors high-performance optimizations over space-saving optimizations.
 
 * `MinSizeRel`: Turns on optimizations and favor higher space saving optimizations over higher-performance.
-
-!!! tip
-    
-    -b missing is only used during your first build.
-
-    ```
-    conan build . -b missing -s build_type=Debug
-    ```
-
-This is how you can specify build types when building with conan:
-
-```
-conan build . -s build_type=Debug
-```

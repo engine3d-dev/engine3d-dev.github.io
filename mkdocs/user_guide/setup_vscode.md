@@ -36,7 +36,7 @@ Clangd arguments should look like this:
 
 ## Used in your own project
 
-You can either add a `self.requires("engine3d-cmake-utils/3.0")` to your project or add the following lines to your `CMakeLists.txt`
+You can either add a `self.requires("engine3d-cmake-utils/4.0")` to your project or add the following lines to your `CMakeLists.txt`
 
 ```cmake
 # Generate compile commands for anyone using our libraries.
@@ -52,9 +52,11 @@ add_custom_target(copy_compile_commands ALL
 
 Run `conan build .` (where `.` is the path to your project/library) and it should generate the `compile_commands.json` file.
 
-To ensure that the dependencies in your `conanfile.py` file that uses `self.requires`.
+To ensure that the dependencies in your `conanfile.py` file that uses `self.requires` function.
 
-You can also run with `-b missing` (where `-b missing` indicates that to install any missing binary into the conan cache)
+!!! tip
+
+    -b missing indicates to install any missing binaries for third party libraries that are missing
 
 ```zsh
 conan build . -b missing

@@ -1,8 +1,12 @@
 #!/bin/bash
 
 # Script to inject custom CSS into all Doxygen HTML files
+# To execute this script, run: ./apply_css.sh
+# This script will inject the custom CSS into all Doxygen HTML files in the mkdocs/html directory
 
+# HTML directory containing the Doxygen HTML files
 HTML_DIR="mkdocs/html"
+# CSS file to inject into the Doxygen HTML files
 CSS_FILE="css_themes/general.css"
 
 # Find all HTML files and inject the CSS link after doxygen.css

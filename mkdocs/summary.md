@@ -7,4 +7,4 @@
   - [philosophy](contributor_guide/philosophy.md)
 - 📜 Project Information
   - [About](about.md)
-- [📖 Docs](api.md)
+- [📖 Docs](html/index.html)

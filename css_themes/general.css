@@ -1,0 +1,592 @@
+/* ===== Color Variables (Hazel Documentation Theme) ===== */
+:root {
+    /* Main backgrounds - matching Hazel's dark theme */
+    --hazel-bg-primary: rgb(21, 21, 21);        /* Main content background */
+    --hazel-bg-alt: rgb(27, 27, 27);            /* Slightly lighter for content areas */
+    --hazel-sidebar-bg: rgb(36, 36, 36);        /* Sidebar background (darker) */
+    --hazel-header-bg: rgb(30, 30, 30);         /* Header bar background */
+    
+    /* Text colors */
+    --hazel-text-primary: rgb(220, 220, 220);   /* Main text color */
+    --hazel-text-secondary: rgb(180, 180, 180);  /* Secondary text */
+    --hazel-text-muted: rgb(140, 140, 140);     /* Muted text */
+    
+    /* Accent colors */
+    --hazel-active: rgb(100, 149, 237);         /* Blue for active nav items */
+    --hazel-link: rgb(100, 149, 237);           /* Link color (blue) */
+    --hazel-link-hover: rgb(135, 206, 250);     /* Link hover */
+    
+    /* Borders and separators */
+    --hazel-border: rgb(60, 60, 60);            /* Border color */
+    --hazel-border-light: rgb(80, 80, 80);      /* Lighter border */
+    
+    /* Code and syntax */
+    --hazel-code-bg: rgb(30, 30, 30);           /* Code block background */
+    --hazel-code-text: rgb(237, 192, 119);      /* Code text color */
+    --hazel-inline-code: rgb(237, 192, 119);    /* Inline code */
+    
+    /* Icons and UI elements */
+    --hazel-icon: rgb(180, 180, 180);           /* Icon color */
+    --hazel-icon-hover: rgb(255, 255, 255);     /* Icon hover */
+    
+    /* Scrollbar */
+    --hazel-scrollbar: rgb(79, 79, 79);         /* Scrollbar color */
+    
+    /* Special elements */
+    --hazel-note-bg: rgb(30, 30, 30);           /* Note box background */
+    --hazel-note-border: rgb(100, 149, 237);    /* Note box border */
+    --hazel-table-header: rgb(40, 40, 40);      /* Table header */
+}
+
+/* ===== Global Reset & Base Styles ===== */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--hazel-bg-primary);
+    color: var(--hazel-text-primary);
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* ===== Header/Top Bar ===== */
+#top {
+    background-color: var(--hazel-header-bg);
+    border-bottom: 1px solid var(--hazel-border);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#titlearea {
+    background: transparent;
+    border: none;
+    padding: 12px 20px;
+}
+
+#projectrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#projectname {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--hazel-text-primary);
+    text-shadow: none;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+#projectalign {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* ===== Search Box ===== */
+#MSearchBox {
+    background-color: var(--hazel-bg-alt);
+    border: 1px solid var(--hazel-border);
+    border-radius: 4px;
+    padding: 6px 12px;
+    transition: all 0.2s ease;
+}
+
+#MSearchBox:hover {
+    border-color: var(--hazel-border-light);
+    background-color: var(--hazel-sidebar-bg);
+}
+
+#MSearchBox.MSearchBoxActive {
+    background-color: var(--hazel-bg-primary);
+    border-color: var(--hazel-active);
+    box-shadow: 0 0 0 2px rgba(100, 149, 237, 0.2);
+}
+
+#MSearchField {
+    color: var(--hazel-text-primary);
+    background: transparent;
+    border: none;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+#MSearchField::placeholder {
+    color: var(--hazel-text-muted);
+}
+
+#MSearchSelect {
+    color: var(--hazel-icon);
+}
+
+#MSearchCloseImg {
+    opacity: 0.7;
+}
+
+#MSearchCloseImg:hover {
+    opacity: 1;
+}
+
+/* ===== Navigation Tree (Sidebar) ===== */
+#side-nav {
+    background-color: var(--hazel-sidebar-bg);
+    border-right: 1px solid var(--hazel-border);
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#nav-tree {
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#nav-tree-contents {
+    padding: 0;
+}
+
+#nav-tree a {
+    color: var(--hazel-text-primary);
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+    transition: all 0.15s ease;
+    font-size: 13px;
+    border-left: 3px solid transparent;
+}
+
+#nav-tree a:hover {
+    background-color: var(--hazel-bg-alt);
+    color: var(--hazel-link);
+    border-left-color: var(--hazel-link);
+}
+
+#nav-tree .selected {
+    background-color: var(--hazel-bg-alt);
+}
+
+#nav-tree .selected a {
+    color: var(--hazel-active);
+    background-color: rgba(100, 149, 237, 0.15);
+    border-left-color: var(--hazel-active);
+    font-weight: 500;
+}
+
+/* Nav tree items hierarchy */
+#nav-tree .item {
+    padding-left: 0;
+}
+
+#nav-tree .item > a {
+    padding-left: 16px;
+}
+
+#nav-tree .item .item > a {
+    padding-left: 32px;
+    font-size: 12px;
+    color: var(--hazel-text-secondary);
+}
+
+#nav-tree .item .item .item > a {
+    padding-left: 48px;
+}
+
+/* Nav tree icons */
+#nav-tree img {
+    opacity: 0.7;
+    margin-right: 6px;
+}
+
+#nav-tree .selected img {
+    opacity: 1;
+}
+
+/* ===== Main Content Area ===== */
+#doc-content {
+    background-color: var(--hazel-bg-primary);
+    margin-left: 300px;
+    padding: 30px 40px;
+    min-height: calc(100vh - 50px);
+    max-width: 1200px;
+}
+
+.contents {
+    background-color: transparent;
+    color: var(--hazel-text-primary);
+}
+
+/* ===== Headings ===== */
+.contents .headertitle {
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--hazel-border);
+}
+
+.contents .title {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--hazel-text-primary);
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--hazel-text-primary);
+    font-weight: 600;
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 28px;
+    border-bottom: 2px solid var(--hazel-border);
+    padding-bottom: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 1px solid var(--hazel-border);
+    padding-bottom: 8px;
+    margin-top: 32px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* ===== Paragraphs and Text ===== */
+p {
+    margin: 16px 0;
+    color: var(--hazel-text-primary);
+    line-height: 1.7;
+}
+
+/* ===== Links ===== */
+a {
+    color: var(--hazel-link);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+a:hover {
+    color: var(--hazel-link-hover);
+    text-decoration: underline;
+}
+
+a.el {
+    font-weight: 500;
+}
+
+a.el:hover {
+    text-decoration: underline;
+}
+
+/* ===== Code Blocks ===== */
+code, .fragment {
+    background-color: var(--hazel-code-bg);
+    border: 1px solid var(--hazel-border);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    color: var(--hazel-inline-code);
+}
+
+div.fragment {
+    background-color: var(--hazel-code-bg);
+    border: 1px solid var(--hazel-border);
+    border-radius: 6px;
+    padding: 16px;
+    margin: 20px 0;
+    overflow-x: auto;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+div.fragment .line {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    line-height: 1.6;
+    color: var(--hazel-code-text);
+}
+
+div.fragment .line .keyword {
+    color: rgb(86, 156, 214);
+}
+
+div.fragment .line .string {
+    color: rgb(206, 145, 120);
+}
+
+div.fragment .line .comment {
+    color: rgb(106, 153, 85);
+}
+
+/* ===== Tables ===== */
+table.memberdecls, table.mdesc, table.markdownTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    background-color: var(--hazel-bg-alt);
+    border: 1px solid var(--hazel-border);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table.memberdecls th, table.mdesc th, table.markdownTable th {
+    background-color: var(--hazel-table-header);
+    color: var(--hazel-text-primary);
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--hazel-border);
+}
+
+table.memberdecls td, table.mdesc td, table.markdownTable td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--hazel-border);
+    color: var(--hazel-text-primary);
+}
+
+table.memberdecls tr:hover, table.mdesc tr:hover, table.markdownTable tr:hover {
+    background-color: var(--hazel-bg-primary);
+}
+
+table.memberdecls tr:last-child td, table.mdesc tr:last-child td, table.markdownTable tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===== Member Lists ===== */
+.memitem {
+    margin: 16px 0;
+    padding: 16px;
+    background-color: var(--hazel-bg-alt);
+    border-left: 3px solid var(--hazel-border);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.memitem:hover {
+    background-color: var(--hazel-sidebar-bg);
+    border-left-color: var(--hazel-link);
+}
+
+.memname {
+    font-weight: 600;
+    color: var(--hazel-text-primary);
+    font-size: 15px;
+}
+
+.memname a {
+    color: var(--hazel-link);
+}
+
+.memdesc {
+    margin-top: 8px;
+    color: var(--hazel-text-secondary);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* ===== Note/Alert Boxes ===== */
+.contents .note, .contents .warning, .contents .attention {
+    background-color: var(--hazel-note-bg);
+    border: 1px solid var(--hazel-note-border);
+    border-left: 4px solid var(--hazel-note-border);
+    border-radius: 4px;
+    padding: 16px;
+    margin: 20px 0;
+}
+
+.contents .note strong, .contents .warning strong {
+    color: var(--hazel-link);
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ===== Footer ===== */
+#nav-path {
+    background-color: var(--hazel-bg-alt);
+    border-top: 1px solid var(--hazel-border);
+    padding: 12px 20px;
+    margin-top: 40px;
+    margin-left: -300px;
+    padding-left: 340px;
+}
+
+#nav-path .footer {
+    color: var(--hazel-text-muted);
+    font-size: 12px;
+}
+
+#nav-path .footer a {
+    color: var(--hazel-link);
+}
+
+/* ===== Tabs ===== */
+.tabs, .tablist {
+    background-color: var(--hazel-bg-alt);
+    border-bottom: 2px solid var(--hazel-border);
+    margin: 0;
+    padding: 0;
+}
+
+.tablist li {
+    background-color: transparent;
+    list-style: none;
+    display: inline-block;
+}
+
+.tablist li a {
+    color: var(--hazel-text-secondary);
+    padding: 12px 20px;
+    display: block;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.tablist li a:hover {
+    color: var(--hazel-text-primary);
+    background-color: var(--hazel-sidebar-bg);
+}
+
+.tablist li.selected a {
+    color: var(--hazel-active);
+    background-color: transparent;
+    border-bottom-color: var(--hazel-active);
+    font-weight: 500;
+}
+
+/* ===== Scrollbar Styling ===== */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--hazel-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--hazel-scrollbar);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hazel-border-light);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    #side-nav {
+        width: 100%;
+        position: relative;
+        top: 0;
+        max-height: 300px;
+    }
+    
+    #doc-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    #nav-path {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+    
+    .contents .title {
+        font-size: 24px;
+    }
+    
+    table.memberdecls, table.mdesc, table.markdownTable {
+        font-size: 0.9em;
+    }
+}
+
+/* ===== Search Results ===== */
+#MSearchResultsWindow {
+    background-color: var(--hazel-bg-alt);
+    border: 1px solid var(--hazel-border);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+#MSearchResults {
+    background-color: var(--hazel-bg-alt);
+}
+
+#MSearchResults .SRPage {
+    background-color: transparent;
+}
+
+#MSearchResults .SRResult {
+    color: var(--hazel-text-primary);
+    background-color: transparent;
+}
+
+#MSearchResults .SRResult:hover {
+    background-color: var(--hazel-sidebar-bg);
+}
+
+#MSearchResults .SRResult a {
+    color: var(--hazel-link);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contents > div {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* ===== Override any light theme defaults ===== */
+body {
+    background: var(--hazel-bg-primary) !important;
+    color: var(--hazel-text-primary) !important;
+}
+
+/* Ensure all text is visible */
+div, span, p, td, th, li {
+    color: inherit;
+}
+
+/* Fix any white backgrounds */
+div.fragment, pre, code {
+    background-color: var(--hazel-code-bg) !important;
+}
+

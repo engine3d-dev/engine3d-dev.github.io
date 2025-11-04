@@ -14,16 +14,17 @@ find "$HTML_DIR" -name "*.html" -type f | while read html_file; do
     # Check if the CSS link is already present
     if ! grep -q "$CSS_FILE" "$html_file"; then
         # Insert the custom CSS link after doxygen.css
-        # if [[ "$OSTYPE" == "darwin"* ]]; then
+        if [[ "$OSTYPE" == "darwin"* ]]; then
             # macOS
-        sed -i '' '/doxygen.css/a\<link href="doxygen-custom.css" rel="stylesheet" type="text/css" />' "$html_file"
-        # else
-        #     # Linux
-        #     sed -i '/doxygen.css/a <link href="doxygen-custom.css" rel="stylesheet" type="text/css" />' "$html_file"
-        # fi
+            sed -i '' '/doxygen.css/a\
+<link href="css_themes/general.css" rel="stylesheet" type="text/css" />
+' "$html_file"
+        else
+            # Linux
+            sed -i '/css_themes/general.css/a <link href="css_themes/general.css" rel="stylesheet" type="text/css" />' "$html_file"
+        fi
         echo "Injected CSS into: $html_file"
     fi
 done
 
 echo "Custom CSS injection complete!"
-

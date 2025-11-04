@@ -48,5 +48,5 @@ doxygen TheAtlasEngine/Doxyfile
 cp -R docs/html mkdocs/html
 
 
-# chmod +x apply_css.sh
+chmod +x apply_css.sh
 ./apply_css.sh

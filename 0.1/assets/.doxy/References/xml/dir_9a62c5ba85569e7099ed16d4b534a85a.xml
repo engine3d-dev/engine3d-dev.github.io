@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_9a62c5ba85569e7099ed16d4b534a85a" kind="dir">
+    <compoundname>TheAtlasEngine/src/atlas/physics</compoundname>
+    <innerfile refid="physics__context_8cpp">physics_context.cpp</innerfile>
+    <innerfile refid="physics__engine_8cpp">physics_engine.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/src/atlas/physics/"/>
+  </compounddef>
+</doxygen>

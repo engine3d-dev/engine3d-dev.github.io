@@ -19,10 +19,11 @@ find "$HTML_DIR" -name "*.html" -type f | while read html_file; do
             sed -i '' '/general.css/a\
 <link href="css_themes/general.css" rel="stylesheet" type="text/css" />
 ' "$html_file"
-        # else
-        #     # Linux
-        #     sed -i '/css_themes/general.css/a <link href="css_themes/general.css" rel="stylesheet" type="text/css" />' "$html_file"
-        # fi
+        else
+            # Linux
+            sed -i "/doxygen.css/a\\
+$CSS_LINK" "$html_file"
+        fi
         echo "Injected CSS into: $html_file"
     fi
 done

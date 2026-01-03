@@ -922,7 +922,7 @@ pre code .keywordtype,
 .contents pre:not(.memproto):not(.memdoc pre) .keywordtype,
 .contents pre:not(.memproto):not(.memdoc pre) code .keyword,
 .contents pre:not(.memproto):not(.memdoc pre) code .keywordtype {
-  color: #c678dd !important; /* Neovim Atom One Dark purple */
+  color: #d19af0 !important; /* Brighter Neovim Atom One Dark purple */
   font-weight: 400 !important; /* Neovim normal weight for keywords */
 }
 
@@ -941,7 +941,7 @@ pre code .classname,
 .contents pre:not(.memproto):not(.memdoc pre) .classname,
 .contents pre:not(.memproto):not(.memdoc pre) code .type,
 .contents pre:not(.memproto):not(.memdoc pre) code .classname {
-  color: #e5c07b !important; /* Neovim Atom One Dark yellow/orange */
+  color: #f0c97f !important; /* Brighter Neovim Atom One Dark yellow/orange */
   font-weight: 400 !important; /* Neovim normal weight */
 }
 
@@ -960,7 +960,7 @@ pre code .stringliteral,
 .contents pre:not(.memproto):not(.memdoc pre) .stringliteral,
 .contents pre:not(.memproto):not(.memdoc pre) code .string,
 .contents pre:not(.memproto):not(.memdoc pre) code .stringliteral {
-  color: #98c379 !important; /* Neovim Atom One Dark green */
+  color: #a5d68a !important; /* Brighter Neovim Atom One Dark green */
   font-weight: 400 !important; /* Neovim normal weight */
 }
 
@@ -972,7 +972,7 @@ pre code .number,
 .contents pre.fragment code .number,
 .contents pre:not(.memproto):not(.memdoc pre) .number,
 .contents pre:not(.memproto):not(.memdoc pre) code .number {
-  color: #d19a66 !important; /* Neovim Atom One Dark orange */
+  color: #e0a877 !important; /* Brighter Neovim Atom One Dark orange */
   font-weight: 400 !important; /* Neovim normal weight */
 }
 
@@ -984,7 +984,7 @@ pre code .comment,
 .contents pre.fragment code .comment,
 .contents pre:not(.memproto):not(.memdoc pre) .comment,
 .contents pre:not(.memproto):not(.memdoc pre) code .comment {
-  color: #5c6370 !important; /* Neovim Atom One Dark gray */
+  color: #6d7583 !important; /* Brighter Neovim Atom One Dark gray */
   font-style: italic !important;
   font-weight: 400 !important; /* Neovim normal weight */
 }
@@ -997,7 +997,7 @@ pre code .preprocessor,
 .contents pre.fragment code .preprocessor,
 .contents pre:not(.memproto):not(.memdoc pre) .preprocessor,
 .contents pre:not(.memproto):not(.memdoc pre) code .preprocessor {
-  color: #c678dd !important; /* Neovim Atom One Dark purple */
+  color: #d19af0 !important; /* Brighter Neovim Atom One Dark purple */
   font-weight: 400 !important; /* Neovim normal weight */
 }
 
@@ -1009,7 +1009,7 @@ pre code .function,
 .contents pre.fragment code .function,
 .contents pre:not(.memproto):not(.memdoc pre) .function,
 .contents pre:not(.memproto):not(.memdoc pre) code .function {
-  color: #61afef !important; /* Neovim Atom One Dark blue */
+  color: #7bc5ff !important; /* Brighter Neovim Atom One Dark blue */
   font-weight: 400 !important; /* Neovim normal weight */
   text-decoration: none !important;
   border-bottom: none !important;
@@ -1046,7 +1046,7 @@ pre code .identifier,
 .contents pre.fragment code .identifier,
 .contents pre:not(.memproto):not(.memdoc pre) .identifier,
 .contents pre:not(.memproto):not(.memdoc pre) code .identifier {
-  color: #e06c75 !important; /* Neovim Atom One Dark red */
+  color: #f0808a !important; /* Brighter Neovim Atom One Dark red */
   font-weight: 400 !important; /* Neovim normal weight */
 }
 
@@ -1058,7 +1058,7 @@ pre code .operator,
 .contents pre.fragment code .operator,
 .contents pre:not(.memproto):not(.memdoc pre) .operator,
 .contents pre:not(.memproto):not(.memdoc pre) code .operator {
-  color: #56b6c2 !important; /* Neovim Atom One Dark cyan */
+  color: #6dd5e3 !important; /* Brighter Neovim Atom One Dark cyan */
   font-weight: 400 !important; /* Neovim normal weight */
 }
 
@@ -1070,7 +1070,7 @@ pre code .punctuation,
 .contents pre.fragment code .punctuation,
 .contents pre:not(.memproto):not(.memdoc pre) .punctuation,
 .contents pre:not(.memproto):not(.memdoc pre) code .punctuation {
-  color: #abb2bf !important; /* Atom One Dark text */
+  color: #c8d0d9 !important; /* Brighter Atom One Dark text */
 }
 
 /* Remove blue highlight from text selection in code blocks */
@@ -1286,9 +1286,9 @@ dl.paramlist dd {
 .contents div pre:not(.memproto):not(.memdoc pre),
 .contents .textblock pre.fragment,
 .contents .textblock pre:not(.memproto):not(.memdoc pre) {
-  background: #282c34 !important; /* Neovim Atom One Dark background */
-  border: 2px solid rgba(198, 120, 221, 0.4) !important; /* Purple border */
-  border-left: 6px solid #c678dd !important; /* Purple accent */
+  background: #323640 !important; /* Brighter Neovim Atom One Dark background */
+  border: 2px solid rgba(198, 120, 221, 0.6) !important; /* Brighter purple border */
+  border-left: 6px solid #d19af0 !important; /* Brighter purple accent */
   border-radius: 12px !important;
   padding: 26px 32px !important;
   overflow-x: auto !important;
@@ -1296,13 +1296,13 @@ dl.paramlist dd {
   font-size: 0.95em !important; /* Neovim Atom One Dark font size */
   font-weight: 400 !important; /* Neovim Atom One Dark normal font weight */
   line-height: 1.6 !important; /* Neovim Atom One Dark line height */
-  color: #abb2bf !important; /* Neovim Atom One Dark text color */
+  color: #c8d0d9 !important; /* Brighter Neovim Atom One Dark text color */
   box-shadow: 
-    0 0 0 1px rgba(198, 120, 221, 0.15),
-    0 8px 40px rgba(198, 120, 221, 0.3),
-    0 4px 20px rgba(0, 0, 0, 0.5),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2) !important;
+    0 0 0 1px rgba(198, 120, 221, 0.25),
+    0 8px 40px rgba(198, 120, 221, 0.45),
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15) !important;
   display: block !important;
   white-space: pre !important;
   position: relative !important;
@@ -1314,16 +1314,16 @@ dl.paramlist dd {
 
 /* Ensure ALL markdown code blocks in .contents get Neovim Atom One Dark theme */
 .contents pre:not(.memproto):not(.memdoc pre) {
-  background: #282c34 !important; /* Neovim Atom One Dark background */
-  border: 2px solid rgba(198, 120, 221, 0.4) !important;
-  border-left: 6px solid #c678dd !important;
+  background: #323640 !important; /* Brighter Neovim Atom One Dark background */
+  border: 2px solid rgba(198, 120, 221, 0.6) !important;
+  border-left: 6px solid #d19af0 !important;
   border-radius: 12px !important;
   padding: 26px 32px !important;
   font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
   font-size: 0.95em !important;
   font-weight: 400 !important;
   line-height: 1.6 !important;
-  color: #abb2bf !important;
+  color: #c8d0d9 !important;
   letter-spacing: 0 !important;
   font-variant-ligatures: common-ligatures !important;
   font-feature-settings: "liga" 1, "calt" 1 !important;
@@ -1383,18 +1383,18 @@ dl.paramlist dd {
   top: 12px !important;
   right: 18px !important;
   font-size: 0.7em !important;
-  color: #c678dd !important; /* Purple */
+  color: #d19af0 !important; /* Brighter Purple */
   font-weight: 700 !important;
   text-transform: uppercase !important;
   letter-spacing: 2.5px !important;
   font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
-  background: rgba(198, 120, 221, 0.2) !important;
+  background: rgba(209, 154, 240, 0.3) !important; /* Brighter purple background */
   padding: 6px 12px !important;
   border-radius: 6px !important;
-  border: 1px solid rgba(198, 120, 221, 0.5) !important;
+  border: 1px solid rgba(209, 154, 240, 0.7) !important; /* Brighter purple border */
   box-shadow: 
-    0 2px 8px rgba(198, 120, 221, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+    0 2px 8px rgba(209, 154, 240, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
   z-index: 2 !important;
 }
 
@@ -1414,7 +1414,7 @@ dl.paramlist dd {
   font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
   font-size: 0.95em !important; /* Neovim Atom One Dark font size */
   font-weight: 400 !important; /* Neovim Atom One Dark normal font weight */
-  color: #abb2bf !important; /* Neovim Atom One Dark text color */
+  color: #c8d0d9 !important; /* Brighter Neovim Atom One Dark text color */
   letter-spacing: 0 !important; /* Neovim Atom One Dark - no letter spacing */
   background: transparent !important;
   padding: 0 !important;
@@ -1442,7 +1442,7 @@ pre code .namespace,
 .contents pre.fragment code .namespace,
 .contents pre:not(.memproto):not(.memdoc pre) .namespace,
 .contents pre:not(.memproto):not(.memdoc pre) code .namespace {
-  color: #e5c07b !important; /* Atom One Dark yellow/orange */
+  color: #f0c97f !important; /* Brighter Atom One Dark yellow/orange */
 }
 
 pre.fragment .template,
@@ -1451,7 +1451,7 @@ pre code .template,
 .contents pre.fragment code .template,
 .contents pre:not(.memproto):not(.memdoc pre) .template,
 .contents pre:not(.memproto):not(.memdoc pre) code .template {
-  color: #e5c07b !important; /* Atom One Dark yellow/orange */
+  color: #f0c97f !important; /* Brighter Atom One Dark yellow/orange */
 }
 
 pre.fragment .macro,
@@ -1460,7 +1460,7 @@ pre code .macro,
 .contents pre.fragment code .macro,
 .contents pre:not(.memproto):not(.memdoc pre) .macro,
 .contents pre:not(.memproto):not(.memdoc pre) code .macro {
-  color: #c678dd !important; /* Atom One Dark purple */
+  color: #d19af0 !important; /* Brighter Atom One Dark purple */
 }
 
 pre.fragment .variable,
@@ -1469,7 +1469,7 @@ pre code .variable,
 .contents pre.fragment code .variable,
 .contents pre:not(.memproto):not(.memdoc pre) .variable,
 .contents pre:not(.memproto):not(.memdoc pre) code .variable {
-  color: #e06c75 !important; /* Atom One Dark red */
+  color: #f0808a !important; /* Brighter Atom One Dark red */
 }
 
 pre.fragment .constant,
@@ -1478,7 +1478,7 @@ pre code .constant,
 .contents pre.fragment code .constant,
 .contents pre:not(.memproto):not(.memdoc pre) .constant,
 .contents pre:not(.memproto):not(.memdoc pre) code .constant {
-  color: #61afef !important; /* Atom One Dark blue */
+  color: #7bc5ff !important; /* Brighter Atom One Dark blue */
 }
 
 /* Ensure all pre code blocks are styled as C++ code blocks */

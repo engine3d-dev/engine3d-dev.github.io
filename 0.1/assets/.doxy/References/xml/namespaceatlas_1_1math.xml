@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceatlas_1_1math" kind="namespace" language="C++">
+    <compoundname>atlas::math</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="core_2math_2utilities_8cpp_1afee51d1dba79b29654d0a6f928b98d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::math::zeroes</definition>
+        <argsstring>()</argsstring>
+        <name>zeroes</name>
+        <qualifiedname>atlas::math::zeroes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="39" column="19" bodyfile="TheAtlasEngine/src/atlas/core/math/utilities.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2math_2utilities_8cpp_1a02da04bf528c7b59cab994d64c62849c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::math::ones</definition>
+        <argsstring>()</argsstring>
+        <name>ones</name>
+        <qualifiedname>atlas::math::ones</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="43" column="19" bodyfile="TheAtlasEngine/src/atlas/core/math/utilities.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2math_2utilities_8cpp_1a05582f9a0bb1c1c3ff3822dd09c91511" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::quat</type>
+        <definition>glm::quat atlas::math::identity</definition>
+        <argsstring>()</argsstring>
+        <name>identity</name>
+        <qualifiedname>atlas::math::identity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="47" column="19" bodyfile="TheAtlasEngine/src/atlas/core/math/utilities.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2math_2utilities_8cpp_1a99a157a6bf7c0fb26200ccec12743302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::math::forward</definition>
+        <argsstring>()</argsstring>
+        <name>forward</name>
+        <qualifiedname>atlas::math::forward</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="51" column="19" bodyfile="TheAtlasEngine/src/atlas/core/math/utilities.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2math_2utilities_8cpp_1af15ff653ae67b240c4141fe472cb5262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::math::right</definition>
+        <argsstring>()</argsstring>
+        <name>right</name>
+        <qualifiedname>atlas::math::right</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="55" column="19" bodyfile="TheAtlasEngine/src/atlas/core/math/utilities.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2math_2utilities_8cpp_1a365221b95d3f5c281918d6ce96ad4574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::math::left</definition>
+        <argsstring>()</argsstring>
+        <name>left</name>
+        <qualifiedname>atlas::math::left</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="59" column="19" bodyfile="TheAtlasEngine/src/atlas/core/math/utilities.cpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2math_2utilities_8cpp_1a7d061d1b480249a477bd12f027269051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::math::backward</definition>
+        <argsstring>()</argsstring>
+        <name>backward</name>
+        <qualifiedname>atlas::math::backward</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="63" column="19" bodyfile="TheAtlasEngine/src/atlas/core/math/utilities.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2math_2utilities_8cpp_1a73c776c5b9828a3abb0bcbeaf931b8d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::math::up</definition>
+        <argsstring>()</argsstring>
+        <name>up</name>
+        <qualifiedname>atlas::math::up</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="67" column="19" bodyfile="TheAtlasEngine/src/atlas/core/math/utilities.cpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="core_2math_2utilities_8cpp_1a02ffe34095309d1d288fdcca542c43af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 atlas::math::down</definition>
+        <argsstring>()</argsstring>
+        <name>down</name>
+        <qualifiedname>atlas::math::down</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="71" column="19" bodyfile="TheAtlasEngine/src/atlas/core/math/utilities.cpp" bodystart="71" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/src/atlas/core/math/utilities.cpp" line="37" column="5"/>
+  </compounddef>
+</doxygen>

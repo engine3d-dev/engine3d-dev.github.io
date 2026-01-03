@@ -182,21 +182,69 @@ a > .hljs {
   .sidebar-visible .nav-wrapper { display: block; }
 }
 
-/* Inline code */
+/* Inline code - Enhanced highlighting */
 
 :not(pre) > .hljs {
   display: inline;
-  padding: 0.1em 0.3em;
-  border-radius: 3px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #2d2d2d;
+  border: 1px solid #3a3a3a;
+  color: #ce9178;
+  font-weight: 500;
 }
 
 :not(pre):not(a) > .hljs {
-  color: var(--inline-code-color);
+  color: #ce9178;
   overflow-x: initial;
 }
 
 a:hover > .hljs {
   text-decoration: underline;
+}
+
+/* Highlight.js syntax highlighting for code blocks */
+pre .hljs {
+  background: #1e1e1e !important;
+  color: #d4d4d4 !important;
+}
+
+pre .hljs .hljs-keyword,
+pre .hljs .hljs-keywordtype {
+  color: #569cd6 !important;
+  font-weight: 600 !important;
+}
+
+pre .hljs .hljs-type,
+pre .hljs .hljs-class {
+  color: #4ec9b0 !important;
+}
+
+pre .hljs .hljs-string {
+  color: #ce9178 !important;
+}
+
+pre .hljs .hljs-number {
+  color: #b5cea8 !important;
+}
+
+pre .hljs .hljs-comment {
+  color: #6a9955 !important;
+  font-style: italic !important;
+}
+
+pre .hljs .hljs-preprocessor,
+pre .hljs .hljs-meta {
+  color: #c586c0 !important;
+}
+
+pre .hljs .hljs-function,
+pre .hljs .hljs-title {
+  color: #dcdcaa !important;
+}
+
+pre .hljs .hljs-operator {
+  color: #d4d4d4 !important;
 }
 
 pre {
@@ -495,113 +543,134 @@ ul#searchresults span.teaser em {
    DOXYGEN-SPECIFIC STYLES - MATCHING IMAGE EXACTLY
    ============================================ */
 
-/* Overall page layout - Dark grey-blue background */
+/* Overall page layout - Brighter dark background with better contrast */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  color: #e0e0e0;
-  background-color: #1a1d26;
+  line-height: 1.7;
+  color: #f5f5f5;
+  background-color: #1e2129;
 }
 
 #doc-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 40px;
-  background-color: #1a1d26;
+  padding: 30px 50px;
+  background-color: #1e2129;
+  min-height: 100vh;
 }
 
-/* Header and title area - Dark background with green gradient title */
+/* Header and title area - Brighter with better contrast */
 #titlearea {
-  background: #0d0f14;
-  border-bottom: none;
-  border-top: none;
-  padding: 15px 20px;
-  margin-bottom: 20px;
+  background: #0f1117;
+  border-bottom: 2px solid #2a2d3a;
+  border-top: 2px solid #2a2d3a;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  margin-left: -50px;
+  margin-right: -50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 #projectname {
-  font-size: 1.8em;
-  font-weight: 600;
+  font-size: 2em;
+  font-weight: 700;
   color: #4ade80;
   background: linear-gradient(90deg, #4ade80 0%, #86efac 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   letter-spacing: -0.5px;
+  text-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
 }
 
-/* Main header styles */
+/* Main header styles - Better organized */
 .header {
-  margin-bottom: 30px;
-  padding: 0;
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  margin-bottom: 40px;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.6) 0%, rgba(30, 33, 41, 0.8) 100%);
+  border-left: 4px solid #4ade80;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .headertitle {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .headertitle .title {
-  font-size: 2.2em;
-  font-weight: 600;
-  color: #e0e0e0;
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   line-height: 1.2;
   letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .summary {
-  font-size: 0.95em;
-  margin-bottom: 15px;
-  color: #a0a0a0;
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #c0c0c0;
+  padding-top: 15px;
+  border-top: 1px solid #3a3d4a;
 }
 
 .summary a {
   color: #60a5fa;
   text-decoration: none;
-  margin-right: 10px;
-  padding: 4px 8px;
-  border-radius: 4px;
+  margin-right: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
   transition: all 0.2s ease;
-  font-weight: 500;
+  font-weight: 600;
+  background: rgba(96, 165, 250, 0.1);
+  border: 1px solid rgba(96, 165, 250, 0.3);
 }
 
 .summary a:hover {
-  background-color: rgba(96, 165, 250, 0.15);
+  background-color: rgba(96, 165, 250, 0.25);
+  border-color: #60a5fa;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(96, 165, 250, 0.3);
   text-decoration: none;
 }
 
-/* Section headers */
+/* Section headers - Better organized with visual separation */
 h2.groupheader {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #e0e0e0;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding: 0;
-  border: none;
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.15) 0%, rgba(74, 222, 128, 0.1) 100%);
+  border-left: 5px solid #60a5fa;
+  border-radius: 6px;
   letter-spacing: -0.3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 h2.memtitle {
-  font-size: 1.3em;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 700;
   color: #60a5fa;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  padding: 0;
-  border: none;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding: 12px 18px;
+  background: rgba(96, 165, 250, 0.08);
+  border-left: 4px solid #60a5fa;
+  border-radius: 6px;
   letter-spacing: -0.2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 h2.memtitle::before {
   content: "◆";
   color: #60a5fa;
-  margin-right: 8px;
-  font-size: 0.9em;
+  margin-right: 10px;
+  font-size: 1em;
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
 }
 
 h2.memtitle .permalink {
@@ -619,77 +688,103 @@ h2.memtitle:hover .permalink a {
   opacity: 1;
 }
 
-/* Member documentation items */
+/* Member documentation items - Better organized */
 .memitem {
-  margin-bottom: 25px;
-  padding: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
+  margin-bottom: 30px;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.4) 0%, rgba(30, 33, 41, 0.6) 100%);
+  border: 1px solid #3a3d4a;
+  border-left: 4px solid #60a5fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 .memitem:hover {
-  box-shadow: none;
-  transform: none;
-  background: transparent;
+  box-shadow: 0 4px 16px rgba(96, 165, 250, 0.2);
+  transform: translateX(3px);
+  border-left-color: #4ade80;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.5) 0%, rgba(30, 33, 41, 0.7) 100%);
 }
 
 .memproto {
   font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
   font-size: 0.95em;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  padding: 12px 15px;
-  background-color: #2a2d3a;
-  border-radius: 4px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  padding: 16px 20px;
+  background-color: #252831;
+  border-radius: 6px;
   border: 1px solid #3a3d4a;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .memproto .memname {
   color: #60a5fa;
-  font-weight: 600;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(96, 165, 250, 0.4);
 }
 
 .memproto .paramname {
   color: #fbbf24;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .memproto .paramtype {
   color: #93c5fd;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .memproto .type {
   color: #93c5fd;
+  font-weight: 500;
 }
 
 .memproto .keyword {
   color: #93c5fd;
+  font-weight: 600;
 }
 
 .memproto .stringliteral {
   color: #ffffff;
+  font-weight: 500;
 }
 
-/* Syntax highlighting for function signatures */
+/* Syntax highlighting for function signatures - Brighter */
 .memproto .keywordtype,
 .memproto .keyword {
   color: #93c5fd;
+  font-weight: 600;
 }
 
 .memproto .classname,
 .memproto .namespace {
-  color: #a0a0a0;
+  color: #c0c0c0;
+  font-weight: 500;
 }
 
 .memproto .identifier {
   color: #60a5fa;
+  font-weight: 600;
 }
 
 .memproto .string {
-  color: #ffffff;
+  color: #ce9178;
+  font-weight: 500;
+}
+
+/* Enhanced syntax highlighting for memproto code blocks */
+.memproto .comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.memproto .number {
+  color: #b5cea8;
+}
+
+.memproto .preprocessor {
+  color: #c586c0;
 }
 
 .memname {
@@ -708,13 +803,46 @@ h2.memtitle:hover .permalink a {
 }
 
 .memdoc {
-  margin-top: 15px;
-  padding: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  color: #e0e0e0;
-  line-height: 1.7;
+  margin-top: 20px;
+  padding: 18px 22px;
+  background: rgba(42, 45, 58, 0.3);
+  border-top: 2px solid #3a3d4a;
+  border-radius: 6px;
+  color: #f0f0f0;
+  line-height: 1.8;
+}
+
+/* Regular code blocks in memdoc - simple styling, not markdown code blocks */
+.memdoc pre.fragment {
+  background-color: #1e1e1e !important;
+  border: 1px solid #3a3a3a !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  margin: 20px 0 !important;
+  overflow-x: auto !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+  color: #d4d4d4 !important;
+}
+
+.memdoc pre.fragment::after {
+  display: none !important;
+}
+
+.memdoc pre.fragment::before {
+  display: none !important;
+}
+
+.memdoc code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', 'Fira Code', monospace !important;
+  font-size: 0.9em !important;
+  background-color: #2d2d2d !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  color: #ce9178 !important;
+  font-weight: 500 !important;
+  border: 1px solid #3a3a3a !important;
 }
 
 .memdoc p {
@@ -729,34 +857,266 @@ h2.memtitle:hover .permalink a {
   margin-bottom: 0;
 }
 
-/* Code blocks */
+/* Regular pre.fragment - simple styling, not markdown code blocks */
 pre.fragment {
-  background-color: #1a1d26;
-  border: 1px solid #2a2d3a;
-  border-radius: 4px;
-  padding: 16px;
-  overflow-x: auto;
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-  font-size: 0.9em;
-  line-height: 1.5;
-  margin: 15px 0;
-  color: #e0e0e0;
+  background-color: #1e1e1e !important;
+  border: 1px solid #3a3a3a !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  overflow-x: auto !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+  margin: 20px 0 !important;
+  color: #d4d4d4 !important;
 }
 
+/* Remove overlay from regular pre.fragment */
+pre.fragment::after {
+  display: none !important;
+}
+
+/* Regular pre.fragment code - simple styling */
 pre.fragment code {
-  color: #e0e0e0;
-  background: transparent;
-  padding: 0;
+  color: #d4d4d4 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
 }
 
+/* Default text in regular code blocks */
+pre.fragment,
+pre.fragment code {
+  color: #d4d4d4 !important;
+}
+
+/* Make all text in code blocks more visible */
+pre.fragment *,
+pre * {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+}
+
+/* Remove C++ badge from regular pre.fragment */
+pre.fragment::before {
+  display: none !important;
+}
+
+/* C++ Syntax highlighting - Keywords (Neovim Atom One Dark purple) */
+pre.fragment .keyword,
+pre.fragment .keywordtype,
+pre.fragment code .keyword,
+pre.fragment code .keywordtype,
+pre code .keyword,
+pre code .keywordtype,
+.contents pre.fragment .keyword,
+.contents pre.fragment .keywordtype,
+.contents pre.fragment code .keyword,
+.contents pre.fragment code .keywordtype,
+.contents pre:not(.memproto):not(.memdoc pre) .keyword,
+.contents pre:not(.memproto):not(.memdoc pre) .keywordtype,
+.contents pre:not(.memproto):not(.memdoc pre) code .keyword,
+.contents pre:not(.memproto):not(.memdoc pre) code .keywordtype {
+  color: #c678dd !important; /* Neovim Atom One Dark purple */
+  font-weight: 400 !important; /* Neovim normal weight for keywords */
+}
+
+/* C++ Syntax highlighting - Types and classes (Neovim Atom One Dark yellow) */
+pre.fragment .type,
+pre.fragment .classname,
+pre.fragment code .type,
+pre.fragment code .classname,
+pre code .type,
+pre code .classname,
+.contents pre.fragment .type,
+.contents pre.fragment .classname,
+.contents pre.fragment code .type,
+.contents pre.fragment code .classname,
+.contents pre:not(.memproto):not(.memdoc pre) .type,
+.contents pre:not(.memproto):not(.memdoc pre) .classname,
+.contents pre:not(.memproto):not(.memdoc pre) code .type,
+.contents pre:not(.memproto):not(.memdoc pre) code .classname {
+  color: #e5c07b !important; /* Neovim Atom One Dark yellow/orange */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Strings (Neovim Atom One Dark green) */
+pre.fragment .string,
+pre.fragment .stringliteral,
+pre.fragment code .string,
+pre.fragment code .stringliteral,
+pre code .string,
+pre code .stringliteral,
+.contents pre.fragment .string,
+.contents pre.fragment .stringliteral,
+.contents pre.fragment code .string,
+.contents pre.fragment code .stringliteral,
+.contents pre:not(.memproto):not(.memdoc pre) .string,
+.contents pre:not(.memproto):not(.memdoc pre) .stringliteral,
+.contents pre:not(.memproto):not(.memdoc pre) code .string,
+.contents pre:not(.memproto):not(.memdoc pre) code .stringliteral {
+  color: #98c379 !important; /* Neovim Atom One Dark green */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Numbers (Neovim Atom One Dark orange) */
+pre.fragment .number,
+pre.fragment code .number,
+pre code .number,
+.contents pre.fragment .number,
+.contents pre.fragment code .number,
+.contents pre:not(.memproto):not(.memdoc pre) .number,
+.contents pre:not(.memproto):not(.memdoc pre) code .number {
+  color: #d19a66 !important; /* Neovim Atom One Dark orange */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Comments (Neovim Atom One Dark gray) */
+pre.fragment .comment,
+pre.fragment code .comment,
+pre code .comment,
+.contents pre.fragment .comment,
+.contents pre.fragment code .comment,
+.contents pre:not(.memproto):not(.memdoc pre) .comment,
+.contents pre:not(.memproto):not(.memdoc pre) code .comment {
+  color: #5c6370 !important; /* Neovim Atom One Dark gray */
+  font-style: italic !important;
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Preprocessor (Neovim Atom One Dark purple) */
+pre.fragment .preprocessor,
+pre.fragment code .preprocessor,
+pre code .preprocessor,
+.contents pre.fragment .preprocessor,
+.contents pre.fragment code .preprocessor,
+.contents pre:not(.memproto):not(.memdoc pre) .preprocessor,
+.contents pre:not(.memproto):not(.memdoc pre) code .preprocessor {
+  color: #c678dd !important; /* Neovim Atom One Dark purple */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Functions (Neovim Atom One Dark blue) */
+pre.fragment .function,
+pre.fragment code .function,
+pre code .function,
+.contents pre.fragment .function,
+.contents pre.fragment code .function,
+.contents pre:not(.memproto):not(.memdoc pre) .function,
+.contents pre:not(.memproto):not(.memdoc pre) code .function {
+  color: #61afef !important; /* Neovim Atom One Dark blue */
+  font-weight: 400 !important; /* Neovim normal weight */
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Remove any underlines or highlights from function links in code blocks */
+pre.fragment .function a.el,
+pre.fragment code .function a.el,
+pre .function a.el,
+pre code .function a.el,
+pre.fragment a.el.function,
+pre.fragment code a.el.function,
+pre a.el.function,
+pre code a.el.function {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  text-shadow: none !important;
+}
+
+/* C++ Syntax highlighting - Identifiers/Variables (Neovim Atom One Dark red) */
+pre.fragment .identifier,
+pre.fragment code .identifier,
+pre code .identifier,
+.contents pre.fragment .identifier,
+.contents pre.fragment code .identifier,
+.contents pre:not(.memproto):not(.memdoc pre) .identifier,
+.contents pre:not(.memproto):not(.memdoc pre) code .identifier {
+  color: #e06c75 !important; /* Neovim Atom One Dark red */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Operators (Neovim Atom One Dark cyan) */
+pre.fragment .operator,
+pre.fragment code .operator,
+pre code .operator,
+.contents pre.fragment .operator,
+.contents pre.fragment code .operator,
+.contents pre:not(.memproto):not(.memdoc pre) .operator,
+.contents pre:not(.memproto):not(.memdoc pre) code .operator {
+  color: #56b6c2 !important; /* Neovim Atom One Dark cyan */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Punctuation (Atom One Dark text) */
+pre.fragment .punctuation,
+pre.fragment code .punctuation,
+pre code .punctuation,
+.contents pre.fragment .punctuation,
+.contents pre.fragment code .punctuation,
+.contents pre:not(.memproto):not(.memdoc pre) .punctuation,
+.contents pre:not(.memproto):not(.memdoc pre) code .punctuation {
+  color: #abb2bf !important; /* Atom One Dark text */
+}
+
+/* Remove blue highlight from text selection in code blocks */
+pre.fragment::selection,
+pre.fragment *::selection,
+pre::selection,
+pre *::selection,
+pre.fragment code::selection,
+pre code::selection,
+.contents pre.fragment::selection,
+.contents pre.fragment *::selection,
+.contents pre:not(.memproto):not(.memdoc pre)::selection,
+.contents pre:not(.memproto):not(.memdoc pre) *::selection,
+.contents pre.fragment code::selection,
+.contents pre:not(.memproto):not(.memdoc pre) code::selection {
+  background-color: rgba(198, 120, 221, 0.3) !important; /* Purple instead of blue */
+  color: inherit !important;
+}
+
+pre.fragment::-moz-selection,
+pre.fragment *::-moz-selection,
+pre::-moz-selection,
+pre *::-moz-selection,
+pre.fragment code::-moz-selection,
+pre code::-moz-selection,
+.contents pre.fragment::-moz-selection,
+.contents pre.fragment *::-moz-selection,
+.contents pre:not(.memproto):not(.memdoc pre)::-moz-selection,
+.contents pre:not(.memproto):not(.memdoc pre) *::-moz-selection,
+.contents pre.fragment code::-moz-selection,
+.contents pre:not(.memproto):not(.memdoc pre) code::-moz-selection {
+  background-color: rgba(198, 120, 221, 0.3) !important; /* Purple instead of blue */
+  color: inherit !important;
+}
+
+/* Inline code - Enhanced styling */
 code {
-  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-  font-size: 0.9em;
-  background-color: #2a2d3a;
-  padding: 2px 6px;
-  border-radius: 3px;
-  color: #fbbf24;
-  font-weight: normal;
+  font-family: 'Consolas', 'Monaco', 'Courier New', 'Fira Code', monospace !important;
+  font-size: 0.9em !important;
+  background-color: #2d2d2d !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  color: #ce9178 !important;
+  font-weight: 500 !important;
+  border: 1px solid #3a3a3a !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
 .memproto code,
@@ -774,11 +1134,15 @@ table.memberdecls {
 }
 
 table.memberdecls tr.heading td {
-  background-color: #2a2d3a;
-  padding: 12px 15px;
-  font-weight: 600;
-  border-bottom: 1px solid #3a3d4a;
-  color: #e0e0e0;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.2) 0%, rgba(74, 222, 128, 0.15) 100%);
+  padding: 14px 18px;
+  font-weight: 700;
+  border-bottom: 3px solid #60a5fa;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 table.memberdecls tr.memitem {
@@ -788,16 +1152,17 @@ table.memberdecls tr.memitem {
   padding: 0;
   margin: 0;
   border-radius: 0;
+  transition: all 0.2s ease;
 }
 
 table.memberdecls tr.memitem:hover {
-  background-color: #2f3240;
+  background: linear-gradient(90deg, rgba(96, 165, 250, 0.15) 0%, transparent 100%);
   box-shadow: none;
-  transform: none;
+  transform: translateX(3px);
 }
 
 table.memberdecls tr.memitem td {
-  padding: 10px 15px;
+  padding: 12px 18px;
   border-bottom: 1px solid #3a3d4a;
 }
 
@@ -807,17 +1172,20 @@ table.memberdecls tr.memitem td.memItemLeft {
   color: #93c5fd;
   width: 30%;
   vertical-align: top;
+  font-weight: 500;
 }
 
 table.memberdecls tr.memitem td.memItemRight {
   font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
   font-size: 0.9em;
-  color: #e0e0e0;
+  color: #f5f5f5;
+  font-weight: 500;
 }
 
 table.memberdecls tr.memitem td.memItemRight b {
   color: #60a5fa;
-  font-weight: 600;
+  font-weight: 700;
+  text-shadow: 0 0 4px rgba(96, 165, 250, 0.3);
 }
 
 table.memberdecls tr.memitem td.memItemRight .paramname {
@@ -829,11 +1197,12 @@ table.memberdecls tr.memitem td.memItemRight .stringliteral {
 }
 
 table.memberdecls tr.memdesc td {
-  padding: 8px 15px 12px 15px;
-  color: #a0a0a0;
+  padding: 10px 18px 15px 18px;
+  color: #c0c0c0;
   font-size: 0.9em;
   border-bottom: 1px solid #3a3d4a;
-  background-color: #2a2d3a;
+  background: rgba(42, 45, 58, 0.5);
+  font-style: italic;
 }
 
 table.memberdecls tr.separator td {
@@ -842,15 +1211,16 @@ table.memberdecls tr.separator td {
   padding: 0;
 }
 
-/* Detailed description section */
+/* Detailed description section - Better organized */
 .contents .textblock {
-  margin: 25px 0;
-  padding: 20px;
-  background-color: #1a1d26;
-  border-radius: 0;
-  border: none;
-  line-height: 1.7;
-  box-shadow: none;
+  margin: 30px 0;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.4) 0%, rgba(30, 33, 41, 0.6) 100%);
+  border-radius: 8px;
+  border-left: 4px solid #4ade80;
+  border-top: 1px solid #3a3d4a;
+  line-height: 1.8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contents .textblock p {
@@ -875,26 +1245,27 @@ table.memberdecls tr.separator td {
   margin: 8px 0;
 }
 
-/* Template parameters and other sections */
+/* Template parameters and other sections - Better organized */
 dl.paramlist {
-  margin: 20px 0;
-  padding: 15px;
-  background-color: #1a1d26;
-  border-radius: 0;
-  border: none;
-  box-shadow: none;
+  margin: 25px 0;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(74, 222, 128, 0.08) 100%);
+  border-radius: 8px;
+  border-left: 4px solid #60a5fa;
+  border-top: 1px solid #3a3d4a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 dl.paramlist dt {
-  font-weight: 600;
+  font-weight: 700;
   color: #60a5fa;
-  margin-top: 15px;
-  margin-bottom: 8px;
-  padding: 0;
-  background: transparent;
-  border-radius: 0;
-  display: block;
-  border: none;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  background: rgba(96, 165, 250, 0.15);
+  border-radius: 5px;
+  display: inline-block;
+  border-left: 3px solid #60a5fa;
 }
 
 dl.paramlist dt:first-child {
@@ -902,31 +1273,358 @@ dl.paramlist dt:first-child {
 }
 
 dl.paramlist dd {
-  margin-left: 20px;
-  margin-bottom: 15px;
-  color: var(--fg);
-  line-height: 1.6;
+  margin-left: 25px;
+  margin-bottom: 18px;
+  color: #f0f0f0;
+  line-height: 1.7;
 }
 
-/* Example usage sections */
-.contents .fragment {
-  margin: 20px 0;
+/* MARKDOWN CODE BLOCKS (``` blocks) ONLY - Neovim Atom One Dark theme with matching fonts */
+.contents pre.fragment,
+.contents pre:not(.memproto):not(.memdoc pre):not(.memproto),
+.contents .fragment pre,
+.contents div pre:not(.memproto):not(.memdoc pre),
+.contents .textblock pre.fragment,
+.contents .textblock pre:not(.memproto):not(.memdoc pre) {
+  background: #282c34 !important; /* Neovim Atom One Dark background */
+  border: 2px solid rgba(198, 120, 221, 0.4) !important; /* Purple border */
+  border-left: 6px solid #c678dd !important; /* Purple accent */
+  border-radius: 12px !important;
+  padding: 26px 32px !important;
+  overflow-x: auto !important;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.95em !important; /* Neovim Atom One Dark font size */
+  font-weight: 400 !important; /* Neovim Atom One Dark normal font weight */
+  line-height: 1.6 !important; /* Neovim Atom One Dark line height */
+  color: #abb2bf !important; /* Neovim Atom One Dark text color */
+  box-shadow: 
+    0 0 0 1px rgba(198, 120, 221, 0.15),
+    0 8px 40px rgba(198, 120, 221, 0.3),
+    0 4px 20px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2) !important;
+  display: block !important;
+  white-space: pre !important;
+  position: relative !important;
+  margin: 32px 0 !important;
+  letter-spacing: 0 !important; /* Neovim Atom One Dark - no letter spacing */
+  font-variant-ligatures: common-ligatures !important; /* Neovim ligatures */
+  font-feature-settings: "liga" 1, "calt" 1 !important; /* Neovim font features */
 }
 
-/* Links - Bright blue */
+/* Ensure ALL markdown code blocks in .contents get Neovim Atom One Dark theme */
+.contents pre:not(.memproto):not(.memdoc pre) {
+  background: #282c34 !important; /* Neovim Atom One Dark background */
+  border: 2px solid rgba(198, 120, 221, 0.4) !important;
+  border-left: 6px solid #c678dd !important;
+  border-radius: 12px !important;
+  padding: 26px 32px !important;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.95em !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  color: #abb2bf !important;
+  letter-spacing: 0 !important;
+  font-variant-ligatures: common-ligatures !important;
+  font-feature-settings: "liga" 1, "calt" 1 !important;
+}
+
+/* Exclude memdoc and memproto from markdown styling */
+.contents .memdoc pre,
+.contents .memdoc .fragment,
+.contents .memproto {
+  background-color: #1e1e1e !important;
+  border: 1px solid #3a3a3a !important;
+  border-left: none !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  margin: 20px 0 !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+  color: #d4d4d4 !important;
+  box-shadow: none !important;
+}
+
+/* Overlay for markdown code blocks only */
+.contents pre.fragment::after,
+.contents pre:not(.memproto):not(.memdoc pre)::after,
+.contents .fragment pre::after,
+.contents div pre:not(.memproto)::after,
+.contents .textblock pre.fragment::after,
+.contents .textblock pre:not(.memproto)::after {
+  content: '';
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: transparent !important;
+  border-radius: 12px !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* No overlay for memdoc/memproto */
+.contents .memdoc pre::after,
+.contents .memproto::after {
+  display: none !important;
+}
+
+/* C++ badge for markdown code blocks only */
+.contents pre.fragment::before,
+.contents pre:not(.memproto):not(.memdoc pre)::before,
+.contents .fragment pre::before,
+.contents div pre:not(.memproto)::before,
+.contents .textblock pre.fragment::before,
+.contents .textblock pre:not(.memproto)::before {
+  content: 'C++';
+  position: absolute !important;
+  top: 12px !important;
+  right: 18px !important;
+  font-size: 0.7em !important;
+  color: #c678dd !important; /* Purple */
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2.5px !important;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  background: rgba(198, 120, 221, 0.2) !important;
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(198, 120, 221, 0.5) !important;
+  box-shadow: 
+    0 2px 8px rgba(198, 120, 221, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15) !important;
+  z-index: 2 !important;
+}
+
+/* No badge for memdoc/memproto */
+.contents .memdoc pre::before,
+.contents .memproto::before {
+  display: none !important;
+}
+
+/* Code content for MARKDOWN CODE BLOCKS (``` blocks) ONLY - Neovim Atom One Dark fonts */
+.contents pre.fragment code,
+.contents pre:not(.memproto):not(.memdoc pre):not(.memproto) code,
+.contents .fragment pre code,
+.contents div pre:not(.memproto):not(.memdoc pre) code,
+.contents .textblock pre.fragment code,
+.contents .textblock pre:not(.memproto):not(.memdoc pre) code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.95em !important; /* Neovim Atom One Dark font size */
+  font-weight: 400 !important; /* Neovim Atom One Dark normal font weight */
+  color: #abb2bf !important; /* Neovim Atom One Dark text color */
+  letter-spacing: 0 !important; /* Neovim Atom One Dark - no letter spacing */
+  background: transparent !important;
+  padding: 0 !important;
+  position: relative !important;
+  z-index: 1 !important;
+  line-height: 1.6 !important; /* Neovim Atom One Dark line height */
+  font-variant-ligatures: common-ligatures !important; /* Neovim ligatures */
+  font-feature-settings: "liga" 1, "calt" 1 !important; /* Neovim font features */
+}
+
+/* Regular code content for memdoc/memproto */
+.contents .memdoc pre code,
+.contents .memproto code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  color: #d4d4d4 !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* Additional C++ syntax elements */
+pre.fragment .namespace,
+pre code .namespace,
+.contents pre.fragment .namespace,
+.contents pre.fragment code .namespace,
+.contents pre:not(.memproto):not(.memdoc pre) .namespace,
+.contents pre:not(.memproto):not(.memdoc pre) code .namespace {
+  color: #e5c07b !important; /* Atom One Dark yellow/orange */
+}
+
+pre.fragment .template,
+pre code .template,
+.contents pre.fragment .template,
+.contents pre.fragment code .template,
+.contents pre:not(.memproto):not(.memdoc pre) .template,
+.contents pre:not(.memproto):not(.memdoc pre) code .template {
+  color: #e5c07b !important; /* Atom One Dark yellow/orange */
+}
+
+pre.fragment .macro,
+pre code .macro,
+.contents pre.fragment .macro,
+.contents pre.fragment code .macro,
+.contents pre:not(.memproto):not(.memdoc pre) .macro,
+.contents pre:not(.memproto):not(.memdoc pre) code .macro {
+  color: #c678dd !important; /* Atom One Dark purple */
+}
+
+pre.fragment .variable,
+pre code .variable,
+.contents pre.fragment .variable,
+.contents pre.fragment code .variable,
+.contents pre:not(.memproto):not(.memdoc pre) .variable,
+.contents pre:not(.memproto):not(.memdoc pre) code .variable {
+  color: #e06c75 !important; /* Atom One Dark red */
+}
+
+pre.fragment .constant,
+pre code .constant,
+.contents pre.fragment .constant,
+.contents pre.fragment code .constant,
+.contents pre:not(.memproto):not(.memdoc pre) .constant,
+.contents pre:not(.memproto):not(.memdoc pre) code .constant {
+  color: #61afef !important; /* Atom One Dark blue */
+}
+
+/* Ensure all pre code blocks are styled as C++ code blocks */
+pre code,
+pre > code {
+  display: block !important;
+  white-space: pre !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', 'Fira Code', monospace !important;
+  color: #d4d4d4 !important;
+}
+
+/* Regular pre elements - simple styling, not markdown code blocks */
+pre:not(.memproto):not(.memdoc pre):not(.contents pre) {
+  background-color: #1e1e1e !important;
+  border: 1px solid #3a3a3a !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  overflow-x: auto !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+  margin: 20px 0 !important;
+  color: #d4d4d4 !important;
+}
+
+pre:not(.memproto):not(.memdoc pre):not(.contents pre)::after,
+pre:not(.memproto):not(.memdoc pre):not(.contents pre)::before {
+  display: none !important;
+}
+
+pre:not(.memproto):not(.memdoc pre):not(.contents pre) code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  color: #d4d4d4 !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* Links - Brighter blue with better contrast */
 a.el {
   color: #60a5fa;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  border-bottom: 1px dotted rgba(96, 165, 250, 0.5);
+  transition: all 0.2s ease;
 }
 
 a.el:hover {
   color: #93c5fd;
-  text-decoration: underline;
+  border-bottom: 2px solid #93c5fd;
+  text-shadow: 0 0 8px rgba(147, 197, 253, 0.4);
+  text-decoration: none;
 }
 
 a.el:visited {
-  color: #60a5fa;
+  color: #9b59b6;
+}
+
+/* Remove ALL blue highlights from links in code blocks - including function links */
+pre.fragment a.el,
+pre.fragment a.el:hover,
+pre.fragment a.el:visited,
+pre.fragment a.el:active,
+pre.fragment a.el.function,
+pre.fragment a.el.function:hover,
+pre.fragment code a.el,
+pre.fragment code a.el:hover,
+pre.fragment code a.el:visited,
+pre.fragment code a.el:active,
+pre.fragment code a.el.function,
+pre.fragment code a.el.function:hover,
+pre a.el,
+pre a.el:hover,
+pre a.el:visited,
+pre a.el:active,
+pre a.el.function,
+pre a.el.function:hover,
+pre code a.el,
+pre code a.el:hover,
+pre code a.el:visited,
+pre code a.el:active,
+pre code a.el.function,
+pre code a.el.function:hover,
+.contents pre.fragment a.el,
+.contents pre.fragment a.el:hover,
+.contents pre.fragment a.el.function,
+.contents pre.fragment a.el.function:hover,
+.contents pre a.el,
+.contents pre a.el:hover,
+.contents pre a.el.function,
+.contents pre a.el.function:hover,
+.memdoc pre.fragment a.el,
+.memdoc pre.fragment a.el:hover,
+.memdoc pre.fragment a.el.function,
+.memdoc pre.fragment a.el.function:hover {
+  color: inherit !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  border-bottom: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  box-decoration-break: clone !important;
+}
+
+/* Specifically remove ALL blue styling from function links in code blocks - no underlines, no backgrounds */
+pre.fragment a.el.function,
+pre.fragment a.el.function:hover,
+pre.fragment a.el.function:visited,
+pre.fragment a.el.function:active,
+pre.fragment code a.el.function,
+pre.fragment code a.el.function:hover,
+pre.fragment code a.el.function:visited,
+pre.fragment code a.el.function:active,
+pre a.el.function,
+pre a.el.function:hover,
+pre a.el.function:visited,
+pre a.el.function:active,
+pre code a.el.function,
+pre code a.el.function:hover,
+pre code a.el.function:visited,
+pre code a.el.function:active,
+.contents pre.fragment a.el.function,
+.contents pre.fragment a.el.function:hover,
+.contents pre a.el.function,
+.contents pre a.el.function:hover,
+.memdoc pre.fragment a.el.function,
+.memdoc pre.fragment a.el.function:hover {
+  color: #61afef !important; /* Keep function color but remove all other blue styling */
+  background-color: transparent !important;
+  background: transparent !important;
+  border-bottom: none !important;
+  border: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  box-decoration-break: clone !important;
 }
 
 /* Labels and badges - Blue box for static */
@@ -984,49 +1682,130 @@ a.el:visited {
 }
 
 .dyncontent {
-  margin: 15px 0;
-  padding: 15px;
-  background-color: #1a1d26;
-  border-radius: 0;
-  border: 1px solid #2a2d3a;
-  box-shadow: none;
+  margin: 20px 0;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.4) 0%, rgba(30, 33, 41, 0.6) 100%);
+  border-radius: 8px;
+  border: 2px solid #3a3d4a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Search box styling */
+/* Search box styling - Brighter */
 #MSearchBox {
-  border: 1px solid #3a3d4a;
-  border-radius: 4px;
+  border: 2px solid #3a3d4a;
+  border-radius: 6px;
   background-color: #2a2d3a;
-  padding: 5px;
-  box-shadow: none;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
 
 #MSearchBox:hover,
 #MSearchBox.MSearchBoxActive {
   border-color: #4ade80;
+  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.3);
 }
 
 #MSearchField {
   background-color: transparent;
   border: none;
-  color: #e0e0e0;
+  color: #f5f5f5;
   font-size: 0.9em;
 }
 
-/* Navigation tree - Very dark sidebar */
+/* Navigation tree - Linear and organized layout */
 #nav-tree {
-  background-color: #0d0f14;
+  background-color: #0f1117 !important;
+  border-right: 2px solid #2a2d3a !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  padding: 8px 0 !important;
 }
 
-#nav-tree a {
-  color: #e0e0e0;
+#nav-tree-contents {
+  padding: 0 !important;
 }
 
-#nav-tree a:hover {
-  color: #4ade80;
+#nav-tree ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* Active navigation item - Vibrant green background */
+#nav-tree li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  position: relative !important;
+  line-height: 1.4 !important;
+  display: block !important;
+}
+
+/* Linear item layout - everything on one clean line with proper alignment */
+#nav-tree .item {
+  display: block !important;
+  position: relative !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  height: 22px !important;
+  overflow: hidden !important;
+}
+
+/* Base padding for all items - consistent alignment */
+#nav-tree .item > a {
+  display: block !important;
+  padding: 3px 6px 3px 8px !important;
+  text-decoration: none !important;
+  color: #e0e0e0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  transition: color 0.15s ease, background-color 0.15s ease !important;
+  line-height: 1.4 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
+#nav-tree .item > a:hover {
+  color: #4ade80 !important;
+  background-color: rgba(74, 222, 128, 0.1) !important;
+}
+
+/* Hide expand/collapse arrows - Remove from navbar tree */
+#nav-tree .arrow,
+#nav-tree .arrowdown,
+#nav-tree .arrowright,
+#nav-tree .plus,
+#nav-tree .minus {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Labels - Linear inline alignment */
+#nav-tree .label {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  vertical-align: middle !important;
+}
+
+#nav-tree .label a {
+  padding: 0 !important;
+  display: inline !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Active/Selected item - Linear highlight */
 #nav-tree .item.selected,
 #nav-tree .item.selected a,
 #nav-tree .selected,
@@ -1036,31 +1815,129 @@ a.el:visited {
 #nav-tree li.selected a {
   background-color: #4ade80 !important;
   color: #ffffff !important;
-  border-left: 3px solid #4ade80 !important;
-  padding-left: 12px !important;
+  font-weight: 600 !important;
+}
+
+#nav-tree .selected .arrow,
+#nav-tree .selected .arrowdown,
+#nav-tree .selected .arrowright {
+  display: none !important;
+}
+
+/* Proper indentation for nested items - Consistent alignment */
+#nav-tree .children_ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Level 1 items (top level) - Base alignment */
+#nav-tree > ul > li > .item > a,
+#nav-tree li:first-child > .item > a {
+  padding-left: 8px !important;
+}
+
+/* Level 2 items - Consistent indentation */
+#nav-tree li li .item > a {
+  padding-left: 16px !important;
+}
+
+/* Level 3 items - Consistent indentation */
+#nav-tree li li li .item > a {
+  padding-left: 24px !important;
+}
+
+/* Level 4 items - Consistent indentation */
+#nav-tree li li li li .item > a {
+  padding-left: 32px !important;
+}
+
+/* Level 5 items - Consistent indentation */
+#nav-tree li li li li li .item > a {
+  padding-left: 40px !important;
+}
+
+/* Level 6 items - Consistent indentation */
+#nav-tree li li li li li li .item > a {
+  padding-left: 48px !important;
+}
+
+/* Ensure all items at same level have same padding */
+#nav-tree ul ul li .item > a {
+  padding-left: 16px !important;
+}
+
+#nav-tree ul ul ul li .item > a {
+  padding-left: 24px !important;
+}
+
+#nav-tree ul ul ul ul li .item > a {
+  padding-left: 32px !important;
+}
+
+/* Images in nav tree - Linear alignment */
+#nav-tree img {
+  margin: 0 4px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Ensure consistent linear layout */
+#nav-tree,
+#nav-tree * {
+  box-sizing: border-box !important;
+}
+
+/* Ensure consistent block layout for proper alignment */
+#nav-tree .item {
+  display: block !important;
+}
+
+#nav-tree .item > a {
+  display: block !important;
+  width: 100% !important;
+}
+
+#nav-tree .label {
+  display: inline !important;
+}
+
+/* Ensure all list items align properly */
+#nav-tree li {
+  display: list-item !important;
+  list-style: none !important;
 }
 
 /* Sidebar navigation items */
 #side-nav {
-  background-color: #0d0f14;
+  background-color: #0f1117;
+  border-right: 2px solid #2a2d3a;
 }
 
 #side-nav a {
   color: #e0e0e0;
+  transition: all 0.2s ease;
 }
 
 #side-nav a:hover {
   color: #4ade80;
+  text-shadow: 0 0 6px rgba(74, 222, 128, 0.4);
 }
 
 #side-nav .selected,
 #side-nav .selected a {
   background-color: #4ade80 !important;
   color: #ffffff !important;
-  border-left: 3px solid #4ade80 !important;
+  border-left: 4px solid #4ade80 !important;
+  box-shadow: 0 2px 8px rgba(74, 222, 128, 0.3) !important;
 }
 
-/* Note boxes - Dark orange-brown with green left border */
+/* Note boxes - Brighter orange-brown with vibrant green left border */
 .memdoc .note,
 .memdoc .warning,
 .memdoc .attention,
@@ -1068,11 +1945,12 @@ a.el:visited {
 .memdoc div[class*="note"],
 .memdoc div[class*="warning"],
 .memdoc div[class*="attention"] {
-  background-color: #8b5a3c;
-  border-left: 3px solid #4ade80;
-  padding: 12px 15px;
-  margin: 15px 0;
-  border-radius: 4px;
+  background-color: #a0654a;
+  border-left: 4px solid #4ade80;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .memdoc .note strong,
@@ -1084,7 +1962,9 @@ a.el:visited {
   color: #fbbf24;
   font-weight: 700;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+  font-size: 1.1em;
 }
 
 .memdoc .note p,
@@ -1095,23 +1975,27 @@ a.el:visited {
 .memdoc div[class*="warning"] p {
   color: #ffffff;
   margin: 0;
+  line-height: 1.7;
 }
 
 /* Additional styling for note-like elements */
 .memdoc blockquote {
-  background-color: #8b5a3c;
-  border-left: 3px solid #4ade80;
-  padding: 12px 15px;
-  margin: 15px 0;
-  border-radius: 4px;
+  background-color: #a0654a;
+  border-left: 4px solid #4ade80;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 6px;
   color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .memdoc blockquote strong {
   color: #fbbf24;
   font-weight: 700;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+  font-size: 1.1em;
 }
 
 /* Target any div that might contain "Note" text */
@@ -1139,11 +2023,11 @@ a.el:visited {
 
 /* Additional styling to match image exactly */
 
-/* Highlight important text */
+/* Highlight important text - Brighter */
 .contents strong,
 .contents b {
-  color: #e0e0e0;
-  font-weight: 600;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 /* Lists with colorful bullets */
@@ -1218,10 +2102,10 @@ a.el:visited {
   border-radius: 2px;
 }
 
-/* Emphasis and italic text */
+/* Emphasis and italic text - Brighter */
 .contents em,
 .contents i {
-  color: #e0e0e0;
+  color: #f0f0f0;
   font-style: italic;
 }
 
@@ -1236,38 +2120,57 @@ a.el:visited {
   font-weight: 600;
 }
 
-/* Additional section styling */
+/* Additional section styling - Better organized */
 .contents h3 {
-  color: #e0e0e0;
-  font-size: 1.2em;
-  font-weight: 600;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  padding: 0;
-  background: transparent;
-  border: none;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  padding: 10px 15px;
+  background: rgba(96, 165, 250, 0.1);
+  border-left: 4px solid #60a5fa;
+  border-radius: 5px;
 }
 
 .contents h4 {
-  color: #e0e0e0;
-  font-size: 1.1em;
+  color: #f5f5f5;
+  font-size: 1.15em;
   font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 12px;
-  padding: 0;
-  border: none;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border-left: 3px solid #4ade80;
+  background: rgba(74, 222, 128, 0.08);
+  border-radius: 4px;
 }
 
-/* Navigation items */
+/* Navigation items - Linear layout */
 #nav-tree .item {
-  transition: all 0.2s ease;
+  transition: background-color 0.15s ease !important;
+  display: block !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  height: 22px !important;
+  overflow: hidden !important;
 }
 
 #nav-tree .item:hover {
-  background: linear-gradient(90deg, 
-    rgba(255, 164, 60, 0.2) 0%, 
-    transparent 100%);
-  padding-left: 5px;
+  background-color: rgba(96, 165, 250, 0.08) !important;
+}
+
+/* Ensure all text elements align linearly */
+#nav-tree span {
+  display: inline !important;
+  vertical-align: middle !important;
+}
+
+/* Linear alignment for all elements */
+#nav-tree .item > * {
+  display: inline-block !important;
+  vertical-align: middle !important;
 }
 
 /* Remove alternating colors - keep consistent */

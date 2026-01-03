@@ -50,6 +50,13 @@ cd sphinx
 sphinx-build -b html -Dbreathe_projects.atlas=doxygen_output/xml . output
 ```
 
+# Contribution Instructions
+
+
+## CSS Layout Modifications
+
+Whenever the CSS modifications are made. Manually reload the doxygen using the `./build.sh` script.
+
 
 ## Resources
 

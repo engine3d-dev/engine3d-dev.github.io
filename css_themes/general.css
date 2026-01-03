@@ -1,77 +1,2233 @@
-.hljs {
-    display: block;
-    overflow-x: auto;
-    background: rgb(36, 36, 36);
-    color: #e6e1cf;
-    padding: 0.5em;
+@import 'variables.css';
+::-webkit-scrollbar {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+}
+html {
+  scrollbar-color: var(--scrollbar) var(--bg);
+}
+#searchresults a,
+.content a:link,
+a:visited,
+a > .hljs {
+  color: var(--links);
+}
+
+/* Menu Bar */
+
+#menu-bar,
+#menu-bar-hover-placeholder {
+  z-index: 101;
+  margin: auto calc(0px - var(--page-padding));
+}
+#menu-bar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--bg);
+  border-bottom-color: var(--bg);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+#menu-bar.sticky,
+.js #menu-bar-hover-placeholder:hover + #menu-bar,
+.js #menu-bar:hover,
+.js.sidebar-visible #menu-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0 !important;
+}
+#menu-bar-hover-placeholder {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: var(--menu-bar-height);
+}
+#menu-bar.bordered {
+  border-bottom-color: var(--table-border-color);
+}
+#menu-bar i, #menu-bar .icon-button {
+  position: relative;
+  padding: 0 8px;
+  z-index: 10;
+  line-height: var(--menu-bar-height);
+  cursor: pointer;
+  transition: color 0.5s;
+}
+@media only screen and (max-width: 420px) {
+  #menu-bar i, #menu-bar .icon-button {
+      padding: 0 5px;
+  }
+}
+
+.icon-button {
+  border: none;
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+.icon-button i {
+  margin: 0;
+}
+
+.right-buttons {
+  margin: 0 15px;
+}
+.right-buttons a {
+  text-decoration: none;
+}
+
+.left-buttons {
+  display: flex;
+  margin: 0 5px;
+}
+.no-js .left-buttons {
+  display: none;
+}
+
+.menu-title {
+  display: inline-block;
+  font-weight: 200;
+  font-size: 2.4rem;
+  line-height: var(--menu-bar-height);
+  text-align: center;
+  margin: 0;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.js .menu-title {
+  cursor: pointer;
+}
+
+.menu-bar,
+.menu-bar:visited,
+.nav-chapters,
+.nav-chapters:visited,
+.mobile-nav-chapters,
+.mobile-nav-chapters:visited,
+.menu-bar .icon-button,
+.menu-bar a i {
+  color: var(--icons);
+}
+
+.menu-bar i:hover,
+.menu-bar .icon-button:hover,
+.nav-chapters:hover,
+.mobile-nav-chapters i:hover {
+  color: var(--icons-hover);
+}
+
+/* Nav Icons */
+
+.nav-chapters {
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: none;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  max-width: 150px;
+  min-width: 90px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.nav-chapters:hover {
+  text-decoration: none;
+  background-color: var(--theme-hover);
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.nav-wrapper {
+  margin-top: 50px;
+  display: none;
+}
+
+.mobile-nav-chapters {
+  font-size: 2.5em;
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+  border-radius: 5px;
+  background-color: var(--sidebar-bg);
+}
+
+.previous {
+  float: left;
+}
+
+.next {
+  float: right;
+  right: var(--page-padding);
+}
+
+@media only screen and (max-width: 1080px) {
+  .nav-wide-wrapper { display: none; }
+  .nav-wrapper { display: block; }
+}
+
+@media only screen and (max-width: 1380px) {
+  .sidebar-visible .nav-wide-wrapper { display: none; }
+  .sidebar-visible .nav-wrapper { display: block; }
+}
+
+/* Inline code - Enhanced highlighting */
+
+:not(pre) > .hljs {
+  display: inline;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #2d2d2d;
+  border: 1px solid #3a3a3a;
+  color: #ce9178;
+  font-weight: 500;
+}
+
+:not(pre):not(a) > .hljs {
+  color: #ce9178;
+  overflow-x: initial;
+}
+
+a:hover > .hljs {
+  text-decoration: underline;
+}
+
+/* Highlight.js syntax highlighting for code blocks */
+pre .hljs {
+  background: #1e1e1e !important;
+  color: #d4d4d4 !important;
+}
+
+pre .hljs .hljs-keyword,
+pre .hljs .hljs-keywordtype {
+  color: #569cd6 !important;
+  font-weight: 600 !important;
+}
+
+pre .hljs .hljs-type,
+pre .hljs .hljs-class {
+  color: #4ec9b0 !important;
+}
+
+pre .hljs .hljs-string {
+  color: #ce9178 !important;
+}
+
+pre .hljs .hljs-number {
+  color: #b5cea8 !important;
+}
+
+pre .hljs .hljs-comment {
+  color: #6a9955 !important;
+  font-style: italic !important;
+}
+
+pre .hljs .hljs-preprocessor,
+pre .hljs .hljs-meta {
+  color: #c586c0 !important;
+}
+
+pre .hljs .hljs-function,
+pre .hljs .hljs-title {
+  color: #dcdcaa !important;
+}
+
+pre .hljs .hljs-operator {
+  color: #d4d4d4 !important;
+}
+
+pre {
+  position: relative;
+}
+pre > .buttons {
+  position: absolute;
+  z-index: 100;
+  right: 5px;
+  top: 5px;
+
+  color: var(--sidebar-fg);
+  cursor: pointer;
+}
+pre > .buttons :hover {
+  color: var(--sidebar-active);
+}
+pre > .buttons i {
+  margin-left: 8px;
+}
+pre > .buttons button {
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: inherit;
+}
+pre > .result {
+  margin-top: 10px;
+}
+
+/* Search */
+
+#searchresults a {
+  text-decoration: none;
+}
+
+mark {
+  border-radius: 2px;
+  padding: 0 3px 1px 3px;
+  margin: 0 -3px -1px -3px;
+  background-color: var(--search-mark-bg);
+  transition: background-color 300ms linear;
+  cursor: pointer;
+}
+
+mark.fade-out {
+  background-color: rgba(0,0,0,0) !important;
+  cursor: auto;
+}
+
+.searchbar-outer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--content-max-width);
+}
+
+#searchbar {
+  width: 100%;
+  margin: 5px auto 0px auto;
+  padding: 10px 16px;
+  transition: box-shadow 300ms ease-in-out;
+  border: 1px solid var(--searchbar-border-color);
+  border-radius: 3px;
+  background-color: var(--searchbar-bg);
+  color: var(--searchbar-fg);
+}
+#searchbar:focus,
+#searchbar.active {
+  box-shadow: 0 0 3px var(--searchbar-shadow-color);
+}
+
+.searchresults-header {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 18px 0 0 5px;
+  color: var(--searchresults-header-fg);
+}
+
+.searchresults-outer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--content-max-width);
+  border-bottom: 1px dashed var(--searchresults-border-color);
+}
+
+ul#searchresults {
+  list-style: none;
+  padding-left: 20px;
+}
+ul#searchresults li {
+  margin: 10px 0px;
+  padding: 2px;
+  border-radius: 2px;
+}
+ul#searchresults li.focus {
+  background-color: var(--searchresults-li-bg);
+}
+ul#searchresults span.teaser {
+  display: block;
+  clear: both;
+  margin: 5px 0 0 20px;
+  font-size: 0.8em;
+}
+ul#searchresults span.teaser em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  font-size: 0.875em;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-fg);
+}
+.sidebar-resizing {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.js:not(.sidebar-resizing) .sidebar {
+  transition: transform 0.3s; /* Animation: slide away */
+}
+.sidebar code {
+  line-height: 2em;
+}
+.sidebar .sidebar-scrollbox {
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 10px;
+}
+.sidebar .sidebar-resize-handle {
+  position: absolute;
+  cursor: col-resize;
+  width: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.js .sidebar .sidebar-resize-handle {
+  cursor: col-resize;
+  width: 5px;
+}
+.sidebar-hidden .sidebar {
+  transform: translateX(calc(0px - var(--sidebar-width)));
+}
+.sidebar::-webkit-scrollbar {
+  background: var(--sidebar-bg);
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+}
+
+.sidebar-visible .page-wrapper {
+  transform: translateX(var(--sidebar-width));
+}
+@media only screen and (min-width: 620px) {
+  .sidebar-visible .page-wrapper {
+      transform: none;
+      margin-left: var(--sidebar-width);
+  }
+}
+
+.chapter {
+  list-style: none outside none;
+  padding-left: 0;
+  line-height: 2.2em;
+}
+
+.chapter ol {
+  width: 100%;
+}
+
+.chapter li {
+  display: flex;
+  color: var(--sidebar-non-existant);
+}
+.chapter li a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  color: var(--sidebar-fg);
+}
+
+.chapter li a:hover {
+  color: var(--sidebar-active);
+}
+
+.chapter li a.active {
+  color: var(--sidebar-active);
+}
+
+.chapter li > a.toggle {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  padding: 0 10px;
+  user-select: none;
+  opacity: 0.68;
+}
+
+.chapter li > a.toggle div {
+  transition: transform 0.5s;
+}
+
+/* collapse the section */
+.chapter li:not(.expanded) + li > ol {
+  display: none;
+}
+
+.chapter li.chapter-item {
+  line-height: 1.5em;
+  margin-top: 0.6em;
+}
+
+.chapter li.expanded > a.toggle div {
+  transform: rotate(90deg);
+}
+
+.spacer {
+  width: 100%;
+  height: 3px;
+  margin: 5px 0px;
+}
+.chapter .spacer {
+  background-color: var(--sidebar-spacer);
+}
+
+@media (-moz-touch-enabled: 1), (pointer: coarse) {
+  .chapter li a { padding: 5px 0; }
+  .spacer { margin: 10px 0; }
+}
+
+.section {
+  list-style: none outside none;
+  padding-left: 20px;
+  line-height: 1.9em;
+}
+
+/* Theme Menu Popup */
+
+.theme-popup {
+  position: absolute;
+  left: 10px;
+  top: var(--menu-bar-height);
+  z-index: 1000;
+  border-radius: 4px;
+  font-size: 0.7em;
+  color: var(--fg);
+  background: var(--theme-popup-bg);
+  border: 1px solid var(--theme-popup-border);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+}
+.theme-popup .default {
+  color: var(--icons);
+}
+.theme-popup .theme {
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 2px 10px;
+  line-height: 25px;
+  white-space: nowrap;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  background: inherit;
+  font-size: inherit;
+}
+.theme-popup .theme:hover {
+  background-color: var(--theme-hover);
+}
+.theme-popup .theme:hover:first-child,
+.theme-popup .theme:hover:last-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+/* ============================================
+   DOXYGEN-SPECIFIC STYLES - MATCHING IMAGE EXACTLY
+   ============================================ */
+
+/* Overall page layout - Brighter dark background with better contrast */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  color: #f5f5f5;
+  background-color: #1e2129;
+}
+
+#doc-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  background-color: #1e2129;
+  min-height: 100vh;
+}
+
+/* Header and title area - Brighter with better contrast */
+#titlearea {
+  background: #0f1117;
+  border-bottom: 2px solid #2a2d3a;
+  border-top: 2px solid #2a2d3a;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+  margin-left: -50px;
+  margin-right: -50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#projectname {
+  font-size: 2em;
+  font-weight: 700;
+  color: #4ade80;
+  background: linear-gradient(90deg, #4ade80 0%, #86efac 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+  text-shadow: 0 0 20px rgba(74, 222, 128, 0.3);
+}
+
+/* Main header styles - Better organized */
+.header {
+  margin-bottom: 40px;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.6) 0%, rgba(30, 33, 41, 0.8) 100%);
+  border-left: 4px solid #4ade80;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.headertitle {
+  margin-bottom: 15px;
+}
+
+.headertitle .title {
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.summary {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #c0c0c0;
+  padding-top: 15px;
+  border-top: 1px solid #3a3d4a;
+}
+
+.summary a {
+  color: #60a5fa;
+  text-decoration: none;
+  margin-right: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  background: rgba(96, 165, 250, 0.1);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+.summary a:hover {
+  background-color: rgba(96, 165, 250, 0.25);
+  border-color: #60a5fa;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(96, 165, 250, 0.3);
+  text-decoration: none;
+}
+
+/* Section headers - Better organized with visual separation */
+h2.groupheader {
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.15) 0%, rgba(74, 222, 128, 0.1) 100%);
+  border-left: 5px solid #60a5fa;
+  border-radius: 6px;
+  letter-spacing: -0.3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2.memtitle {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #60a5fa;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding: 12px 18px;
+  background: rgba(96, 165, 250, 0.08);
+  border-left: 4px solid #60a5fa;
+  border-radius: 6px;
+  letter-spacing: -0.2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+h2.memtitle::before {
+  content: "◆";
+  color: #60a5fa;
+  margin-right: 10px;
+  font-size: 1em;
+  text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
+}
+
+h2.memtitle .permalink {
+  margin-right: 8px;
+}
+
+h2.memtitle .permalink a {
+  color: var(--sidebar-fg);
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+h2.memtitle:hover .permalink a {
+  opacity: 1;
+}
+
+/* Member documentation items - Better organized */
+.memitem {
+  margin-bottom: 30px;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.4) 0%, rgba(30, 33, 41, 0.6) 100%);
+  border: 1px solid #3a3d4a;
+  border-left: 4px solid #60a5fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.memitem:hover {
+  box-shadow: 0 4px 16px rgba(96, 165, 250, 0.2);
+  transform: translateX(3px);
+  border-left-color: #4ade80;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.5) 0%, rgba(30, 33, 41, 0.7) 100%);
+}
+
+.memproto {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.95em;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  padding: 16px 20px;
+  background-color: #252831;
+  border-radius: 6px;
+  border: 1px solid #3a3d4a;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.memproto .memname {
+  color: #60a5fa;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(96, 165, 250, 0.4);
+}
+
+.memproto .paramname {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.memproto .paramtype {
+  color: #93c5fd;
+  font-weight: 500;
+}
+
+.memproto .type {
+  color: #93c5fd;
+  font-weight: 500;
+}
+
+.memproto .keyword {
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.memproto .stringliteral {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Syntax highlighting for function signatures - Brighter */
+.memproto .keywordtype,
+.memproto .keyword {
+  color: #93c5fd;
+  font-weight: 600;
+}
+
+.memproto .classname,
+.memproto .namespace {
+  color: #c0c0c0;
+  font-weight: 500;
+}
+
+.memproto .identifier {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.memproto .string {
+  color: #ce9178;
+  font-weight: 500;
+}
+
+/* Enhanced syntax highlighting for memproto code blocks */
+.memproto .comment {
+  color: #6a9955;
+  font-style: italic;
+}
+
+.memproto .number {
+  color: #b5cea8;
+}
+
+.memproto .preprocessor {
+  color: #c586c0;
+}
+
+.memname {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.memname .paramname {
+  color: #fbbf24;
+  font-weight: normal;
+}
+
+.paramtype {
+  color: #93c5fd;
+  font-weight: normal;
+}
+
+.memdoc {
+  margin-top: 20px;
+  padding: 18px 22px;
+  background: rgba(42, 45, 58, 0.3);
+  border-top: 2px solid #3a3d4a;
+  border-radius: 6px;
+  color: #f0f0f0;
+  line-height: 1.8;
+}
+
+/* Regular code blocks in memdoc - simple styling, not markdown code blocks */
+.memdoc pre.fragment {
+  background-color: #1e1e1e !important;
+  border: 1px solid #3a3a3a !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  margin: 20px 0 !important;
+  overflow-x: auto !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+  color: #d4d4d4 !important;
+}
+
+.memdoc pre.fragment::after {
+  display: none !important;
+}
+
+.memdoc pre.fragment::before {
+  display: none !important;
+}
+
+.memdoc code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', 'Fira Code', monospace !important;
+  font-size: 0.9em !important;
+  background-color: #2d2d2d !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  color: #ce9178 !important;
+  font-weight: 500 !important;
+  border: 1px solid #3a3a3a !important;
+}
+
+.memdoc p {
+  margin: 10px 0;
+}
+
+.memdoc p:first-child {
+  margin-top: 0;
+}
+
+.memdoc p:last-child {
+  margin-bottom: 0;
+}
+
+/* Regular pre.fragment - simple styling, not markdown code blocks */
+pre.fragment {
+  background-color: #1e1e1e !important;
+  border: 1px solid #3a3a3a !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  overflow-x: auto !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+  margin: 20px 0 !important;
+  color: #d4d4d4 !important;
+}
+
+/* Remove overlay from regular pre.fragment */
+pre.fragment::after {
+  display: none !important;
+}
+
+/* Regular pre.fragment code - simple styling */
+pre.fragment code {
+  color: #d4d4d4 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+}
+
+/* Default text in regular code blocks */
+pre.fragment,
+pre.fragment code {
+  color: #d4d4d4 !important;
+}
+
+/* Make all text in code blocks more visible */
+pre.fragment *,
+pre * {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 1em !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+}
+
+/* Remove C++ badge from regular pre.fragment */
+pre.fragment::before {
+  display: none !important;
+}
+
+/* C++ Syntax highlighting - Keywords (Neovim Atom One Dark purple) */
+pre.fragment .keyword,
+pre.fragment .keywordtype,
+pre.fragment code .keyword,
+pre.fragment code .keywordtype,
+pre code .keyword,
+pre code .keywordtype,
+.contents pre.fragment .keyword,
+.contents pre.fragment .keywordtype,
+.contents pre.fragment code .keyword,
+.contents pre.fragment code .keywordtype,
+.contents pre:not(.memproto):not(.memdoc pre) .keyword,
+.contents pre:not(.memproto):not(.memdoc pre) .keywordtype,
+.contents pre:not(.memproto):not(.memdoc pre) code .keyword,
+.contents pre:not(.memproto):not(.memdoc pre) code .keywordtype {
+  color: #d19af0 !important; /* Brighter Neovim Atom One Dark purple */
+  font-weight: 400 !important; /* Neovim normal weight for keywords */
+}
+
+/* C++ Syntax highlighting - Types and classes (Neovim Atom One Dark yellow) */
+pre.fragment .type,
+pre.fragment .classname,
+pre.fragment code .type,
+pre.fragment code .classname,
+pre code .type,
+pre code .classname,
+.contents pre.fragment .type,
+.contents pre.fragment .classname,
+.contents pre.fragment code .type,
+.contents pre.fragment code .classname,
+.contents pre:not(.memproto):not(.memdoc pre) .type,
+.contents pre:not(.memproto):not(.memdoc pre) .classname,
+.contents pre:not(.memproto):not(.memdoc pre) code .type,
+.contents pre:not(.memproto):not(.memdoc pre) code .classname {
+  color: #f0c97f !important; /* Brighter Neovim Atom One Dark yellow/orange */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Strings (Neovim Atom One Dark green) */
+pre.fragment .string,
+pre.fragment .stringliteral,
+pre.fragment code .string,
+pre.fragment code .stringliteral,
+pre code .string,
+pre code .stringliteral,
+.contents pre.fragment .string,
+.contents pre.fragment .stringliteral,
+.contents pre.fragment code .string,
+.contents pre.fragment code .stringliteral,
+.contents pre:not(.memproto):not(.memdoc pre) .string,
+.contents pre:not(.memproto):not(.memdoc pre) .stringliteral,
+.contents pre:not(.memproto):not(.memdoc pre) code .string,
+.contents pre:not(.memproto):not(.memdoc pre) code .stringliteral {
+  color: #a5d68a !important; /* Brighter Neovim Atom One Dark green */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Numbers (Neovim Atom One Dark orange) */
+pre.fragment .number,
+pre.fragment code .number,
+pre code .number,
+.contents pre.fragment .number,
+.contents pre.fragment code .number,
+.contents pre:not(.memproto):not(.memdoc pre) .number,
+.contents pre:not(.memproto):not(.memdoc pre) code .number {
+  color: #e0a877 !important; /* Brighter Neovim Atom One Dark orange */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Comments (Neovim Atom One Dark gray) */
+pre.fragment .comment,
+pre.fragment code .comment,
+pre code .comment,
+.contents pre.fragment .comment,
+.contents pre.fragment code .comment,
+.contents pre:not(.memproto):not(.memdoc pre) .comment,
+.contents pre:not(.memproto):not(.memdoc pre) code .comment {
+  color: #6d7583 !important; /* Brighter Neovim Atom One Dark gray */
+  font-style: italic !important;
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Preprocessor (Neovim Atom One Dark purple) */
+pre.fragment .preprocessor,
+pre.fragment code .preprocessor,
+pre code .preprocessor,
+.contents pre.fragment .preprocessor,
+.contents pre.fragment code .preprocessor,
+.contents pre:not(.memproto):not(.memdoc pre) .preprocessor,
+.contents pre:not(.memproto):not(.memdoc pre) code .preprocessor {
+  color: #d19af0 !important; /* Brighter Neovim Atom One Dark purple */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Functions (Neovim Atom One Dark blue) */
+pre.fragment .function,
+pre.fragment code .function,
+pre code .function,
+.contents pre.fragment .function,
+.contents pre.fragment code .function,
+.contents pre:not(.memproto):not(.memdoc pre) .function,
+.contents pre:not(.memproto):not(.memdoc pre) code .function {
+  color: #7bc5ff !important; /* Brighter Neovim Atom One Dark blue */
+  font-weight: 400 !important; /* Neovim normal weight */
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+/* Remove any underlines or highlights from function links in code blocks */
+pre.fragment .function a.el,
+pre.fragment code .function a.el,
+pre .function a.el,
+pre code .function a.el,
+pre.fragment a.el.function,
+pre.fragment code a.el.function,
+pre a.el.function,
+pre code a.el.function {
+  text-decoration: none !important;
+  border-bottom: none !important;
+  border: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  text-shadow: none !important;
+}
+
+/* C++ Syntax highlighting - Identifiers/Variables (Neovim Atom One Dark red) */
+pre.fragment .identifier,
+pre.fragment code .identifier,
+pre code .identifier,
+.contents pre.fragment .identifier,
+.contents pre.fragment code .identifier,
+.contents pre:not(.memproto):not(.memdoc pre) .identifier,
+.contents pre:not(.memproto):not(.memdoc pre) code .identifier {
+  color: #f0808a !important; /* Brighter Neovim Atom One Dark red */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Operators (Neovim Atom One Dark cyan) */
+pre.fragment .operator,
+pre.fragment code .operator,
+pre code .operator,
+.contents pre.fragment .operator,
+.contents pre.fragment code .operator,
+.contents pre:not(.memproto):not(.memdoc pre) .operator,
+.contents pre:not(.memproto):not(.memdoc pre) code .operator {
+  color: #6dd5e3 !important; /* Brighter Neovim Atom One Dark cyan */
+  font-weight: 400 !important; /* Neovim normal weight */
+}
+
+/* C++ Syntax highlighting - Punctuation (Atom One Dark text) */
+pre.fragment .punctuation,
+pre.fragment code .punctuation,
+pre code .punctuation,
+.contents pre.fragment .punctuation,
+.contents pre.fragment code .punctuation,
+.contents pre:not(.memproto):not(.memdoc pre) .punctuation,
+.contents pre:not(.memproto):not(.memdoc pre) code .punctuation {
+  color: #c8d0d9 !important; /* Brighter Atom One Dark text */
+}
+
+/* Remove blue highlight from text selection in code blocks */
+pre.fragment::selection,
+pre.fragment *::selection,
+pre::selection,
+pre *::selection,
+pre.fragment code::selection,
+pre code::selection,
+.contents pre.fragment::selection,
+.contents pre.fragment *::selection,
+.contents pre:not(.memproto):not(.memdoc pre)::selection,
+.contents pre:not(.memproto):not(.memdoc pre) *::selection,
+.contents pre.fragment code::selection,
+.contents pre:not(.memproto):not(.memdoc pre) code::selection {
+  background-color: rgba(198, 120, 221, 0.3) !important; /* Purple instead of blue */
+  color: inherit !important;
+}
+
+pre.fragment::-moz-selection,
+pre.fragment *::-moz-selection,
+pre::-moz-selection,
+pre *::-moz-selection,
+pre.fragment code::-moz-selection,
+pre code::-moz-selection,
+.contents pre.fragment::-moz-selection,
+.contents pre.fragment *::-moz-selection,
+.contents pre:not(.memproto):not(.memdoc pre)::-moz-selection,
+.contents pre:not(.memproto):not(.memdoc pre) *::-moz-selection,
+.contents pre.fragment code::-moz-selection,
+.contents pre:not(.memproto):not(.memdoc pre) code::-moz-selection {
+  background-color: rgba(198, 120, 221, 0.3) !important; /* Purple instead of blue */
+  color: inherit !important;
+}
+
+/* Inline code - Enhanced styling */
+code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', 'Fira Code', monospace !important;
+  font-size: 0.9em !important;
+  background-color: #2d2d2d !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  color: #ce9178 !important;
+  font-weight: 500 !important;
+  border: 1px solid #3a3a3a !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.memproto code,
+.memproto .memname {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Member declaration tables - Dark grey rows */
+table.memberdecls {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #1a1d26;
+}
+
+table.memberdecls tr.heading td {
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.2) 0%, rgba(74, 222, 128, 0.15) 100%);
+  padding: 14px 18px;
+  font-weight: 700;
+  border-bottom: 3px solid #60a5fa;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+table.memberdecls tr.memitem {
+  background-color: #2a2d3a;
+  border: none;
+  border-left: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  transition: all 0.2s ease;
+}
+
+table.memberdecls tr.memitem:hover {
+  background: linear-gradient(90deg, rgba(96, 165, 250, 0.15) 0%, transparent 100%);
+  box-shadow: none;
+  transform: translateX(3px);
+}
+
+table.memberdecls tr.memitem td {
+  padding: 12px 18px;
+  border-bottom: 1px solid #3a3d4a;
+}
+
+table.memberdecls tr.memitem td.memItemLeft {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  color: #93c5fd;
+  width: 30%;
+  vertical-align: top;
+  font-weight: 500;
+}
+
+table.memberdecls tr.memitem td.memItemRight {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  color: #f5f5f5;
+  font-weight: 500;
+}
+
+table.memberdecls tr.memitem td.memItemRight b {
+  color: #60a5fa;
+  font-weight: 700;
+  text-shadow: 0 0 4px rgba(96, 165, 250, 0.3);
+}
+
+table.memberdecls tr.memitem td.memItemRight .paramname {
+  color: #fbbf24;
+}
+
+table.memberdecls tr.memitem td.memItemRight .stringliteral {
+  color: #ffffff;
+}
+
+table.memberdecls tr.memdesc td {
+  padding: 10px 18px 15px 18px;
+  color: #c0c0c0;
+  font-size: 0.9em;
+  border-bottom: 1px solid #3a3d4a;
+  background: rgba(42, 45, 58, 0.5);
+  font-style: italic;
+}
+
+table.memberdecls tr.separator td {
+  height: 10px;
+  border: none;
+  padding: 0;
+}
+
+/* Detailed description section - Better organized */
+.contents .textblock {
+  margin: 30px 0;
+  padding: 25px 30px;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.4) 0%, rgba(30, 33, 41, 0.6) 100%);
+  border-radius: 8px;
+  border-left: 4px solid #4ade80;
+  border-top: 1px solid #3a3d4a;
+  line-height: 1.8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contents .textblock p {
+  margin: 12px 0;
+}
+
+.contents .textblock p:first-child {
+  margin-top: 0;
+}
+
+.contents .textblock p:last-child {
+  margin-bottom: 0;
+}
+
+.contents .textblock ul,
+.contents .textblock ol {
+  margin: 12px 0;
+  padding-left: 30px;
+}
+
+.contents .textblock li {
+  margin: 8px 0;
+}
+
+/* Template parameters and other sections - Better organized */
+dl.paramlist {
+  margin: 25px 0;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, rgba(96, 165, 250, 0.1) 0%, rgba(74, 222, 128, 0.08) 100%);
+  border-radius: 8px;
+  border-left: 4px solid #60a5fa;
+  border-top: 1px solid #3a3d4a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+dl.paramlist dt {
+  font-weight: 700;
+  color: #60a5fa;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  background: rgba(96, 165, 250, 0.15);
+  border-radius: 5px;
+  display: inline-block;
+  border-left: 3px solid #60a5fa;
+}
+
+dl.paramlist dt:first-child {
+  margin-top: 0;
+}
+
+dl.paramlist dd {
+  margin-left: 25px;
+  margin-bottom: 18px;
+  color: #f0f0f0;
+  line-height: 1.7;
+}
+
+/* MARKDOWN CODE BLOCKS (``` blocks) ONLY - Neovim Atom One Dark theme with matching fonts */
+.contents pre.fragment,
+.contents pre:not(.memproto):not(.memdoc pre):not(.memproto),
+.contents .fragment pre,
+.contents div pre:not(.memproto):not(.memdoc pre),
+.contents .textblock pre.fragment,
+.contents .textblock pre:not(.memproto):not(.memdoc pre) {
+  background: #323640 !important; /* Brighter Neovim Atom One Dark background */
+  border: 2px solid rgba(198, 120, 221, 0.6) !important; /* Brighter purple border */
+  border-left: 6px solid #d19af0 !important; /* Brighter purple accent */
+  border-radius: 12px !important;
+  padding: 26px 32px !important;
+  overflow-x: auto !important;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.95em !important; /* Neovim Atom One Dark font size */
+  font-weight: 400 !important; /* Neovim Atom One Dark normal font weight */
+  line-height: 1.6 !important; /* Neovim Atom One Dark line height */
+  color: #c8d0d9 !important; /* Brighter Neovim Atom One Dark text color */
+  box-shadow: 
+    0 0 0 1px rgba(198, 120, 221, 0.25),
+    0 8px 40px rgba(198, 120, 221, 0.45),
+    0 4px 20px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15) !important;
+  display: block !important;
+  white-space: pre !important;
+  position: relative !important;
+  margin: 32px 0 !important;
+  letter-spacing: 0 !important; /* Neovim Atom One Dark - no letter spacing */
+  font-variant-ligatures: common-ligatures !important; /* Neovim ligatures */
+  font-feature-settings: "liga" 1, "calt" 1 !important; /* Neovim font features */
+}
+
+/* Ensure ALL markdown code blocks in .contents get Neovim Atom One Dark theme */
+.contents pre:not(.memproto):not(.memdoc pre) {
+  background: #323640 !important; /* Brighter Neovim Atom One Dark background */
+  border: 2px solid rgba(198, 120, 221, 0.6) !important;
+  border-left: 6px solid #d19af0 !important;
+  border-radius: 12px !important;
+  padding: 26px 32px !important;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.95em !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  color: #c8d0d9 !important;
+  letter-spacing: 0 !important;
+  font-variant-ligatures: common-ligatures !important;
+  font-feature-settings: "liga" 1, "calt" 1 !important;
+}
+
+/* Exclude memdoc and memproto from markdown styling */
+.contents .memdoc pre,
+.contents .memdoc .fragment,
+.contents .memproto {
+  background-color: #1e1e1e !important;
+  border: 1px solid #3a3a3a !important;
+  border-left: none !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  margin: 20px 0 !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+  color: #d4d4d4 !important;
+  box-shadow: none !important;
+}
+
+/* Overlay for markdown code blocks only */
+.contents pre.fragment::after,
+.contents pre:not(.memproto):not(.memdoc pre)::after,
+.contents .fragment pre::after,
+.contents div pre:not(.memproto)::after,
+.contents .textblock pre.fragment::after,
+.contents .textblock pre:not(.memproto)::after {
+  content: '';
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: transparent !important;
+  border-radius: 12px !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+/* No overlay for memdoc/memproto */
+.contents .memdoc pre::after,
+.contents .memproto::after {
+  display: none !important;
+}
+
+/* C++ badge for markdown code blocks only */
+.contents pre.fragment::before,
+.contents pre:not(.memproto):not(.memdoc pre)::before,
+.contents .fragment pre::before,
+.contents div pre:not(.memproto)::before,
+.contents .textblock pre.fragment::before,
+.contents .textblock pre:not(.memproto)::before {
+  content: 'C++';
+  position: absolute !important;
+  top: 12px !important;
+  right: 18px !important;
+  font-size: 0.7em !important;
+  color: #d19af0 !important; /* Brighter Purple */
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2.5px !important;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  background: rgba(209, 154, 240, 0.3) !important; /* Brighter purple background */
+  padding: 6px 12px !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(209, 154, 240, 0.7) !important; /* Brighter purple border */
+  box-shadow: 
+    0 2px 8px rgba(209, 154, 240, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  z-index: 2 !important;
+}
+
+/* No badge for memdoc/memproto */
+.contents .memdoc pre::before,
+.contents .memproto::before {
+  display: none !important;
+}
+
+/* Code content for MARKDOWN CODE BLOCKS (``` blocks) ONLY - Neovim Atom One Dark fonts */
+.contents pre.fragment code,
+.contents pre:not(.memproto):not(.memdoc pre):not(.memproto) code,
+.contents .fragment pre code,
+.contents div pre:not(.memproto):not(.memdoc pre) code,
+.contents .textblock pre.fragment code,
+.contents .textblock pre:not(.memproto):not(.memdoc pre) code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.95em !important; /* Neovim Atom One Dark font size */
+  font-weight: 400 !important; /* Neovim Atom One Dark normal font weight */
+  color: #c8d0d9 !important; /* Brighter Neovim Atom One Dark text color */
+  letter-spacing: 0 !important; /* Neovim Atom One Dark - no letter spacing */
+  background: transparent !important;
+  padding: 0 !important;
+  position: relative !important;
+  z-index: 1 !important;
+  line-height: 1.6 !important; /* Neovim Atom One Dark line height */
+  font-variant-ligatures: common-ligatures !important; /* Neovim ligatures */
+  font-feature-settings: "liga" 1, "calt" 1 !important; /* Neovim font features */
+}
+
+/* Regular code content for memdoc/memproto */
+.contents .memdoc pre code,
+.contents .memproto code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  color: #d4d4d4 !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* Additional C++ syntax elements */
+pre.fragment .namespace,
+pre code .namespace,
+.contents pre.fragment .namespace,
+.contents pre.fragment code .namespace,
+.contents pre:not(.memproto):not(.memdoc pre) .namespace,
+.contents pre:not(.memproto):not(.memdoc pre) code .namespace {
+  color: #f0c97f !important; /* Brighter Atom One Dark yellow/orange */
+}
+
+pre.fragment .template,
+pre code .template,
+.contents pre.fragment .template,
+.contents pre.fragment code .template,
+.contents pre:not(.memproto):not(.memdoc pre) .template,
+.contents pre:not(.memproto):not(.memdoc pre) code .template {
+  color: #f0c97f !important; /* Brighter Atom One Dark yellow/orange */
+}
+
+pre.fragment .macro,
+pre code .macro,
+.contents pre.fragment .macro,
+.contents pre.fragment code .macro,
+.contents pre:not(.memproto):not(.memdoc pre) .macro,
+.contents pre:not(.memproto):not(.memdoc pre) code .macro {
+  color: #d19af0 !important; /* Brighter Atom One Dark purple */
+}
+
+pre.fragment .variable,
+pre code .variable,
+.contents pre.fragment .variable,
+.contents pre.fragment code .variable,
+.contents pre:not(.memproto):not(.memdoc pre) .variable,
+.contents pre:not(.memproto):not(.memdoc pre) code .variable {
+  color: #f0808a !important; /* Brighter Atom One Dark red */
+}
+
+pre.fragment .constant,
+pre code .constant,
+.contents pre.fragment .constant,
+.contents pre.fragment code .constant,
+.contents pre:not(.memproto):not(.memdoc pre) .constant,
+.contents pre:not(.memproto):not(.memdoc pre) code .constant {
+  color: #7bc5ff !important; /* Brighter Atom One Dark blue */
+}
+
+/* Ensure all pre code blocks are styled as C++ code blocks */
+pre code,
+pre > code {
+  display: block !important;
+  white-space: pre !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', 'Fira Code', monospace !important;
+  color: #d4d4d4 !important;
+}
+
+/* Regular pre elements - simple styling, not markdown code blocks */
+pre:not(.memproto):not(.memdoc pre):not(.contents pre) {
+  background-color: #1e1e1e !important;
+  border: 1px solid #3a3a3a !important;
+  border-radius: 6px !important;
+  padding: 12px 16px !important;
+  overflow-x: auto !important;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  line-height: 1.6 !important;
+  margin: 20px 0 !important;
+  color: #d4d4d4 !important;
+}
+
+pre:not(.memproto):not(.memdoc pre):not(.contents pre)::after,
+pre:not(.memproto):not(.memdoc pre):not(.contents pre)::before {
+  display: none !important;
+}
+
+pre:not(.memproto):not(.memdoc pre):not(.contents pre) code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace !important;
+  font-size: 0.9em !important;
+  color: #d4d4d4 !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* Links - Brighter blue with better contrast */
+a.el {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px dotted rgba(96, 165, 250, 0.5);
+  transition: all 0.2s ease;
+}
+
+a.el:hover {
+  color: #93c5fd;
+  border-bottom: 2px solid #93c5fd;
+  text-shadow: 0 0 8px rgba(147, 197, 253, 0.4);
+  text-decoration: none;
+}
+
+a.el:visited {
+  color: #9b59b6;
+}
+
+/* Remove ALL blue highlights from links in code blocks - including function links */
+pre.fragment a.el,
+pre.fragment a.el:hover,
+pre.fragment a.el:visited,
+pre.fragment a.el:active,
+pre.fragment a.el.function,
+pre.fragment a.el.function:hover,
+pre.fragment code a.el,
+pre.fragment code a.el:hover,
+pre.fragment code a.el:visited,
+pre.fragment code a.el:active,
+pre.fragment code a.el.function,
+pre.fragment code a.el.function:hover,
+pre a.el,
+pre a.el:hover,
+pre a.el:visited,
+pre a.el:active,
+pre a.el.function,
+pre a.el.function:hover,
+pre code a.el,
+pre code a.el:hover,
+pre code a.el:visited,
+pre code a.el:active,
+pre code a.el.function,
+pre code a.el.function:hover,
+.contents pre.fragment a.el,
+.contents pre.fragment a.el:hover,
+.contents pre.fragment a.el.function,
+.contents pre.fragment a.el.function:hover,
+.contents pre a.el,
+.contents pre a.el:hover,
+.contents pre a.el.function,
+.contents pre a.el.function:hover,
+.memdoc pre.fragment a.el,
+.memdoc pre.fragment a.el:hover,
+.memdoc pre.fragment a.el.function,
+.memdoc pre.fragment a.el.function:hover {
+  color: inherit !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  border-bottom: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  box-decoration-break: clone !important;
+}
+
+/* Specifically remove ALL blue styling from function links in code blocks - no underlines, no backgrounds */
+pre.fragment a.el.function,
+pre.fragment a.el.function:hover,
+pre.fragment a.el.function:visited,
+pre.fragment a.el.function:active,
+pre.fragment code a.el.function,
+pre.fragment code a.el.function:hover,
+pre.fragment code a.el.function:visited,
+pre.fragment code a.el.function:active,
+pre a.el.function,
+pre a.el.function:hover,
+pre a.el.function:visited,
+pre a.el.function:active,
+pre code a.el.function,
+pre code a.el.function:hover,
+pre code a.el.function:visited,
+pre code a.el.function:active,
+.contents pre.fragment a.el.function,
+.contents pre.fragment a.el.function:hover,
+.contents pre a.el.function,
+.contents pre a.el.function:hover,
+.memdoc pre.fragment a.el.function,
+.memdoc pre.fragment a.el.function:hover {
+  color: #61afef !important; /* Keep function color but remove all other blue styling */
+  background-color: transparent !important;
+  background: transparent !important;
+  border-bottom: none !important;
+  border: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  text-decoration: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  box-decoration-break: clone !important;
+}
+
+/* Labels and badges - Blue box for static */
+.mlabel {
+  display: inline-block;
+  padding: 3px 8px;
+  margin: 0 4px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mlabel.inline {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.mlabel.static {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.mlabel.nodiscard {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.mlabel.override {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.mlabel.virtual {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.mlabel.private {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.mlabel.public {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Inheritance diagrams */
+.dynheader {
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  color: var(--fg);
+}
+
+.dyncontent {
+  margin: 20px 0;
+  padding: 20px 25px;
+  background: linear-gradient(135deg, rgba(42, 45, 58, 0.4) 0%, rgba(30, 33, 41, 0.6) 100%);
+  border-radius: 8px;
+  border: 2px solid #3a3d4a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Search box styling - Brighter */
+#MSearchBox {
+  border: 2px solid #3a3d4a;
+  border-radius: 6px;
+  background-color: #2a2d3a;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#MSearchBox:hover,
+#MSearchBox.MSearchBoxActive {
+  border-color: #4ade80;
+  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.3);
+}
+
+#MSearchField {
+  background-color: transparent;
+  border: none;
+  color: #f5f5f5;
+  font-size: 0.9em;
+}
+
+/* Navigation tree - Linear and organized layout */
+#nav-tree {
+  background-color: #0f1117 !important;
+  border-right: 2px solid #2a2d3a !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  padding: 8px 0 !important;
+}
+
+#nav-tree-contents {
+  padding: 0 !important;
+}
+
+#nav-tree ul {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#nav-tree li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  position: relative !important;
+  line-height: 1.4 !important;
+  display: block !important;
+}
+
+/* Linear item layout - everything on one clean line with proper alignment */
+#nav-tree .item {
+  display: block !important;
+  position: relative !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  height: 22px !important;
+  overflow: hidden !important;
+}
+
+/* Base padding for all items - consistent alignment */
+#nav-tree .item > a {
+  display: block !important;
+  padding: 3px 6px 3px 8px !important;
+  text-decoration: none !important;
+  color: #e0e0e0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  transition: color 0.15s ease, background-color 0.15s ease !important;
+  line-height: 1.4 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
+#nav-tree .item > a:hover {
+  color: #4ade80 !important;
+  background-color: rgba(74, 222, 128, 0.1) !important;
+}
+
+/* Hide expand/collapse arrows - Remove from navbar tree */
+#nav-tree .arrow,
+#nav-tree .arrowdown,
+#nav-tree .arrowright,
+#nav-tree .plus,
+#nav-tree .minus {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Labels - Linear inline alignment */
+#nav-tree .label {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  vertical-align: middle !important;
+}
+
+#nav-tree .label a {
+  padding: 0 !important;
+  display: inline !important;
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Active/Selected item - Linear highlight */
+#nav-tree .item.selected,
+#nav-tree .item.selected a,
+#nav-tree .selected,
+#nav-tree .selected a,
+#nav-tree a.selected,
+#nav-tree li.selected,
+#nav-tree li.selected a {
+  background-color: #4ade80 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+#nav-tree .selected .arrow,
+#nav-tree .selected .arrowdown,
+#nav-tree .selected .arrowright {
+  display: none !important;
+}
+
+/* Proper indentation for nested items - Consistent alignment */
+#nav-tree .children_ul {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Level 1 items (top level) - Base alignment */
+#nav-tree > ul > li > .item > a,
+#nav-tree li:first-child > .item > a {
+  padding-left: 8px !important;
+}
+
+/* Level 2 items - Consistent indentation */
+#nav-tree li li .item > a {
+  padding-left: 16px !important;
+}
+
+/* Level 3 items - Consistent indentation */
+#nav-tree li li li .item > a {
+  padding-left: 24px !important;
+}
+
+/* Level 4 items - Consistent indentation */
+#nav-tree li li li li .item > a {
+  padding-left: 32px !important;
+}
+
+/* Level 5 items - Consistent indentation */
+#nav-tree li li li li li .item > a {
+  padding-left: 40px !important;
+}
+
+/* Level 6 items - Consistent indentation */
+#nav-tree li li li li li li .item > a {
+  padding-left: 48px !important;
+}
+
+/* Ensure all items at same level have same padding */
+#nav-tree ul ul li .item > a {
+  padding-left: 16px !important;
+}
+
+#nav-tree ul ul ul li .item > a {
+  padding-left: 24px !important;
+}
+
+#nav-tree ul ul ul ul li .item > a {
+  padding-left: 32px !important;
+}
+
+/* Images in nav tree - Linear alignment */
+#nav-tree img {
+  margin: 0 4px 0 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Ensure consistent linear layout */
+#nav-tree,
+#nav-tree * {
+  box-sizing: border-box !important;
+}
+
+/* Ensure consistent block layout for proper alignment */
+#nav-tree .item {
+  display: block !important;
+}
+
+#nav-tree .item > a {
+  display: block !important;
+  width: 100% !important;
+}
+
+#nav-tree .label {
+  display: inline !important;
+}
+
+/* Ensure all list items align properly */
+#nav-tree li {
+  display: list-item !important;
+  list-style: none !important;
+}
+
+/* Sidebar navigation items */
+#side-nav {
+  background-color: #0f1117;
+  border-right: 2px solid #2a2d3a;
+}
+
+#side-nav a {
+  color: #e0e0e0;
+  transition: all 0.2s ease;
+}
+
+#side-nav a:hover {
+  color: #4ade80;
+  text-shadow: 0 0 6px rgba(74, 222, 128, 0.4);
+}
+
+#side-nav .selected,
+#side-nav .selected a {
+  background-color: #4ade80 !important;
+  color: #ffffff !important;
+  border-left: 4px solid #4ade80 !important;
+  box-shadow: 0 2px 8px rgba(74, 222, 128, 0.3) !important;
+}
+
+/* Note boxes - Brighter orange-brown with vibrant green left border */
+.memdoc .note,
+.memdoc .warning,
+.memdoc .attention,
+.memdoc .deprecated,
+.memdoc div[class*="note"],
+.memdoc div[class*="warning"],
+.memdoc div[class*="attention"] {
+  background-color: #a0654a;
+  border-left: 4px solid #4ade80;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.memdoc .note strong,
+.memdoc .warning strong,
+.memdoc .attention strong,
+.memdoc .deprecated strong,
+.memdoc div[class*="note"] strong,
+.memdoc div[class*="warning"] strong {
+  color: #fbbf24;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+  font-size: 1.1em;
+}
+
+.memdoc .note p,
+.memdoc .warning p,
+.memdoc .attention p,
+.memdoc .deprecated p,
+.memdoc div[class*="note"] p,
+.memdoc div[class*="warning"] p {
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Additional styling for note-like elements */
+.memdoc blockquote {
+  background-color: #a0654a;
+  border-left: 4px solid #4ade80;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.memdoc blockquote strong {
+  color: #fbbf24;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+  font-size: 1.1em;
+}
+
+/* Target any div that might contain "Note" text */
+.memdoc div:has(strong:contains("Note")),
+.memdoc div:has(strong:contains("Warning")),
+.memdoc div:has(strong:contains("Attention")) {
+  background-color: #8b5a3c;
+  border-left: 3px solid #4ade80;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+/* Style paragraphs that start with "Note:" or similar */
+.memdoc p:has-text("Note:"),
+.memdoc p:has-text("Warning:"),
+.memdoc p:first-child {
+  background-color: #8b5a3c;
+  border-left: 3px solid #4ade80;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+/* Additional styling to match image exactly */
+
+/* Highlight important text - Brighter */
+.contents strong,
+.contents b {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Lists with colorful bullets */
+.contents ul li::marker {
+  color: var(--links);
+  font-weight: bold;
+}
+
+.contents ol li::marker {
+  color: var(--links);
+  font-weight: bold;
+}
+
+/* Blockquotes */
+.contents blockquote {
+  border-left: 4px solid var(--links);
+  background: linear-gradient(90deg, 
+    rgba(255, 164, 60, 0.1) 0%, 
+    transparent 100%);
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+/* Tables */
+.contents table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contents table th {
+  background: linear-gradient(135deg, 
+    rgba(255, 164, 60, 0.25) 0%, 
+    rgba(52, 152, 219, 0.2) 100%);
+  color: var(--fg);
+  padding: 12px 15px;
+  font-weight: 700;
+  text-align: left;
+  border-bottom: 2px solid var(--links);
+}
+
+.contents table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255, 164, 60, 0.2);
+  background-color: var(--bg-alt);
+}
+
+.contents table tr:hover td {
+  background: linear-gradient(90deg, 
+    rgba(255, 164, 60, 0.1) 0%, 
+    transparent 100%);
+}
+
+.contents table tr:nth-child(even) td {
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+/* Horizontal rules */
+.contents hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--links) 50%, 
+    transparent 100%);
+  margin: 30px 0;
+  border-radius: 2px;
+}
+
+/* Emphasis and italic text - Brighter */
+.contents em,
+.contents i {
+  color: #f0f0f0;
+  font-style: italic;
+}
+
+/* Highlighted text */
+.contents mark {
+  background: linear-gradient(135deg, 
+    rgba(255, 164, 60, 0.4) 0%, 
+    rgba(255, 193, 7, 0.3) 100%);
+  color: var(--fg);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+/* Additional section styling - Better organized */
+.contents h3 {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  padding: 10px 15px;
+  background: rgba(96, 165, 250, 0.1);
+  border-left: 4px solid #60a5fa;
+  border-radius: 5px;
+}
+
+.contents h4 {
+  color: #f5f5f5;
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  border-left: 3px solid #4ade80;
+  background: rgba(74, 222, 128, 0.08);
+  border-radius: 4px;
+}
+
+/* Navigation items - Linear layout */
+#nav-tree .item {
+  transition: background-color 0.15s ease !important;
+  display: block !important;
+  position: relative !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  height: 22px !important;
+  overflow: hidden !important;
+}
+
+#nav-tree .item:hover {
+  background-color: rgba(96, 165, 250, 0.08) !important;
+}
+
+/* Ensure all text elements align linearly */
+#nav-tree span {
+  display: inline !important;
+  vertical-align: middle !important;
+}
+
+/* Linear alignment for all elements */
+#nav-tree .item > * {
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+/* Remove alternating colors - keep consistent */
+.memitem:nth-child(odd),
+.memitem:nth-child(even) {
+  border: none;
+  background: transparent;
+}
+
+/* Scrollbar styling for webkit browsers */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0f14;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3a3d4a;
+  border-radius: 0;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4a4d5a;
+}
+
+/* Hide the "C" icon in class hierarchy and index pages */
+.icona .icon,
+.directory .icon,
+.classindex .icon,
+.icon {
+  display: none !important;
+}
+
+.icona {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #doc-content {
+    padding: 15px 20px;
   }
   
-  .hljs-comment,
-  .hljs-quote {
-    color: rgb(87, 166, 74);
-    font-style: italic;
+  .headertitle .title {
+    font-size: 1.6em;
   }
   
-  .hljs-variable,
-  .hljs-template-variable,
-  .hljs-attribute,
-  .hljs-attr,
-  .hljs-regexp,
-  .hljs-link,
-  .hljs-selector-id,
-  .hljs-params {
-    color: rgb(189, 183, 107);
+  h2.groupheader {
+    font-size: 1.3em;
   }
   
-  .hljs-selector-class {
-    color: #ff00ff;
+  .memitem {
+    padding: 15px;
   }
-  
-  .hljs-number,
-  .hljs-meta,
-  .hljs-literal,
-  .hljs-builtin-name,
-  .hljs-type {
-    color: rgb(218, 218, 218);
-  }
-  
-  .hljs-string,
-  .hljs-bullet {
-    color: rgb(214, 157, 133);
-  }
-  
-  .hljs-title,
-  .hljs-built_in,
-  .hljs-section {
-    color: #ff8000;
-  }
-  
-  .hljs-keyword,
-  .hljs-selector-tag,
-  .hljs-symbol {
-    color: rgb(86, 156, 214);
-  }
-  
-  .hljs-name {
-      color: #ff00ff;
-  }
-  
-  .hljs-tag {
-      color: #00568d;
-  }
-  
-  .hljs-emphasis {
-    font-style: italic;
-  }
-  
-  .hljs-strong {
-    font-weight: bold;
-  }
-  
-  .hljs-addition {
-    color: #91b362;
-  }
-  
-  .hljs-deletion {
-    color: #d96c75;
-  }
+}

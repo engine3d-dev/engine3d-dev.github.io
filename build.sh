@@ -1,16 +1,16 @@
 
-# This script generates the docs html files required for the documentation web-page
+# # This script generates the docs html files required for the documentation web-page
 
-# Sets up the virtual environment
-python3 -m venv venv
+# # Sets up the virtual environment
+# python3 -m venv venv
 
-source venv/bin/activate
-
-
-pip install -r requirements.txt
+# source venv/bin/activate
 
 
-# Generate doxygen
+# pip install -r requirements.txt
+
+
+# # Generate doxygen
 
 # cd TheAtlasEngine
 # doxygen -g Doxyfile
@@ -41,12 +41,26 @@ echo "ls TheAtlasEngine | grep \"Doxyfile\""
 echo "Output:"
 ls TheAtlasEngine | grep "Doxyfile"
 
-# Generating the doxygen documentation from the specified Doxyfile in the repository
+# # Generating the doxygen documentation from the specified Doxyfile in the repository
 doxygen TheAtlasEngine/Doxyfile
 
-# # Copying the doxygen documentation to the mkdocs/html directory
-cp -R docs/html mkdocs/html
+# # # Copying the doxygen documentation to the mkdocs/html directory
+# cp -R docs/html mkdocs/html
 
 
-chmod +x apply_css.sh
-./apply_css.sh
+if [ -d mkdocs/html ]; then
+    rm -rf mkdocs/html
+    echo "Deleted mkdocs/html directory"
+    echo "Copying docs/html to mkdocs/html"
+    cp -R docs/html mkdocs/html
+    cp css_themes/*.css mkdocs/html/
+else
+    echo "mkdocs/html directory not found"
+    echo "Copying docs/html to mkdocs/html"
+    cp -R docs/html mkdocs/html
+    cp css_themes/*.css mkdocs/html/
+fi
+
+
+# chmod +x apply_css.sh
+# ./apply_css.sh

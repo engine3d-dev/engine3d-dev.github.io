@@ -58,6 +58,7 @@ else
     echo "mkdocs/html directory not found"
     echo "Copying docs/html to mkdocs/html"
     cp -R docs/html mkdocs/html
+    echo "Copying css_themes/*.css to mkdocs/html/"
     cp css_themes/*.css mkdocs/html/
 fi
 

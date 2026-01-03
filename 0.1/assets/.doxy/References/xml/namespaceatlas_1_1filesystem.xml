@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="namespaceatlas_1_1filesystem" kind="namespace" language="C++">
+    <compoundname>atlas::filesystem</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="file__dialog_8cpp_1aca0753c5f202fdccb5ac171633d3af5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string atlas::filesystem::load_from_file_dialog</definition>
+        <argsstring>(const std::string &amp;p_filter, const std::filesystem::path &amp;p_default_path)</argsstring>
+        <name>load_from_file_dialog</name>
+        <qualifiedname>atlas::filesystem::load_from_file_dialog</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_filter</declname>
+        </param>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>p_default_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/filesystem/file_dialog.cpp" line="6" column="17" bodyfile="TheAtlasEngine/src/atlas/core/filesystem/file_dialog.cpp" bodystart="6" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="file__dialog_8cpp_1a898d8c9c490d16acb9435492a3d39432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string atlas::filesystem::save_to_file</definition>
+        <argsstring>(const std::string &amp;p_filter, const std::filesystem::path &amp;p_default)</argsstring>
+        <name>save_to_file</name>
+        <qualifiedname>atlas::filesystem::save_to_file</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>p_filter</declname>
+        </param>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>p_default</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TheAtlasEngine/src/atlas/core/filesystem/file_dialog.cpp" line="23" column="17" bodyfile="TheAtlasEngine/src/atlas/core/filesystem/file_dialog.cpp" bodystart="23" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/src/atlas/core/filesystem/file_dialog.cpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

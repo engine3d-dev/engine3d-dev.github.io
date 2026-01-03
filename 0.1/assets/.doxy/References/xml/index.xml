@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="namespaceatlas" kind="namespace"><name>atlas</name>
+    <member refid="application_8cpp_1a38eb5a578696ef0237bc6769c3bf4288" kind="variable"><name>g_graphics_backend_api</name></member>
+    <member refid="engine__logger_8cpp_1a2f1b7a0ff35a7891c0b094edbda30d05" kind="variable"><name>g_current_pattern_for_logs</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a9c04b1043787fe902d79d05545f03078" kind="function"><name>to_quat</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a377e152e447293addd67a4fc9568ca20" kind="function"><name>from_quat</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a1a0211af0c93bbacd236cb927134f154" kind="function"><name>to_quat</name></member>
+    <member refid="core_2math_2utilities_8cpp_1ac82329f7a6e29f002bb6d88be289b9f1" kind="function"><name>to_quathp</name></member>
+    <member refid="serializer_8cpp_1af3faa5594363ee9001ca7d1a24adcdd5" kind="function"><name>serialize_entity</name></member>
+    <member refid="serializer_8cpp_1a2e04e4d0694ae709362b4b43f7bc5d2b" kind="function"><name>deserialize_entity</name></member>
+    <member refid="core_2serialize_2types_8cpp_1a94a473e9566370f01fa961ef60c2748b" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1a345f0a4c253e722ccd93217bda774a6a" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1a77dcfe0567453fc3f28e95b87da7cdc7" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1a07b84454c43b234e6f13076166621c2e" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1aa7c457a05b1c5abfe014c5a78765d2a2" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1a803d3c75666caba06b1243b1a6256b79" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1ad5d3ce1e5e531b2f1ac2feafe766a276" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1a32c27dcc02ed3078c1640467ed55d1cd" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1ac4fe97362e56da34d90f5e6afaf24f2b" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1acbfd8a5564e211316da14e33047aa65b" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="core_2serialize_2types_8cpp_1aba89ed55a555e38dba0386b29480616d" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="window_8cpp_1a77e029bfc960c855162bb9f64332f995" kind="function"><name>create_window</name></member>
+    <member refid="graphics__context_8cpp_1a53d091866b8220d17ce93c0d8a3522fc" kind="function"><name>initialize_context</name></member>
+    <member refid="drivers_2jolt-cpp_2types_8cpp_1aa3226807b3d692985813ba20198cd8dd" kind="function"><name>to_quat</name></member>
+    <member refid="drivers_2jolt-cpp_2types_8cpp_1afd76711c27835df4095891d7e6bcba91" kind="function"><name>to_vec3</name></member>
+    <member refid="drivers_2jolt-cpp_2types_8cpp_1a5eb7197d2b0687385b58b7ed23577ea8" kind="function"><name>to_vec4</name></member>
+    <member refid="render__context_8cpp_1a761b8940175876e4bf759fcb890d77d2" kind="function"><name>initialize_renderer</name></member>
+  </compound>
+  <compound refid="namespaceatlas_1_1detail" kind="namespace"><name>atlas::detail</name>
+    <member refid="state_8cpp_1a48464177164cc23761e720dc138abb8d" kind="variable"><name>s_update</name></member>
+    <member refid="state_8cpp_1ae92048c3a3c9f2241f0d14721815936c" kind="variable"><name>s_defer_update</name></member>
+    <member refid="state_8cpp_1a06218b110dee91e65fdd1fef998f68b8" kind="variable"><name>s_ui_update</name></member>
+    <member refid="state_8cpp_1a59787dfd6ecf00c4b47f6d8b0167053d" kind="variable"><name>s_physica_update</name></member>
+    <member refid="state_8cpp_1afd127e8cbb101988524d139d08a06717" kind="variable"><name>s_start</name></member>
+    <member refid="state_8cpp_1a7e280da82c86919f7642bb173e8381dd" kind="function"><name>poll_update</name></member>
+    <member refid="state_8cpp_1af84a7acfbe726071d21e235fa8e57c6e" kind="function"><name>poll_defer_update</name></member>
+    <member refid="state_8cpp_1a3ef49cfab76f90ad63313b15cf5bf375" kind="function"><name>poll_physics_update</name></member>
+    <member refid="state_8cpp_1ab25947c2db7537c2cbffb25982da7704" kind="function"><name>poll_ui_update</name></member>
+    <member refid="state_8cpp_1abb637a9df6a73b5e31ca8ed9b8221ef4" kind="function"><name>poll_start</name></member>
+    <member refid="state_8cpp_1af87790ef7d496fa2de221fac04766fb3" kind="function"><name>remove_update</name></member>
+    <member refid="state_8cpp_1a13acfd97d6fa42f420298f4db80ee18c" kind="function"><name>remove_defer_update</name></member>
+    <member refid="state_8cpp_1a517bfc56ad349c18f2630d824eacb22f" kind="function"><name>remove_physics_update</name></member>
+    <member refid="state_8cpp_1a2e188ce11fcee1913b4e1b167dd40175" kind="function"><name>remove_ui_update</name></member>
+    <member refid="state_8cpp_1a4405dec004f8ad11e381bac0f939e856" kind="function"><name>remove_start</name></member>
+    <member refid="state_8cpp_1a0b56baab83bdd4631c54155b6307ac37" kind="function"><name>invoke_on_update</name></member>
+    <member refid="state_8cpp_1aaa8f9f78ed531b0ed587d8b20a3a3528" kind="function"><name>invoke_defer_update</name></member>
+    <member refid="state_8cpp_1a5c8c98274a1a3b86e436a62157e2471f" kind="function"><name>invoke_physics_update</name></member>
+    <member refid="state_8cpp_1a81404d85cbaee50c2a59afe887105fc5" kind="function"><name>invoke_ui_update</name></member>
+    <member refid="state_8cpp_1a6b45fc867e4b74524dfc192227f0e2e0" kind="function"><name>invoke_start</name></member>
+  </compound>
+  <compound refid="namespaceatlas_1_1event" kind="namespace"><name>atlas::event</name>
+    <member refid="event_8cpp_1a95ba12caad052f7b3fc87585913b17d2" kind="typedef"><name>button_id</name></member>
+    <member refid="event_8cpp_1a8af372e2c962462b3b7d56f4750931c8" kind="typedef"><name>controller_id</name></member>
+    <member refid="event_8cpp_1a2e687800620c50aa5c3a0883f15beffc" kind="variable"><name>s_controllers</name></member>
+    <member refid="event_8cpp_1ae703dd3e3405285b7b7ff4f8d94ca5ec" kind="function"><name>is_key_pressed</name></member>
+    <member refid="event_8cpp_1a6016f0064cb28180f8ee8b4f820c9d97" kind="function"><name>is_key_released</name></member>
+    <member refid="event_8cpp_1a9b7c409b479a3c2a8ad60ead7543fe4a" kind="function"><name>is_mouse_pressed</name></member>
+    <member refid="event_8cpp_1a7a4b5c837d33921d95ebbdfbf462bba4" kind="function"><name>is_mouse_released</name></member>
+    <member refid="event_8cpp_1ad397eb11d06d5ba65166179a4e2be15a" kind="function"><name>cursor_position</name></member>
+    <member refid="event_8cpp_1aa733f383c0f6b25f558052f16570d0cf" kind="function"><name>is_joystic_present</name></member>
+    <member refid="event_8cpp_1a2a95ad6d7ca7dce77294fea2c09ee762" kind="function"><name>is_joystick_guid</name></member>
+    <member refid="event_8cpp_1a3c758967056912703d007390e69a05bb" kind="function"><name>get_joystic_axis</name></member>
+    <member refid="event_8cpp_1a9adad6002a96719a09d6a1d57d2adb56" kind="function"><name>is_joystick_button_pressed</name></member>
+    <member refid="event_8cpp_1a1a82eff9d9d9342d8260d5c8ef48b87e" kind="function"><name>is_joystick_button_released</name></member>
+    <member refid="event_8cpp_1a4ae93c786be96e42acbe58a52a3338e0" kind="function"><name>update_events</name></member>
+    <member refid="event_8cpp_1a28a1fe94c14510179be50f0523d63c55" kind="function"><name>wait_for_events</name></member>
+  </compound>
+  <compound refid="namespaceatlas_1_1filesystem" kind="namespace"><name>atlas::filesystem</name>
+    <member refid="file__dialog_8cpp_1aca0753c5f202fdccb5ac171633d3af5f" kind="function"><name>load_from_file_dialog</name></member>
+    <member refid="file__dialog_8cpp_1a898d8c9c490d16acb9435492a3d39432" kind="function"><name>save_to_file</name></member>
+  </compound>
+  <compound refid="namespaceatlas_1_1jolt" kind="namespace"><name>atlas::jolt</name>
+    <member refid="drivers_2jolt-cpp_2types_8cpp_1a3df252a1ea3f48c10331a0ba54124ab5" kind="function"><name>to_rvec3</name></member>
+    <member refid="drivers_2jolt-cpp_2types_8cpp_1adadedad2f43a088205adaccde77bbcaa" kind="function"><name>to_vec3</name></member>
+    <member refid="drivers_2jolt-cpp_2types_8cpp_1a57ff6cfaedec681925e985f3cff412ef" kind="function"><name>to_quat</name></member>
+    <member refid="drivers_2jolt-cpp_2types_8cpp_1a1cd8417e1258ef93c257002c8d7729d9" kind="function"><name>to_quat</name></member>
+  </compound>
+  <compound refid="namespaceatlas_1_1math" kind="namespace"><name>atlas::math</name>
+    <member refid="core_2math_2utilities_8cpp_1afee51d1dba79b29654d0a6f928b98d6a" kind="function"><name>zeroes</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a02da04bf528c7b59cab994d64c62849c" kind="function"><name>ones</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a05582f9a0bb1c1c3ff3822dd09c91511" kind="function"><name>identity</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a99a157a6bf7c0fb26200ccec12743302" kind="function"><name>forward</name></member>
+    <member refid="core_2math_2utilities_8cpp_1af15ff653ae67b240c4141fe472cb5262" kind="function"><name>right</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a365221b95d3f5c281918d6ce96ad4574" kind="function"><name>left</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a7d061d1b480249a477bd12f027269051" kind="function"><name>backward</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a73c776c5b9828a3abb0bcbeaf931b8d9" kind="function"><name>up</name></member>
+    <member refid="core_2math_2utilities_8cpp_1a02ffe34095309d1d288fdcca542c43af" kind="function"><name>down</name></member>
+  </compound>
+  <compound refid="namespaceatlas_1_1physics" kind="namespace"><name>atlas::physics</name>
+    <member refid="jolt__context_8cpp_1a4c9ad260864dfcc1bba25a829b1013a3" kind="function"><name>trace_impl</name></member>
+    <member refid="jolt__context_8cpp_1af90e9f72c1634e425bf8d49e92535632" kind="function"><name>assert_failed_impl</name></member>
+    <member refid="physics__context_8cpp_1a5508d126c1629179c0d9df4f2c4f63e5" kind="function"><name>initialize_physics_context</name></member>
+  </compound>
+  <compound refid="namespaceatlas_1_1ui" kind="namespace"><name>atlas::ui</name>
+    <member refid="widgets_8cpp_1a4470331e4c39de3f85cb6f845e7a95ff" kind="function"><name>begin_popup_context_window</name></member>
+    <member refid="widgets_8cpp_1ad0775b8ac5ba53624b8325b1a436831c" kind="function"><name>draw_vec3</name></member>
+    <member refid="widgets_8cpp_1ac159fee0b09ff382b510b703bef7dbaa" kind="function"><name>draw_vec4</name></member>
+    <member refid="widgets_8cpp_1a9a59962418d04d8460d7a3f6e37d63ee" kind="function"><name>draw_float</name></member>
+    <member refid="widgets_8cpp_1afdfe5a5e9cf9dbb403b37e189b1d767f" kind="function"><name>draw_input_text</name></member>
+    <member refid="widgets_8cpp_1a797d4b9f331d7506b805dc10a70be0ab" kind="function"><name>draw_text</name></member>
+    <member refid="widgets_8cpp_1af4d3fa5b0a88148f50fc9c5ef36e7141" kind="function"><name>dockspace_window</name></member>
+    <member refid="widgets_8cpp_1a49417ba76d3ec9ab0ced5bd27975bb85" kind="function"><name>button_open_file_dialog</name></member>
+  </compound>
+  <compound refid="namespaceatlas_1_1vk" kind="namespace"><name>atlas::vk</name>
+    <member refid="shader__resource__group_8cpp_1a2a7af45771a8f912a12b00e10dbeedac" kind="function"><name>read_raw_spirv</name></member>
+    <member refid="shader__resource__group_8cpp_1a5bd83a236940847eaa88d84aa9f25fad" kind="function"><name>compile_binary_shader_source</name></member>
+    <member refid="shader__resource__group_8cpp_1a884adf97fa021d3b9a1151f867b33d67" kind="function"><name>read_shader_source_code</name></member>
+    <member refid="shader__resource__group_8cpp_1aeae0f461f3a25c5e44855de2db1ed69f" kind="function"><name>compile_source_from_file</name></member>
+    <member refid="drivers_2vulkan-cpp_2utilities_8cpp_1a65db953413f75deed63fe11a662d9528" kind="function"><name>vk_check</name></member>
+    <member refid="vk__context_8cpp_1ae836940b2ef10d84e7441484a0783968" kind="function"><name>initialize_instance_extensions</name></member>
+    <member refid="vk__driver_8cpp_1ae69d81afa8945652d98916b1800f59d2" kind="function"><name>search_supported_depth_format</name></member>
+    <member refid="vk__driver_8cpp_1a89340d239c21d7c40fb10d92fc8cda09" kind="function"><name>search_depth_format</name></member>
+    <member refid="vk__imgui_8cpp_1a897cb342e49fa3bfabafe58405984d6e" kind="function"><name>im_gui_layout_color_modification</name></member>
+    <member refid="vk__renderer_8cpp_1a6d151c116bb70e48fefbc35ceb645c91" kind="function"><name>to_bytes</name></member>
+  </compound>
+  <compound refid="application_8cpp" kind="file"><name>application.cpp</name>
+  </compound>
+  <compound refid="dockspace_8cpp" kind="file"><name>dockspace.cpp</name>
+  </compound>
+  <compound refid="menu__item_8cpp" kind="file"><name>menu_item.cpp</name>
+  </compound>
+  <compound refid="engine__logger_8cpp" kind="file"><name>engine_logger.cpp</name>
+  </compound>
+  <compound refid="event_8cpp" kind="file"><name>event.cpp</name>
+  </compound>
+  <compound refid="file__dialog_8cpp" kind="file"><name>file_dialog.cpp</name>
+  </compound>
+  <compound refid="stb__image_8cpp" kind="file"><name>stb_image.cpp</name>
+    <member refid="stb__image_8cpp_1a18372412ad2fc3ce1e3240b3cf0efe78" kind="define"><name>STB_IMAGE_IMPLEMENTATION</name></member>
+  </compound>
+  <compound refid="core_2math_2utilities_8cpp" kind="file"><name>utilities.cpp</name>
+  </compound>
+  <compound refid="drivers_2vulkan-cpp_2utilities_8cpp" kind="file"><name>utilities.cpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a30d6a7bd25c04b34553b178203d30cd5" kind="function"><name>win_main</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="win32_8cpp" kind="file"><name>win32.cpp</name>
+    <member refid="win32_8cpp_1a30d6a7bd25c04b34553b178203d30cd5" kind="function"><name>win_main</name></member>
+  </compound>
+  <compound refid="game__object_8cpp" kind="file"><name>game_object.cpp</name>
+  </compound>
+  <compound refid="scene_8cpp" kind="file"><name>scene.cpp</name>
+  </compound>
+  <compound refid="world_8cpp" kind="file"><name>world.cpp</name>
+  </compound>
+  <compound refid="serializer_8cpp" kind="file"><name>serializer.cpp</name>
+  </compound>
+  <compound refid="core_2serialize_2types_8cpp" kind="file"><name>types.cpp</name>
+  </compound>
+  <compound refid="drivers_2jolt-cpp_2types_8cpp" kind="file"><name>types.cpp</name>
+  </compound>
+  <compound refid="registry_8cpp" kind="file"><name>registry.cpp</name>
+  </compound>
+  <compound refid="timer_8cpp" kind="file"><name>timer.cpp</name>
+  </compound>
+  <compound refid="widgets_8cpp" kind="file"><name>widgets.cpp</name>
+  </compound>
+  <compound refid="state_8cpp" kind="file"><name>state.cpp</name>
+  </compound>
+  <compound refid="window_8cpp" kind="file"><name>window.cpp</name>
+  </compound>
+  <compound refid="graphics__context_8cpp" kind="file"><name>graphics_context.cpp</name>
+  </compound>
+  <compound refid="jolt__contact__listener_8cpp" kind="file"><name>jolt_contact_listener.cpp</name>
+  </compound>
+  <compound refid="jolt__context_8cpp" kind="file"><name>jolt_context.cpp</name>
+  </compound>
+  <compound refid="render__context_8cpp" kind="file"><name>render_context.cpp</name>
+  </compound>
+  <compound refid="mesh_8cpp" kind="file"><name>mesh.cpp</name>
+    <member refid="mesh_8cpp_1a18372412ad2fc3ce1e3240b3cf0efe78" kind="define"><name>STB_IMAGE_IMPLEMENTATION</name></member>
+    <member refid="mesh_8cpp_1aefe397a94e8feddc652f92ef40ce9597" kind="define"><name>STB_IMAGE_WRITE_IMPLEMENTATION</name></member>
+  </compound>
+  <compound refid="shader__resource__group_8cpp" kind="file"><name>shader_resource_group.cpp</name>
+  </compound>
+  <compound refid="vk__context_8cpp" kind="file"><name>vk_context.cpp</name>
+  </compound>
+  <compound refid="vk__driver_8cpp" kind="file"><name>vk_driver.cpp</name>
+  </compound>
+  <compound refid="vk__imgui_8cpp" kind="file"><name>vk_imgui.cpp</name>
+  </compound>
+  <compound refid="vk__physical__driver_8cpp" kind="file"><name>vk_physical_driver.cpp</name>
+  </compound>
+  <compound refid="vk__renderer_8cpp" kind="file"><name>vk_renderer.cpp</name>
+  </compound>
+  <compound refid="vk__swapchain_8cpp" kind="file"><name>vk_swapchain.cpp</name>
+  </compound>
+  <compound refid="vk__window_8cpp" kind="file"><name>vk_window.cpp</name>
+  </compound>
+  <compound refid="physics__context_8cpp" kind="file"><name>physics_context.cpp</name>
+  </compound>
+  <compound refid="physics__engine_8cpp" kind="file"><name>physics_engine.cpp</name>
+  </compound>
+  <compound refid="renderer_8cpp" kind="file"><name>renderer.cpp</name>
+  </compound>
+  <compound refid="dir_846b40a516a2a471658ccbe09e530d2e" kind="dir"><name>TheAtlasEngine/src/atlas</name>
+  </compound>
+  <compound refid="dir_72c8e49e70df5a84858ab1265443dbf9" kind="dir"><name>TheAtlasEngine/src/atlas/core</name>
+  </compound>
+  <compound refid="dir_608dc5b7aaba5a488a1cee762bfade26" kind="dir"><name>TheAtlasEngine/src/atlas/drivers</name>
+  </compound>
+  <compound refid="dir_8370a929e1c81109a1f99ac5eede01cd" kind="dir"><name>TheAtlasEngine/src/atlas/core/editor</name>
+  </compound>
+  <compound refid="dir_b8e6e82d89ee66e9ca545e81d513e939" kind="dir"><name>TheAtlasEngine/src/atlas/core/event</name>
+  </compound>
+  <compound refid="dir_f130aa4281de8b0a0ce4fe6bb2f3ff76" kind="dir"><name>TheAtlasEngine/src/atlas/core/filesystem</name>
+  </compound>
+  <compound refid="dir_b50d2704714c2c2d879ccbd8a82452ca" kind="dir"><name>TheAtlasEngine/src/atlas/core/image</name>
+  </compound>
+  <compound refid="dir_91f3b6bbd0150e83e6271f2b896a7a0e" kind="dir"><name>TheAtlasEngine/src/atlas/drivers/jolt-cpp</name>
+  </compound>
+  <compound refid="dir_fc6e8c66c05c843f66c0bec401a38de9" kind="dir"><name>TheAtlasEngine/src/atlas/core/math</name>
+  </compound>
+  <compound refid="dir_9a62c5ba85569e7099ed16d4b534a85a" kind="dir"><name>TheAtlasEngine/src/atlas/physics</name>
+  </compound>
+  <compound refid="dir_8d4914c5e7dfa41cebb35065bb0be3d0" kind="dir"><name>TheAtlasEngine/src/atlas/core/platforms</name>
+  </compound>
+  <compound refid="dir_fa8a80cc4ed6793f178a8a05028bb97a" kind="dir"><name>TheAtlasEngine/src/atlas/renderer</name>
+  </compound>
+  <compound refid="dir_909c0b2c0140e856eaa37e8f470b8792" kind="dir"><name>TheAtlasEngine/src/atlas/core/scene</name>
+  </compound>
+  <compound refid="dir_b056caa509fb4971186501a08c712a21" kind="dir"><name>TheAtlasEngine/src/atlas/core/serialize</name>
+  </compound>
+  <compound refid="dir_ba4e964bcd857e995c2b25f3961c5cf7" kind="dir"><name>TheAtlasEngine/src</name>
+  </compound>
+  <compound refid="dir_53c06e91a2ea408e8b37a84b8b632614" kind="dir"><name>TheAtlasEngine/src/atlas/core/system</name>
+  </compound>
+  <compound refid="dir_b67f019f7e2fe784ec01f943d860c92a" kind="dir"><name>TheAtlasEngine</name>
+  </compound>
+  <compound refid="dir_820a1cd67b5638ff1fcd3240ccaeff22" kind="dir"><name>TheAtlasEngine/src/atlas/core/ui</name>
+  </compound>
+  <compound refid="dir_4112b34ff4c6cd2019ee1a1b55bd7baf" kind="dir"><name>TheAtlasEngine/src/atlas/core/utilities</name>
+  </compound>
+  <compound refid="dir_328caf802809d01e7397181570d57cd0" kind="dir"><name>TheAtlasEngine/src/atlas/drivers/vulkan-cpp</name>
+  </compound>
+</doxygenindex>

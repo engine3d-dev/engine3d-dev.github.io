@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_ba4e964bcd857e995c2b25f3961c5cf7" kind="dir">
+    <compoundname>TheAtlasEngine/src</compoundname>
+    <innerdir refid="dir_846b40a516a2a471658ccbe09e530d2e">TheAtlasEngine/src/atlas</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/src/"/>
+  </compounddef>
+</doxygen>

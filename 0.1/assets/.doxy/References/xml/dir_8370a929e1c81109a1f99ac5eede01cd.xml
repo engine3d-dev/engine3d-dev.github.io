@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_8370a929e1c81109a1f99ac5eede01cd" kind="dir">
+    <compoundname>TheAtlasEngine/src/atlas/core/editor</compoundname>
+    <innerfile refid="dockspace_8cpp">dockspace.cpp</innerfile>
+    <innerfile refid="menu__item_8cpp">menu_item.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TheAtlasEngine/src/atlas/core/editor/"/>
+  </compounddef>
+</doxygen>

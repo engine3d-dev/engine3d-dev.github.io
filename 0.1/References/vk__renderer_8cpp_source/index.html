@@ -1,0 +1,1375 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>File vk_renderer.cpp - TheAtlasEngine</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/styles.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#file-vk_renderercpp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="TheAtlasEngine" class="md-header__button md-logo" aria-label="TheAtlasEngine" data-md-component="logo">
+      
+  <img src="../../mkdocs/assets/Preview.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TheAtlasEngine
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              File vk_renderer.cpp
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/engine3d-dev/TheAtlasEngine" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  🏠 Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting_started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📚 Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../user_guide/setup_vscode/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🕹️ User Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../contributor_guide/style/" class="md-tabs__link">
+          
+  
+  
+  🚀 Contributor Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../about/" class="md-tabs__link">
+          
+  
+  
+  📜 Project Information
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../html/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📖 Docs
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="TheAtlasEngine" class="md-nav__button md-logo" aria-label="TheAtlasEngine" data-md-component="logo">
+      
+  <img src="../../mkdocs/assets/Preview.jpg" alt="logo">
+
+    </a>
+    TheAtlasEngine
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/engine3d-dev/TheAtlasEngine" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🏠 Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📚 Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_guide/setup_vscode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🕹️ User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚀 Contributor Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    🚀 Contributor Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributor_guide/style/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🎨 Style Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributor_guide/code_design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📝 Code Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contributor_guide/philosophy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    philosophy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📜 Project Information
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📜 Project Information
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📖 Docs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="file-vk_renderercpp">File vk_renderer.cpp</h1>
+<p><a href="../files/"><strong>File List</strong></a> <strong>&gt;</strong> <a href="../dir_846b40a516a2a471658ccbe09e530d2e/"><strong>atlas</strong></a> <strong>&gt;</strong> <a href="../dir_608dc5b7aaba5a488a1cee762bfade26/"><strong>drivers</strong></a> <strong>&gt;</strong> <a href="../dir_328caf802809d01e7397181570d57cd0/"><strong>vulkan-cpp</strong></a> <strong>&gt;</strong> <a href="../vk__renderer_8cpp/"><strong>vk_renderer.cpp</strong></a></p>
+<p><a href="../vk__renderer_8cpp/">Go to the documentation of this file</a></p>
+<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;core/common.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;array&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;drivers/vulkan-cpp/vk_renderer.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;drivers/vulkan-cpp/utilities.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;drivers/vulkan-cpp/vk_context.hpp&gt;</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;renderer/uniforms.hpp&gt;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">atlas</span><span class="o">::</span><span class="nn">vk</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="n">vk_renderer</span><span class="o">::</span><span class="n">vk_renderer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">window_settings</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_settings</span><span class="p">,</span>
+<span class="w">                             </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">p_image_size</span><span class="p">,</span>
+<span class="w">                             </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_tag</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">console_log_manager</span><span class="o">::</span><span class="n">create_new_logger</span><span class="p">(</span><span class="n">p_tag</span><span class="p">);</span>
+<span class="w">        </span><span class="n">m_device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vk_context</span><span class="o">::</span><span class="n">driver_context</span><span class="p">();</span>
+<span class="w">        </span><span class="n">m_physical</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vk_context</span><span class="o">::</span><span class="n">physical_driver</span><span class="p">();</span>
+<span class="w">        </span><span class="n">m_window_extent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_settings</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">m_image_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_image_size</span><span class="p">;</span>
+<span class="cp">#ifdef USE_SHADERC</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_source</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="o">&gt;</span><span class="w"> </span><span class="n">shader_sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_source</span><span class="p">{</span>
+<span class="w">              </span><span class="s">&quot;experimental-shaders/test.vert&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">vertex</span><span class="p">,</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_source</span><span class="p">{</span>
+<span class="w">              </span><span class="s">&quot;experimental-shaders/test.frag&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">fragment</span><span class="p">,</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="cp">#else</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_source</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="o">&gt;</span><span class="w"> </span><span class="n">shader_sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_source</span><span class="p">{</span>
+<span class="w">              </span><span class="s">&quot;experimental-shaders/test.vert.spv&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">vertex</span><span class="p">,</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_source</span><span class="p">{</span>
+<span class="w">              </span><span class="s">&quot;experimental-shaders/test.frag.spv&quot;</span><span class="p">,</span>
+<span class="w">              </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">fragment</span><span class="p">,</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="cp">#endif</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_attribute_entry</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="o">&gt;</span><span class="w"> </span><span class="n">attribute_entries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_attribute_entry</span><span class="p">{</span>
+<span class="w">              </span><span class="p">.</span><span class="n">location</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">format</span><span class="o">::</span><span class="n">rgb32_sfloat</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">stride</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_input</span><span class="p">,</span><span class="w"> </span><span class="n">position</span><span class="p">),</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_attribute_entry</span><span class="p">{</span>
+<span class="w">              </span><span class="p">.</span><span class="n">location</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">format</span><span class="o">::</span><span class="n">rgb32_sfloat</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">stride</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_input</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="p">),</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_attribute_entry</span><span class="p">{</span>
+<span class="w">              </span><span class="p">.</span><span class="n">location</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">format</span><span class="o">::</span><span class="n">rgb32_sfloat</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">stride</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">vertex_input</span><span class="p">,</span><span class="w"> </span><span class="n">normals</span><span class="p">),</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_attribute_entry</span><span class="p">{</span>
+<span class="w">              </span><span class="p">.</span><span class="n">location</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">format</span><span class="o">::</span><span class="n">rg32_sfloat</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">stride</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">offsetof</span><span class="p">(</span><span class="n">vertex_input</span><span class="p">,</span><span class="w"> </span><span class="n">uv</span><span class="p">),</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_attribute</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;</span><span class="w"> </span><span class="n">attribute</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_attribute</span><span class="p">{</span>
+<span class="w">              </span><span class="c1">// layout (set = 0, binding = 0)</span>
+<span class="w">              </span><span class="p">.</span><span class="n">binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">entries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">attribute_entries</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">stride</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">vk</span><span class="o">::</span><span class="n">vertex_input</span><span class="p">),</span>
+<span class="w">              </span><span class="p">.</span><span class="n">input_rate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">input_rate</span><span class="o">::</span><span class="n">vertex</span><span class="p">,</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_resource_info</span><span class="w"> </span><span class="n">shader_info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">sources</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shader_sources</span><span class="p">,</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">m_shader_group</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">shader_resource_group</span><span class="p">(</span><span class="n">m_device</span><span class="p">,</span><span class="w"> </span><span class="n">shader_info</span><span class="p">);</span>
+<span class="w">            </span><span class="n">m_shader_group</span><span class="p">.</span><span class="n">vertex_attributes</span><span class="p">(</span><span class="n">attribute</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">runtime_error</span><span class="o">&amp;</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">console_log_error</span><span class="p">(</span><span class="s">&quot;Compilation Error!!&quot;</span><span class="p">);</span>
+<span class="w">            </span><span class="n">console_log_error</span><span class="p">(</span><span class="s">&quot;{}&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="n">what</span><span class="p">());</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="c1">// Setting global descriptor set 0</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_entry</span><span class="o">&gt;</span><span class="w"> </span><span class="n">set0_entries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_entry</span><span class="p">{</span>
+<span class="w">                </span><span class="c1">// specifies &quot;layout (set = 0, binding = 0) uniform GlobalUbo&quot;</span>
+<span class="w">                </span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">buffer</span><span class="o">::</span><span class="n">uniform</span><span class="p">,</span>
+<span class="w">                </span><span class="p">.</span><span class="n">binding_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">vertex</span><span class="p">,</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">.</span><span class="n">descriptor_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_entry</span><span class="p">{</span>
+<span class="w">                </span><span class="c1">// specifies &quot;layout (set = 0, binding = 1) uniform light_ubo&quot;</span>
+<span class="w">                </span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">buffer</span><span class="o">::</span><span class="n">uniform</span><span class="p">,</span>
+<span class="w">                </span><span class="p">.</span><span class="n">binding_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">fragment</span><span class="p">,</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">.</span><span class="n">descriptor_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="c1">// uint32_t image_count = image_count;</span>
+<span class="w">        </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_layout</span><span class="w"> </span><span class="n">set0_layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">slot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">max_sets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_image_count</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">entries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">set0_entries</span><span class="p">,</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">        </span><span class="n">m_global_descriptors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_resource</span><span class="p">(</span><span class="n">m_device</span><span class="p">,</span><span class="w"> </span><span class="n">set0_layout</span><span class="p">);</span>
+
+<span class="w">        </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">uniform_params</span><span class="w"> </span><span class="n">global_info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">phsyical_memory_properties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_physical</span><span class="p">.</span><span class="n">memory_properties</span><span class="p">(),</span>
+<span class="w">            </span><span class="p">.</span><span class="n">size_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">global_ubo</span><span class="p">),</span>
+<span class="w">            </span><span class="p">.</span><span class="n">debug_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;</span><span class="se">\n</span><span class="s">m_global_uniforms</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">vkSetDebugUtilsObjectNameEXT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vk_context</span><span class="o">::</span><span class="n">get_debug_object_name</span><span class="p">()</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">        </span><span class="n">m_global_uniforms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">uniform_buffer</span><span class="p">(</span><span class="n">m_device</span><span class="p">,</span><span class="w"> </span><span class="n">global_info</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// setting up our light uniforms as the global uniforms rather then</span>
+<span class="w">        </span><span class="c1">// per-object basis</span>
+<span class="w">        </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">uniform_params</span><span class="w"> </span><span class="n">light_ubo_params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">phsyical_memory_properties</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_physical</span><span class="p">.</span><span class="n">memory_properties</span><span class="p">(),</span>
+<span class="w">            </span><span class="p">.</span><span class="n">size_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">light_scene_ubo</span><span class="p">),</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">        </span><span class="n">m_point_light_uniforms</span><span class="w"> </span><span class="o">=</span>
+<span class="w">          </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">uniform_buffer</span><span class="p">(</span><span class="n">m_device</span><span class="p">,</span><span class="w"> </span><span class="n">light_ubo_params</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;</span><span class="w"> </span><span class="n">binding0_uniforms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer</span><span class="p">{</span>
+<span class="w">              </span><span class="p">.</span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_global_uniforms</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">range</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_global_uniforms</span><span class="p">.</span><span class="n">size_bytes</span><span class="p">(),</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;</span><span class="w"> </span><span class="n">binding1_uniforms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer</span><span class="p">{</span>
+<span class="w">              </span><span class="p">.</span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_point_light_uniforms</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">range</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_point_light_uniforms</span><span class="p">.</span><span class="n">size_bytes</span><span class="p">(),</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer_descriptor</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="o">&gt;</span><span class="w"> </span><span class="n">set0_write_buffers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer_descriptor</span><span class="p">{</span>
+<span class="w">              </span><span class="p">.</span><span class="n">dst_binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">uniforms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">binding0_uniforms</span><span class="p">,</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer_descriptor</span><span class="p">{</span>
+<span class="w">              </span><span class="p">.</span><span class="n">dst_binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">              </span><span class="p">.</span><span class="n">uniforms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">binding1_uniforms</span><span class="p">,</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">        </span><span class="n">m_global_descriptors</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="n">set0_write_buffers</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">m_sets_layouts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">m_global_descriptors</span><span class="p">.</span><span class="n">layout</span><span class="p">(),</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">image_extent</span><span class="w"> </span><span class="n">extent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">        </span><span class="n">m_white_texture</span><span class="w"> </span><span class="o">=</span>
+<span class="w">          </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">texture</span><span class="p">(</span><span class="n">m_device</span><span class="p">,</span><span class="w"> </span><span class="n">extent</span><span class="p">,</span><span class="w"> </span><span class="n">m_physical</span><span class="p">.</span><span class="n">memory_properties</span><span class="p">());</span>
+
+<span class="w">        </span><span class="n">vk_context</span><span class="o">::</span><span class="n">submit_resource_free</span><span class="p">([</span><span class="k">this</span><span class="p">]()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">m_white_texture</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">            </span><span class="n">m_shader_group</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">            </span><span class="n">m_global_descriptors</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">            </span><span class="n">m_global_uniforms</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">            </span><span class="n">m_point_light_uniforms</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="p">[</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">mesh</span><span class="p">]</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">m_cached_meshes</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">console_log_trace</span><span class="p">(</span><span class="s">&quot;Entity </span><span class="se">\&quot;</span><span class="s">{}</span><span class="se">\&quot;</span><span class="s"> Destroyed in vk_renderer!!!&quot;</span><span class="p">,</span>
+<span class="w">                                  </span><span class="n">id</span><span class="p">);</span>
+<span class="w">                </span><span class="n">mesh</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="p">[</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">uniform</span><span class="p">]</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">m_mesh_geometry_set</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">uniform</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="p">[</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">material_uniform</span><span class="p">]</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">m_mesh_material_set</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">material_uniform</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="p">[</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">descriptor_map</span><span class="p">]</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">m_mesh_descriptors</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="o">&amp;</span><span class="w"> </span><span class="p">[</span><span class="n">descriptor_type</span><span class="p">,</span><span class="w"> </span><span class="n">descriptor</span><span class="p">]</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">descriptor_map</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">descriptor</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">            </span><span class="n">m_main_pipeline</span><span class="p">.</span><span class="n">destroy</span><span class="p">();</span>
+<span class="w">        </span><span class="p">});</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">vk_renderer</span><span class="o">::</span><span class="n">current_scene</span><span class="p">(</span><span class="n">ref</span><span class="o">&lt;</span><span class="n">scene</span><span class="o">&gt;</span><span class="w"> </span><span class="n">p_scene</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">m_current_scene</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_scene</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">vk_renderer</span><span class="o">::</span><span class="n">background_color</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="kt">float</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">p_color</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">m_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">{</span><span class="w"> </span><span class="n">p_color</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="n">p_color</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">p_color</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="n">p_color</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">vk_renderer</span><span class="o">::</span><span class="n">preload_assets</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">VkRenderPass</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_renderpass</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">m_final_renderpass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_renderpass</span><span class="p">;</span>
+<span class="w">        </span><span class="c1">// set 1 -- material uniforms</span>
+<span class="w">        </span><span class="c1">// ref&lt;world&gt; current_world = system_registry::get_world(&quot;Editor</span>
+<span class="w">        </span><span class="c1">// World&quot;); ref&lt;scene&gt; current_scene =</span>
+<span class="w">        </span><span class="c1">// current_world-&gt;get_scene(&quot;LevelScene&quot;);</span>
+
+<span class="w">        </span><span class="n">flecs</span><span class="o">::</span><span class="n">query</span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="n">caching</span><span class="w"> </span><span class="o">=</span>
+<span class="w">          </span><span class="n">m_current_scene</span><span class="o">-&gt;</span><span class="n">query_builder</span><span class="o">&lt;</span><span class="n">mesh_source</span><span class="o">&gt;</span><span class="p">().</span><span class="n">build</span><span class="p">();</span>
+
+<span class="w">        </span><span class="n">caching</span><span class="p">.</span><span class="n">each</span><span class="p">([</span><span class="k">this</span><span class="p">](</span><span class="n">flecs</span><span class="o">::</span><span class="n">entity</span><span class="w"> </span><span class="n">p_entity</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">mesh_source</span><span class="o">*</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_entity</span><span class="p">.</span><span class="n">get</span><span class="o">&lt;</span><span class="n">mesh_source</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">            </span><span class="n">mesh</span><span class="w"> </span><span class="nf">new_mesh</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">filesystem</span><span class="o">::</span><span class="n">path</span><span class="p">(</span><span class="n">target</span><span class="o">-&gt;</span><span class="n">model_path</span><span class="p">),</span>
+<span class="w">                          </span><span class="n">target</span><span class="o">-&gt;</span><span class="n">flip</span><span class="p">);</span>
+
+<span class="w">            </span><span class="c1">// we do a check if the geometry uniform associated with this game</span>
+<span class="w">            </span><span class="c1">// object is valid</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">m_mesh_geometry_set</span><span class="p">.</span><span class="n">contains</span><span class="p">(</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">uniform_params</span><span class="w"> </span><span class="n">geo_info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">phsyical_memory_properties</span><span class="w"> </span><span class="o">=</span>
+<span class="w">                      </span><span class="n">m_physical</span><span class="p">.</span><span class="n">memory_properties</span><span class="p">(),</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">size_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">material_uniform</span><span class="p">),</span>
+<span class="w">                </span><span class="p">};</span>
+<span class="w">                </span><span class="n">m_mesh_geometry_set</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()]</span><span class="w"> </span><span class="o">=</span>
+<span class="w">                  </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">uniform_buffer</span><span class="p">(</span><span class="n">m_device</span><span class="p">,</span><span class="w"> </span><span class="n">geo_info</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="c1">// check if material is already associated with this particular game</span>
+<span class="w">            </span><span class="c1">// object</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">m_mesh_material_set</span><span class="p">.</span><span class="n">contains</span><span class="p">(</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">uniform_params</span><span class="w"> </span><span class="n">mat_info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">phsyical_memory_properties</span><span class="w"> </span><span class="o">=</span>
+<span class="w">                      </span><span class="n">m_physical</span><span class="p">.</span><span class="n">memory_properties</span><span class="p">(),</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">size_bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">material_metadata</span><span class="p">),</span>
+<span class="w">                </span><span class="p">};</span>
+<span class="w">                </span><span class="n">m_mesh_material_set</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()]</span><span class="w"> </span><span class="o">=</span>
+<span class="w">                  </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">uniform_buffer</span><span class="p">(</span><span class="n">m_device</span><span class="p">,</span><span class="w"> </span><span class="n">mat_info</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">new_mesh</span><span class="p">.</span><span class="n">add_diffuse</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">filesystem</span><span class="o">::</span><span class="n">path</span><span class="p">(</span><span class="n">target</span><span class="o">-&gt;</span><span class="n">diffuse</span><span class="p">));</span>
+<span class="w">            </span><span class="n">new_mesh</span><span class="p">.</span><span class="n">add_specular</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">filesystem</span><span class="o">::</span><span class="n">path</span><span class="p">(</span><span class="n">target</span><span class="o">-&gt;</span><span class="n">specular</span><span class="p">));</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">new_mesh</span><span class="p">.</span><span class="n">loaded</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">m_cached_meshes</span><span class="p">.</span><span class="n">emplace</span><span class="p">(</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">(),</span><span class="w"> </span><span class="n">new_mesh</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_entry</span><span class="o">&gt;</span><span class="w"> </span><span class="n">set1_entries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_entry</span><span class="p">{</span>
+<span class="w">                        </span><span class="c1">// specifies &quot;layout (set = 1, binding = 0) uniform geometry_uniform&quot;</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">buffer</span><span class="o">::</span><span class="n">uniform</span><span class="p">,</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">binding_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="p">.</span><span class="n">binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                            </span><span class="p">.</span><span class="n">stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">vertex</span><span class="p">,</span>
+<span class="w">                        </span><span class="p">},</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">descriptor_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_entry</span><span class="p">{</span>
+<span class="w">                        </span><span class="c1">// specifies &quot;layout (set = 1, binding = 1) uniform sampler2D diffuse_texture&quot;</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">buffer</span><span class="o">::</span><span class="n">combined_image_sampler</span><span class="p">,</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">binding_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="p">.</span><span class="n">binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                            </span><span class="p">.</span><span class="n">stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">fragment</span><span class="p">,</span>
+<span class="w">                        </span><span class="p">},</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">descriptor_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_entry</span><span class="p">{</span>
+<span class="w">                        </span><span class="c1">// specifies &quot;layout (set = 1, binding = 2) uniform sampler2D specular_texture&quot;</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">buffer</span><span class="o">::</span><span class="n">combined_image_sampler</span><span class="p">,</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">binding_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="p">.</span><span class="n">binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                            </span><span class="p">.</span><span class="n">stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">fragment</span><span class="p">,</span>
+<span class="w">                        </span><span class="p">},</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">descriptor_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_entry</span><span class="p">{</span>
+<span class="w">                        </span><span class="c1">// specifies &quot;layout (set = 1, binding = 3) uniform sampler2D material_ubo&quot;</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">buffer</span><span class="o">::</span><span class="n">uniform</span><span class="p">,</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">binding_point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                            </span><span class="p">.</span><span class="n">binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">                            </span><span class="p">.</span><span class="n">stage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_stage</span><span class="o">::</span><span class="n">fragment</span><span class="p">,</span>
+<span class="w">                        </span><span class="p">},</span>
+<span class="w">                        </span><span class="p">.</span><span class="n">descriptor_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                </span><span class="p">};</span>
+
+<span class="w">                </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_layout</span><span class="w"> </span><span class="n">set1_layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">slot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">max_sets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_image_count</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">entries</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">set1_entries</span><span class="p">,</span>
+<span class="w">                </span><span class="p">};</span>
+
+<span class="w">                </span><span class="n">m_mesh_descriptors</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">emplace</span><span class="p">(</span>
+<span class="w">                  </span><span class="s">&quot;materials&quot;</span><span class="p">,</span>
+<span class="w">                  </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">descriptor_resource</span><span class="p">(</span><span class="n">m_device</span><span class="p">,</span><span class="w"> </span><span class="n">set1_layout</span><span class="p">));</span>
+
+<span class="w">                </span><span class="c1">// specify to the vk::write_descriptor_buffer</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;</span><span class="w"> </span><span class="n">binding0_buffers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer</span><span class="p">{</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_mesh_geometry_set</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()],</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">range</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_mesh_geometry_set</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">size_bytes</span><span class="p">(),</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">};</span>
+
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;</span><span class="w"> </span><span class="n">binding3_buffers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer</span><span class="p">{</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_mesh_material_set</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()],</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">range</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_mesh_material_set</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">size_bytes</span><span class="p">(),</span>
+<span class="w">                    </span><span class="p">}</span>
+<span class="w">                </span><span class="p">};</span>
+
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer_descriptor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">material_uniforms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="c1">// layout(set=  1, binding = 0) geometry_ubo</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer_descriptor</span><span class="p">{</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">dst_binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">uniforms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">binding0_buffers</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="c1">// layout(set=  1, binding = 3) material_ubo</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_buffer_descriptor</span><span class="p">{</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">dst_binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">uniforms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">binding3_buffers</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                </span><span class="p">};</span>
+
+<span class="w">                </span><span class="c1">// layout(set = 1, binding = 1)</span>
+<span class="w">                </span><span class="c1">// If the texture loaded successfully then we use that texture,</span>
+<span class="w">                </span><span class="c1">// otherwise utilize the default white texture</span>
+<span class="w">                </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">sample_image</span><span class="w"> </span><span class="n">diffuse</span><span class="w"> </span><span class="o">=</span>
+<span class="w">                  </span><span class="n">m_cached_meshes</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">diffuse_loaded</span><span class="p">()</span>
+<span class="w">                    </span><span class="o">?</span><span class="w"> </span><span class="n">m_cached_meshes</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">diffuse</span><span class="p">()</span>
+<span class="w">                    </span><span class="o">:</span><span class="w"> </span><span class="n">m_white_texture</span><span class="p">.</span><span class="n">image</span><span class="p">();</span>
+
+<span class="w">                </span><span class="c1">// layout(set = 1, binding = 2)</span>
+<span class="w">                </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">sample_image</span><span class="w"> </span><span class="n">specular</span><span class="w"> </span><span class="o">=</span>
+<span class="w">                  </span><span class="n">m_cached_meshes</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">specular_loaded</span><span class="p">()</span>
+<span class="w">                    </span><span class="o">?</span><span class="w"> </span><span class="n">m_cached_meshes</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">specular</span><span class="p">()</span>
+<span class="w">                    </span><span class="o">:</span><span class="w"> </span><span class="n">m_white_texture</span><span class="p">.</span><span class="n">image</span><span class="p">();</span>
+
+<span class="w">                </span><span class="c1">// writes to texture at layout(set = 1, binding = 1)</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_image</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;</span>
+<span class="w">                  </span><span class="n">binding1_images</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_image</span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">sampler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">diffuse</span><span class="p">.</span><span class="n">sampler</span><span class="p">(),</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">view</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">diffuse</span><span class="p">.</span><span class="n">image_view</span><span class="p">(),</span>
+<span class="w">                    </span><span class="c1">// .image_layout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL,</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">image_layout</span><span class="o">::</span><span class="n">shader_read_only_optimal</span><span class="p">,</span>
+<span class="w">                  </span><span class="p">}</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">                </span><span class="c1">// writes to texture at layout(set = 1, binding = 2)</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_image</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="o">&gt;</span>
+<span class="w">                  </span><span class="n">binding2_images</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_image</span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">sampler</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">specular</span><span class="p">.</span><span class="n">sampler</span><span class="p">(),</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">view</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">specular</span><span class="p">.</span><span class="n">image_view</span><span class="p">(),</span>
+<span class="w">                    </span><span class="c1">// .image_layout = VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL,</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">layout</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">image_layout</span><span class="o">::</span><span class="n">shader_read_only_optimal</span><span class="p">,</span>
+<span class="w">                  </span><span class="p">}</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">                </span><span class="c1">// vulkan image descriptors are for writing textures</span>
+<span class="w">                </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_image_descriptor</span><span class="o">&gt;</span><span class="w"> </span><span class="n">material_textures</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="c1">// layout(set = 1, binding = 1) uniform sampler2D</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_image_descriptor</span><span class="p">{</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">dst_binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">sample_images</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">binding1_images</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                    </span><span class="c1">// layout(set = 1, binding = 2) uniform sampler2D</span>
+<span class="w">                    </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">write_image_descriptor</span><span class="p">{</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">dst_binding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">                      </span><span class="p">.</span><span class="n">sample_images</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">binding2_images</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">},</span>
+<span class="w">                </span><span class="p">};</span>
+
+<span class="w">                </span><span class="n">m_mesh_descriptors</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()][</span><span class="s">&quot;materials&quot;</span><span class="p">].</span><span class="n">update</span><span class="p">(</span>
+<span class="w">                  </span><span class="n">material_uniforms</span><span class="p">,</span><span class="w"> </span><span class="n">material_textures</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">m_sets_layouts</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span>
+<span class="w">                  </span><span class="n">m_mesh_descriptors</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()][</span><span class="s">&quot;materials&quot;</span><span class="p">].</span><span class="n">layout</span><span class="p">());</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">});</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;::</span><span class="n">vk</span><span class="o">::</span><span class="n">shader_handle</span><span class="o">&gt;</span><span class="w"> </span><span class="n">modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_shader_group</span><span class="p">.</span><span class="n">handles</span><span class="p">();</span>
+
+<span class="w">        </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">pipeline_settings</span><span class="w"> </span><span class="n">pipeline_configuration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">renderpass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_final_renderpass</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">shader_modules</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">modules</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">vertex_attributes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_shader_group</span><span class="p">.</span><span class="n">vertex_attributes</span><span class="p">(),</span>
+<span class="w">            </span><span class="p">.</span><span class="n">vertex_bind_attributes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_shader_group</span><span class="p">.</span><span class="n">vertex_bind_attributes</span><span class="p">(),</span>
+<span class="w">            </span><span class="p">.</span><span class="n">descriptor_layouts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_sets_layouts</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">        </span><span class="n">m_main_pipeline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">pipeline</span><span class="p">(</span><span class="n">m_device</span><span class="p">,</span><span class="w"> </span><span class="n">pipeline_configuration</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">vk_renderer</span><span class="o">::</span><span class="n">start_frame</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">command_buffer</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_current</span><span class="p">,</span>
+<span class="w">                                  </span><span class="k">const</span><span class="w"> </span><span class="n">window_settings</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_settings</span><span class="p">,</span>
+<span class="w">                                  </span><span class="k">const</span><span class="w"> </span><span class="n">VkRenderPass</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_renderpass</span><span class="p">,</span>
+<span class="w">                                  </span><span class="k">const</span><span class="w"> </span><span class="n">VkFramebuffer</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_framebuffer</span><span class="p">,</span>
+<span class="w">                                  </span><span class="k">const</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_proj_view</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">m_proj_view</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_proj_view</span><span class="p">;</span>
+<span class="w">        </span><span class="n">m_current_frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">application</span><span class="o">::</span><span class="n">current_frame</span><span class="p">();</span>
+<span class="w">        </span><span class="n">m_final_renderpass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_renderpass</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">array</span><span class="o">&lt;</span><span class="n">VkClearValue</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="o">&gt;</span><span class="w"> </span><span class="n">clear_values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+
+<span class="w">        </span><span class="n">clear_values</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_color</span><span class="p">;</span>
+<span class="w">        </span><span class="n">clear_values</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">depthStencil</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mf">1.f</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">};</span>
+<span class="w">        </span><span class="n">m_window_extent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_settings</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">VkRenderPassBeginInfo</span><span class="w"> </span><span class="n">renderpass_begin_info</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">sType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">VK_STRUCTURE_TYPE_RENDER_PASS_BEGIN_INFO</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">pNext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">renderPass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_renderpass</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">renderArea</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="p">.</span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">                </span><span class="p">.</span><span class="n">extent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_settings</span><span class="p">.</span><span class="n">width</span><span class="p">,</span>
+<span class="w">                    </span><span class="p">.</span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_settings</span><span class="p">.</span><span class="n">height</span>
+<span class="w">                </span><span class="p">},</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="p">.</span><span class="n">clearValueCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">clear_values</span><span class="p">.</span><span class="n">size</span><span class="p">()),</span>
+<span class="w">            </span><span class="p">.</span><span class="n">pClearValues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clear_values</span><span class="p">.</span><span class="n">data</span><span class="p">()</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="n">m_current_command_buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_current</span><span class="p">;</span>
+<span class="w">        </span><span class="n">m_current_command_buffer</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span>
+<span class="w">          </span><span class="o">::</span><span class="n">vk</span><span class="o">::</span><span class="n">command_usage</span><span class="o">::</span><span class="n">simulatneous_use_bit</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">VkViewport</span><span class="w"> </span><span class="n">viewport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m_window_extent</span><span class="p">.</span><span class="n">width</span><span class="p">),</span>
+<span class="w">            </span><span class="p">.</span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="p">(</span><span class="n">m_window_extent</span><span class="p">.</span><span class="n">height</span><span class="p">),</span>
+<span class="w">            </span><span class="p">.</span><span class="n">minDepth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0f</span><span class="p">,</span>
+<span class="w">            </span><span class="p">.</span><span class="n">maxDepth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="n">vkCmdSetViewport</span><span class="p">(</span><span class="n">m_current_command_buffer</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">viewport</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">VkRect2D</span><span class="w"> </span><span class="n">scissor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="p">.</span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">},</span>
+<span class="w">            </span><span class="p">.</span><span class="n">extent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">m_window_extent</span><span class="p">.</span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="n">m_window_extent</span><span class="p">.</span><span class="n">height</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">};</span>
+
+<span class="w">        </span><span class="n">vkCmdSetScissor</span><span class="p">(</span><span class="n">m_current_command_buffer</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">scissor</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">renderpass_begin_info</span><span class="p">.</span><span class="n">framebuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_framebuffer</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">vkCmdBeginRenderPass</span><span class="p">(</span><span class="n">m_current_command_buffer</span><span class="p">,</span>
+<span class="w">                             </span><span class="o">&amp;</span><span class="n">renderpass_begin_info</span><span class="p">,</span>
+<span class="w">                             </span><span class="n">VK_SUBPASS_CONTENTS_INLINE</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// This just returns the arbitrary amount of bytes of the object</span>
+<span class="w">    </span><span class="c1">// TODO: Move this into core/utilities.hpp</span>
+<span class="w">    </span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">span</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="w"> </span><span class="n">to_bytes</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">p_data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">span</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">&gt;</span><span class="p">(</span><span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">uint8_t</span><span class="o">*&gt;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">p_data</span><span class="p">),</span>
+<span class="w">                                  </span><span class="k">sizeof</span><span class="p">(</span><span class="n">p_data</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">vk_renderer</span><span class="o">::</span><span class="n">post_frame</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">        </span><span class="c1">// For now, using this. Will need to remove this before vulkan</span>
+<span class="w">        </span><span class="c1">// integration merging into dev This is for testing and to hopefully</span>
+<span class="w">        </span><span class="c1">// have a global_ubo for globalized uniforms</span>
+<span class="w">        </span><span class="n">global_ubo</span><span class="w"> </span><span class="n">global_frame_ubo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">mvp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_proj_view</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">        </span><span class="c1">// TODO: Make to_bytes be part of utilities. This can be useful in</span>
+<span class="w">        </span><span class="c1">// sending the amount of bytes in batches for batch-rendering</span>
+<span class="w">        </span><span class="c1">// std::span&lt;uint8_t&gt; bytes_data = to_bytes(global_frame_ubo);</span>
+<span class="w">        </span><span class="c1">// m_global_uniforms.update(bytes_data.data());</span>
+<span class="w">        </span><span class="n">m_global_uniforms</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="o">&amp;</span><span class="n">global_frame_ubo</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">ref</span><span class="o">&lt;</span><span class="n">world</span><span class="o">&gt;</span><span class="w"> </span><span class="n">current_world</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">system_registry</span><span class="o">::</span><span class="n">get_world</span><span class="p">(</span><span class="s">&quot;Editor World&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="n">ref</span><span class="o">&lt;</span><span class="n">scene</span><span class="o">&gt;</span><span class="w"> </span><span class="n">current_scene</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">current_world</span><span class="o">-&gt;</span><span class="n">get_scene</span><span class="p">(</span><span class="s">&quot;LevelScene&quot;</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// query all entities that have a point light</span>
+<span class="w">        </span><span class="n">flecs</span><span class="o">::</span><span class="n">query</span><span class="o">&lt;</span><span class="n">point_light</span><span class="o">&gt;</span><span class="w"> </span><span class="n">query_point_lights</span><span class="w"> </span><span class="o">=</span>
+<span class="w">          </span><span class="n">current_scene</span><span class="o">-&gt;</span><span class="n">query_builder</span><span class="o">&lt;</span><span class="n">point_light</span><span class="o">&gt;</span><span class="p">().</span><span class="n">build</span><span class="p">();</span>
+
+<span class="w">        </span><span class="n">light_scene_ubo</span><span class="w"> </span><span class="n">test_light</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">        </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">        </span><span class="n">query_point_lights</span><span class="p">.</span><span class="n">each</span><span class="p">(</span>
+<span class="w">          </span><span class="p">[</span><span class="o">&amp;</span><span class="n">index</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">test_light</span><span class="p">](</span><span class="n">flecs</span><span class="o">::</span><span class="n">entity</span><span class="w"> </span><span class="n">p_entity</span><span class="p">,</span><span class="w"> </span><span class="n">point_light</span><span class="o">&amp;</span><span class="w"> </span><span class="n">p_light</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">              </span><span class="k">const</span><span class="w"> </span><span class="n">transform</span><span class="o">*</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_entity</span><span class="p">.</span><span class="n">get</span><span class="o">&lt;</span><span class="n">transform</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">              </span><span class="n">p_light</span><span class="p">.</span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">t</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">;</span>
+
+<span class="w">              </span><span class="n">test_light</span><span class="p">.</span><span class="n">light_sources</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                  </span><span class="p">.</span><span class="n">position</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">vec4</span><span class="p">(</span><span class="n">p_light</span><span class="p">.</span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="mf">1.f</span><span class="p">),</span>
+<span class="w">                  </span><span class="p">.</span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_light</span><span class="p">.</span><span class="n">color</span><span class="p">,</span>
+<span class="w">                  </span><span class="p">.</span><span class="n">attenuation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_light</span><span class="p">.</span><span class="n">attenuation</span><span class="p">,</span>
+<span class="w">                  </span><span class="p">.</span><span class="n">constant</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_light</span><span class="p">.</span><span class="n">constant</span><span class="p">,</span>
+<span class="w">                  </span><span class="p">.</span><span class="n">linear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_light</span><span class="p">.</span><span class="n">linear</span><span class="p">,</span>
+<span class="w">                  </span><span class="p">.</span><span class="n">quadratic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_light</span><span class="p">.</span><span class="n">quadratic</span><span class="p">,</span>
+<span class="w">                  </span><span class="p">.</span><span class="n">ambient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_light</span><span class="p">.</span><span class="n">ambient</span><span class="p">,</span>
+<span class="w">                  </span><span class="p">.</span><span class="n">diffuse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_light</span><span class="p">.</span><span class="n">diffuse</span><span class="p">,</span>
+<span class="w">                  </span><span class="p">.</span><span class="n">specular</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_light</span><span class="p">.</span><span class="n">specular</span><span class="p">,</span>
+<span class="w">              </span><span class="p">};</span>
+<span class="w">              </span><span class="n">index</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">          </span><span class="p">});</span>
+<span class="w">        </span><span class="n">test_light</span><span class="p">.</span><span class="n">num_lights</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">index</span><span class="p">;</span>
+
+<span class="w">        </span><span class="n">m_point_light_uniforms</span><span class="p">.</span><span class="n">update</span><span class="p">(</span><span class="o">&amp;</span><span class="n">test_light</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// query all objects with a specified 3d mesh source</span>
+<span class="w">        </span><span class="n">flecs</span><span class="o">::</span><span class="n">query</span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="n">query_targets</span><span class="w"> </span><span class="o">=</span>
+<span class="w">          </span><span class="n">current_scene</span><span class="o">-&gt;</span><span class="n">query_builder</span><span class="o">&lt;</span><span class="n">mesh_source</span><span class="o">&gt;</span><span class="p">().</span><span class="n">build</span><span class="p">();</span>
+
+<span class="w">        </span><span class="n">m_main_pipeline</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="n">m_current_command_buffer</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// Bind global camera data here</span>
+<span class="w">        </span><span class="n">m_global_descriptors</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="n">m_current_command_buffer</span><span class="p">,</span>
+<span class="w">                                  </span><span class="n">m_main_pipeline</span><span class="p">.</span><span class="n">layout</span><span class="p">());</span>
+<span class="w">        </span><span class="n">query_targets</span><span class="p">.</span><span class="n">each</span><span class="p">([</span><span class="k">this</span><span class="p">](</span><span class="n">flecs</span><span class="o">::</span><span class="n">entity</span><span class="w"> </span><span class="n">p_entity</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">transform</span><span class="o">*</span><span class="w"> </span><span class="n">transform_component</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_entity</span><span class="p">.</span><span class="n">get</span><span class="o">&lt;</span><span class="n">transform</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">            </span><span class="k">const</span><span class="w"> </span><span class="n">mesh_source</span><span class="o">*</span><span class="w"> </span><span class="n">material_component</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p_entity</span><span class="p">.</span><span class="n">get</span><span class="o">&lt;</span><span class="n">mesh_source</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">            </span><span class="n">m_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="p">(</span><span class="mf">1.f</span><span class="p">);</span>
+<span class="w">            </span><span class="n">m_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">translate</span><span class="p">(</span><span class="n">m_model</span><span class="p">,</span><span class="w"> </span><span class="n">transform_component</span><span class="o">-&gt;</span><span class="n">position</span><span class="p">);</span>
+<span class="w">            </span><span class="n">m_model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">glm</span><span class="o">::</span><span class="n">scale</span><span class="p">(</span><span class="n">m_model</span><span class="p">,</span><span class="w"> </span><span class="n">transform_component</span><span class="o">-&gt;</span><span class="n">scale</span><span class="p">);</span>
+<span class="w">            </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="w"> </span><span class="n">rotation_mat4</span><span class="w"> </span><span class="o">=</span>
+<span class="w">              </span><span class="n">glm</span><span class="o">::</span><span class="n">mat4</span><span class="p">(</span><span class="n">glm</span><span class="o">::</span><span class="n">quat</span><span class="p">(</span><span class="n">transform_component</span><span class="o">-&gt;</span><span class="n">rotation</span><span class="p">));</span>
+
+<span class="w">            </span><span class="n">m_model</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">rotation_mat4</span><span class="p">;</span>
+
+<span class="w">            </span><span class="c1">// Mesh used for viking_room - replaced with std::map equivalent</span>
+<span class="w">            </span><span class="n">geometry_uniform</span><span class="w"> </span><span class="n">mesh_ubo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">.</span><span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_model</span><span class="p">,</span>
+<span class="w">                                          </span><span class="p">.</span><span class="n">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">material_component</span><span class="o">-&gt;</span><span class="n">color</span><span class="w"> </span><span class="p">};</span>
+
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">m_cached_meshes</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">loaded</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="n">m_mesh_geometry_set</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">update</span><span class="p">(</span><span class="o">&amp;</span><span class="n">mesh_ubo</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">material_metadata</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">p_entity</span><span class="p">.</span><span class="n">has</span><span class="o">&lt;</span><span class="n">material_metadata</span><span class="o">&gt;</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">p_entity</span><span class="p">.</span><span class="n">get</span><span class="o">&lt;</span><span class="n">material_metadata</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">                </span><span class="p">}</span>
+<span class="w">                </span><span class="n">m_mesh_material_set</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">update</span><span class="p">(</span><span class="o">&amp;</span><span class="n">data</span><span class="p">);</span>
+
+<span class="w">                </span><span class="n">m_mesh_descriptors</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()][</span><span class="s">&quot;materials&quot;</span><span class="p">].</span><span class="n">bind</span><span class="p">(</span>
+<span class="w">                  </span><span class="n">m_current_command_buffer</span><span class="p">,</span><span class="w"> </span><span class="n">m_main_pipeline</span><span class="p">.</span><span class="n">layout</span><span class="p">());</span>
+
+<span class="w">                </span><span class="n">m_cached_meshes</span><span class="p">[</span><span class="n">p_entity</span><span class="p">.</span><span class="n">id</span><span class="p">()].</span><span class="n">draw</span><span class="p">(</span><span class="n">m_current_command_buffer</span><span class="p">);</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">});</span>
+
+<span class="w">        </span><span class="n">vkCmdEndRenderPass</span><span class="p">(</span><span class="n">m_current_command_buffer</span><span class="p">);</span>
+<span class="w">        </span><span class="n">m_current_command_buffer</span><span class="p">.</span><span class="n">end</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/engine3d-dev" target="_blank" rel="noopener">Aaron Herr</a>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/engine3d-dev/TheAtlasEngine" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M202.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1M496 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2m-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3m-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "content.tabs.link", "toc.integrate", "navigation.tracking", "navigation.footer"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

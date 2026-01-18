@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="vk__swapchain_8cpp" kind="file" language="C++">
+    <compoundname>vk_swapchain.cpp</compoundname>
+    <includes local="no">drivers/vulkan-cpp/vk_swapchain.hpp</includes>
+    <includes local="no">drivers/vulkan-cpp/vk_context.hpp</includes>
+    <includes local="no">core/engine_logger.hpp</includes>
+    <includes local="no">drivers/vulkan-cpp/utilities.hpp</includes>
+    <includes local="no">array</includes>
+    <includes local="no">vulkan-cpp/types.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>TheAtlasEngine/src/atlas/drivers/vulkan-cpp/vk_swapchain.cpp</label>
+        <link refid="vk__swapchain_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>array</label>
+      </node>
+      <node id="4">
+        <label>core/engine_logger.hpp</label>
+      </node>
+      <node id="5">
+        <label>drivers/vulkan-cpp/utilities.hpp</label>
+      </node>
+      <node id="3">
+        <label>drivers/vulkan-cpp/vk_context.hpp</label>
+      </node>
+      <node id="2">
+        <label>drivers/vulkan-cpp/vk_swapchain.hpp</label>
+      </node>
+      <node id="7">
+        <label>vulkan-cpp/types.hpp</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceatlas">atlas</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1vk">atlas::vk</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;drivers/vulkan-cpp/vk_swapchain.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;drivers/vulkan-cpp/vk_context.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;core/engine_logger.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;drivers/vulkan-cpp/utilities.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vulkan-cpp/types.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">atlas::vk<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>vk_swapchain::vk_swapchain(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VkSurfaceKHR&amp;<sp/>p_surface,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>window_settings&amp;<sp/>p_settings)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>m_current_surface_handler(p_surface)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>m_window_settings(p_settings)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>m_current_surface(p_surface)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_physical<sp/>=<sp/>vk_context::physical_driver();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_driver<sp/>=<sp/>vk_context::driver_context();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>create();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vk_swapchain::create()<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>surface<sp/>properties<sp/>are<sp/>always<sp/>updated<sp/>from<sp/>the<sp/>physical<sp/>device</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>they<sp/>are<sp/>valid<sp/>should<sp/>the<sp/>swapchain<sp/>be<sp/>recreated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_surface_properties<sp/>=</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_physical.get_surface_properties(m_current_surface);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_window_settings.width<sp/>=</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_surface_properties.surface_capabilities.currentExtent.width;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_window_settings.height<sp/>=</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_surface_properties.surface_capabilities.currentExtent.height;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>request<sp/>what<sp/>our<sp/>minimum<sp/>image<sp/>count<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>request_min_image_count<sp/>=</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>select_images_size(m_surface_properties.surface_capabilities);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_extent<sp/>=</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_surface_properties.surface_capabilities.currentExtent;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setting<sp/>our<sp/>presentation<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>present_index<sp/>=</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_physical.read_presentation_index(m_current_surface_handler);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkSwapchainCreateInfoKHR<sp/>swapchain_ci<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.surface<sp/>=<sp/>m_current_surface_handler,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.minImageCount<sp/>=<sp/>request_min_image_count,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.imageFormat<sp/>=<sp/>m_surface_properties.surface_format.format,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.imageColorSpace<sp/>=<sp/>m_surface_properties.surface_format.colorSpace,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>physical<sp/>device<sp/>surface<sp/>formats<sp/>to<sp/>getting<sp/>the<sp/>right<sp/>formats</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>vulkan</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.imageExtent<sp/>=<sp/>m_swapchain_extent,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.imageArrayLayers<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.imageUsage<sp/>=<sp/>(VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT<sp/>|</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VK_IMAGE_USAGE_TRANSFER_DST_BIT),</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.queueFamilyIndexCount<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.pQueueFamilyIndices<sp/>=<sp/>&amp;present_index,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.preTransform<sp/>=</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_surface_properties.surface_capabilities.currentTransform,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.compositeAlpha<sp/>=<sp/>VK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.presentMode<sp/>=<sp/>VK_PRESENT_MODE_IMMEDIATE_KHR,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.clipped<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vk_check(vkCreateSwapchainKHR(</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_driver,<sp/>&amp;swapchain_ci,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>&amp;m_swapchain_handler),</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;vkCreateSwapchainKHR&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>image_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vkGetSwapchainImagesKHR(m_driver,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_handler,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;image_count,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>used<sp/>to<sp/>get<sp/>the<sp/>amount<sp/>of<sp/>images</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;VkImage&gt;<sp/>images(image_count);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vkGetSwapchainImagesKHR(m_driver,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_handler,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;image_count,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>images.data());<sp/></highlight><highlight class="comment">//<sp/>used<sp/>to<sp/>store<sp/>in<sp/>the<sp/>images</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Creating<sp/>Images</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_images.resize(image_count);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_image_size<sp/>=<sp/>image_count;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_depth_images.resize(image_count);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkFormat<sp/>depth_format<sp/>=<sp/>m_driver.depth_format();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m_swapchain_images.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::image_params<sp/>color_image_config<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.extent<sp/>=<sp/>{<sp/>m_swapchain_extent.width,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_extent.height,<sp/>},</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.format<sp/>=<sp/>m_surface_properties.surface_format.format,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.aspect<sp/>=<sp/>::vk::image_aspect_flags::color_bit,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.usage<sp/>=<sp/>VK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.mip_levels<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.layer_count<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.phsyical_memory_properties<sp/>=<sp/>m_physical.memory_properties(),</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_images[i]<sp/>=</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::sample_image(m_driver,<sp/>images[i],<sp/>color_image_config);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::image_params<sp/>depth_image_config<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.extent<sp/>=<sp/>{<sp/>m_swapchain_extent.width,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_extent.height,<sp/>},</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.format<sp/>=<sp/>depth_format,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.aspect<sp/>=<sp/>::vk::image_aspect_flags::depth_bit,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.usage<sp/>=<sp/>VK_IMAGE_USAGE_DEPTH_STENCIL_ATTACHMENT_BIT,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.mip_levels<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.layer_count<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.phsyical_memory_properties<sp/>=<sp/>m_physical.memory_properties(),</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_depth_images[i]<sp/>=</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::sample_image(m_driver,<sp/>depth_image_config);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>command<sp/>buffers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_command_buffers.resize(image_count);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m_swapchain_command_buffers.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::command_params<sp/>settings<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.levels<sp/>=<sp/>::vk::command_levels::primary,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>.queue_index<sp/>=<sp/>enumerate_swapchain_settings.present_index,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.queue_index<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.flags<sp/>=<sp/>::vk::command_pool_flags::reset,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_command_buffers[i]<sp/>=</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::command_buffer(m_driver,<sp/>settings);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;::vk::attachment,<sp/>2&gt;<sp/>renderpass_attachments<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::attachment{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.format<sp/>=<sp/>m_surface_properties.surface_format.format,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.layout<sp/>=<sp/>::vk::image_layout::color_optimal,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.samples<sp/>=<sp/>::vk::sample_bit::count_1,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.load<sp/>=<sp/>::vk::attachment_load::clear,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.store<sp/>=<sp/>::vk::attachment_store::store,</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.stencil_load<sp/>=<sp/>::vk::attachment_load::clear,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.stencil_store<sp/>=<sp/>::vk::attachment_store::dont_care,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.initial_layout<sp/>=<sp/>::vk::image_layout::undefined,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.final_layout<sp/>=<sp/>::vk::image_layout::present_src_khr,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::attachment{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.format<sp/>=<sp/>depth_format,</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.layout<sp/>=<sp/>::vk::image_layout::depth_stencil_optimal,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.samples<sp/>=<sp/>::vk::sample_bit::count_1,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.load<sp/>=<sp/>::vk::attachment_load::clear,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.store<sp/>=<sp/>::vk::attachment_store::dont_care,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.stencil_load<sp/>=<sp/>::vk::attachment_load::dont_care,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.stencil_store<sp/>=<sp/>::vk::attachment_store::dont_care,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.initial_layout<sp/>=<sp/>::vk::image_layout::undefined,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.final_layout<sp/>=<sp/>::vk::image_layout::depth_stencil_optimal,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_final_renderpass<sp/>=<sp/>::vk::renderpass(m_driver,<sp/>renderpass_attachments);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>creating<sp/>framebuffers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_framebuffers.resize(m_swapchain_images.size());</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m_swapchain_images.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::array&lt;VkImageView,<sp/>renderpass_attachments.size()&gt;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>image_attachments<sp/>=<sp/>{<sp/>m_swapchain_images[i].image_view(),</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_depth_images[i].image_view()<sp/>};</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::framebuffer_params<sp/>framebuffer_info<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.renderpass<sp/>=<sp/>m_final_renderpass,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.views<sp/>=<sp/>image_attachments,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.extent<sp/>=<sp/>m_swapchain_extent</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_framebuffers[i]<sp/>=</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::framebuffer(m_driver,<sp/>framebuffer_info);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::vk::queue_params<sp/>present_queue_params{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.family<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.index<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_present_to_queue<sp/>=<sp/>::vk::device_present_queue(</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_driver,<sp/>m_swapchain_handler,<sp/>present_queue_params);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vk_swapchain::invalidate()<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>destroy();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>create();</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>vk_swapchain::select_images_size(</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VkSurfaceCapabilitiesKHR&amp;<sp/>p_surface_capabilities)<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>requested_images<sp/>=<sp/>p_surface_capabilities.minImageCount<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>final_image_count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((p_surface_capabilities.maxImageCount<sp/>&gt;<sp/>0)<sp/>and</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(requested_images<sp/>&gt;<sp/>p_surface_capabilities.maxImageCount))<sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>final_image_count<sp/>=<sp/>p_surface_capabilities.maxImageCount;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>final_image_count<sp/>=<sp/>requested_images;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>final_image_count;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>vk_swapchain::read_acquired_image()<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_present_to_queue.wait_idle();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>uint32_t<sp/>frame_idx<sp/>=<sp/>m_present_to_queue.acquired_frame();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>frame_idx<sp/>=<sp/>m_present_to_queue.acquire_next_image();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_present_to_queue.out_of_date())<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalidate();</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_present_to_queue.out_of_date(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame_idx<sp/>=<sp/>m_present_to_queue.acquire_next_image();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frame_idx;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vk_swapchain::present(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t&amp;<sp/>p_current_frame)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_present_to_queue.present_frame(p_current_frame);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_present_to_queue.out_of_date())<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>invalidate();</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_present_to_queue.out_of_date(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vk_swapchain::submit(std::span&lt;const<sp/>VkCommandBuffer&gt;<sp/>p_commands)<sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>m_present_to_queue.submit_immediate_async(p_command);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_present_to_queue.submit_async(p_commands);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vk_swapchain::destroy()<sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vkDeviceWaitIdle(m_driver);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m_swapchain_framebuffers.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_framebuffers[i].destroy();</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_final_renderpass.destroy();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_present_to_queue.destroy();</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m_swapchain_command_buffers.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_command_buffers[i].destroy();</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m_swapchain_depth_images.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_depth_images[i].destroy();</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint32_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>m_swapchain_images.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_swapchain_images[i].destroy();</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vkDestroySwapchainKHR(m_driver,<sp/>m_swapchain_handler,<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="TheAtlasEngine/src/atlas/drivers/vulkan-cpp/vk_swapchain.cpp"/>
+  </compounddef>
+</doxygen>

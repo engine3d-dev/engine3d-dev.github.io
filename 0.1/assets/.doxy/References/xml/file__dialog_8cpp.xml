@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="file__dialog_8cpp" kind="file" language="C++">
+    <compoundname>file_dialog.cpp</compoundname>
+    <includes local="no">core/engine_logger.hpp</includes>
+    <includes local="no">core/filesystem/file_dialog.hpp</includes>
+    <includes local="no">nfd/nfd.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>TheAtlasEngine/src/atlas/core/filesystem/file_dialog.cpp</label>
+        <link refid="file__dialog_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/engine_logger.hpp</label>
+      </node>
+      <node id="3">
+        <label>core/filesystem/file_dialog.hpp</label>
+      </node>
+      <node id="4">
+        <label>nfd/nfd.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceatlas">atlas</innernamespace>
+    <innernamespace refid="namespaceatlas_1_1filesystem">atlas::filesystem</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;core/engine_logger.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;core/filesystem/file_dialog.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;nfd/nfd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">atlas::filesystem<sp/>{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>load_from_file_dialog(</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p_filter,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::filesystem::path&amp;<sp/>p_default_path)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>output_path<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nfdresult_t<sp/>result<sp/>=<sp/>NFD_OpenDialog(</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_filter.c_str(),<sp/>p_default_path.string().c_str(),<sp/>&amp;output_path);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(result<sp/>==<sp/>NFD_OKAY)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>return<sp/>std::string(output_path);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>console_log_fatal(&quot;Error<sp/>Loading<sp/>File!&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>&quot;&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(result<sp/>==<sp/>NFD_OKAY)<sp/>?<sp/>std::string(output_path)<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>save_to_file(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p_filter,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::filesystem::path&amp;<sp/>p_default)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>output_path<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nfdresult_t<sp/>result<sp/>=<sp/>NFD_SaveDialog(</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_filter.c_str(),<sp/>p_default.string().c_str(),<sp/>&amp;output_path);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if(result<sp/>==<sp/>NFD_ERROR){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>return<sp/>std::string();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>std::string(output_path);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(result<sp/>==<sp/>NFD_OKAY)<sp/>?<sp/>std::string(output_path)<sp/>:<sp/>std::string();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="TheAtlasEngine/src/atlas/core/filesystem/file_dialog.cpp"/>
+  </compounddef>
+</doxygen>

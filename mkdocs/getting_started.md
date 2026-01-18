@@ -4,11 +4,9 @@
 
 These are needed before working to get TheAtlasEngine building successfully on your platform.
 
-* `python`: 3.12 or above
-* `conan`: 2.18.0 or above
-* `llvm`: 17 or above
-* `CMake` Build tool for the project
-* `git`: Version control
+* `python`: 3.18 or above
+* `conan`: latest or above
+* `llvm`: 20 or above
 
 === "Windows"
 
@@ -62,40 +60,18 @@ These are needed before working to get TheAtlasEngine building successfully on y
 
     Installing llvm toolchain (powershell must be in **admin**)
     ```powershell
-    choco install llvm
+    choco install llvm --version=20.1.4
     ```
     
     Install `conan` (powershell must be **admin**)
     ```powershell
-    pip install "conan>=2.10.2"
+    pip install "conan>=2.18.1"
     ```
 
-    Install cmake and make
-
-    !!! error
-        you can get this error if you DO NOT have 'make' installed via choco
-
-        ```
-        CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
-        ```
-    
-    !!! error
-        you can get this error if you DO NOT have 'mingw' installed via choco
-
-        CMake Error: CMake was unable to find a build program corresponding to "MinGW Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+    Install CMake
 
     ```powershell
-    choco install make cmake
-    ```
-
-    !!! info
-
-        mingw is installed because we need `mingw32-make.exe` as dependencies will default to using "MinGW Makefiles" generator specified.
-        which means that their CMake will look for `mingw32-make.exe` specific make executables instead of `make.exe`
-
-    Install mingw (powershell must be in **admin**)
-    ```powershell
-    choco install mingw
+    choco install cmake.install --version=3.31.6
     ```
 
     [comment]: <> (Vulkan Installer can be found here [here](https://vulkan.lunarg.com/sdk/home#windows))
@@ -116,34 +92,11 @@ These are needed before working to get TheAtlasEngine building successfully on y
 
 === "Ubuntu 20.0+"
 
-    Install wget if it isn't already on your system
-
-    `sudo apt-get install wget`
-
-    Install the latest version of `llvm`
-    
-    ``` bash
-    wget https://apt.llvm.org/llvm.sh
-    chmod +x llvm.sh
-    sudo ./llvm.sh
-    ```
-
-    Install LLVM's C+ standard library (this will use the llvm apt repos)
+    Installing LLVM
 
     ```bash
-    sudo apt install libc++-17-dev libc++abi-17-dev
+    sudo apt-get install libc++-20-dev libc++abi-20-dev
     ```
-
-    <details>
-        <summary> Installing Linux Prerequisites </summary>
-
-    ```bash
-    sudo apt install -y lsb-release wget software-properties-common gnupg libgtk2.0-dev libgl1-mesa-dev
-    sudo apt-get install -y libx11-dev libx11-xcb-dev libfontenc-dev libice-dev libsm-dev libxau-dev libxaw7-dev libxt-dev libxtst-dev libxrender-dev libxrandr-dev libxi-dev
-    sudo apt install -y software-properties-common
-    sudo add-apt-repository ppa:deadsnakes/ppa
-    ```
-    </details>
     
     <details>
         <summary> If your using 20.04, you have to upgrade Python to 3.10 </summary>
@@ -168,9 +121,16 @@ These are needed before working to get TheAtlasEngine building successfully on y
     pipx install "conan>=2.18.1"
     ```
 
-    !!! important
-
-        If you are installing to compile TheAtlasEngine. Conan already installs Vulkan for you automatically.
+    <details>
+        <summary> Installing Vulkan SDK is optional and only required if you plan to contribute to TheAtlasEngine. </summary>
+    
+    ```bash
+    wget -qO- https://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo tee /etc/apt/trusted.gpg.d/lunarg.asc
+    sudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-noble.list http://packages.lunarg.com/vulkan/lunarg-vulkan-noble.list
+    sudo apt update
+    sudo apt install vulkan-sdk
+    ```
+    </details>
 
 
 === "MacOS X"
@@ -183,13 +143,13 @@ These are needed before working to get TheAtlasEngine building successfully on y
     Install latest version of Python && llvm:
     
     ```
-    brew install python pipx llvm@17
+    brew install python pipx llvm@20
     ```
     
     Install conan:
     
     ```zsh
-    pipx install "conan>=2.18.2"
+    pipx install "conan>=2.18.1"
     ```
     
     Make `clang-tidy` available on the command line:
@@ -204,54 +164,43 @@ These are needed before working to get TheAtlasEngine building successfully on y
     /usr/sbin/softwareupdate --install-rosetta --agree-to-license
     ```
 
+    <details>
+        <summary> Installing Vulkan SDK is optional and only required if you plan to contribute to TheAtlasEngine. </summary>
+    
     !!! note
+        There are future plans to use the Metal graphics API on Mac.
+    
+    ```zsh
+    curl -O https://sdk.lunarg.com/sdk/download/1.4.335.1/mac/vulkansdk-macos-1.4.335.1.zip
+    unzip https://sdk.lunarg.com/sdk/download/1.4.335.1/mac/vulkansdk-macos-1.4.335.1.zip
+    sudo ./vulkansdk-macOS-1.4.335.1.app/Contents/MacOS/vulkansdk-macOS-1.4.335.1 --accept-licenses --default-answer --confirm-command install
+    ```
+    </details>
 
-        On MacOS there are plans in using metal (metal-cpp) instead of Vulkan. Which conan also handles for you.
 
 ---
 
 # 📦 Setting up Conan
 
-Install host profiles for your specific platforms
+First install the Conan configuration
 
-=== "Windows"
+```bash
+conan config install https://github.com/engine3d-dev/conan-config.git
+```
 
-    If you are on an x86 architecture for Windows.
-    
-    ```powershell
-    conan config install -sf profiles/x86_64/Windows/ -tf profiles https://github.com/engine3d-dev/conan-config.git
-    ```
+This will install the `conan atlas` command and files needed to build for your particular platforms and architecture.
 
-=== "X86 Linux"
+Now run the `setup` command:
 
-    If you are on a linux platform that uses an x86 architecture.
-    
-    ```bash
-    conan config install -sf profiles/x86_64/linux/ -tf profiles https://github.com/engine3d-dev/conan-config.git
-    ```
-
-=== "M1 Mac"
-
-    If you are on an M1 Mac OS.
-
-    ```zsh
-    conan config install -sf profiles/armv8/mac/ -tf profiles https://github.com/engine3d-dev/conan-config.git
-    ```
-
----
-
-## 📥 Getting project repositories from Artifactory
-
-Add the engine3d-conan repository to your system. This repository holds all of the TheAtlasEngine packages.
-
-```zsh
-conan remote add engine3d-conan https://libhal.jfrog.io/artifactory/api/conan/engine3d-conan
+```
+conan atlas setup
 ```
 
 ## ✅ Development Environment Completed!!
 
 Once the development environment is completed. Then go to the [repos](https://github.com/engine3d-dev) to see the list of repositories that you plan to contribute to.
 
+Then follow the instructions to cloning the repository.
 
 ## **Changing Build Type**
 
@@ -263,7 +212,7 @@ It is highly recommended during developing of features to build with `Debug` ena
     
     `-b missing` only used during your first build.
 
-    Means to install any missing dependency binaries into conan cache before compiling the project.
+    Will install any missing binaries from your dependencies into conan cache before compiling the actual project.
 
 You can change `build_type` to the following types:
 

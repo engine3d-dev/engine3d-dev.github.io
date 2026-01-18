@@ -4,6 +4,8 @@
 
 These are needed before working to get TheAtlasEngine building successfully on your platform.
 
+Specifications:
+
 * `python`: 3.18 or above
 * `conan`: latest or above
 * `llvm`: 20 or above
@@ -16,11 +18,11 @@ These are needed before working to get TheAtlasEngine building successfully on y
 
     Run this `winget` command to setup C++ with Visual Studio installer in powershell (in admin mode)
 
+    Installing Visual Studio are to get the C++ headers for the STL.
+
     ```powershell
     winget install Microsoft.VisualStudio.2022.BuildTools --override "--add Microsoft.VisualStudio.Workload.VCTools --includeRecommended -p --installWhileDownloading"
     ```
-
-    It is recommended to use Choco for an easy installation process on Windows.
     
     To install `choco`, open powershell with admin access and run the following command in your terminal (powershell must be admin):
     
@@ -42,39 +44,10 @@ These are needed before working to get TheAtlasEngine building successfully on y
     choco install python --version=3.18.0
     ```
     
-    Install `llvm` (powershell must be **admin**):
-
-    !!! error
-        If you get this error make sure that your environment variable is set to LLVM's clang.exe and clang++.exe filepath.
-
-        While also making sure 
-        
-        ```
-        CMake Error at CMakeLists.txt:2 (project):
-        The CMAKE_CXX_COMPILER:
-
-            C:/Program Files/LLVM/bin/clang++.exe
-
-        is not a full path to an existing compiler tool.
-        ```
-
-    Installing llvm toolchain (powershell must be in **admin**)
-    ```powershell
-    choco install llvm --version=20.1.4
-    ```
-    
     Install `conan` (powershell must be **admin**)
     ```powershell
     pip install "conan>=2.18.1"
     ```
-
-    Install CMake
-
-    ```powershell
-    choco install cmake.install --version=3.31.6
-    ```
-
-    [comment]: <> (Vulkan Installer can be found here [here](https://vulkan.lunarg.com/sdk/home#windows))
 
     !!! info
 
@@ -143,7 +116,7 @@ These are needed before working to get TheAtlasEngine building successfully on y
     Install latest version of Python && llvm:
     
     ```
-    brew install python pipx llvm@20
+    brew install python pipx
     ```
     
     Install conan:
@@ -221,3 +194,5 @@ You can change `build_type` to the following types:
 * `Release`: Turns on optimizations and favors high-performance optimizations over space-saving optimizations.
 
 * `MinSizeRel`: Turns on optimizations and favor higher space saving optimizations over higher-performance.
+
+To set the build type, simple add `-s build_type=Debug`.

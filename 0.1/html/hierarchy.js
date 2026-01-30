@@ -1,0 +1,115 @@
+var hierarchy =
+[
+    [ "atlas::application", "classatlas_1_1application.html", null ],
+    [ "atlas::application_settings", "structatlas_1_1application__settings.html", null ],
+    [ "atlas::ui::block", "structatlas_1_1ui_1_1block.html", null ],
+    [ "atlas::box_collider", "structatlas_1_1box__collider.html", null ],
+    [ "JPH::BroadPhaseLayerInterface", null, [
+      [ "atlas::physics::broad_phase_layer_interface", "classatlas_1_1physics_1_1broad__phase__layer__interface.html", null ]
+    ] ],
+    [ "atlas::event::bus", "classatlas_1_1event_1_1bus.html", null ],
+    [ "atlas::vulkan::camera_ubo", "structatlas_1_1vulkan_1_1camera__ubo.html", null ],
+    [ "atlas::capsule_collider", "structatlas_1_1capsule__collider.html", null ],
+    [ "atlas::event::collision_enter", "structatlas_1_1event_1_1collision__enter.html", null ],
+    [ "atlas::event::collision_exit", "structatlas_1_1event_1_1collision__exit.html", null ],
+    [ "atlas::event::collision_persisted", "structatlas_1_1event_1_1collision__persisted.html", null ],
+    [ "atlas::console_log_manager", "classatlas_1_1console__log__manager.html", null ],
+    [ "atlas::physics::contact_event", "structatlas_1_1physics_1_1contact__event.html", null ],
+    [ "JPH::ContactListener", null, [
+      [ "atlas::physics::contact_listener", "classatlas_1_1physics_1_1contact__listener.html", null ]
+    ] ],
+    [ "YAML::convert< atlas::body_layer >", "structYAML_1_1convert_3_01atlas_1_1body__layer_01_4.html", null ],
+    [ "YAML::convert< atlas::body_type >", "structYAML_1_1convert_3_01atlas_1_1body__type_01_4.html", null ],
+    [ "YAML::convert< atlas::box_collider >", "structYAML_1_1convert_3_01atlas_1_1box__collider_01_4.html", null ],
+    [ "YAML::convert< atlas::capsule_collider >", "structYAML_1_1convert_3_01atlas_1_1capsule__collider_01_4.html", null ],
+    [ "YAML::convert< atlas::mesh_source >", "structYAML_1_1convert_3_01atlas_1_1mesh__source_01_4.html", null ],
+    [ "YAML::convert< atlas::physics_body >", "structYAML_1_1convert_3_01atlas_1_1physics__body_01_4.html", null ],
+    [ "YAML::convert< atlas::point_light >", "structYAML_1_1convert_3_01atlas_1_1point__light_01_4.html", null ],
+    [ "YAML::convert< atlas::sphere_collider >", "structYAML_1_1convert_3_01atlas_1_1sphere__collider_01_4.html", null ],
+    [ "YAML::convert< glm::vec2 >", "structYAML_1_1convert_3_01glm_1_1vec2_01_4.html", null ],
+    [ "YAML::convert< glm::vec3 >", "structYAML_1_1convert_3_01glm_1_1vec3_01_4.html", null ],
+    [ "YAML::convert< glm::vec4 >", "structYAML_1_1convert_3_01glm_1_1vec4_01_4.html", null ],
+    [ "atlas::vulkan::device", "classatlas_1_1vulkan_1_1device.html", null ],
+    [ "atlas::directional_light", "structatlas_1_1directional__light.html", null ],
+    [ "atlas::ui::dockspace", "classatlas_1_1ui_1_1dockspace.html", null ],
+    [ "atlas::tag::editor", "structatlas_1_1tag_1_1editor.html", null ],
+    [ "atlas::physics::engine", "classatlas_1_1physics_1_1engine.html", null ],
+    [ "flecs::entity", null, [
+      [ "atlas::game_object", "classatlas_1_1game__object.html", null ]
+    ] ],
+    [ "atlas::vulkan::geometry_uniform", "structatlas_1_1vulkan_1_1geometry__uniform.html", null ],
+    [ "atlas::vulkan::global_ubo", "structatlas_1_1vulkan_1_1global__ubo.html", null ],
+    [ "atlas::graphics_context", "classatlas_1_1graphics__context.html", [
+      [ "atlas::vulkan::instance_context", "classatlas_1_1vulkan_1_1instance__context.html", null ]
+    ] ],
+    [ "std::hash< vk::vertex_input >", "structstd_1_1hash_3_01vk_1_1vertex__input_01_4.html", null ],
+    [ "atlas::vulkan::imgui_context", "classatlas_1_1vulkan_1_1imgui__context.html", null ],
+    [ "atlas::physics::jolt_settings", "structatlas_1_1physics_1_1jolt__settings.html", null ],
+    [ "atlas::joystick_button", "structatlas_1_1joystick__button.html", null ],
+    [ "atlas::joystick_info", "structatlas_1_1joystick__info.html", null ],
+    [ "atlas::vulkan::light_scene_ubo", "structatlas_1_1vulkan_1_1light__scene__ubo.html", null ],
+    [ "atlas::event::listener< UEvent >", "classatlas_1_1event_1_1listener.html", null ],
+    [ "atlas::material_metadata", "structatlas_1_1material__metadata.html", null ],
+    [ "atlas::vulkan::material_uniform", "structatlas_1_1vulkan_1_1material__uniform.html", null ],
+    [ "atlas::math_generic< T >", "structatlas_1_1math__generic.html", null ],
+    [ "atlas::matrix2< T >", "structatlas_1_1matrix2.html", null ],
+    [ "atlas::matrix3< T >", "structatlas_1_1matrix3.html", null ],
+    [ "atlas::matrix4< T >", "structatlas_1_1matrix4.html", null ],
+    [ "atlas::physics::matrix4< T >", "structatlas_1_1physics_1_1matrix4.html", null ],
+    [ "atlas::physics::matrix4< JPH::Mat44 >", "structatlas_1_1physics_1_1matrix4_3_01JPH_1_1Mat44_01_4.html", null ],
+    [ "atlas::ui::menu_bar_exception", "classatlas_1_1ui_1_1menu__bar__exception.html", null ],
+    [ "atlas::ui::menu_item", "classatlas_1_1ui_1_1menu__item.html", null ],
+    [ "atlas::vulkan::mesh", "classatlas_1_1vulkan_1_1mesh.html", null ],
+    [ "atlas::mesh_source", "structatlas_1_1mesh__source.html", null ],
+    [ "JPH::ObjectLayerPairFilter", null, [
+      [ "atlas::physics::object_layer_pair_filter", "classatlas_1_1physics_1_1object__layer__pair__filter.html", null ]
+    ] ],
+    [ "JPH::ObjectVsBroadPhaseLayerFilter", null, [
+      [ "atlas::physics::object_vs_broadphase_layer", "classatlas_1_1physics_1_1object__vs__broadphase__layer.html", null ]
+    ] ],
+    [ "atlas::perspective_camera", "structatlas_1_1perspective__camera.html", null ],
+    [ "atlas::vulkan::physical_device", "classatlas_1_1vulkan_1_1physical__device.html", null ],
+    [ "atlas::physics_body", "structatlas_1_1physics__body.html", null ],
+    [ "atlas::physics::physics_context", "classatlas_1_1physics_1_1physics__context.html", [
+      [ "atlas::physics::jolt_context", "classatlas_1_1physics_1_1jolt__context.html", null ]
+    ] ],
+    [ "atlas::point_light", "structatlas_1_1point__light.html", null ],
+    [ "atlas::vulkan::point_light_ubo", "structatlas_1_1vulkan_1_1point__light__ubo.html", null ],
+    [ "atlas::projection_view", "structatlas_1_1projection__view.html", null ],
+    [ "atlas::physics::quaternion< T >", "structatlas_1_1physics_1_1quaternion.html", null ],
+    [ "atlas::renderer_system", "classatlas_1_1renderer__system.html", [
+      [ "atlas::vulkan::render_system", "classatlas_1_1vulkan_1_1render__system.html", null ]
+    ] ],
+    [ "atlas::scene", "classatlas_1_1scene.html", null ],
+    [ "atlas::event::scene_transition", "structatlas_1_1event_1_1scene__transition.html", null ],
+    [ "atlas::tag::serialize", "structatlas_1_1tag_1_1serialize.html", null ],
+    [ "atlas::serializer", "classatlas_1_1serializer.html", null ],
+    [ "atlas::vulkan::shader_resource_group", "classatlas_1_1vulkan_1_1shader__resource__group.html", null ],
+    [ "atlas::sphere_collider", "structatlas_1_1sphere__collider.html", null ],
+    [ "atlas::surface_properties", "structatlas_1_1surface__properties.html", null ],
+    [ "atlas::vulkan::surface_properties", "structatlas_1_1vulkan_1_1surface__properties.html", null ],
+    [ "atlas::vulkan::swapchain", "classatlas_1_1vulkan_1_1swapchain.html", null ],
+    [ "atlas::system_registry", "classatlas_1_1system__registry.html", null ],
+    [ "atlas::transform", "structatlas_1_1transform.html", null ],
+    [ "atlas::vector2< T >", "structatlas_1_1vector2.html", null ],
+    [ "atlas::vector2< glm::highp_vec2 >", "structatlas_1_1vector2_3_01glm_1_1highp__vec2_01_4.html", null ],
+    [ "atlas::physics::vector3< T >", "structatlas_1_1physics_1_1vector3.html", null ],
+    [ "atlas::vector3< T >", "structatlas_1_1vector3.html", null ],
+    [ "atlas::vector3< glm::highp_vec3 >", "structatlas_1_1vector3_3_01glm_1_1highp__vec3_01_4.html", null ],
+    [ "atlas::physics::vector3< JPH::Double3 >", "structatlas_1_1physics_1_1vector3_3_01JPH_1_1Double3_01_4.html", null ],
+    [ "atlas::physics::vector3< JPH::DVec3 >", "structatlas_1_1physics_1_1vector3_3_01JPH_1_1DVec3_01_4.html", null ],
+    [ "atlas::physics::vector3< JPH::Float3 >", "structatlas_1_1physics_1_1vector3_3_01JPH_1_1Float3_01_4.html", null ],
+    [ "atlas::physics::vector3< JPH::Vec3 >", "structatlas_1_1physics_1_1vector3_3_01JPH_1_1Vec3_01_4.html", null ],
+    [ "atlas::vector3< JPH::Vec3 >", "structatlas_1_1vector3_3_01JPH_1_1Vec3_01_4.html", null ],
+    [ "atlas::physics::vector4< T >", "structatlas_1_1physics_1_1vector4.html", null ],
+    [ "atlas::vector4< T >", "structatlas_1_1vector4.html", null ],
+    [ "atlas::vector4< glm::highp_vec4 >", "structatlas_1_1vector4_3_01glm_1_1highp__vec4_01_4.html", null ],
+    [ "atlas::physics::vector4< JPH::Float4 >", "structatlas_1_1physics_1_1vector4_3_01JPH_1_1Float4_01_4.html", null ],
+    [ "atlas::physics::vector4< JPH::Vec4 >", "structatlas_1_1physics_1_1vector4_3_01JPH_1_1Vec4_01_4.html", null ],
+    [ "atlas::vulkan::vertex_input", "structatlas_1_1vulkan_1_1vertex__input.html", null ],
+    [ "atlas::window", "classatlas_1_1window.html", [
+      [ "atlas::vulkan::window_context", "classatlas_1_1vulkan_1_1window__context.html", null ]
+    ] ],
+    [ "atlas::window_params", "structatlas_1_1window__params.html", null ],
+    [ "atlas::world", "classatlas_1_1world.html", null ]
+];

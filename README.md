@@ -1,6 +1,6 @@
 # engine3d-dev.github.io
 
-Documentatino website for TheAtlasEngine to provide information on guidelines and development environment setup.
+Documentation website for TheAtlasEngine to provide information on guidelines and development environment setup.
 
 ## Instructions
 

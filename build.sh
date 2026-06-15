@@ -1,67 +1,32 @@
 
 # # This script generates the docs html files required for the documentation web-page
 
-# # Sets up the virtual environment
-# python3 -m venv venv
+# Setting working directory to the file path of the shell script
+# so that it doesn't depend on where the script is run from
+SCRIPT_PATH=$(pwd)
+cd "$SCRIPT_PATH"
+echo "[Build Script] Current working directory: $SCRIPT_PATH"
 
-# source venv/bin/activate
-
-
-# pip install -r requirements.txt
-
-
-# # Generate doxygen
-
-# cd TheAtlasEngine
-# doxygen -g Doxyfile
-# Modify PROJECT_NAME
-# Modify INPUT = ./TheAtlasEngine/atlas
-# Modify RECURSIVE = YES
-# Modify OUTPUT_DIRECTORY docs
-# doxygen TheAtlasEngine/Doxyfile
-# Then add that to mkdocs
+# Directory of where the Atlas Engine source repository will be stored.
+# This is relative to where this script file is.
+ATLAS_SRC_DIR="./TheAtlasEngine"
 
 # Cloning the TheAtlasEngine repository
-# We check if TheAtlasEngine directory exists then we remove it and re-clone repository again
-if ! [ -d TheAtlasEngine ]; then
-    echo "Cloning TheAtlasEngine Repo..."
-    git clone https://github.com/engine3d-dev/TheAtlasEngine
+# We check if TheAtlasEngine directory exists before we can generate Doxygen HTML files.
+if ! [ -d "$ATLAS_SRC_DIR" ]; then
+    echo "[Git] Cloning TheAtlasEngine Repo..."
+    git clone https://github.com/engine3d-dev/TheAtlasEngine "$ATLAS_SRC_DIR"
 else
-    echo "TheAtlasEngine Repo Found!"
-    rm -rf TheAtlasEngine
-    echo "Deleted TheAtlasEngine/ Repo"
-    echo "Cloning TheAtlasEngine Repo..."
-    git clone https://github.com/engine3d-dev/TheAtlasEngine
+    echo "[Git] TheAtlasEngine Repo Found! Updating Repository..."
+		cd "$ATLAS_SRC_DIR"
+		git pull
+		cd "$SCRIPT_PATH"
 fi
 
-# Copies Doxyfile to TheAtlasEngine directory to modify it for the documentation website
-echo "cp Doxyfile TheAtlasEngine/Doxyfile"
-cp Doxyfile TheAtlasEngine/Doxyfile
-echo "ls TheAtlasEngine | grep \"Doxyfile\""
-echo "Output:"
-ls TheAtlasEngine | grep "Doxyfile"
-
-# # Generating the doxygen documentation from the specified Doxyfile in the repository
-doxygen TheAtlasEngine/Doxyfile
-
-# # # Copying the doxygen documentation to the mkdocs/html directory
-# cp -R docs/html mkdocs/html
-
-
-if [ -d mkdocs/html ]; then
-    rm -rf mkdocs/html
-    echo "Deleted mkdocs/html directory"
-    echo "Copying docs/html to mkdocs/html"
-    cp -R docs/html mkdocs/html
-    cp css_themes/*.css mkdocs/html/
-else
-    echo "mkdocs/html directory not found"
-    echo "Copying docs/html to mkdocs/html"
-    cp -R docs/html mkdocs/html
-    echo "Copying css_themes/*.css to mkdocs/html/"
-    cp css_themes/*.css mkdocs/html/
+# We will set up a log file to redirect doxygen logs/warnings/errors to because it can generate a lot of messages that clutter the user's terminal
+echo "[Doxygen] Generating documentation from ./Doxyfile..."
+if ! [ -d "logs" ]; then
+		mkdir logs
 fi
 
-
-# chmod +x apply_css.sh
-# ./apply_css.sh
+doxygen ./Doxyfile > ./logs/doxygen.log 2>&1

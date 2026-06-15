@@ -2,32 +2,42 @@
 
 Documentation website for TheAtlasEngine to provide information on guidelines and development environment setup.
 
-## Instructions
+## Set Up Instructions
 
-To install the website please install the needed dependencies for the project:
+To set up a local development environment for the documentation website,
+you will need:
+- [NodeJS](https://nodejs.org/en/download): A runtime environemnt to execute JavaScript code.
+- [Git](https://git-scm.com/install/): To let the build script download the source code of the Atlas engine to your local machine. You probbaly already have this installed if you had cloned this repository to your machine.
 
-```
-pip install -r requirements.txt
-```
+This guide assumes that you are setting up the development environment on the command line.
 
-Then to build the actual documentation
-
-!!! tip
-
-    You may need to run `chmod +x build.sh` to execute the build script
-
-```
-./build.sh
+First, clone the repository to your machine. 
+Make sure to update your command line's working directory to the newly cloned repository once the documentation repository is cloned.
+```zsh
+git clone https://github.com/engine3d-dev/TheAtlasEngine.git
+cd ./TheAtlasEngine
 ```
 
-Finally run the serve command to run the documentation website.
+Then install package dependencies for this Node project such as Vite and the Typescript transpiler, etc. 
 
+```zsh
+npm i
 ```
-mkdocs serve
+
+With the Node packages installed properly, we can start a local development server. 
+The following command will run Vite which itself is configured to run the `build.sh` before starting the dev server. 
+```zsh
+npm run dev
 ```
+By default, you should be able to access the local documentation site at 
+http://localhost:5173/. 
+The port number may change if the port was already occupied. 
+If that's the case, just follow the URL that was provided by Vite in the command line.
 
-This page should be available on your local address at `https://127.0.0.1:8000`
+### !!! tip
+You may need to run `chmod +x build.sh` to let Vite run the build script
 
+<!-- 
 When making changes to the page itself, it will auto-reload.
 
 If the API documentation gets modified. You must rebuild the documentation. If your changes involve just `rst` or `md` files in the sphinx directory.
@@ -48,7 +58,7 @@ doxygen Doxyfile.in
 
 cd sphinx
 sphinx-build -b html -Dbreathe_projects.atlas=doxygen_output/xml . output
-```
+``` -->
 
 # Contribution Instructions
 

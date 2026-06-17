@@ -24,9 +24,14 @@ else
 fi
 
 # We will set up a log file to redirect doxygen logs/warnings/errors to because it can generate a lot of messages that clutter the user's terminal
-echo "[Doxygen] Generating documentation from ./Doxyfile..."
 if ! [ -d "logs" ]; then
 		mkdir logs
 fi
 
+# # Create public/api directory if it doesn't exist
+# if ! [ -d "public/docs" ]; then
+#     mkdir -p public/api
+# fi
+
+echo "[Doxygen] Generating documentation from ./Doxyfile..."
 doxygen ./Doxyfile > ./logs/doxygen.log 2>&1

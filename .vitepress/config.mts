@@ -43,6 +43,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
+      { text: 'Get Started', link: '/getting-started' },
+      { text: 'Usage', link: '/user-guide/setup-vscode' },
+      { text: 'About', link: '/about' },
       { text: 'API Docs', link: '/docs/html/index.html', target: '_self' },
       { text: 'Examples', link: '/markdown-examples' }
     ],

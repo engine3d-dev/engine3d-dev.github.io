@@ -19,5 +19,8 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+	"vueCompilerOptions": {
+    "vitePressExtensions": [".md"],
+  },
+  "include": ["src", ".vitepress"]
 }

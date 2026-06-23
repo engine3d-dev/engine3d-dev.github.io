@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 import { execSync } from 'child_process'
 import path from 'path'
+import { fileURLToPath } from 'url'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -9,6 +10,7 @@ export default defineConfig({
   
   title: "Atlas Docs",
   description: "Documentation for Engine3D, to look at how to get started",
+	head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   vite: {
     plugins: [
       {
@@ -32,7 +34,7 @@ export default defineConfig({
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '../src'),
-      }
+				}
     },
     build: {
       outDir: 'dist',
@@ -55,7 +57,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+
+		search: {
+      provider: 'local'
+    }
 		
   },
 	markdown: {

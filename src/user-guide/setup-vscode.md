@@ -23,7 +23,7 @@ Follow the same setups above. In the intellisense sections in the extensions for
 
 Check the disable checkbox as shown below
 
-![clangd intellisense](../assets/intellisense-image.png)
+![clangd intellisense](./intellisense-image.png)
 
 
 ## Disable auto-include headers
@@ -32,7 +32,7 @@ If you do not want auto-imported headers and are already including them if you h
 
 Clangd arguments should look like this:
 
-![clangd arguments](../assets/clangd-arguments.png "Clangd Arguments")
+![clangd arguments](./clangd-arguments.png "Clangd Arguments")
 
 ## Used in your own project
 

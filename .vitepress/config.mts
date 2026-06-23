@@ -40,6 +40,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
+		logo: '/assets/ae-logo.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },

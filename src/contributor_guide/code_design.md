@@ -39,7 +39,7 @@ In the demonstration below, is how the callback system works. Removing
 
 <details>
     <summary> Register Callbacks Code Example </summary>
-
+</details>
 ```C++
 class main_scene : public atlas::scene {
 public:
